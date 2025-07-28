@@ -1,0 +1,988 @@
+:root {
+    --principal-color: #ffffff;
+    --header-footer-color:  #fcfcfc;
+    --header-footer-line:  #f3efef;
+    --second-color:  #e5e5f9;
+    --third-color:  #b3b3d8;
+    --cart-border-color: #bdbdea ;
+    --cart-color: #9797d9;
+    --button-color: #5353b4; 
+    --text-one: #ffffff;
+    --text-two: #000000;
+    --text-promo: red; 
+    --font-familly1: "Josefin Sans", sans-serif; 
+    --font-familly2: "Montserrat", sans-serif;
+    --promo-box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+    --achat-box-shadow: inset 0px 0px 8px -2px rgba(36, 36, 72, 1);
+    /* --panier-box-shadow: inset 0px 0px 8px -2px rgba(36, 36, 72, 1); */
+    /* --ranking-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
+    --AddToCart-color:#5353b4; 
+    --AddToCart-BgColor:#7474dd;
+    --btn-theme-hoverBgColor:#303064;
+    --btn-theme-hoverColor:#e5e5f9  ;
+    --transition3s: all .3s ease-in-out;
+    --transition2s: all .2s ease-in-out;
+    --transition1s: all .1s ease-in-out;
+    --logo:#7474dd;
+ }
+
+ .darkmode{
+    --principal-color:  #303064;
+    --header-footer-color:  #2e2e5e;
+    --header-footer-line:  #2a2a54;
+    --second-color: #242448 ;
+    --third-color:  #1c1c36;
+    --text-two: #ffffff;
+    --text-one: #000000;
+    --promo-box-shadow: rgba(151, 151, 217, 0.1) 0px 1px 0px;
+    --achat-box-shadow: inset 0px 0px 8px -2px rgb(17, 16, 16);
+    /* --panier-box-shadow: inset 0px 0px 8px -2px rgb(0, 0, 0); */
+    /* --ranking-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
+    --text-promo: rgb(216, 60, 60);
+    --AddToCart-color: #ddd7e9 ;
+    --AddToCart-BgColor:#7474dd;
+    --btn-theme-hoverBgColor:#ffffff;
+    --btn-theme-hoverColor:#000000 ;
+ }
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--principal-color); 
+    color: var(--text-two);
+    font-family: var(--font-familly1);
+}
+
+/* Le header */
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 60px;
+    gap: 40px;
+    background-color: var(--header-footer-color);
+    color:var(--text-two);
+    border-bottom: 1px solid var(--header-footer-line);
+}
+
+header a, footer a{
+    color:var(--text-two)
+}
+/* Le logo */
+#logo{
+    margin: 0 20px;
+    padding: 0 5px 0 0;
+    border-right: 1.5px solid var(--second-color);
+    height: 30px;
+}
+
+#logo svg{
+ width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#logo svg .b{
+    fill:var(--text-two)
+}
+
+/* Rayons - et le dropdown */
+.dropdown{
+    width: 15%;
+    margin: 0 0 0 10px;
+    transition: var(--transition2s);
+}
+.dropdown button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 100%;
+    border-radius: 20px;
+    color: var(--text-two);
+    background-color: var(--header-footer-color);
+    border: 1px solid var(--second-color);
+    padding: 0 10px 0 10px;
+    margin: 10.55px 0;
+    cursor: pointer;
+    font-size: clamp(50%, 5vw, 100%);
+    transition: var(--transition3s);
+    font-family: var(--font-familly1);
+}
+
+.dropdown button:hover{
+    height: 35px;
+    width: 100%;
+    border: 1px solid var(--third-color);
+    border-radius: 20px;
+    background: var(--second-color);
+}
+
+.dropdown button svg{
+    width: 30%;
+    fill:var(--text-two) ;
+}
+
+.dropdown .content{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+    left: 0;
+    border-top: 1px solid var(--header-footer-line);
+    background: var(--header-footer-color);
+    box-shadow: 0 3px 3px 0px rgba(0, 0, 0, 0.2);
+    height: 20%;
+    width: 100%;
+    z-index: 10;
+}
+
+ .dropdown:hover .content{
+    display: flex;
+ }
+
+.dropdown .content a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width:15% ;
+    gap: 10px;
+    cursor: pointer;
+    transition: var(--transition3s);
+
+}
+.dropdown .content a:hover{
+    background: var(--second-color);
+}
+.dropdown .content img{
+    height: 50px;
+    width: 50px;
+}
+
+/* La barre de recherche */
+.search{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+}
+.search input{
+    width: 90%;
+    height:30px;
+    border-radius: 15px;
+    background-color: var(--second-color);
+    border: .5px solid var(--third-color) ;
+    padding: 0 0 0 35px;
+    color:var(--text-two);
+}
+
+.search input::placeholder{
+    font-family: var(--font-familly1);
+    font-size: 0.9rem;
+    color: var(--AddToCart-BgColor);
+    opacity: 0.6;
+}
+
+.search svg{
+    fill: var(--text-two);
+    position: relative;
+    top: 0 ;
+}
+
+.search-icon{
+    left: 30px ;
+    border-right: 1px solid var(--third-color);
+}
+
+.clean-search-bar{
+    display: none;
+    right: 30px ;
+    cursor: pointer;
+    transition: var(--transition2s); 
+}
+.clean-search-bar:hover{
+    background-color: var(--cart-color);
+    border-radius: 50%;
+}
+
+
+/* Le  user-profil*/
+
+.user-profil{
+    display: flex;
+    justify-content: center;
+    margin: 0 20px;
+   
+}
+.user-profil svg{
+   fill:var(--text-two);
+   cursor: pointer;
+   height: 25px;
+   width: 25px;
+   padding: 4px;
+   margin: 10.55px 0;
+   border-radius: 50%;
+   background-color: var(--second-color);
+   transition: var(--transition3s);
+}
+
+.user-profil svg:hover{
+background-color: var(--third-color);
+}
+
+.user-content{
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    border-top: 1px solid var(--header-footer-line);
+    background: var(--header-footer-color);
+    box-shadow: 0 3px 3px 0px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 60px;
+    right: 15px;
+    height: 20%;
+    width: 20%;
+    z-index: 10;
+}
+
+.user-profil:hover .user-content{
+    display: flex;
+}
+
+.user-content span{
+    color: var(--text-two);
+    font-size: 1rem;
+}
+
+.user-content img{
+    height: 30px;
+    width: 30px;
+    border-radius: 40%;
+    padding: 2px;
+    margin: 0 5px;
+}
+
+/* Le changement de la langue de la page */
+
+header .traducteur{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: auto;
+    padding: 0 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    color: var(--text-wo);
+    background-color: var(--second-color);
+    border: none;
+    margin: 0 20px;
+    transition: var(--transition2s);
+}
+header .traducteur:hover{
+    background-color: var(--third-color);
+}
+
+
+
+
+
+/* Le footer */
+footer{
+    display: flex;
+    background-color: var(--header-footer-color);
+    color: var(--text-two);
+    width: 100%;
+    height: 100px;
+    border-top: 2px solid var(--header-footer-line);
+}
+
+/* Le copyright de BeDrive */
+footer .BeDrive{
+    display: flex;
+    flex-grow: 0;
+    align-items:flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.BeDrive svg, .BeDrive p{
+    margin: 0 20px;
+}
+
+.BeDrive svg .b{
+    fill: var(--text-two);
+}
+.BeDrive .logo{
+    color: var(--logo);
+}
+
+/* Les conditions générales */
+
+footer  ul{
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Les réseaux sociaux */
+footer .social-media{
+    display: flex;
+    flex-grow: 0.1;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-media a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+     background-color: var(--AddToCart-BgColor);
+     transition: var(--transition1s);
+}
+.social-media a:hover,
+.social-media a:hover svg,
+.social-media a:hover svg g {
+    background-color: var(--AddToCart-color);
+    fill: var(--AddToCart-BgColor);
+}
+
+.social-media svg{
+     height: 20px;
+     width: 20px;
+     background-color: var(--AddToCart-BgColor);
+}
+.social-media svg g {
+    fill:var(--AddToCart-color)
+}
+
+/* Le boutton 'Contactez nous' */
+footer button.btn-contact{
+    border:none;
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    position: absolute;
+    left: 180px;
+    margin: 0 0 30px 0;
+    cursor: pointer;
+    transition: var(--transition3s);
+    background-color: var(--AddToCart-BgColor);
+    color: var(--text-one);
+}
+
+footer button.btn-contact:hover{
+    background-color: var(--AddToCart-color);
+    color: var(--AddToCart-BgColor);
+}
+
+/* Le pop-pup du formulaire de contact */
+
+.form-container{
+    display: none;
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    pointer-events:auto;
+    overflow: hidden;
+    padding: 0 0 170px 0;
+    z-index: 0;
+    background-color: rgba(8, 8, 8, 0.5);
+    opacity: 0.5;
+    transition: opacity 2s ease-in-out;
+}
+.form-container.active{
+    display: flex;
+    opacity: 1;
+}
+
+footer .contact-form{
+    display: none;
+    align-items: flex-start;
+    flex-direction: column;
+    position: absolute;
+    top:25%;
+    left:32%;
+    height: 500px;
+    width: 500px;
+    padding: 20px;
+    gap: 10px;
+    border-radius: 30px;
+    background-color:#9797d9;;
+    
+}
+
+.contact-form.active{
+    display: flex;
+}
+
+ footer .contact-form input{
+    padding-left: 5px;
+    height: 30px;
+    width: 220px;
+    border: none;
+    border-radius: 10px;
+}
+footer .contact-form textarea{
+    flex-grow:1 ;
+    padding: 10px;
+    width: 96%;
+    border: none;
+    border-radius: 10px;
+}
+.contact-form button{
+    border: none;
+    height: 35px;
+    width: 100px;
+    border-radius: 10px;
+    font-family: var(--font-familly2);
+    font-size: clamp(2px, 2vw, 17px);
+    background-color: var(--button-color);
+    color: #e5e5f9;
+    cursor: pointer;
+    transition: var(--transition3s);
+}
+.contact-form button:hover{
+    background-color:#303064; 
+}
+.contact-form svg{
+    position: absolute;
+    right: 0;
+    margin: 0 20px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    transition: var(--transition3s);
+}
+
+.contact-form svg:hover{
+    fill:#303064;
+}
+
+.input-form{
+   font-family: var(--font-familly2);
+}
+.input-form::placeholder{
+    color:#5353b4;
+    opacity: 0.6;
+}
+
+
+
+
+/* Le Dark ou light mode */
+.theme-mode-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute ;
+    top:70px;
+    right: 0;
+    margin: 15px 40px 0 0;
+    z-index: 1;
+    height: 40px;
+    width: 40px; 
+    background-color: var(--second-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: var(--transition2s);
+}
+
+.theme-mode-btn:hover,
+.theme-mode-btn:hover svg{
+    background-color: var(--btn-theme-hoverBgColor);
+    fill:var(--btn-theme-hoverColor)
+}
+
+.theme-mode-btn svg:last-child{
+    display: none;
+    fill: var(--text-one);
+}
+
+.darkmode .theme-mode-btn svg:first-child{
+    display: none;
+}
+
+.darkmode .theme-mode-btn svg:last-child{
+    display: block;
+}
+
+                            /* LE CONTENU PRINCIPAL */
+
+/* Le container parent */
+ .container{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden; 
+}
+
+/* Le message d'accueil */
+.welcome-message{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    height: 12%;
+    width: 100%;
+    gap: 5px;
+    padding: 25px 0;
+}
+
+.welcome-message span{
+    color: var(--logo);
+}
+
+.welcome-message h3{
+    padding: 1px 0;
+}
+
+        /* LES SECTIONS  */
+
+.lesSections{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    overflow: hidden; 
+    height: 88%;
+    width: 100%;
+}
+
+    /* La premiere section */
+.section1{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 82%;
+    height: 100%;
+    padding: 0 0 0 10px ;
+    overflow-x: hidden;
+}
+
+/* La première partie de la section1 - les supermarchés classés par promotion  */
+.section1Partie1{
+    width: 100%;
+    height: 22%;
+    overflow-y: hidden;
+}
+
+       /* Les titres de la .section1Partie1 */
+
+.section1Partie1 h2{
+    color: var(--text-two);
+    font-family: "Josefin Sans", sans-serif; 
+}
+ 
+        /* Liste des supermarchés par promo */
+
+.lesSupermarches {
+    display: flex;
+    justify-content: flex-start; /* important pour garder la taille des enfants */
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
+    width: 100%;
+    height: auto;
+    padding: 0 2px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.lesSupermarches > a {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--second-color); 
+    color: var(--text-promo); 
+    border-radius: 10px;
+    width: 200px;
+    height: 95px;
+    gap: 7px;
+    cursor: pointer;
+    box-shadow: var(--promo-box-shadow);
+    transition: transform 0.2s cubic-bezier(0.4,0,0.2,1),
+                margin 0.2s cubic-bezier(0.4,0,0.2,1);
+    
+    margin: 10px 0;
+}
+.lesSupermarches a:hover {
+    transform: scale(1.1);
+    margin: 0 10px ;
+
+}
+.lesSupermarches img{
+    height: 50%;
+    width: 50%;
+}
+/* Masquer la scrollbar horizontale */
+
+.lesSupermarches {
+  scrollbar-width: none;        /* Firefox */
+  -ms-overflow-style: none;     /* IE et Edge */
+}
+
+.lesSupermarches::-webkit-scrollbar {
+  display: none;                /* Chrome, Safari, Opera */
+}
+
+ 
+        /*La deuxième partie de la section1 -  Les produits à acheter */
+.section1Partie2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    flex-direction: column;
+    width: 100%;
+    height: 80%;
+}
+
+/* La liste des produits au choix */
+.choixProduits{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: var(--second-color);
+    box-shadow: var(--achat-box-shadow);
+    height: 91.5%;
+    width: 100%; 
+    border-radius: 10px;
+    padding: 5px 0 0 0;
+}
+
+.choixProduits .produit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 200px;
+    width: 150px;
+    gap: 10px;
+    border-bottom: 2px solid var(--third-color);
+    transition: var(--transition2s);
+}
+
+.choixProduits .produit img{
+    height: 80px;
+    width: 80px;
+}
+
+.prix-AddToCart{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    font-size: clamp(1rem, 2vw, 1.1rem);
+}
+
+.prix-AddToCart svg{
+    height: 30px;
+    width: 30px;
+    padding: 1px;
+    border-radius: 3px;
+    fill: var(--AddToCart-color);
+    background-color: var(--AddToCart-BgColor);
+    transition: var(--transition3s);
+}
+
+.prix-AddToCart svg:hover{
+    fill:var(--AddToCart-BgColor);
+    background-color: var(--AddToCart-color);
+    cursor: pointer;
+}
+
+
+    /* La deuxieme section */
+
+.section2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 18%;
+    height: 100%;
+    gap: 8px;
+}
+
+        /* La premiere partie de la section2 */
+
+/* Le panier */
+.panier{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    background-color: var(--cart-color); 
+    box-shadow: var(--panier-box-shadow);
+    width: 90%;
+    height: 54%;
+    /* border: 1px solid var(--third-color); */
+    border-radius: 10px;
+    padding: 5px 0;
+}
+
+/* Le choix du supermarché le moins cher */
+.choixSupermarche{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 100%;
+    gap: 10px;
+    overflow: hidden;
+}
+.choixSupermarche select{
+    width: 40%;
+    height: auto;
+    font: 0.7em sans-serif;
+    border-radius: 8px;
+    color: var(--text-one); 
+    background-color: var(--cart-color);
+    border-color: var(--cart-border-color);
+}
+
+.choixSupermarche img{
+    width: 40px;
+    height: auto;
+}
+
+/* Les produits du panier */
+.produits-panier{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 1px;
+    width: 90%;
+    height: 60%;
+    padding: 5px 0;
+    color: #000000;
+    border-top: 1px solid var(--cart-border-color);
+    border-bottom: 1px solid var(--cart-border-color);
+    -webkit-overflow-scrolling: touch; /* scroll fluide sur iOS */
+}
+
+/* Masquer la scrollbar verticale du ranking */
+
+.produits-panier {
+  scrollbar-width: none;        /* Firefox */
+  -ms-overflow-style: none;     /* IE et Edge */
+}
+
+.produits-panier::-webkit-scrollbar {
+  display: none;                /* Chrome, Safari, Opera */
+}
+
+/* Chaque produit du panier */
+ .produits-panier > .produit{
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 40px;
+    overflow-y: hidden;
+}
+
+.produits-panier .produit .image-nom{
+    display: flex;
+    align-items: center;
+    font-size: clamp(0.15rem, 1vw, 0.7rem);
+    width: 50%;
+    gap: 3px;
+}
+.produits-panier .produit img{
+    height: 30px;
+    width: 30px;
+}
+.produits-panier .produit .quantite-prix{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+ }
+
+ .produits-panier .quantite-prix .quantite{
+    width: 35%;
+    background-color:#bdbdea;
+    border: none;
+    border-radius: 3px;
+    padding: 2px 0;
+ }
+
+/* <!-- Le prix total du panier --> */
+
+ .panier .Total{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    font-weight:bold ;
+    color: var(--text-one); 
+}
+
+/* <!-- Le boutton de validation du panier --> */
+
+.panier .button{
+    background-color: var(--button-color);
+    color: var(--text-one); 
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(3px, 1.5vw, 20px);
+    font-weight: 500;
+    height: 10%;
+    width: 40%;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+
+.panier .button:hover{
+    background-color:var(--logo)
+}
+
+
+
+        /* La deuxieme partie de la section2 */
+.ranking{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+    background-color:  var(--second-color); 
+    width: 90%;
+    height: 40%;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 5px 0;
+    box-shadow: var(--ranking-box-shadow);
+}
+
+ .titre.ranking{
+    border-radius: 0;
+    height: 6%;
+    border-bottom: 1px solid var(--cart-color);
+    font-size: clamp(13px, 2vw, 18px);
+    box-shadow: initial;
+}
+
+ .supermarche.ranking{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 90%;
+    gap: 3px;
+    border-radius:0 ;
+    overflow-y: auto; 
+    -webkit-overflow-scrolling: touch; /* scroll fluide sur iOS */
+    box-shadow: initial;
+}
+
+ .supermarche.ranking > div{
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 40px;
+    overflow-y: hidden;
+    box-shadow: initial;
+}
+.supermarche.ranking span{
+    color: var(--text-two);
+    font-size:1rem ;
+    overflow: hidden;
+    height: auto;
+    box-shadow: initial;
+}
+
+.ranking .logoSupermarche {
+    width: 40px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Masquer la scrollbar verticale du ranking */
+
+.supermarche.ranking {
+  scrollbar-width: none;        /* Firefox */
+  -ms-overflow-style: none;     /* IE et Edge */
+}
+
+.supermarche.ranking::-webkit-scrollbar {
+  display: none;                /* Chrome, Safari, Opera */
+}
+
+
+/* Light/Dark mode */
+
+@media (prefers-color-scheme: light) {
+
+
+    /* .darkmode {
+    --principal-color: #ffffff;
+    --header-footer-color:  #fcfcfc;
+    --header-footer-line:  #f3efef;
+    --second-color:  #e2eafc;
+    --third-color:  #d7e3fc;
+    --cart-border-color:  #c4d2ef;
+    --button-color: #0e0e0e;
+    --text-one: #ffffff;
+    --text-two: #000000;
+    --text-promo: red; 
+    } */
+}
+@media (prefers-color-scheme: dark) {
+     /* .darkmode {
+    --principal-color: #202544;
+    --header-footer-color:  #1e2344;
+    --header-footer-line:  #1c213f;
+    --second-color:  #282f58;
+    --third-color:  #282f58;
+    --cart-border-color:  #202544;
+    --button-color:  #14182b;
+     --text-one: #e1dddb;
+    --text-two: #e1dddb;
+    --text-promo: rgb(213, 80, 80);
+    } */
+}
+
+/* Respensive Design */
+
+

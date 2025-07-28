@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Les liens pour les 'fonts' -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Les liens pour SVG -->
+     
+    <!-- Les liens CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>BeDrive - comparateur des courses en ligne</title>
+</head>
+<body >
+    <!-- Le header -->
+     <header>
+        <!-- Le logo BeDrive -->
+         <a href="index.html" id="logo"><svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2507 630" width="127" height="32"><style>.a{fill:#7474dd}.b{fill:#000000}</style><path class="a" d="m271.3 299.8q37.7 17.6 58.5 46.1 21.4 28 21.4 65 0 72.8-48.1 107.3-47.4 33.8-118.9 33.8h-159.3v-478.4h140.4q76.1 0 119.6 31.2 43.6 30.5 43.6 89 0 35.8-15 63.1-14.9 26.6-42.2 42.9zm-152.1-135.2v104.6h57.2q26 0 40.3-15.6 14.3-16.2 14.3-39.6 0-24.1-16.3-36.4-16.2-13-44.8-13zm60.4 299.6q33.2 0 53.3-13 20.8-13.6 20.8-40.3 0-50.7-80.6-50.7h-53.9v104zm392.6 18.2q27.3 0 56.5-18.8l40.3 67.6q-23.4 13-49.4 20.8-26 7.8-49.4 7.8-50.7 0-87.7-18.9-36.4-19.5-55.3-53.9-18.8-35.1-18.8-80 0-41.6 21.4-76.7 22.1-35.1 59.8-55.2 37.7-20.8 82.6-20.8 61.1 0 100.1 35.7 39.6 35.8 51.3 102.1l-208 66.3q20.8 24 56.6 24zm-7.2-157.3q-30.5 0-48.7 20.8-18.2 20.8-18.2 55.9v5.9l124.8-42.3q-13.7-40.3-57.9-40.3z"/><path class="b" d="m804.9 552v-478.4h143q91.7 0 150.8 35.7 59.2 35.1 85.8 91.7 27.3 55.9 27.3 120.2 0 68.9-32.5 121.6-32.5 52.6-87.7 81.2-54.6 28-120.3 28zm94.3-91h55.9q73.4 0 116.3-37.7 42.9-37.7 42.9-108.6 0-57.2-24-91-23.4-33.8-55.3-46.8-31.2-13-59.1-13h-76.7zm481-128q11.7-22.8 31.8-41 20.8-18.2 42.3-27.9 21.4-10.4 33.8-10.4l-4.6 91q-3.9-0.7-11-0.7-27.3 0-48.1 14.3-20.8 14.3-31.9 37.1-11 22.1-11 45.5v111.1h-90.4v-284h81.9zm177.5-65h91v284h-91zm-2-100.7q0-19.5 15-32.5 15.6-13.7 35.1-13.7 18.8 0 33.8 13.7 14.9 13 14.9 32.5 0 19.5-14.9 32.5-15 13-33.8 13-19.5 0-35.1-13-15-13-15-32.5zm379 100.7h101.4l-161.2 289.9-2.6 0.1-170.3-290h107.9l66.3 135.2zm286.6 214.5q27.3 0 56.6-18.8l40.3 67.6q-23.4 13-49.4 20.8-26 7.8-49.4 7.8-50.7 0-87.8-18.8-36.4-19.5-55.2-54-18.9-35.1-18.9-80 0-41.6 21.5-76.6 22.1-35.2 59.8-55.3 37.7-20.8 82.5-20.8 61.1 0 100.1 35.8 39.7 35.7 51.4 102l-208 66.3q20.8 24 56.5 24zm-7.1-157.3q-30.6 0-48.8 20.8-18.2 20.9-18.2 56v5.8l124.8-42.3q-13.6-40.3-57.8-40.3zm187.8 180.1q0-19.5 14.3-33.1 14.3-14.3 32.5-14.3 16.9 0 31.2 14.3 14.3 13.6 14.3 33.1 0 20.2-14.3 33.8-13.6 13-31.2 13-18.2 0-32.5-13-14.3-13-14.3-33.8z"/></svg></a>
+
+<!-- La barre de navigation pour les rayons -->
+        <nav class="dropdown">
+        <button href="#" id="lesRayons" >Les rayons<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg></button>
+        <div class="content">
+            <a href="#" class="rayon fruits-legumes" id="fruitsLegumes"><img src="/images/icons rayons/fruits.png" alt=""><span>Fruits et légumes</span></a>
+            <a href="#" class="rayon viandes-poissons" id="viandesPoissons"><img src="/images/icons rayons/viandes.png" alt=""><span>Viandes et poissons</span></a>
+            <a href="#" class="rayon produits-laitiers" id="prodLaitiersEuf"><img src="/images/icons rayons/produits-laitiers.png" alt=""><span>Produits laitiers et ouefs</span></a>
+            <a href="#" class="rayon epicerie" id="epicerie"><img src="/images/icons rayons/épicerie.png" alt=""><span>Épicerie</span></a>
+            <a href="#" class="rayon pains" id="painVienois"><img src="/images/icons rayons/pains.png" alt=""><span>Pains et viénoiseries</a>
+            <a href="#" class="rayon surgeles" id="prodSurgeles"><img src="/images/icons rayons/surgeless.png" alt=""><span>Produits Surgelés</span></a>
+            <a href="#" class="rayon boissons" id="boissons"><img src="/images/icons rayons/boissons.png" alt=""><span>Boissons</span></a>
+            <a href="#" class="rayon charcuterie" id="charcutTraiteur"><img src="/images/icons rayons/charcuterie.png" alt=""><span>Charcuterie et traiteur</span></a>
+
+        </div>
+        </nav>
+
+        <!-- La barre de recherche -->
+        <div class="search">
+
+            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+            <input type="text" placeholder="Rechercher...">
+
+            <svg class="clean-search-bar" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+        </div>
+        <!-- Le profil utilisateur -->
+        <div href="#" class="user-profil">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Z"/></svg>
+        
+            <div class="user-content">
+                <span id="connectezVous">Connectez-vous</span>
+                <div class="link">
+                    <a href="https://mail.google.com/mail/" target="_blank"><img src="images/icons/google-icon.svg" alt="Gmail"></a>
+                    <a href="https://www.facebook.com/" target="_blank"><img src="images/icons/Facebook_f_logo__2019_.svg" alt="Facebook"></a>
+                    <a href="https://www.icloud.com/mail" target="_blank"><img src="images/icons/apple_icon_grey.svg" class="Apple-logo" alt="iCloud Apple"></a>
+                </div>
+            </div>
+        </div>
+      
+     <!-- Le traducteur de la page -->
+     
+        <select name="" id="" class="traducteur">
+            <option value="fr" id="francais">🇫🇷 Français</option>
+            <option value="en" id="anglais">🇺🇸 Anglais</option>
+            <option value="es" id="espagnol">🇪🇸 Espagnol</option>
+            <option value="ln" id="lingala">🇨🇬 Lingala</option>
+            <option value="zho" id="chinois">🇨🇳 Chinois</option>
+        </select>
+
+     </header>
+    <!-- Le container principal -->
+    <main class ="container">
+        <!-- boutton du dark-mode -->
+        <button class="theme-mode-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
+        </button>
+<!-- Welcome message -->
+        <div class="welcome-message">
+        <h1 id="wlcomMessageH1">Comparez, économisez et juste <span class="logo">Be</span>Drive.</h1>
+        <h3 id="wlcomMessageH3">Faites vos courses en profitant des meilleures offres de vos supermarchés</h3>
+        </div>
+        <!-- Les sections -->
+        <div class="lesSections">
+        <!-- La premiere section -->
+            <section class="section1">  
+                <div class="section1Partie1">
+                    <h2 class="promo" id="promoH2">Les meilleures promotions du moment</h2>
+                    <div class="lesSupermarches">
+
+                        <a class="Carrefour" href="https://www.carrefour.fr/promotions" target="_blank">
+                            <img src="/images/supermarket/Logo_Carrefour.svg" alt="Logo Carrefour">
+                            <span id="promoSpan">105 promotions </span>
+                        </a>
+
+                        <a class="Lidàl" href="https://www.lidl.fr/c/manger-boire/s10068374" target="_blank">
+                            <img src="/images/supermarket/lidl.svg" alt="Logo Lidl">
+                            <span id="promoSpan">100 promotions </span>
+                        </a>
+
+                        <a class="Auchan" href="https://www.auchan.fr/boutique/promos" target="_blank">
+                            <img src="/images/supermarket/Logo_Auchan_(2015).svg" alt="Logo Auchan">
+                            <span id="promoSpan">100 promotions </span>
+                        </a>
+
+                        <a class="Leclerc" href="" target="_blank">
+                            <img src="/images/supermarket/E.Leclerc_logo.svg" alt="Logo E.Leclerc" >
+                            <span id="promoSpan">100 promotions </span>
+                        </a>
+
+                        <a class="Intermarche" href="https://www.intermarche.com/enseigne/services/courses-en-ligne?srsltid=AfmBOopbvLxKoOOyOc1TF4J82DLRVj9Rj-MY1G9tD3plxEUZgtaG2RBY" target="_blank">
+                            <img src="/images/supermarket/Intermarché_logo_2009_supermarkets.svg" alt="Logo Intermarché">
+                            <span id="promoSpan">100 promotions </span>
+                        </a>
+
+                        <a class="Casino" href="https://petitcasino.casino.fr/" target="_blank">
+                            <img src="/images/supermarket/Logo_of_Casino_Supermarchés.svg" alt="Logo Casino">
+                            <span id="promoSpan">100 promotions </span>
+                        </a>
+
+                        <a class="Aldi" href="https://www.aldi.fr/offres-et-bons-plans.html#2025-07-15" target="_blank">
+                            <img src="/images/supermarket/Aldi_Nord_201x_logo.svg" alt="Logo Aldi">
+                            <span id="promoSpan">100 promotions </span>
+                        </a>
+
+                        <a class="Metro" href="https://www.metro.fr/marketplace/c/nourriture-et-boissons?f.promotion=true" target="_blank">
+                            <img src="/images/supermarket/Logo_METRO.svg" alt="Logo Metro">
+                            <span id="promoSpan">100 promotions </span>
+                        </a>
+
+                        <a class="U" href="https://www.magasins-u.com/accueil.m23220" target="_blank">
+                            <img src="/images/supermarket/U_commerçants_logo_2018.svg" alt="Logo Super U">
+                            <span id="promoSpan">100 promotions </span>
+                        </a>
+
+                        <a class="U" href="https://www.magasins-u.com/accueil.m23220" target="_blank">
+                            <img src="/images/supermarket/U_commerçants_logo_2018.svg" alt="Logo Super U">
+                            <span id="promoSpan">100 promotions </span>
+                        </a>
+                        <a class="U" href="https://www.magasins-u.com/accueil.m23220" target="_blank">
+                            <img src="/images/supermarket/U_commerçants_logo_2018.svg" alt="Logo Super U">
+                            <span id="promoSpan">100 promotions </span>
+                        </a>
+                        <a class="U" href="https://www.magasins-u.com/accueil.m23220" target="_blank">
+                            <img src="/images/supermarket/U_commerçants_logo_2018.svg" alt="Logo Super U">
+                            <span id="promoSpan">100 promotions </span>
+                        </a>
+                        <a class="U" href="https://www.magasins-u.com/accueil.m23220" target="_blank">
+                            <img src="/images/supermarket/U_commerçants_logo_2018.svg" alt="Logo Super U">
+                            <span id="promoSpan">100 promotions </span>
+                        </a>
+                        <a class="U" href="https://www.magasins-u.com/accueil.m23220" target="_blank">
+                            <img src="/images/supermarket/U_commerçants_logo_2018.svg" alt="Logo Super U">
+                            <span id="promoSpan">100 promotions </span>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="section1Partie2">
+                    <h2 id="sect1P2H2">Commencez vos achats</h2>
+                    <div class="choixProduits">
+                        <!-- Ici s'affficheront les produits à acheter. -->
+
+                        <div class="produit">
+                            <img src="/images/produits/FruitLégumes/ananas.png" alt="">
+                            <span class="prix-AddToCart">
+                                <span class="prix">2.34€, -55.16%</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M440-600v-120H320v-80h120v-120h80v120h120v80H520v120h-80ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z"/></svg>
+                            </span>
+                            <span class="nom" id="ananas">Ananas</span>
+                        </div>
+                        <div class="produit">
+                            <img src="/images/produits/FruitLégumes/mango (1).png" alt="">
+                            <span class="prix-AddToCart">
+                                <span class="prix">2.34€</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M440-600v-120H320v-80h120v-120h80v120h120v80H520v120h-80ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z"/></svg>
+                            </span>
+                            <span class="nom" id="mangue">Mangue</span>
+                        </div>
+                        <div class="produit">
+                            <img src="/images/produits/FruitLégumes/banana.png" alt="">
+                            <span class="prix-AddToCart">
+                                <span class="prix">2.34€</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M440-600v-120H320v-80h120v-120h80v120h120v80H520v120h-80ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z"/></svg>
+                            </span>
+                            <span class="nom" id="banane">Banane</span>
+                        </div>
+                        <div class="produit">
+                            <img src="/images/produits/Boissons/Heineken.png" alt="">
+                            <span class="prix-AddToCart">
+                                <span class="prix">3.3€</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M440-600v-120H320v-80h120v-120h80v120h120v80H520v120h-80ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z"/></svg>
+                            </span>
+                            <span class="nom" id="heineken">Heineken</span>
+                        </div>
+                        <div class="produit">
+                            <img src="/images/produits/Boulangerie/pain.png" alt="">
+                            <span class="prix-AddToCart">
+                                <span class="prix">1.34€</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M440-600v-120H320v-80h120v-120h80v120h120v80H520v120h-80ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z"/></svg>
+                            </span>
+                            <span class="nom" id="pain">Pain</span>
+                        </div>
+                        <div class="produit">
+                            <img src="/images/produits/Boissons/champagne_6691442.png" alt="">
+                            <span class="prix-AddToCart">
+                                <span class="prix">20.43€</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M440-600v-120H320v-80h120v-120h80v120h120v80H520v120h-80ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z"/></svg>
+                            </span>
+                            <span class="nom" id="champagne">Champagne</span>
+                        </div>
+                        <div class="produit">
+                            <img src="/images/produits/Épicerie/hotdog_8688598.png" alt="">
+                            <span class="prix-AddToCart">
+                                <span class="prix">3.4€</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M440-600v-120H320v-80h120v-120h80v120h120v80H520v120h-80ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z"/></svg>
+                            </span>
+                            <span class="nom" >Hotdog</span>
+                        </div>
+                        <div class="produit">
+                            <img src="/images/produits/FruitLégumes/celeri.png" alt="">
+                            <span class="prix-AddToCart">
+                                <span class="prix">2.7€</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M440-600v-120H320v-80h120v-120h80v120h120v80H520v120h-80ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z"/></svg>
+                            </span>
+                            <span class="nom" id="céleri">Céleri</span>
+                        </div>
+                        <div class="produit">
+                            <img src="/images/produits/FruitLégumes/garlic.png" alt="">
+                            <span class="prix-AddToCart">
+                                <span class="prix">1.48€</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M440-600v-120H320v-80h120v-120h80v120h120v80H520v120h-80ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z"/></svg>
+                            </span>
+                            <span class="nom" id="ail">Ail</span>
+                        </div>
+                        <div class="produit">
+                            <img src="/images/produits/FruitLégumes/kiwi.png" alt="">
+                            <span class="prix-AddToCart">
+                                <span class="prix">3.41€</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M440-600v-120H320v-80h120v-120h80v120h120v80H520v120h-80ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z"/></svg>
+                            </span>
+                            <span class="nom" id="kiwi">Kiwi</span>
+                        </div>
+                        <div class="produit">
+                            <img src="/images/produits/ProduitLaitiers/Gruyère.png" alt="">
+                            <span class="prix-AddToCart">
+                                <span class="prix">5.34€</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M440-600v-120H320v-80h120v-120h80v120h120v80H520v120h-80ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z"/></svg>
+                            </span>
+                            <span class="nom" >Gruyère</span>
+                        </div>
+                        <div class="produit">
+                            <img src="/images/produits/TraiteurCharcut/Gamja jorim.png" alt="">
+                            <span class="prix-AddToCart">
+                                <span class="prix">12.5€</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M440-600v-120H320v-80h120v-120h80v120h120v80H520v120h-80ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z"/></svg>
+                            </span>
+                            <span class="nom">Gamja jorim</span>
+                        </div>
+                        <div class="produit">
+                            <img src="/images/produits/ViandesPoissons/Boudin noir.png" alt="">
+                            <span class="prix-AddToCart">
+                                <span class="prix">5.34€</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M440-600v-120H320v-80h120v-120h80v120h120v80H520v120h-80ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z"/></svg>
+                            </span>
+                            <span class="nom" id="boudin noir">Boudin noir</span>
+                        </div>
+                        <div class="produit">
+                            <img src="/images/produits/Boissons/Coca cola 33cl.png" alt="">
+                            <span class="prix-AddToCart">
+                                <span class="prix">2.17€</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M440-600v-120H320v-80h120v-120h80v120h120v80H520v120h-80ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z"/></svg>
+                            </span>
+                            <span class="nom" id="cocaCola">Coca cola 33cl</span>
+                        </div>
+                        <div class="produit">
+                            <img src="/images/produits/ViandesPoissons/Rouelle de porc.png" alt="">
+                            <span class="prix-AddToCart">
+                                <span class="prix">15.3€, -55.16%</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M440-600v-120H320v-80h120v-120h80v120h120v80H520v120h-80ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z"/></svg>
+                            </span>
+                            <span class="nom" id="rouellePorc">Rouelle de porc</span>
+                        </div>
+                        <div class="produit">
+                            <img src="/images/produits/ViandesPoissons/Poulet fermier.png" alt="">
+                            <span class="prix-AddToCart">
+                                <span class="prix">11.72€</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M440-600v-120H320v-80h120v-120h80v120h120v80H520v120h-80ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z"/></svg>
+                            </span>
+                            <span class="nom" id="pouletFermier">Poulet fermier</span>
+                        </div>
+                        <div class="produit">
+                            <img src="/images/produits/Boissons/Eau minérale.png" alt="">
+                            <span class="prix-AddToCart">
+                                <span class="prix">2.15€</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M440-600v-120H320v-80h120v-120h80v120h120v80H520v120h-80ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z"/></svg>
+                            </span>
+                            <span class="nom" id="eauMinr">Eau minérale</span>
+                        </div>
+                        <div class="produit">
+                            <img src="/images/produits/Boissons/Pepsi.png" alt="">
+                            <span class="prix-AddToCart">
+                                <span class="prix">2.58€</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M440-600v-120H320v-80h120v-120h80v120h120v80H520v120h-80ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z"/></svg>
+                            </span>
+                            <span class="nom" id="pepsi">Pepsi</span>
+                        </div>
+                        <div class="produit">
+                            <img src="/images/produits/Boissons/Coca 2l.png" alt="">
+                            <span class="prix-AddToCart">
+                                <span class="prix">2.79€</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M440-600v-120H320v-80h120v-120h80v120h120v80H520v120h-80ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z"/></svg>
+                            </span>
+                            <span class="nom" id="coca2l">Coca cola 2l</span>
+                        </div>
+                        <div class="produit">
+                            <img src="/images/produits/FruitLégumes/Poire.png" alt="">
+                            <span class="prix-AddToCart">
+                                <span class="prix">2.34€, -55.16%</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M440-600v-120H320v-80h120v-120h80v120h120v80H520v120h-80ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z"/></svg>
+                            </span>
+                            <span class="nom" id="poire">Poire</span>
+                        </div>
+
+
+                        <div class="produit">
+                            <img src="/images/produits/FruitLégumes/mango.png" alt="">
+                            <span class="prix-AddToCart">
+                                <span class="prix">3.79€</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M440-600v-120H320v-80h120v-120h80v120h120v80H520v120h-80ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z"/></svg>
+                            </span>
+                            <span class="nom" id="mangueCg">Mangue du Congo</span>
+                        </div>
+                        <div class="produit">
+                            <img src="/images/produits/FruitLégumes/oignon rouge.png" alt="">
+                            <span class="prix-AddToCart">
+                                <span class="prix">4.34€</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M440-600v-120H320v-80h120v-120h80v120h120v80H520v120h-80ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z"/></svg>
+                            </span>
+                            <span class="nom" id="oignonRg">Oignon rouge</span>
+                        </div>
+                        <div class="produit">
+                            <img src="/images/produits/ViandesPoissons/chipolata.png" alt="">
+                            <span class="prix-AddToCart">
+                                <span class="prix">5.79€</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M440-600v-120H320v-80h120v-120h80v120h120v80H520v120h-80ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z"/></svg>
+                            </span>
+                            <span class="nom" id="chipolata">Chipolata</span>
+                        </div>
+                        <div class="produit">
+                            <img src="/images/produits/ProduitLaitiers/Parmesan.png" alt="">
+                            <span class="prix-AddToCart">
+                                <span class="prix">7.18€</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M440-600v-120H320v-80h120v-120h80v120h120v80H520v120h-80ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z"/></svg>
+                            </span>
+                            <span class="nom">Parmesan</span>
+                        </div>
+                       
+
+
+
+                    </div>
+                </div>
+            </section>
+            <!-- Le deuxieme section -->
+            <section class="section2">
+            <!-- Le panier avec un 1er supermarché choix(moins chèr) qui peut etre changé-->
+                <div class="panier">
+                    <div class="choixSupermarche">
+                        <select name="" id="select">
+                            <option value="Lidl">Intermarché</option>
+                            <option value="Carrefour">Carrefour</option>
+                            <option value="Auchan">Auchan</option>
+                        </select>
+                        <a href="#">
+                            <img src="/images/supermarket/Logo_Auchan_(2015).svg" type="button" alt="logo" class="logoSupermarche" title="Carrefour Vitry-sur-Seine">
+                        </a>
+                    </div>
+                
+                    <div class="produits-panier" style="background-image: url(/images/icons/shopping_cart.svg);
+        background-size: 50px;
+        background-repeat: no-repeat;
+        background-position: center;">
+                            
+                        <!-- Ici s'ajouteront tous les produits du panier -->
+
+                        <div class="produit">
+                            <div class="image-nom"> 
+                                <img src="/images/produits/Boissons/Coca cola 33cl.png" alt="">
+                                <span class="nom"> Coca cola 33cl</span>
+                            </div>
+                            <div class="quantite-prix">
+                                <input type="number" value="1" min="0"  step="1" class="quantite" onkeydown="return false;" oninput="this.value = Math.max(0, this.value)" onchange="console.log(this.value)">
+                                <span class="prix">1€</span>
+                            </div>
+                        </div>
+                        <div class="produit">
+                            <div class="image-nom"> 
+                                <img src="/images/produits/Boissons/Heineken.png" alt="">
+                                <span class="nom">Heineken</span>
+                            </div>
+                            <div class="quantite-prix">
+                                <input type="number" value="1" min="0"  step="1" class="quantite" onkeydown="return false;" oninput="this.value = Math.max(0, this.value)" onchange="console.log(this.value)">
+                                <span class="prix">1000€</span>
+                            </div>
+                        </div>
+
+                        <div class="produit">
+                            <div class="image-nom"> 
+                                <img src="/images/produits/FruitLégumes/ananas.png" alt="">
+                                <span class="nom"> Ananas</span>
+                            </div>
+                            <div class="quantite-prix">
+                                <input type="number" value="1" min="0"  step="1" class="quantite" onkeydown="return false;" oninput="this.value = Math.max(0, this.value)" onchange="console.log(this.value)">
+                                <span class="prix">10000€</span>
+                            </div>
+                        </div>
+                        <div class="produit">
+                            <div class="image-nom"> 
+                                <img src="/images/produits/FruitLégumes/mango.png" alt="">
+                                <span class="nom">Mangue du Congo</span>
+                            </div>
+                            <div class="quantite-prix">
+                                <input type="number" value="1" min="0"  step="1" class="quantite" onkeydown="return false;" oninput="this.value = Math.max(0, this.value)" onchange="console.log(this.value)">
+                                <span class="prix">10€</span>
+                            </div>
+                        </div>
+                        <div class="produit">
+                            <div class="image-nom"> 
+                                <img src="/images/produits/Boulangerie/pain.png" alt="">
+                                <span class="nom">Pain</span>
+                            </div>
+                            <div class="quantite-prix">
+                                <input type="number" value="1" min="0"  step="1" class="quantite" onkeydown="return false;" oninput="this.value = Math.max(0, this.value)" onchange="console.log(this.value)">
+                                <span class="prix">1€</span>
+                            </div>
+                        </div>
+                        <div class="produit">
+                            <div class="image-nom"> 
+                                <img src="/images/produits/ProduitLaitiers/Gruyère.png" alt="">
+                                <span class="nom">Gruyère</span>
+                            </div>
+                            <div class="quantite-prix">
+                                <input type="number" value="1" min="0"  step="1" class="quantite" onkeydown="return false;" oninput="this.value = Math.max(0, this.value)" onchange="console.log(this.value)">
+                                <span class="prix">1€</span>
+                            </div>
+                        </div>
+                        <div class="produit">
+                            <div class="image-nom"> 
+                                <img src="/images/produits/FruitLégumes/kiwi.png" alt="">
+                                <span class="nom">Pain</span>
+                            </div>
+                            <div class="quantite-prix">
+                                <input type="number" value="1" min="0"  step="1" class="quantite" onkeydown="return false;" oninput="this.value = Math.max(0, this.value)" onchange="console.log(this.value)">
+                                <span class="prix">1€</span>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <!-- Le prix total du panier -->
+                    <div class="Total">
+                        <span id="total">Total:</span>
+                        <span class="prixTotal">100 €</span>
+                    </div>
+                    <!-- Le boutton de validation du panier -->
+                    <button class="button">Valider</button>
+            </div>
+        
+            <!-- Le classement par prix total des produits sélectionnés -->
+            <div class="ranking">
+                    <span class="titre ranking" id="classement">Classement</span>
+                    <div class="supermarche ranking">
+                        <div>
+                            <img src="/images/supermarket/Intermarché_logo_2009_supermarkets.svg" alt="logo Intermarche" class="logoSupermarche">
+                            <span class="prixTotal"> 10 €</span>
+                        </div>
+                        <div>
+                            <img src="/images/supermarket/Aldi_Nord_201x_logo.svg" alt="logo Aldi" class="logoSupermarche">
+                            <span class="prixTotal"> 13.53 €</span>
+                        </div>
+                        <div>
+                            <img src="/images/supermarket/E.Leclerc_logo.svg" alt="logo Leclerc" class="logoSupermarche">
+                            <span class="prixTotal"> 10.5 €</span>
+                        </div>
+                        <div>
+                            <img src="/images/supermarket/Logo_Auchan_(2015).svg" alt="logo Auchan" class="logoSupermarche">
+                            <span class="prixTotal"> 22.38 €</span>
+                        </div>
+                        <div>
+                            <img src="/images/supermarket/Logo_Carrefour.svg" alt="logo Carrefour" class="logoSupermarche">
+                            <span class="prixTotal"> 100.43 €</span>
+                        </div>
+                        <div>
+                            <img src="/images/supermarket/lidl.svg" alt="logo Lidl" class="logoSupermarche">
+                            <span class="prixTotal"> 115.47 €</span>
+                        </div>
+
+
+                    </div> 
+            </div>
+            </section>
+        </div>
+    </main>
+
+  
+        
+
+    <!-- le footer -->
+    <footer>
+        <div class="BeDrive">
+            <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2507 630" width="127" height="32"><style>.a{fill:#7474dd}.b{fill:#000000}</style><path class="a" d="m271.3 299.8q37.7 17.6 58.5 46.1 21.4 28 21.4 65 0 72.8-48.1 107.3-47.4 33.8-118.9 33.8h-159.3v-478.4h140.4q76.1 0 119.6 31.2 43.6 30.5 43.6 89 0 35.8-15 63.1-14.9 26.6-42.2 42.9zm-152.1-135.2v104.6h57.2q26 0 40.3-15.6 14.3-16.2 14.3-39.6 0-24.1-16.3-36.4-16.2-13-44.8-13zm60.4 299.6q33.2 0 53.3-13 20.8-13.6 20.8-40.3 0-50.7-80.6-50.7h-53.9v104zm392.6 18.2q27.3 0 56.5-18.8l40.3 67.6q-23.4 13-49.4 20.8-26 7.8-49.4 7.8-50.7 0-87.7-18.9-36.4-19.5-55.3-53.9-18.8-35.1-18.8-80 0-41.6 21.4-76.7 22.1-35.1 59.8-55.2 37.7-20.8 82.6-20.8 61.1 0 100.1 35.7 39.6 35.8 51.3 102.1l-208 66.3q20.8 24 56.6 24zm-7.2-157.3q-30.5 0-48.7 20.8-18.2 20.8-18.2 55.9v5.9l124.8-42.3q-13.7-40.3-57.9-40.3z"/><path class="b" d="m804.9 552v-478.4h143q91.7 0 150.8 35.7 59.2 35.1 85.8 91.7 27.3 55.9 27.3 120.2 0 68.9-32.5 121.6-32.5 52.6-87.7 81.2-54.6 28-120.3 28zm94.3-91h55.9q73.4 0 116.3-37.7 42.9-37.7 42.9-108.6 0-57.2-24-91-23.4-33.8-55.3-46.8-31.2-13-59.1-13h-76.7zm481-128q11.7-22.8 31.8-41 20.8-18.2 42.3-27.9 21.4-10.4 33.8-10.4l-4.6 91q-3.9-0.7-11-0.7-27.3 0-48.1 14.3-20.8 14.3-31.9 37.1-11 22.1-11 45.5v111.1h-90.4v-284h81.9zm177.5-65h91v284h-91zm-2-100.7q0-19.5 15-32.5 15.6-13.7 35.1-13.7 18.8 0 33.8 13.7 14.9 13 14.9 32.5 0 19.5-14.9 32.5-15 13-33.8 13-19.5 0-35.1-13-15-13-15-32.5zm379 100.7h101.4l-161.2 289.9-2.6 0.1-170.3-290h107.9l66.3 135.2zm286.6 214.5q27.3 0 56.6-18.8l40.3 67.6q-23.4 13-49.4 20.8-26 7.8-49.4 7.8-50.7 0-87.8-18.8-36.4-19.5-55.2-54-18.9-35.1-18.9-80 0-41.6 21.5-76.6 22.1-35.2 59.8-55.3 37.7-20.8 82.5-20.8 61.1 0 100.1 35.8 39.7 35.7 51.4 102l-208 66.3q20.8 24 56.5 24zm-7.1-157.3q-30.6 0-48.8 20.8-18.2 20.9-18.2 56v5.8l124.8-42.3q-13.6-40.3-57.8-40.3zm187.8 180.1q0-19.5 14.3-33.1 14.3-14.3 32.5-14.3 16.9 0 31.2 14.3 14.3 13.6 14.3 33.1 0 20.2-14.3 33.8-13.6 13-31.2 13-18.2 0-32.5-13-14.3-13-14.3-33.8z"/></svg>
+            <p>© 2025 <span class="logo">Be</span>Drive. <span id="toutdroitRz">Tous droits réservés.</span></p>
+        </div>
+
+        <ul>
+            <li><a href="#" id="politoConf">Politique de confidentialité</a></li>
+            <li><a href="#" id="conditionsUser">Conditions d'utilisation</a></li>
+            <li><a href="#" id="apropos">À propos</a></li>
+        </ul>
+
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/giliord-mpouo/" class="linkedIn" target="_blank">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                        viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                    <g fill='#000000'>
+                        <path d="M111.1,511.1H1.8V146.7h109.3V511.1z M512,511.1H402.7V316.4c0-50.7-18.1-76-53.9-76c-28.4,0-46.4,14.1-55.4,42.4v228.2
+                            H184c0,0,1.5-328,0-364.4h86.3l6.7,72.9h2.3c22.4-36.4,58.2-61.2,107.4-61.2c37.3,0,67.6,10.4,90.6,36.5
+                            C500.5,221,512,256.1,512,305.3V511.1z"/>
+                        <path d="M56.5,0.9c31.2,0,56.5,24.5,56.5,54.7s-25.3,54.7-56.5,54.7S0,85.8,0,55.6S25.3,0.9,56.5,0.9z"/>
+                    </g>
+                </svg>
+
+            </a>
+            <a href="https://youtube.com/@designmeg?si=G-o3Go1SZxGH9iY2" class="youtube" target="_blank">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                    <g fill='#00000'>
+                        <path d="M471.6,147.3c-5.2-19.5-20.4-34.8-39.8-40C396.7,97.8,256,97.8,256,97.8s-140.7,0-175.8,9.5c-19.4,5.2-34.6,20.6-39.8,40
+                            c-9.4,35.3-9.4,109-9.4,109s0,73.7,9.4,109c5.2,19.5,20.4,34.2,39.8,39.4c35.1,9.5,175.8,9.5,175.8,9.5s140.7,0,175.8-9.5
+                            c19.4-5.2,34.6-19.9,39.8-39.4c9.4-35.3,9.4-109,9.4-109S481,182.6,471.6,147.3z M210,323.2V189.4l117.6,66.9L210,323.2L210,323.2z
+                            "/> </g>
+                    </svg>
+
+            </a>
+            <a href="https://x.com/MpouoGiliord" class="twitter" target="_blank">
+                <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" class="r-18jsvk2 r-4qtqp9 r-yyyyoo r-16y2uox r-8kz0gk r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-lrsllp" width="50"  height="30" ><g fill="#0F1419"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></g>
+                </svg>
+
+            </a>
+
+            <button class="btn-contact" id="nousContacter">Nous contacter</button>
+
+        </div>
+
+
+          <!-- Le pop-pop du formulaire de contact -->
+
+        <div class="form-container" id="form-container">
+           
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form" id="contact-form">
+
+                <input type="hidden" name="access_key" value="f1b4359a-c7b1-4685-88f9-72db3ea94bdc">
+
+                <svg class="close-form-btn" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5353b4"><path d="m336-280 144-144 144 144 56-56-144-144 144-144-56-56-144 144-144-144-56 56 144 144-144 144 56 56ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
+                <input type="text" name="name" class="input-form" placeholder="Votre nom" required>
+                <input type="email" name="email" class="input-form" placeholder="Votre mail" required>
+                <textarea name="message" class="input-form" placeholder="Votre message" required></textarea>
+                <button type="submit" id="envoyer">Envoyer</button>
+            </form>
+
+        </div>
+
+    </footer>
+    <!-- Liens JS -->
+    <script src="script.js"></script>
+    <script src="traducteur.js"></script>
+
+    <!-- Les scripts génériques -->
+     <script>
+
+// Le gestionnaire du dark/light mode
+        let darkmode = localStorage.getItem('darkmode')
+        const themeSwith = document.querySelector('.theme-mode-btn')
+
+        function activeDarkmode(){
+            document.body.classList.add('darkmode')
+            localStorage.setItem('darkmode', 'active')}
+
+        function desactiveDarkmode(){
+        document.body.classList.remove('darkmode')
+        localStorage.setItem('darkmode', null)}
+
+        if(darkmode === 'active') activeDarkmode()
+       
+        themeSwith.addEventListener('click', () => {
+        darkmode = localStorage.getItem('darkmode')
+        darkmode !=='active' ? activeDarkmode() : desactiveDarkmode()})
+
+
+    // Pour cacher l'image du panier en filigrane lorsque l'utilisateur rempli le panier
+        const inputElementQteValue = document.querySelector('input.quantite').value
+
+        if(inputElementQteValue > 0){
+document.querySelector('div.produits-panier').style.backgroundImage = '' }
+              
+
+    // Pour afficher le pop-pup du formulaire de contact
+
+    const btnContact = document.querySelector('.btn-contact').addEventListener('click', () =>{
+       
+        document.getElementById('form-container').classList.add("active");
+        document.getElementById('contact-form').classList.add("active");
+    })
+    const btnCloseForm = document.querySelector('.close-form-btn').addEventListener('click', () =>{
+        document.getElementById('form-container').classList.remove("active");
+        document.getElementById('contact-form').classList.remove("active");
+    })
+
+    // Pour afficher le bouton clean search-bar
+  
+document.querySelector(".search input").addEventListener("focus", () => {
+  document.querySelector('.clean-search-bar').style.display = 'flex'
+});
+
+document.querySelector(".search input").addEventListener("blur", () => {
+  document.querySelector('.clean-search-bar').style.display = 'none'
+});
+
+     </script>
+</body>
+</html>
