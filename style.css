@@ -1256,8 +1256,8 @@ header{
         height: 50px;
     }
 
-.search{
-    flex-grow: 0.8;
+ul .logo{
+    width: 10px;
 }
 
 .sideBar > li{
