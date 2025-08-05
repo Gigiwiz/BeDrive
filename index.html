@@ -822,13 +822,15 @@ document.querySelector('div.produits-panier').style.backgroundImage = '' }
     // Pour afficher le pop-pup du formulaire de contact
 
     const btnContact = document.querySelector('.btn-contact').addEventListener('click', () =>{
-       
         document.getElementById('form-container').classList.add("active");
         document.getElementById('contact-form').classList.add("active");
+        document.querySelector('.overlay').classList.add("active");
     })
     const btnCloseForm = document.querySelector('.close-form-btn').addEventListener('click', () =>{
         document.getElementById('form-container').classList.remove("active");
         document.getElementById('contact-form').classList.remove("active");
+        document.querySelector('.overlay').classList.remove("active");
+
     })
 
     // Pour afficher/cacher le bouton clean search-bar
