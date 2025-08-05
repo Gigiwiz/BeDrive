@@ -1257,7 +1257,7 @@ header{
     }
 
 ul .logo{
-    width: 300px;
+    width: auto;
 }
 
 .sideBar > li{
