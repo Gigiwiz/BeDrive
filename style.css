@@ -401,7 +401,7 @@ padding:10px;
 .overlaySB,
 .overlay{
     display: none;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     position: fixed;
     top: 0;
@@ -613,7 +613,7 @@ footer button.btn-contact:hover{
     pointer-events:auto;
     overflow: hidden;
     /* padding: 0 0 170px 0; */
-    z-index: 0;
+    z-index: 20;
     background-color: rgba(8, 8, 8, 0.5);
     opacity: 0.5;
     transition: opacity 2s ease-in-out;
@@ -1252,15 +1252,11 @@ footer .btn-contact{
 
     /* Le header */
 
-header{
+    header{
         height: 50px;
     }
 
-ul .logo{
-    width: auto;
-}
-
-.sideBar > li{
+    .sideBar > li{
     padding: 3px;
 }
 
