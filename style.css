@@ -865,7 +865,7 @@ footer button.btn-contact:hover{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    position: fixed;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
