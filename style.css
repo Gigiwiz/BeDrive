@@ -805,6 +805,7 @@ footer button.btn-contact:hover{
 
 .section1Partie2 .header .trie{
     display: flex;
+    align-items: center;
     border: 2px solid var(--header-footer-line);
     padding: .3vw;
     border-radius: 7px;
