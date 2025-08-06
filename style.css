@@ -400,11 +400,11 @@ padding:10px;
 
 
 .overlaySB,
-.overlayPanier{
+.overlay{
     display: none;
     height: 100vh;
     width: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 5;
@@ -416,7 +416,7 @@ padding:10px;
     display: none;
     height: 100vh;
     width: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 5;
@@ -649,6 +649,7 @@ footer button.btn-contact:hover{
     gap: 10px;
     border-radius: 30px;
     background-color:#9797d9;
+    z-index: 30;
 }
 
 .contact-form.active{
