@@ -636,7 +636,8 @@ footer button.btn-contact:hover{
     padding: 17px 19px 17px 17px;
     gap: 10px;
     border-radius: 30px;
-    background-color:#9797d9;    
+    background-color:#9797d9;
+    z-index: 25;
 }
 
 .contact-form.active{
