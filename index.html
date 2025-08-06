@@ -123,11 +123,11 @@
                 </li>
                 <li>
                     <select name="selectLanguage" id="" class="traducteurSB">
-                        <option value="fr" >🇫🇷 Français</option>
-                        <option value="en" >🇺🇸 English</option>
-                        <option value="es" >🇪🇸 Español</option>
-                        <option value="ln" >🇨🇬 Lingala</option>
-                        <option value="zho" >🇨🇳 中文</option>
+                        <option value="fr" >Français 🇫🇷</option>
+                        <option value="en" >English 🇺🇸</option>
+                        <option value="es" >Español 🇪🇸</option>
+                        <option value="ln" >Lingala 🇨🇬</option>
+                        <option value="zho" >中文 🇨🇳</option>
                     </select>
                 </li>
 
@@ -141,6 +141,7 @@
                     </button>  
                 </li>
             </ul>
+
     <div class="overlaySB"></div>
     <div class="overlay"></div>
         </nav>
@@ -823,14 +824,12 @@ document.querySelector('div.produits-panier').style.backgroundImage = '' }
     // Pour afficher le pop-pup du formulaire de contact
 
     const btnContact = document.querySelector('.btn-contact').addEventListener('click', () =>{
-        document.getElementById('form-container').classList.add("active");
-        document.getElementById('contact-form').classList.add("active");
-        //document.querySelector('.overlay').classList.add("active");
+        document.getElementById('form-container').style.display='flex';
+        document.querySelector('.overlaySB').classList.add("active");
     })
     const btnCloseForm = document.querySelector('.close-form-btn').addEventListener('click', () =>{
-        document.getElementById('form-container').classList.remove("active");
-        document.getElementById('contact-form').classList.remove("active");
-       // document.querySelector('.overlay').classList.remove("active");
+        document.getElementById('form-container').style.display='none';
+       document.querySelector('.overlaySB').classList.remove("active");
 
     })
 
