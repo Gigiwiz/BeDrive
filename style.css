@@ -424,10 +424,6 @@ padding:10px;
     opacity: 0.5;
 }
 
-.overlaySB.active,
-.overlay.active{
-    display: block;
-}
 
 
 .sideBar > li{
