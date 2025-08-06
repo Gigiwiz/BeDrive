@@ -398,6 +398,7 @@ padding:10px;
     transform: translateX(0%);
 }
 
+
 .overlaySB,
 .overlay{
     display: none;
@@ -421,6 +422,8 @@ padding:10px;
     margin-top: 10px;
     padding: 10px;
 }
+
+
 
 .openSideBar{
  display: none;
@@ -605,17 +608,18 @@ footer button.btn-contact:hover{
 
 .form-container{
     display: none;
+    align-items: center;
+    justify-content: center;
     position: absolute;
-    top:0;
-    left:0;
-    height: 100vh;
-    width: 100%;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    height: clamp(300px, 70%, 400px);
+    width: clamp(250px, 70%, 400px);
     pointer-events:auto;
     overflow: hidden;
-    /* padding: 0 0 170px 0; */
     z-index: 20;
-    background-color: rgba(8, 8, 8, 0.5);
-    opacity: 0.3; 
+    /* background-color: rgba(8, 8, 8, 0.5); */
     transition: opacity 2s ease-in-out;
 }
 .form-container.active{
@@ -623,17 +627,13 @@ footer button.btn-contact:hover{
     /* opacity: 1; */
 }
 
-.form-container .contact-form{
-    display: none;
+.form-container form{
+    display: flex;
     align-items: flex-start;
     flex-direction: column;
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%, -50%);
-    height: clamp(300px, 70%, 400px);
-    width: clamp(250px, 60%, 400px);
-    padding: 20px;
+    height: 90%;
+    width: 90%;
+    padding: 17px 19px 17px 17px;
     gap: 10px;
     border-radius: 30px;
     background-color:#9797d9;    
@@ -644,11 +644,11 @@ footer button.btn-contact:hover{
 }
 
  .contact-form input{
-    padding-left: 5px;
-    height: 30px;
-    width: clamp(200px, 10em, 200px);
+    padding-left: 3px;
+    height: 2em;
+    width: clamp(150px, 10em, 200px);
     border: none;
-    border-radius: 10px;
+    border-radius:8px;
 }
 .contact-form textarea{
     flex-grow:1 ;
@@ -663,7 +663,7 @@ footer button.btn-contact:hover{
     width: 100px;
     border-radius: 10px;
     font-family: var(--font-familly2);
-    font-size: clamp(2px, 2vw, 17px);
+    font-size: clamp(7px, 3.5vw, 14px);
     background-color: var(--button-color);
     color: #e5e5f9;
     cursor: pointer;
@@ -676,8 +676,8 @@ footer button.btn-contact:hover{
     position: absolute;
     right: 0;
     margin: 0 20px;
-    height: 30px;
-    width: 30px;
+    max-height: 30px;
+    max-width: 30px;
     cursor: pointer;
     transition: var(--transition3s);
 }
