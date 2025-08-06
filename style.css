@@ -793,6 +793,30 @@ footer button.btn-contact:hover{
     height: 90%;
 }
 
+.section1Partie2 .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+}
+
+
+
+.section1Partie2 .header .trie{
+    border: 2px solid var(--header-footer-line);
+    padding: .3vw;
+    border-radius: 7px;
+    font-size: clamp(8px, 2vw, 15px);
+}
+.section1Partie2 .header select{
+    border: none;
+    background-color: var(--principal-color);
+    color: var(--text-two);
+    font-size: clamp(8px, 2vw, 15px);
+    font-family: var(--font-familly1); 
+}
+
 /* La liste des produits au choix */
 .choixProduits{
     display: flex;
