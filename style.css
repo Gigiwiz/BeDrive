@@ -119,16 +119,18 @@ ul .logo{
     align-items: center;
     justify-content: center;
     margin-right: auto;
+    padding-right: 5px;
     overflow: hidden;
 }
 nav ul li:first-child{
     overflow: hidden;
+    height: 90%;
 }
 
 .logo h2{
-   padding-right:10px;
+   padding-right:15px;
    border-right: 1.5px solid var(--second-color);
-
+   font-size: clamp(10px, 3vw, 20px);
 }
 .logo h2::before{
     content: 'Be';
@@ -1289,11 +1291,16 @@ footer .btn-contact{
 
     /* Le header */
 
-    header{
+header{
         height: 50px;
     }
 
-    .sideBar > li{
+
+nav svg{
+    max-width: 24px;
+}
+
+.sideBar > li{
     padding: 3px;
 }
 
