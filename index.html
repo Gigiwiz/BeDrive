@@ -130,8 +130,6 @@
                         <option value="zho" >中文 🇨🇳</option>
                     </select>
                 </li>
-    <div class="overlaySB"></div>
-
 
                 
 
@@ -143,6 +141,9 @@
                     </button>  
                 </li>
             </ul>
+
+    <div class="overlaySB"></div>
+    <div class="overlay"></div>
         </nav>
 
 
@@ -717,9 +718,6 @@
                 </div>
             </div>
 
-    <div class="overlayPanier"></div>
-
-
               <!-- Le pop-pop du formulaire de contact -->
 
         <div class="form-container" id="form-container">
@@ -736,7 +734,8 @@
             </form>
 
         </div>
-    <div class="overlayForm"></div>
+
+         <div class="overlayForm"></div>
 
 
 
@@ -828,12 +827,14 @@ document.querySelector('div.produits-panier').style.backgroundImage = '' }
     // Pour afficher le pop-pup du formulaire de contact
 
     const btnContact = document.querySelector('.btn-contact').addEventListener('click', () =>{
-        document.querySelector('.overlayForm').style.display='flex';
         document.getElementById('form-container').style.display='flex';
+        document.querySelector('.overlayForm').style.display='flex';
     })
     const btnCloseForm = document.querySelector('.close-form-btn').addEventListener('click', () =>{
         document.getElementById('form-container').style.display='none';
         document.querySelector('.overlayForm').style.display='none';
+
+
     })
 
     // Pour afficher/cacher le bouton clean search-bar
