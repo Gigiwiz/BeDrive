@@ -637,7 +637,7 @@ footer button.btn-contact:hover{
     gap: 10px;
     border-radius: 30px;
     background-color:#9797d9;
-    z-index: 25;
+    z-index: 30;
 }
 
 .contact-form.active{
