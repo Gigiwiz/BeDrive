@@ -855,12 +855,12 @@ document.querySelector(".clean-search-bar").addEventListener("click", () => {
 // Pour afficher et cacher le panier
 
 document.querySelector('.openPanier').addEventListener('click', ()=>{    document.querySelector('.panierOnmobile').style.scale='1';
-document.querySelector('.overlay').classList.toggle('active')
+document.querySelector('.overlay').style.display='block';
 });
 
 document.querySelector('.overlay').addEventListener('click', ()=>{
 document.querySelector('.panierOnmobile').style.scale='0';
-document.querySelector('.overlay').classList.toggle('active')
+document.querySelector('.overlay').style.display='none';
 });
 
 
@@ -871,7 +871,7 @@ document.querySelector('.overlay').classList.toggle('active')
 document.querySelector('.openSideBar').addEventListener('click', ()=>{
 
     document.querySelector('.sideBar').classList.add('active');
-    document.querySelector('.overlaySB').classList.toggle('active')
+    document.querySelector('.overlaySB').style.display='block';
 
 });
 
@@ -880,9 +880,8 @@ document.querySelector('.openSideBar').addEventListener('click', ()=>{
 
 document.querySelector('.closeSideBar').addEventListener('click', ()=>{
 
-        document.querySelector('.sideBar').classList.remove('active');
-
-    document.querySelector('.overlaySB').classList.toggle('active')
+    document.querySelector('.sideBar').classList.remove('active');
+    document.querySelector('.overlaySB').style.display='none';
 
 })
 
