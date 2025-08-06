@@ -837,14 +837,12 @@ document.querySelector('div.produits-panier').style.backgroundImage = '' }
     // Pour afficher le pop-pup du formulaire de contact
 
     const btnContact = document.querySelector('.btn-contact').addEventListener('click', () =>{
-        document.getElementById('form-container').style.display='flex';
+        document.getElementById('form-container').classList.add('active');
         document.querySelector('.overlayForm').style.display='flex';
     })
     const btnCloseForm = document.querySelector('.close-form-btn').addEventListener('click', () =>{
-        document.getElementById('form-container').style.display='none';
+        document.getElementById('form-container').classList.remove('active');
         document.querySelector('.overlayForm').style.display='none';
-
-
     })
 
     // Pour afficher/cacher le bouton clean search-bar
@@ -864,12 +862,12 @@ document.querySelector(".clean-search-bar").addEventListener("click", () => {
 
 // Pour afficher et cacher le panier
 
-document.querySelector('.openPanier').addEventListener('click', ()=>{    document.querySelector('.panierOnmobile').style.scale='1';
+document.querySelector('.openPanier').addEventListener('click', ()=>{    document.querySelector('.panierOnmobile').classList.add('active');
 document.querySelector('.overlay').style.display='block';
 });
 
 document.querySelector('.overlay').addEventListener('click', ()=>{
-document.querySelector('.panierOnmobile').style.scale='0';
+document.querySelector('.panierOnmobile').classList.remove('active');
 document.querySelector('.overlay').style.display='none';
 });
 
