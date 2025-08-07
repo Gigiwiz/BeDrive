@@ -238,18 +238,16 @@ nav .dropdown{
     opacity: 0.6;
 }
 
-.search svg{
+.search-icon{
     position: relative;
     top: 0 ;
-}
-
-.search-icon{
     left: 30px ;
     border-right: 1px solid var(--third-color);
 }
 
 .clean-search-bar{
     display: flex;
+    position: relative;
     right: 23px ;
     opacity: 0;    
     cursor: pointer;
@@ -1297,10 +1295,30 @@ header{
         height: 50px;
     }
 
+nav ul{
+    gap: 5px;
+}
+
 
 nav svg{
     width: 20px;
 }
+
+.search input{
+    padding: 0 0 0 20px;
+    height: 25px;
+}
+
+.search-icon{
+    position: relative;
+    top: 0 ;
+    left: 16px ;
+    width:15px ;
+}
+.clean-search-bar{
+    width:15px ;
+}
+
 
 .sideBar > li{
     padding: 3px;
@@ -1345,18 +1363,13 @@ nav svg{
     footer ul{
         flex-direction: column;
         gap: 5px;
-
         flex: 1;
     }
 
     footer .social-media{
         gap:5px ;
     };
-/* 
-     .social-media a{
-    height:  20px;
-    width: 20px;
-} */
+
    .social-media .twitter{
     display: none;
 }
