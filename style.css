@@ -124,6 +124,7 @@ ul .logo{
 }
 nav ul li:first-child{
     overflow: hidden;
+    height: 20px;
 }
 
 .logo h2{
