@@ -829,6 +829,7 @@ footer button.btn-contact:hover{
     color: var(--text-two);
     font-size: clamp(8px, 2vw, 15px);
     font-family: var(--font-familly1); 
+    overflow: hidden;
 }
 
 /* La liste des produits au choix */
