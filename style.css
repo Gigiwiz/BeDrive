@@ -124,7 +124,6 @@ ul .logo{
 }
 nav ul li:first-child{
     overflow: hidden;
-    height: 90%;
 }
 
 .logo h2{
@@ -443,8 +442,11 @@ padding:10px;
 
 .openSideBar, 
 .openPanier{
- display: none;
-max-width: 150px;
+display: none;
+align-items: center;
+justify-content: center;
+width: 30px;
+height: 30px;
 cursor: pointer;
 }
 
@@ -1297,7 +1299,7 @@ header{
 
 
 nav svg{
-    max-width: 24px;
+    width: 20px;
 }
 
 .sideBar > li{
