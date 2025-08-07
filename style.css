@@ -1143,6 +1143,7 @@ footer button.btn-contact:hover{
     width: 80%;
     border-radius:0 ;
     overflow-y: auto; 
+    scrollbar-width: 2vw;
     -webkit-overflow-scrolling: touch; /* scroll fluide sur iOS */
     box-shadow: initial;
 }
@@ -1169,17 +1170,6 @@ footer button.btn-contact:hover{
     width: 40px;
     height: auto;
     object-fit: contain;
-}
-
-/* Masquer la scrollbar verticale du ranking */
-
-.supermarche.ranking {
-  scrollbar-width: none;        /* Firefox */
-  -ms-overflow-style: none;     /* IE et Edge */
-}
-
-.supermarche.ranking::-webkit-scrollbar {
-  display: none;                /* Chrome, Safari, Opera */
 }
 
 /* Le ranking onMobile */
