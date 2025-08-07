@@ -807,21 +807,24 @@ footer button.btn-contact:hover{
 .section1Partie2 .header{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     width: 100%;
     height: auto;
 }
 
-.section1Partie2 .header .trie{
-    display: flex;
-    align-items: center;
-    border: 2px solid var(--header-footer-line);
-    padding: .3vw;
-    border-radius: 7px;
-    font-size: clamp(8px, 2vw, 15px);
+.header #sect1P2H2{
+    margin-right: auto;
 }
-.section1Partie2 .header select{
-    border: none;
+
+.header #trierPar{
+   
+    padding-right: .5vw;
+    font-size: clamp(8px, 2vw, 15px);
+
+}
+.header select{
+    border: 2px solid var(--header-footer-line);
+    border-radius: 7px;
     background-color: var(--principal-color);
     color: var(--text-two);
     font-size: clamp(8px, 2vw, 15px);
