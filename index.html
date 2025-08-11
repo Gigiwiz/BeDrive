@@ -142,7 +142,6 @@
                 </li>
             </ul>
 
-    <div class="overlaySB"></div>
     <div class="overlay"></div>
         </nav>
 
@@ -231,7 +230,7 @@
                         <img src="https://raw.githubusercontent.com/Gigiwiz/Images-BeDrive/refs/heads/main/produits/FruitLe%CC%81gumes/ananas.png" id="imgAnanas" alt=" ananas">
                         <span class="prix-AddToCart">
                             <span class="prix">2.34€, -55.16%</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M440-600v-120H320v-80h120v-120h80v120h120v80H520v120h-80ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z"/></svg>
+                            <svg class="addToCart" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M440-600v-120H320v-80h120v-120h80v120h120v80H520v120h-80ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z"/></svg>
                         </span>
                         <span class="nom" id="ananas">Ananas</span>
                     </div>
@@ -379,9 +378,6 @@
                         </span>
                         <span class="nom" id="pepsi">Pepsi</span>
                     </div>
-
-
-
                     <div class="produit">
                         <img src="https://raw.githubusercontent.com/Gigiwiz/Images-BeDrive/refs/heads/main/produits/Boissons/Coca 2l.png" id="imgCoca2l" alt=" Bouteille de Coca cola 2l">
                         <span class="prix-AddToCart">
@@ -430,10 +426,18 @@
                         </span>
                         <span class="nom" id="parmesan">Parmesan</span>
                     </div>
-                    
-
-
                 </div>
+                 <div class="description-produit">
+                            <div>
+                                <img src="https://raw.githubusercontent.com/Gigiwiz/Images-BeDrive/refs/heads/main/produits/FruitLe%CC%81gumes/ananas.png" id="imgAnanas" alt=" ananas">
+                                <p id="ananasDesc">Un ananas frais, juteux et sucré, parfait pour vos desserts ou smoothies.</p>
+                            </div>
+                            <span class="prix">2.34€, -55.16%</span>
+                            <div class="addToCart">
+                                <span id="addToCart">Ajouter au panier</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fcfcfc"><path d="M440-600v-120H320v-80h120v-120h80v120h120v80H520v120h-80ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z"/></svg>
+                            </div>
+                        </div>
             </div>
             
              <!-- Le classement des supermarchés par prix total des produits sélectionnés -->
@@ -731,9 +735,6 @@
         <div class="form-container" id="form-container">
            
             <form action="https://api.web3forms.com/submit" method="POST" class="contact-form" id="contact-form">
-
-                <input type="hidden" name="access_key" value="f1b4359a-c7b1-4685-88f9-72db3ea94bdc">
-
                 <svg class="close-form-btn" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5353b4"><path d="m336-280 144-144 144 144 56-56-144-144 144-144-56-56-144 144-144-144-56 56 144 144-144 144 56 56ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
                 <input type="text" name="name" class="input-form" id="inputNom" placeholder="Votre nom" required>
                 <input type="email" name="email" class="input-form" id="inputMail" placeholder="Votre mail" required>
@@ -797,13 +798,15 @@
     </footer>
     <!-- Liens JS -->
     <script src="script.js"></script>
-    <script src="traducteur.js"></script>
+    <script type="module" src="traducteur.js"></script>
     <script src="produits.js"></script>
     <script src="BeDrive.js"></script>
+    <script type="module" src="traductions.js"></script>
 
     <!-- Les scripts génériques -->
-     <script>
+     <script >
 
+    try {
 // Le gestionnaire du dark/light mode
         let darkmode = localStorage.getItem('darkmode')
         const btnSwith = document.querySelectorAll('.theme-mode-btn')
@@ -832,16 +835,6 @@
 document.querySelector('div.produits-panier').style.backgroundImage = '' }
               
 
-    // Pour afficher le pop-pup du formulaire de contact
-
-    const btnContact = document.querySelector('.btn-contact').addEventListener('click', () =>{
-        document.getElementById('form-container').classList.add('active');
-        document.querySelector('.overlayForm').style.display='flex';
-    })
-    const btnCloseForm = document.querySelector('.close-form-btn').addEventListener('click', () =>{
-        document.getElementById('form-container').classList.remove('active');
-        document.querySelector('.overlayForm').style.display='none';
-    })
 
     // Pour afficher/cacher le bouton clean search-bar
   
@@ -858,39 +851,46 @@ document.querySelector(".clean-search-bar").addEventListener("click", () => {
 });
 
 
-// Pour afficher et cacher le panier
+// Pour display la description des produits et le panierOnMobile
 
-document.querySelector('.openPanier').addEventListener('click', ()=>{    document.querySelector('.panierOnmobile').classList.add('active');
-document.querySelector('.overlay').style.display='block';
-});
+function displayDescProduitAndPanier(displayBtn, displayEl) {
+    document.querySelectorAll(displayBtn).forEach((element) => {
+        element.addEventListener('click', () => {
+            document.querySelector(displayEl).classList.add('active');
+            document.querySelector('.overlay').style.display='block';
+        });
 
-document.querySelector('.overlay').addEventListener('click', ()=>{
-document.querySelector('.panierOnmobile').classList.remove('active');
-document.querySelector('.overlay').style.display='none';
-});
+        document.querySelector('.overlay').addEventListener('click', () => {
+            document.querySelector(displayEl).classList.remove('active');
+            document.querySelector('.overlay').style.display='none';
+        });
+    });
+}
 
-
-
-
-// Pour afficher la sideBar
-
-document.querySelector('.openSideBar').addEventListener('click', ()=>{
-
-    document.querySelector('.sideBar').classList.add('active');
-    document.querySelector('.overlaySB').style.display='block';
-
-});
+displayDescProduitAndPanier('.openPanier', '.panierOnmobile' );
+displayDescProduitAndPanier('.choixProduits .produit', '.description-produit' );
 
 
-// Pour cacher la sideBar
+  // Pour afficher le formulaire de contact et la sideBar
 
-document.querySelector('.closeSideBar').addEventListener('click', ()=>{
 
-    document.querySelector('.sideBar').classList.remove('active');
-    document.querySelector('.overlaySB').style.display='none';
+  function toggleFormAndSideBar(OpenBtn, displayEl, CloseBtn) {
+    document.querySelectorAll(OpenBtn).forEach((element) => {
+        element.addEventListener('click', () => {
+            document.querySelector(displayEl).classList.add('active');
+            document.querySelector('.overlayForm').style.display='flex';
+        });
+    });
+    document.querySelectorAll(CloseBtn).forEach((element) => {
+        element.addEventListener('click', () => {
+            document.querySelector(displayEl).classList.remove('active');
+            document.querySelector('.overlayForm').style.display='none';
+        });
+    });
+  }
 
-})
-
+    toggleFormAndSideBar('.btn-contact', '#form-container', '.close-form-btn');
+    toggleFormAndSideBar('.openSideBar', '.sideBar', '.closeSideBar');
 
 
 // Pour afficher les => lesRayonsSB
@@ -899,6 +899,11 @@ document.querySelector('.btn-lesRayons').addEventListener('click', ()=>{
     document.querySelector('.lesRayonsSB').classList.toggle('active')
 
 })
+
+
+} catch (error) {
+        console.error("Une erreur s'est produite : ", error);
+    }
 
      </script>
 </body>
