@@ -11,7 +11,7 @@ class Supermarket{
 
 
     this.getProduits = async function() {
-        const reponse = await fetch("/Json/produits.json");
+        const reponse = await fetch("./Json/produits.json");
         return reponse.json()
 };
 
