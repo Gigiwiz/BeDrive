@@ -15,6 +15,7 @@
   {
     "id": "FRU2",
     "nom": "Banane",
+    "nomCourt": "banane",
     "categorie": "Fruits",
     "description": "Bananes jaunes mûres, riches en potassium.",
     "prix": 1.79,
@@ -27,6 +28,7 @@
   {
     "id": "FRU3",
     "nom": "Orange",
+    "nomCourt": "orange",
     "categorie": "Fruits",
     "description": "Oranges juteuses et sans pépins, idéales pour le jus.",
     "prix": 3.49,
@@ -65,6 +67,7 @@
   {
     "id": "FRU6",
     "nom": "Pastèque",
+    "nomCourt": "pasteque",
     "categorie": "Fruits",
     "description": "Pastèque rafraîchissante à chair rouge.",
     "prix": 5.49,
@@ -77,6 +80,7 @@
   {
     "id": "FRU7",
     "nom": "Kiwi",
+    "nomCourt": "kiwi",
     "categorie": "Fruits",
     "description": "Kiwi à chair verte acidulée et riche en vitamine C.",
     "prix": 2.59,
@@ -89,6 +93,7 @@
   {
     "id": "FRU8",
     "nom": "Mangue",
+    "nomCourt": "mangue",
     "categorie": "Fruits",
     "description": "Mangue bien mûre à chair fondante et sucrée.",
     "prix": 3.79,
@@ -101,6 +106,7 @@
   {
     "id": "FRU9",
     "nom": "Poire",
+    "nomCourt": "poire",
     "categorie": "Fruits",
     "description": "Poires Conférence juteuses et parfumées.",
     "prix": 2.89,
@@ -113,6 +119,7 @@
   {
     "id": "FRU10",
     "nom": "Abricot",
+    "nomCourt": "abricot",
     "categorie": "Fruits",
     "description": "Abricots dorés au goût légèrement acidulé.",
     "prix": 4.29,
@@ -125,6 +132,7 @@
   {
     "id": "FRU11",
     "nom": "Cerise",
+    "nomCourt": "cerise",
     "categorie": "Fruits",
     "description": "Cerises Burlat rouges, charnues et sucrées.",
     "prix": 6.99,
@@ -137,6 +145,7 @@
   {
     "id": "FRU12",
     "nom": "Prune",
+    "nomCourt": "prune",
     "categorie": "Fruits",
     "description": "Prunes Reine-Claude sucrées et juteuses.",
     "prix": 3.59,
@@ -149,6 +158,7 @@
   {
     "id": "FRU13",
     "nom": "Ananas",
+    "nomCourt": "ananas",
     "categorie": "Fruits",
     "description": "Ananas sucré et parfumé, parfait pour les desserts.",
     "prix": 3.99,
@@ -161,6 +171,7 @@
   {
     "id": "FRU14",
     "nom": "Framboise",
+    "nomCourt": "framboise",
     "categorie": "Fruits",
     "description": "Framboises rouges, douces et acidulées.",
     "prix": 5.49,
@@ -173,6 +184,7 @@
   {
     "id": "FRU15",
     "nom": "Papaye",
+    "nomCourt": "papaye",
     "categorie": "Fruits",
     "description": "Papaye exotique à chair orange et goût sucré.",
     "prix": 4.99,
@@ -185,6 +197,7 @@
   {
     "id": "FRU16",
     "nom": "Citron",
+    "nomCourt": "citron",
     "categorie": "Fruits",
     "description": "Citrons jaunes, parfaits pour les boissons et les desserts.",
     "prix": 1.29,
@@ -207,6 +220,7 @@
   {
     "id": "LEG1",
     "nom": "Carotte",
+    "nomCourt": "carotte",
     "categorie": "Légumes",
     "description": "Carottes fraîches, croquantes et riches en bêta-carotène.",
     "prix": 1.99,
@@ -232,6 +246,7 @@
   {
     "id": "LEG3",
     "nom": "Courgette",
+    "nomCourt": "courgette",
     "categorie": "Légumes",
     "description": "Courgettes vertes tendres, parfaites pour la cuisson ou les grillades.",
     "prix": 2.29,
@@ -257,6 +272,7 @@
   {
     "id": "LEG5",
     "nom": "Concombre",
+    "nomCourt": "concombre",
     "categorie": "Légumes",
     "description": "Concombres croquants et rafraîchissants.",
     "prix": 1.79,
@@ -269,6 +285,7 @@
   {
     "id": "LEG6",
     "nom": "Brocoli",
+    "nomCourt": "brocoli",
     "categorie": "Légumes",
     "description": "Brocolis verts tendres, riches en fibres et vitamines.",
     "prix": 2.99,
@@ -281,6 +298,7 @@
   {
     "id": "LEG7",
     "nom": "Aubergine",
+    "nomCourt": "aubergine",
     "categorie": "Légumes",
     "description": "Aubergines violettes, idéales pour les plats méditerranéens.",
     "prix": 3.49,
@@ -332,6 +350,7 @@
   {
     "id": "LEG11",
     "nom": "Épinard",
+    "nomCourt": "epinard",
     "categorie": "Légumes",
     "description": "Épinards frais, riches en fer et vitamines.",
     "prix": 2.19,
@@ -344,6 +363,7 @@
   {
     "id": "LEG12",
     "nom": "Ail",
+    "nomCourt": "ail",
     "categorie": "Légumes",
     "description": "Ail frais, parfait pour relever les plats.",
     "prix": 0.99,
