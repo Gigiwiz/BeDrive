@@ -48,8 +48,16 @@ function Traduire(codeLangue) {
 
 
             // Le CONTAINER
-            wlcomMessageH3.textContent = dataTraductions[codeLangue].wlcomMessageH3;
-            wlcomMessageH1.textContent = dataTraductions[codeLangue].wlcomMessageH1;
+              document.querySelectorAll("#wlcomMessageH1").forEach((wlcomMessageH1) => {
+                if(wlcomMessageH1){
+                  wlcomMessageH1.textContent = dataTraductions[codeLangue].wlcomMessageH1;
+                }
+              })
+              document.querySelectorAll("#wlcomMessageH3").forEach((wlcomMessageH3) => {
+                if(wlcomMessageH3){
+                  wlcomMessageH3.textContent = dataTraductions[codeLangue].wlcomMessageH3;
+                }
+              })
 
            
 
@@ -121,5 +129,11 @@ languesSB.addEventListener('change', (e) =>{
 
 // ! SÉLECTION DE CHAQUE ÉLÉEMENT À TRADUIRE - Variable en fonction du contenu de la page
 
-let wlcomMessageH3 = document.getElementById('wlcomMessageH3');
 
+
+// import { Supermarket } from "./BeDrive.js";
+
+// const recupDonnées =  new Supermarket()
+      
+
+// recupDonnées.getProduits().then(resp => console.log(resp));

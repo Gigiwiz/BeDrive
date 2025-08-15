@@ -862,7 +862,7 @@ footer button.btn-contact:hover{
     display: flex;
     align-items: center;
     justify-content: start;
-    width: 100%;
+    width: 90%;
 }
 .prix-AddToCart .prix{
    flex-grow: 1;
@@ -932,6 +932,7 @@ footer button.btn-contact:hover{
     gap: 10px;
     border-bottom: 1px solid var(--cart-border-color);
     max-height: 40em;
+    overflow: hidden;
 }
 .description-produit img{
     height: clamp(100px,5vw, 200px);
@@ -942,6 +943,8 @@ footer button.btn-contact:hover{
 .description-produit div:first-child p{
     width: 70%;
     text-align:justify;
+    height: auto;
+    line-height: 1.5em ;
 }
 
 .description-produit span.prix{

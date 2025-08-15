@@ -1,4 +1,4 @@
-class Supermarket{
+export class Supermarket{
     
         #promo = false;
         #changePromoElements = [];
@@ -20,7 +20,7 @@ class Supermarket{
         
 
     this.getProduits = async function() {
-        const reponse = await fetch("./Json/produits.json");
+        const reponse = await fetch("../Json/produits.json");
         const products = reponse.json()
         this.produits = products        
         return this.produits
@@ -234,7 +234,6 @@ class Supermarket{
                         const attr = event.target.value
                             imagesSuperM.forEach((image) =>{
                                 image.id === attr ? image.style.display = "flex" : image.style.display = "none";
-
                         });
                     })
     });
@@ -243,7 +242,7 @@ class Supermarket{
     /**
      * @param {[string]} elements les id et/ou les catégories des produits dont le prix originel va être modifier.
      * @param {number} price valeur à soustraire du prix originel(dans produits.json) => nombre entier ou décimal.toFixed(2) compris entre 0.1 à 2
-     * @returns {[string]} retourne le tableau => changePriceElements = [elements]
+     * @returns {[string]} retourne le tableau => changePriceElements = [...elements]
      */
 setPrice([...elements], price){
     if(price >= 0.1 && price <= 2){
@@ -257,7 +256,7 @@ setPrice([...elements], price){
     /**
      * @param {[string]} elements les id et/ou les catégories des produits à mettre en promo => se référer au produits.json
      * @param {number} promo nombre entier ou décimal.toFixed(2) compris entre 1 - 100
-     * @returns {[string]} retourne le tableau => #changePromoElements = [elements]
+     * @returns {[string]} retourne le tableau => #changePromoElements = [...elements]
      */
 setPromo([...elements], promo){
     if(promo >= 0 && promo <= 100){
@@ -270,7 +269,7 @@ setPromo([...elements], promo){
 
     /**
      * @param {string} elements les id et/ou les catégories des produits à rendre indisponibles => se référer au produits.json
-     * @returns {[string]} retourne le tableau des éléments à rendre indisponibles => #unavailableElements = [elements]
+     * @returns {[string]} retourne le tableau des éléments à rendre indisponibles => #unavailableElements = [...elements]
      */
 setUnavailable(...elements){
     this.#dispo = false
@@ -284,12 +283,12 @@ setUnavailable(...elements){
 
 const Lidl = new Supermarket("Lidl","Logo_Lidl.svg", "23 avenue des Peupliers Paris 75013")
         Lidl.setPrice(["Fruits", "Légumes", "EPI3", "EPI4"], 1);
-        Lidl.setPromo(["Fruits", "Viandes", "EPI3", "EPI4"], 50);
+        Lidl.setPromo(["Viandes", "EPI3", "BOI17"], 50);
         Lidl.setUnavailable("FRU1", "FRU2", "FRU6", 'FRU3')
 
 const Carrefour = new Supermarket("Carrefour", "Logo_Carrefour.svg", "60 boulevard de Stalingrad Vitry-sur-Seine");
         Carrefour.setPrice(["Fruits", "Légumes", "EPI3", "EPI4"], 2)
-        Carrefour.setPromo(["Fruits", "Boissons", "EPI1", "EPI2"], 30)
+        Carrefour.setPromo(["FRU7", "Boissons", "EPI1", "EPI2"], 30)
 
 const Auchan = new Supermarket("Auchan","Logo_Auchan.svg", "10 rue des Oliviers Paris 75013");
         Auchan.setPrice(["Fruits", "Légumes", "EPI3", "EPI4"], 0.89)
@@ -299,6 +298,7 @@ const Auchan = new Supermarket("Auchan","Logo_Auchan.svg", "10 rue des Oliviers 
 // const Leclerc = new Supermarket("E.Leclerc","Logo_Leclerc.svg", "203 avenue des dominicaines Paris 75003");
 
 // const Aldi = new Supermarket("Aldi","Logo_Aldi.svg","30 avenue de Choisy Ivry-sur-Seine 75013")
+
 
 
 
