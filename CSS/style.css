@@ -270,7 +270,8 @@ nav .Traducteur{
      border-radius: 15px;
     cursor: pointer;
     border: none;
-    transition: var(--transition2s);
+    z-index: 1;
+
 }
 
 
@@ -284,7 +285,6 @@ nav .Traducteur{
     border-radius: 50%;
     cursor: pointer;
     gap: 3px;
-    transition: var(--transition2s);
 }
 
 .Traducteur #output:hover{
@@ -301,7 +301,6 @@ nav .Traducteur{
   border-top: 1px solid var(--header-footer-line);
   background-color: var(--header-footer-color);
   visibility: hidden;
-  transition:var(--transition2s);
 }
 
 nav .Traducteur:hover #langMenu{
@@ -319,7 +318,7 @@ text-decoration:none;
 gap: 3px;
 color: var(--text-two);
 cursor: pointer;
-transition: var(--transition2s);
+/* transition: var(--transition2s); */
 padding:10px;
 }
 #langMenu a:hover{
@@ -841,6 +840,7 @@ footer button.btn-contact:hover{
     height: 170px;
     width: 150px;
     gap: 10px;
+    padding: 0 5px;
     border-bottom: 2px solid var(--third-color);
     cursor: pointer;
     transition: var(--transition2s);
@@ -860,12 +860,11 @@ footer button.btn-contact:hover{
 .prix-AddToCart{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: start;
     width: 100%;
 }
-
-.prix-AddToCart .nom{
-    text-align: justify;
+.prix-AddToCart .prix{
+   flex-grow: 1;
 }
 
 .prix-AddToCart svg{
@@ -884,6 +883,11 @@ footer button.btn-contact:hover{
     background-color: var(--AddToCart-color);
     cursor: pointer;
 }
+
+.choixProduits .nom{
+    text-align: center;
+}
+
 
 .description-produit{
     display: flex;
@@ -918,7 +922,7 @@ footer button.btn-contact:hover{
     scale: 1;
 }
 
-.description-produit div:first-child{
+.description-produit .img-description{
     display: flex;
     align-items: center;
     justify-content: start;
