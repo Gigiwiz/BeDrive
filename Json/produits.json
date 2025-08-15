@@ -6,7 +6,7 @@
     "categorie": "Fruits",
     "description": "Pommes Gala fraîches et sucrées, cultivées localement.",
     "prix": 2.99,
-    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/FruitsLegumes/pommeGala.jpg",
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/FruitsLegumes/pommeGala.png",
     "disponible": true,
     "marque": "Verger du Soleil",
     "promo": false,
