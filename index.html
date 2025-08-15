@@ -291,7 +291,7 @@
         <!-- Le panier avec un 1er supermarché choix(moins chèr) qui peut etre changé-->
             <div class="panier">
                 <div class="choixSupermarche">
-                    <select name="select">
+                    <select class="switchSupermarket" name="select">
                     </select>
                     <a href="#">
                     </a>
@@ -310,61 +310,15 @@
                             <span class="nom"> Coca cola 33cl</span>
                         </div>
                         <div class="quantite-prix">
-                            <input type="number" value="1" min="0"  step="1" name="quantite" onkeydown="return false;" oninput="this.value = Math.max(0, this.value)" onchange="console.log(this.value)">
+                            <div class="quantite">
+                                <img class="remove" src="https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/icons/remove_.svg" alt="remove">                                
+                                <span>1</span>
+                                <img class="add" src="https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/icons/add_.svg" alt="add">
+                            </div>
                             <span class="prix">1€</span>
                         </div>
                     </div>
-                    <div class="produit">
-                        <div class="image-nom"> 
-                            <img src="https://raw.githubusercontent.com/Gigiwiz/Images-BeDrive/refs/heads/main/produits/Boissons/Heineken.png" alt=" Heineken">
-                            <span class="nom">Heineken</span>
-                        </div>
-                        <div class="quantite-prix">
-                            <input type="number" value="1" min="0"  step="1" name="quantite" onkeydown="return false;" oninput="this.value = Math.max(0, this.value)" onchange="console.log(this.value)">
-                            <span class="prix">1000€</span>
-                        </div>
-                    </div>
-
-                    <div class="produit">
-                        <div class="image-nom"> 
-                            <img src="https://raw.githubusercontent.com/Gigiwiz/Images-BeDrive/refs/heads/main/produits/FruitLe%CC%81gumes/ananas.png" alt=" Ananas">
-                            <span class="nom"> Ananas</span>
-                        </div>
-                        <div class="quantite-prix">
-                            <input type="number" value="1" min="0"  step="1" name="quantite" onkeydown="return false;" oninput="this.value = Math.max(0, this.value)" onchange="console.log(this.value)">
-                            <span class="prix">10000€</span>
-                        </div>
-                    </div>
-                    <div class="produit">
-                        <div class="image-nom"> 
-                            <img src="https://raw.githubusercontent.com/Gigiwiz/Images-BeDrive/refs/heads/main/produits/FruitLe%CC%81gumes/mango.png" alt=" Mangue">
-                            <span class="nom">Mangue du Congo</span>
-                        </div>
-                        <div class="quantite-prix">
-                            <input type="number" value="1" min="0"  step="1" name="quantite" onkeydown="return false;" oninput="this.value = Math.max(0, this.value)" onchange="console.log(this.value)">
-                            <span class="prix">10€</span>
-                        </div>
-                    </div>
-                    <div class="produit">
-                        <div class="image-nom"> 
-                            <img src="https://raw.githubusercontent.com/Gigiwiz/Images-BeDrive/refs/heads/main/produits/Boulangerie/pain.png" alt=" Deux pains">
-                            <span class="nom">Pain</span>
-                        </div>
-                        <div class="quantite-prix">
-                            <input type="number" value="1" min="0"  step="1" name="quantite" onkeydown="return false;" oninput="this.value = Math.max(0, this.value)" onchange="console.log(this.value)">
-                            <span class="prix">1€</span>
-                        </div>
-                    </div>
-                    <div class="produit">
-                        <div class="image-nom"> 
-                            <img src="https://raw.githubusercontent.com/Gigiwiz/Images-BeDrive/refs/heads/main/produits/ProduitLaitiers/Gruye%CC%80re.png" alt=" Gruyère ">
-                            <span class="nom">Gruyère</span>
-                        </div>
-                        <div class="quantite-prix">
-                            <input type="number" value="1" min="0"  step="1" name="quantite" onkeydown="return false;" oninput="this.value = Math.max(0, this.value)" onchange="console.log(this.value)">
-                            <span class="prix">1€</span>
-                        </div>
-                    </div>
+                    
                     <div class="produit">
                         <div class="image-nom"> 
                             <img src="https://raw.githubusercontent.com/Gigiwiz/Images-BeDrive/refs/heads/main/produits/FruitLe%CC%81gumes/kiwi.png" alt=" Kiwi">
@@ -375,7 +329,6 @@
                             <span class="prix">1€</span>
                         </div>
                     </div>
-
 
                 </div>
 
@@ -432,8 +385,7 @@
          <!-- Le panier onMobile-->
             <div class="panierOnmobile">
                 <div class="choixSupermarche">
-                    <select name="select">
-                        
+                    <select class="switchSupermarket" name="select">
                     </select>
                     <a href="#">
                     </a>
@@ -457,58 +409,6 @@
                                 <span>1</span>
                                 <img class="add" src="https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/icons/add_.svg" alt="add">
                             </div>
-                            <!-- <span type="number" value="1" min="0"  step="1" class="quantite" onkeydown="return false;" oninput="this.value = Math.max(0, this.value)" onchange="console.log(this.value)">1</span> -->
-                            <span class="prix">1€</span>
-                        </div>
-                    </div>
-                    <div class="produit">
-                        <div class="image-nom"> 
-                            <img src="https://raw.githubusercontent.com/Gigiwiz/Images-BeDrive/refs/heads/main/produits/Boissons/Heineken.png" alt=" Heineken">
-                            <span class="nom">Heineken</span>
-                        </div>
-                        <div class="quantite-prix">
-                            <input type="number" value="1" min="0"  step="1" name="quantite" onkeydown="return false;" oninput="this.value = Math.max(0, this.value)" onchange="console.log(this.value)">
-                            <span class="prix">1000€</span>
-                        </div>
-                    </div>
-
-                    <div class="produit">
-                        <div class="image-nom"> 
-                            <img src="https://raw.githubusercontent.com/Gigiwiz/Images-BeDrive/refs/heads/main/produits/FruitLe%CC%81gumes/ananas.png" alt=" Ananas">
-                            <span class="nom"> Ananas</span>
-                        </div>
-                        <div class="quantite-prix">
-                            <input type="number" value="1" min="0"  step="1" name="quantite" onkeydown="return false;" oninput="this.value = Math.max(0, this.value)" onchange="console.log(this.value)">
-                            <span class="prix">10000€</span>
-                        </div>
-                    </div>
-                    <div class="produit">
-                        <div class="image-nom"> 
-                            <img src="https://raw.githubusercontent.com/Gigiwiz/Images-BeDrive/refs/heads/main/produits/FruitLe%CC%81gumes/mango.png" alt=" Mangue">
-                            <span class="nom">Mangue du Congo</span>
-                        </div>
-                        <div class="quantite-prix">
-                            <input type="number" value="1" min="0"  step="1" name="quantite" onkeydown="return false;" oninput="this.value = Math.max(0, this.value)" onchange="console.log(this.value)">
-                            <span class="prix">10€</span>
-                        </div>
-                    </div>
-                    <div class="produit">
-                        <div class="image-nom"> 
-                            <img src="https://raw.githubusercontent.com/Gigiwiz/Images-BeDrive/refs/heads/main/produits/Boulangerie/pain.png" alt=" Deux pains">
-                            <span class="nom">Pain</span>
-                        </div>
-                        <div class="quantite-prix">
-                            <input type="number" value="1" min="0"  step="1" name="quantite" onkeydown="return false;" oninput="this.value = Math.max(0, this.value)" onchange="console.log(this.value)">
-                            <span class="prix">1€</span>
-                        </div>
-                    </div>
-                    <div class="produit">
-                        <div class="image-nom"> 
-                            <img src="https://raw.githubusercontent.com/Gigiwiz/Images-BeDrive/refs/heads/main/produits/ProduitLaitiers/Gruye%CC%80re.png" alt=" Gruyère ">
-                            <span class="nom">Gruyère</span>
-                        </div>
-                        <div class="quantite-prix">
-                            <input type="number" value="1" min="0"  step="1" name="quantite" onkeydown="return false;" oninput="this.value = Math.max(0, this.value)" onchange="console.log(this.value)">
                             <span class="prix">1€</span>
                         </div>
                     </div>
@@ -653,19 +553,28 @@
 
     let quantite = 1
 
-    const addBtn = document.querySelector('.quantite .add');
-    const removeBtn = document.querySelector('.quantite .remove');
-    
-    addBtn.addEventListener('click', () => { 
-        quantite++;
-        document.querySelector('.quantite span').textContent = quantite; 
+    const addBtn = document.querySelectorAll('.quantite .add');
+    const removeBtn = document.querySelectorAll('.quantite .remove');
+
+
+    addBtn.forEach((btn) => {        
+        btn.addEventListener('click', () => {
+            quantite++;
+            document.querySelectorAll('.quantite span').forEach((span) => {
+                span.textContent = quantite; 
+            });
+        });
     });
 
-    removeBtn.addEventListener('click', () => {
-        if(quantite >= 1) {
-        quantite--;
-        document.querySelector('.quantite span').textContent = quantite; 
-        }
+    removeBtn.forEach((btn) => {
+        btn.addEventListener('click', () => {
+            if (quantite >= 1) {
+                quantite--;
+                document.querySelectorAll('.quantite span').forEach((span) => {
+                    span.textContent = quantite; 
+                });
+            }
+        });
     });
     
 
@@ -683,18 +592,21 @@ document.querySelector(".clean-search-bar").addEventListener("click", () => {
   document.querySelector('.clean-search-bar').style.opacity = '0'
 });
 
-
 // Pour display la description des produits et le panierOnMobile
 
 function displayDescProduitAndPanier(displayBtn, displayEl) {
-    document.querySelectorAll(displayBtn).forEach((element) => {
-        element.addEventListener('click', () => {
-            document.querySelector(displayEl).classList.add('active');
+    document.querySelectorAll(displayBtn).forEach((btn) => {
+        btn.addEventListener('click', () => {
+            document.querySelectorAll(displayEl).forEach((el) => {
+                el.classList.add('active');
+            });
             document.querySelector('.overlay').style.display='block';
         });
 
         document.querySelector('.overlay').addEventListener('click', () => {
-            document.querySelector(displayEl).classList.remove('active');
+            document.querySelectorAll(displayEl).forEach((el) => {
+                el.classList.remove('active');
+            });
             document.querySelector('.overlay').style.display='none';
         });
     });

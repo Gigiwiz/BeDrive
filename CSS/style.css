@@ -1122,11 +1122,12 @@ footer button.btn-contact:hover{
     height: 30px;
     width: 30px;
 }
-.produits-panier .produit .quantite-prix{
+.produits-panier .quantite-prix{
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 50%;
+    height: 100%;
  }
 
  .produits-panier input{
@@ -1141,12 +1142,13 @@ footer button.btn-contact:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 45%;
+    width: 55%;
+    height: 60%;
     gap: 3px;
     background-color: #bdbdea;
     border-radius: 5px;
-    font-size: clamp(10px, 2vw, 15px);
-    padding: 0 5px;
+    font-size: clamp(9px, 1.5vw, 14px);
+    margin-left: 2px;
    
     overflow: hidden;
 }
