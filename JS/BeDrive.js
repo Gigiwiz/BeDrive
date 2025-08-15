@@ -76,10 +76,12 @@ class Supermarket{
             if(produit.disponible){
                 const produitDiv = document.createElement("div");
                         produitDiv.className = `produit ${this.nom}`;
+                        produitDiv.id = produit.nomCourt
 
                 const img = document.createElement("img");
                         img.src = produit.image;
-                        img.id = `img${produit.nomCourt}`;
+                        img.className = `img ${produit.nomCourt}`;
+                        img.id = produit.nomCourt;
                         img.alt = produit.nom;
 
                 const div1 = document.createElement("div");
@@ -87,6 +89,7 @@ class Supermarket{
 
                 const span = document.createElement("span");
                         span.className = "prix" ;
+                        span.id = produit.nomCourt
                         if(!produit.promo){
                             span.textContent = `${(produit.prix)} €`;
                         }
@@ -138,34 +141,49 @@ class Supermarket{
                                                 product.style.display = "none";
                                         })
                             })
-
                         })
-            
-            
             }
         }
 
         return newProduits
     })
     .then(newProduits => {
+
 // Pour afficher la description de chaque produit au clic de celui-ci
         const produitsEl =  document.querySelectorAll('.choixProduits .produit');
         const descriptionDiv = document.querySelector(".description-produit");
         const productDescriptionImg = document.querySelector(".description-produit img");
         const productDescription = document.querySelector(".description-produit p");
-        const prix = document.querySelector(".description-produit .prix");
+        const prixDesc = document.querySelector(".description-produit .prix");
 
         for (const produit of newProduits) {
-                productDescriptionImg.src = produit.image;
-                productDescription.textContent = produit.description;
-                productDescription.id = produit.nomCourt
-                prix.textContent = produit.prix
-
+            
                 produitsEl.forEach(el => {
-                el.addEventListener("click", (e) => {
+                el.addEventListener("click", (e) => {                    
                     e.preventDefault()
-                    const value = e.target.className
-                    descriptionDiv.classList.add("active")
+                    const value = e.target.id
+                    if(value === produit.nomCourt && el.className.includes(this.nom) ){
+                        productDescriptionImg.src = produit.image;
+                        productDescription.textContent = produit.description;
+                        productDescription.id = produit.nomCourt
+                        if(!produit.promo){
+                            prixDesc.textContent = `${produit.prix} €`;
+                            prixDesc.style.color = 'white'
+                        }
+                        else{
+                            prixDesc.textContent = `${(produit.prix)} €, -${produit.promo}%`;
+                            prixDesc.style.color = 'red'
+                        }
+
+                        descriptionDiv.classList.add("active")
+                        document.querySelector('.overlay').style.display='block';
+
+
+                        
+
+                    }
+                    
+
                 })
             })
             
