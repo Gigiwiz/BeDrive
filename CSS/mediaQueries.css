@@ -146,6 +146,10 @@ nav svg{
     overflow: hidden;
 }
 
+.welcome-message h3{
+    font-size: 8px;
+}
+
 .welcome1 .Drive{
     position: relative;
     top: 2px;
