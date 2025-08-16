@@ -338,9 +338,7 @@ footer{
   }
 
   .welcome-message {
-    position: absolute;
-    top: 2.5em;
-    right:200px;
+    display: none;
   }
 
   .welcome-message h1{
@@ -366,7 +364,7 @@ footer{
     }
     .section1Partie2 {
         flex-grow: 1;
-        height: 78%;
+        height: 95%;
     }
     .choixProduits .produit {
         height: 120px;
@@ -390,7 +388,7 @@ footer{
 
     .rankingOnMobile {
         width: 25%;
-        height: 70%;
+        height: 90%;
        
     }
     .rankingOnMobile .titre, 
