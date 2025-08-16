@@ -306,3 +306,4 @@ const Auchan = new Supermarket("Auchan","Logo_Auchan.svg", "10 rue des Oliviers 
 
 
 
+console.log("JFJDJKKDJKJJKDJKDGGHBNDK");
