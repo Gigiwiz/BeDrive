@@ -137,3 +137,5 @@ languesSB.addEventListener('change', (e) =>{
       
 
 // recupDonnées.getProduits().then(resp => console.log(resp));
+
+console.log("Traducteur FFVN,ZMBGN");
