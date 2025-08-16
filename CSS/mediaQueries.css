@@ -399,6 +399,10 @@ footer{
 
     button{
         height: 30px;
+        overflow: hidden;
+    }
+    .button{
+        overflow: hidden;
     }
 
     
