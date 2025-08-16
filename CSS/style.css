@@ -492,8 +492,8 @@ cursor: pointer;
     width: 100%;
     height: 40px;
     color: var(--logo);
-    overflow-y: scroll;
-
+    overflow: hidden;
+    
 }
 .lesRayonsSB li a{
     color: rgb(164, 138, 199);

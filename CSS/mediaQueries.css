@@ -233,15 +233,6 @@ footer .btn-contact{
         gap: 1vw;
     }
 
-    /* .welcome-message h1
-{
-    font-size: clamp(20px, 3.5vw, 28px);
-} 
-
- .welcome-message h3{
-    font-size: clamp(8px, 2.5vw,15px);
-} */
-
     .section2{
         display: none;
     }
@@ -280,7 +271,7 @@ footer .btn-contact{
 
 
 /* Pour les téléphones en mode paysage */
-@media screen and (max-width:1024px) and (max-height:500px) and (orientation: landscape) {
+@media screen and (max-width:1024px) and (max-height:570px) and (orientation: landscape) {
  
 body{
     width: 100vw;
@@ -340,15 +331,6 @@ footer{
   .welcome-message {
     display: none;
   }
-
-  .welcome-message h1{
-        font-size: 4.5vh;
-    }
-
-    .welcome-message h3 {
-    font-size: clamp(5px, 2.5vw, 10px);
-    height: auto;
-    }
 
     .header #sect1P2H2,
     .header #trierPar,
@@ -414,6 +396,10 @@ footer{
 
     
 }
+
+
+
+
 
 
 /* Pour les écrans extra */
