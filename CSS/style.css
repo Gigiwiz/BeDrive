@@ -402,7 +402,7 @@ padding:10px;
 
 .sideBar.active{
     visibility: visible;
-    width:35% ;
+    width:40% ;
 }
 
 .overlay,
@@ -419,9 +419,11 @@ padding:10px;
 }
 
 
-.sideBar > li{
+.sideBar > li:not(:nth-child(3)){
     margin-top: 10px;
     padding: 10px;
+    overflow: hidden;
+
 }
 
 
@@ -435,28 +437,31 @@ height: 30px;
 cursor: pointer;
 }
 
-.closeSideBar{
-    cursor: pointer;
+.sideBar li:first-child,
+ .closeSideBar{
+    margin-bottom: 25px;
 }
 
 .lesRayonsSBContainer{
     overflow: hidden;
-    gap: 0;
-    font-size: clamp(10px, 1.7vw, 16px);
+    height: 70%;
+    width: 100%;
+    font-size: clamp(15px, 5vw, 20px);
+    padding-left: 15px;
     outline: none;
-
 }
 .lesRayonsSBContainer ul{
     overflow: hidden;
-    gap: 0;
-    height: 200px;
+    height: auto;
     width: 100%;
+    gap: 0;
     margin-top: 3px;
 }
 
+
 .btn-lesRayons{
     overflow: hidden;
-    width: 6.5em;
+    width: 100%;
 }
 .btn-lesRayons svg{
     position: relative;
@@ -464,27 +469,37 @@ cursor: pointer;
 }
 
 .lesRayonsSB{
-    display: none;
+    display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
     transition: var(--transition2s);
     height: auto;
     border: initial;
+    height: 0%;
+    width: 100%;
+    padding: 10px ;
+    visibility: hidden;
 }
 
 .lesRayonsSB.active{
-    display: flex;
+    height: 80%;
+    visibility: visible;
 }
 
 .lesRayonsSB li{
     display: flex;
     width: 100%;
-    height: 100%;
+    height: 40px;
     color: var(--logo);
+    overflow-y: scroll;
+
 }
 .lesRayonsSB li a{
     color: rgb(164, 138, 199);
+}
+.lesRayonsSB li:first-child{
+    margin-bottom: 19px;
 }
 
 
@@ -495,12 +510,17 @@ cursor: pointer;
     background-color: var(--header-footer-color);
     color: var(--text-two);
     font-family: var(--font-familly1);
-    font-size: clamp(10px, 1.7vw, 16px);
+    font-size: clamp(15px, 5vw, 20px);
     border:1px solid var(--header-footer-line);
     border-radius: 5px;
 
 }
 
+.sideBar .theme-mode{
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
 
 
 /* Le footer */
@@ -740,15 +760,17 @@ footer button.btn-contact:hover{
     flex-direction: column;
     height: auto;
     width: 100%;
+    gap: 5px;
     margin: 2% 0 4% 0;
 }
 
 .welcome-message h1
 {
-    font-size: clamp(20px, 2vw, 32px);
+    font-size: clamp(15px, 3.5vw, 30px);
 }
 .welcome-message h3{
-    font-size: clamp(8px, 1.5vw,15px);
+    text-align: center;
+    font-size: clamp(9px, 2vw, 16px);
     padding: 1px 0;
     overflow: hidden;
 
@@ -796,6 +818,7 @@ footer button.btn-contact:hover{
     justify-content: flex-end;
     width: 100%;
     height: auto;
+    overflow: hidden;
 }
 
 .header #sect1P2H2{
@@ -869,8 +892,8 @@ footer button.btn-contact:hover{
 }
 
 .prix-AddToCart svg{
-    height: clamp(15px, 3vw, 30px);
-    width: clamp(15px, 3vw, 30px);
+    height: clamp(18px, 3vw, 30px);
+    width: clamp(18px, 3vw, 30px);
     padding: 1px;
     border-radius: 3px;
     fill: var(--second-color);
@@ -903,18 +926,17 @@ footer button.btn-contact:hover{
     color:#f3efef;
     font-size: clamp(10px, 3vw, 20px);
 
-
     position: absolute;
     top: 50%;
     left: 50%;
     transform:translate(-50%, -50%);
-    
 
     height: 200px;
     width: 400px;
     padding: 15px;
     border-radius: 10px;
     gap: 10px;
+    overflow: hidden;
 
     transition: var(--transition2s);
 }
@@ -938,6 +960,8 @@ footer button.btn-contact:hover{
     height: clamp(100px,5vw, 200px);
     width: clamp(100px,5vw, 200px);
     border-radius: 10px;
+    overflow: hidden;
+
 }
 
 .description-produit div:first-child p{
@@ -1017,7 +1041,7 @@ footer button.btn-contact:hover{
 }
 
 .panierOnmobile .produits-panier span{
-    font-size:clamp(11px, 2.5vw, 23px);
+    font-size:clamp(12px, 1.8vw, 23px);
 }
 
    .panierOnmobile .button{
@@ -1039,7 +1063,7 @@ footer button.btn-contact:hover{
     border: none;
     border-radius: 8px;
     transition: 0.3s cubic-bezier(0.4,0,0.2,1);
-    color: var(--text-one);
+    color: white;
 }
 .panierOnmobile .Total{
     display: flex;
@@ -1047,6 +1071,8 @@ footer button.btn-contact:hover{
     align-items: center;
     width: 100%;
     font-size:clamp(11px, 2.5vw, 23px);
+    overflow: hidden;
+    color: #000;
 
 }
 
@@ -1079,7 +1105,7 @@ footer button.btn-contact:hover{
     height: auto;
     font: 0.8em sans-serif;
     border-radius: 8px;
-    color: var(--text-one); 
+    color: black; 
     background-color: var(--cart-color);
     border-color: var(--cart-border-color);
 }
@@ -1177,12 +1203,14 @@ footer button.btn-contact:hover{
     align-items: center;
     justify-content: space-between;
     width: 90%;
-    color: var(--text-one); 
+    color: black; 
 }
 .Total .prixTotal{
     font-weight:bold ;
 }
-
+.Total{
+    overflow: hidden;
+}
 
 /* <!-- Les bouttons --> */
 
@@ -1204,7 +1232,7 @@ footer button.btn-contact:hover{
     border: none;
     border-radius: 8px;
     transition: 0.3s cubic-bezier(0.4,0,0.2,1);
-    color: var(--text-one); 
+    color: white; 
 }
 .btn:hover{
     scale:1.08;
@@ -1292,247 +1320,4 @@ footer button.btn-contact:hover{
     padding: 5px 0;
     margin-top: 10px;
     box-shadow: var(--ranking-box-shadow);      
-}
-
-
-
-
-
-
-/* Light/Dark mode par rapport au système */
-
-@media (prefers-color-scheme: light) {
-
-
-}
-@media (prefers-color-scheme: dark) {
-    
-}
-
-                        /* Respensive Design */
-
-/* Pour les tablettes */
-
-@media screen and (max-width:1024px) {
-
-    /* Le header */
-    #onMobilePhone{
-        display: none;
-    }
-
-    .openSideBar{
-        display: flex;
-    }
-    .openPanier{
-display: block;
-}
-
-    /* Le footer */
-    footer{
-        font-size: clamp(3px, 1.5vw, 15px);
-
-    }
-    footer ul{
-        flex-direction: column;
-        gap: 5px;
-    }
- 
-footer .btn-contact{
-    height: 2.5em;
-        font-size: clamp(3px, 1.5vw, 15px);
-        margin: 0 5px;
-
-}
-
-    /* Le container */
-    .welcome-message{
-        gap: 1vw;
-    }
-
-    .welcome-message h1
-{
-    font-size: clamp(20px, 3.5vw, 28px);
-}
-.welcome-message h3{
-    font-size: clamp(8px, 2.5vw,15px);
-
-}
-
-    .section2{
-        display: none;
-    }
-    .section1{
-        width: 100%;
-        padding-right: 10px;
-    }
-
-    .section1Partie2{
-        height: 65%;
-    }
-
-
-    .rankingOnMobile{
-        display: flex;
-        font-size: clamp(3px, 2vw, 15px);
-
-    }
-
-    .titre.ranking{
-        font-size: clamp(3px, 3vw, 15px);
-
-    }
-
-}
-
-/* Pour les téléphones */
-
-@media screen and (max-width:540px) {
-
-    /* Le header */
-
-header{
-        height: 50px;
-    }
-
-nav ul{
-    gap: 10px;
-}
-
-
-nav svg{
-    width: 20px;
-}
-
-.search input{
-    padding: 0 0 0 20px;
-    height: 25px;
-}
-
-.search-icon{
-    position: relative;
-    top: 0 ;
-    left: 16px ;
-    width:15px ;
-}
-.clean-search-bar{
-    width:15px ;
-}
-
-
-.sideBar > li{
-    padding: 3px;
-}
-
-.sideBar .theme-mode-btn{
-    height: 20px;
-    width: 20px;
-}
-.sideBar .theme-mode-btn svg{
-    height: 1em;
-    width: 1em;
-}
-
-.sideBar li:last-child{
-    overflow: hidden;
-}
-
-.closeSideBar{
-    height: 20px;
-    width: 20px;
-}
-
-
-.btn-lesRayons svg{
-    position: relative;
-    top:6px;
-    height: 16px;
-    width: 16px;
-}
-
-.lesRayonsSBContainer ul{
-    margin-top: 5px;
-}
-
-    /* Le footer */
-    footer{
-        font-size: clamp(4px, 1.5vw, 15px);
-        height: 60px;
-
-    }
-    footer ul{
-        flex-direction: column;
-        gap: 5px;
-        flex: 1;
-    }
-
-    footer .social-media{
-        gap:5px ;
-    };
-
-   .social-media .twitter{
-    display: none;
-}
-
-
-  /* Le container */
-
-.welcome-message {
-    margin: 0 0 8% 0;
-}
-.welcome-message h1{
-    font-size: clamp(15px, 3.5vw, 22px);
-}
-
-.welcome-message h3{
-    font-size: clamp(4px, 2vw,10px);
-}
-
-.welcome1{
-    gap: 5px;
-}
-
-.welcome1 .Drive{
-    position: relative;
-    top: 2px;
-}
-
-.choixProduits .produit{
-    height: 120px;
-    width: 100px;
-}
-
-.panierOnmobile{
-    width: 70%;
-    height: 50%;
-    border-radius: 15px;
-
-}
-
-.description-produit{
-    width: 70%;
-    height: 25%;
-    padding: 10px;
-    font-size: clamp(10px, 3vw, 20px);
-}
-.description-produit div:first-child{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.description-produit img{
-    width: 80px;
-    height: 80px;
-}
-.description-produit p{
-    width: auto;
-}
-}
-
-
-
-/* Pour les écrans extra */
-
-@media screen and (min-width:1800px) {
-
-    
 }
