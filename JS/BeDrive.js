@@ -20,7 +20,7 @@ export class Supermarket{
         
 
     this.getProduits = async function() {
-        const reponse = await fetch("./Json/produits.json");
+        const reponse = await fetch("../produits.json");
         const products = reponse.json()
         this.produits = products        
         return this.produits
@@ -56,7 +56,7 @@ export class Supermarket{
     })
     .then(produitsPromoToChange =>{
 // Pour rendre indisponible les produits
-        const produitsAvailable = produitsPromoToChange
+        const produitsAvailable =  produitsPromoToChange
         this.#unavailableElements.forEach(el =>{
             for (const produit of produitsAvailable) {
                 if(el.toLowerCase() === produit.categorie.toLowerCase() || el.toLowerCase() === produit.id.toLowerCase()){                    
@@ -68,28 +68,32 @@ export class Supermarket{
         return produitsAvailable
     })
     .then(produitsAvailable => {
+        
+
 // Pour afficher les produits en fonction du choix du spermarché
+
         const newProduits = produitsAvailable.sort((a, b) => a.marque.localeCompare(b.marque))
 
-        const section1ProduitsAcceuil = document.querySelectorAll(".section1Produits.accueil");
+
+        const section1ProduitsPageAcceuil = document.querySelectorAll(".section1Produits.accueil");
 
         /* Création du container des produits de la page d'accueil
             dans le but d'automatiser l'ajout des produits en fonction des catégories (ajoutée.s ou rétirée.s)
         */
-        const containerProduitsAcceuilClass = ["containerProduits "];
-        const containerProduitsAcceuil = document.createElement('div');
+        const containerProduitsPageAcceuilClass = ["containerProduits "];
+        const containerProduitsPageAcceuil = document.createElement('div');
 
 
         for (const produit of newProduits) {
 
             if (produit.categorie) {
-                containerProduitsAcceuilClass.push(produit.categorie)
-                const newClass =  [...new Set(containerProduitsAcceuilClass)]
+                containerProduitsPageAcceuilClass.push(produit.categorie)
+                const newClass = [...new Set(containerProduitsPageAcceuilClass)]
 
-                containerProduitsAcceuil.className = newClass;
+                containerProduitsPageAcceuil.className = newClass;
 
-                section1ProduitsAcceuil.forEach(section => {
-                    section.appendChild(containerProduitsAcceuil);                    
+                section1ProduitsPageAcceuil.forEach(section => {
+                    section.appendChild(containerProduitsPageAcceuil);                    
                 })
 
                 const allContainersProduits = document.querySelectorAll(".containerProduits");
@@ -333,5 +337,6 @@ const Auchan = new Supermarket("Auchan","Logo_Auchan.svg", "10 rue des Oliviers 
 // const Leclerc = new Supermarket("E.Leclerc","Logo_Leclerc.svg", "203 avenue des dominicaines Paris 75003");
 
 // const Aldi = new Supermarket("Aldi","Logo_Aldi.svg","30 avenue de Choisy Ivry-sur-Seine 75013")
+
 
 

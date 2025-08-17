@@ -1,5 +1,7 @@
 import { dataTraductions } from "./traductions.js";
 
+
+
 function Traduire(codeLangue) {
   for (const langue of langues) {
     localStorage.getItem('Langue')
@@ -60,6 +62,7 @@ function Traduire(codeLangue) {
               })
 
            
+              
 
             // Section1 - Partie2: produits à acheter
 
@@ -122,7 +125,7 @@ languesSB.addEventListener('change', (e) =>{
   const attr = e.target.value
   for (const el of languesSB) {
     localStorage.setItem('langueCode', attr);
-    Traduire(attr);
+    Traduire(attr);    
   }
 });
  

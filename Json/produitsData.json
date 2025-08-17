@@ -1,0 +1,2062 @@
+[
+  {
+    "id": "FRU1",
+    "fr":{
+      "nom": "Pomme Gala",
+      "description": "Pommes Gala fraîches et sucrées, cultivées localement."
+    },
+    "en": {
+            "nom": "Apple Gala",
+            "description": "“Fresh, sweet Gala apples, grown locally.”"
+  },
+    "es":{
+            "nom": "Manzana Gala",
+            "description":  "Manzanas Gala frescas y dulces, cultivadas localmente."
+  },
+    "ln":{
+            "nom": "Mbuma ya pɔme Gala",
+            "description":  "Eza mbuma ya pɔme Gala ya kitoko ba loni na mboka"
+    },
+    "zho":{
+            "nom": "加拉苹果",
+            "description":  "新鲜甜美的加拉苹果，本地种植"
+    },
+    "nomCourt": "pommeGala",
+    "categorie": "Fruits",
+    "prix": 2.99,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/FruitsLegumes/pommeGala.png",
+    "disponible": true,
+    "marque": "Verger du Soleil",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "FRU2",
+    "nom": "Banane",
+    "nomCourt": "banane",
+    "categorie": "Fruits",
+    "description": "Bananes jaunes mûres, riches en potassium.",
+    "prix": 1.79,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/FruitsLegumes/banane.png",
+    "disponible": true,
+    "marque": "TropiFruit",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "FRU3",
+    "nom": "Orange",
+    "nomCourt": "orange",
+    "categorie": "Fruits",
+    "description": "Oranges juteuses et sans pépins, idéales pour le jus.",
+    "prix": 3.49,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/FruitsLegumes/orange.png",
+    "disponible": true,
+    "marque": "Agrume d’Or",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "FRU4",
+    "nom": "Fraise Gariguette",
+    "nomCourt": "fraiseGariguette",
+    "categorie": "Fruits",
+    "description": "Fraises Gariguette parfumées et sucrées.",
+    "prix": 4.99,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/FruitsLegumes/fraiseGariguette.png",
+    "disponible": true,
+    "marque": "Jardin Rouge",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "FRU5",
+  "nom": "Raisin blanc",
+  "nomCourt": "raisinBlanc",
+    "categorie": "Fruits",
+    "description": "Raisin blanc sans pépins, croquant et sucré.",
+    "prix": 3.99,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/FruitsLegumes/raisinBlanc.png",
+    "disponible": true,
+    "marque": "Vignes d’Argent",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "FRU6",
+    "nom": "Pastèque",
+    "nomCourt": "pasteque",
+    "categorie": "Fruits",
+    "description": "Pastèque rafraîchissante à chair rouge.",
+    "prix": 5.49,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/FruitsLegumes/pasteque.png",
+    "disponible": true,
+    "marque": "Melon&Soleil",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "FRU7",
+    "nom": "Kiwi",
+    "nomCourt": "kiwi",
+    "categorie": "Fruits",
+    "description": "Kiwi à chair verte acidulée et riche en vitamine C.",
+    "prix": 2.59,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/FruitsLegumes/kiwi.png",
+    "disponible": true,
+    "marque": "ExoFresh",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "FRU8",
+    "nom": "Mangue",
+    "nomCourt": "mangue",
+    "categorie": "Fruits",
+    "description": "Mangue bien mûre à chair fondante et sucrée.",
+    "prix": 3.79,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/FruitsLegumes/mangue.png",
+    "disponible": true,
+    "marque": "TropiFruit",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "FRU9",
+    "nom": "Poire",
+    "nomCourt": "poire",
+    "categorie": "Fruits",
+    "description": "Poires Conférence juteuses et parfumées.",
+    "prix": 2.89,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/FruitsLegumes/poire.png",
+    "disponible": true,
+    "marque": "Verger du Soleil",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "FRU10",
+    "nom": "Abricot",
+    "nomCourt": "abricot",
+    "categorie": "Fruits",
+    "description": "Abricots dorés au goût légèrement acidulé.",
+    "prix": 4.29,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/FruitsLegumes/abricot.png",
+    "disponible": true,
+    "marque": "Fruitière Bio",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "FRU11",
+    "nom": "Cerise",
+    "nomCourt": "cerise",
+    "categorie": "Fruits",
+    "description": "Cerises Burlat rouges, charnues et sucrées.",
+    "prix": 6.99,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/FruitsLegumes/cerise.png",
+    "disponible": true,
+    "marque": "Jardin Rouge",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "FRU12",
+    "nom": "Prune",
+    "nomCourt": "prune",
+    "categorie": "Fruits",
+    "description": "Prunes Reine-Claude sucrées et juteuses.",
+    "prix": 3.59,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/FruitsLegumes/prune.png",
+    "disponible": true,
+    "marque": "Verger d’Or",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "FRU13",
+    "nom": "Ananas",
+    "nomCourt": "ananas",
+    "categorie": "Fruits",
+    "description": "Ananas sucré et parfumé, parfait pour les desserts.",
+    "prix": 3.99,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/FruitsLegumes/ananas.png",
+    "disponible": true,
+    "marque": "TropiFruit",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "FRU14",
+    "nom": "Framboise",
+    "nomCourt": "framboise",
+    "categorie": "Fruits",
+    "description": "Framboises rouges, douces et acidulées.",
+    "prix": 5.49,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/FruitsLegumes/framboise.png",
+    "disponible": true,
+    "marque": "Jardin Rouge",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "FRU15",
+    "nom": "Papaye",
+    "nomCourt": "papaye",
+    "categorie": "Fruits",
+    "description": "Papaye exotique à chair orange et goût sucré.",
+    "prix": 4.99,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/FruitsLegumes/papaye.png",
+    "disponible": true,
+    "marque": "ExoFresh",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "FRU16",
+    "nom": "Citron",
+    "nomCourt": "citron",
+    "categorie": "Fruits",
+    "description": "Citrons jaunes, parfaits pour les boissons et les desserts.",
+    "prix": 1.29,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/FruitsLegumes/citron.png",
+    "disponible": true,
+    "marque": "Agrume d’Or",
+    "promo": false,
+    "bio": true
+  },
+
+
+
+
+
+
+
+
+
+
+  {
+    "id": "LEG1",
+    "nom": "Carotte",
+    "nomCourt": "carotte",
+    "categorie": "Légumes",
+    "description": "Carottes fraîches, croquantes et riches en bêta-carotène.",
+    "prix": 1.99,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/FruitsLegumes/carotte.png",
+    "disponible": true,
+    "marque": "Potager Bio",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "LEG2",
+    "nom": "Tomates rondes",
+    "nomCourt": "tomatesRondes",
+    "categorie": "Légumes",
+    "description": "Tomates rondes rouges et juteuses, idéales pour les salades.",
+    "prix": 2.49,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/FruitsLegumes/tomatesRondes.png",
+    "disponible": true,
+    "marque": "Ferme du Soleil",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "LEG3",
+    "nom": "Courgette",
+    "nomCourt": "courgette",
+    "categorie": "Légumes",
+    "description": "Courgettes vertes tendres, parfaites pour la cuisson ou les grillades.",
+    "prix": 2.29,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/FruitsLegumes/courgette.png",
+    "disponible": true,
+    "marque": "Jardin Vert",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "LEG4",
+    "nom": "Poivron rouge",
+    "nomCourt": "poivronRouge",
+    "categorie": "Légumes",
+    "description": "Poivrons rouges sucrés, riches en vitamine C.",
+    "prix": 3.19,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/FruitsLegumes/poivronRouge.png",
+    "disponible": true,
+    "marque": "Légumes du Marché",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "LEG5",
+    "nom": "Concombre",
+    "nomCourt": "concombre",
+    "categorie": "Légumes",
+    "description": "Concombres croquants et rafraîchissants.",
+    "prix": 1.79,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/FruitsLegumes/concombre.png",
+    "disponible": true,
+    "marque": "Ferme du Soleil",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "LEG6",
+    "nom": "Brocoli",
+    "nomCourt": "brocoli",
+    "categorie": "Légumes",
+    "description": "Brocolis verts tendres, riches en fibres et vitamines.",
+    "prix": 2.99,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/FruitsLegumes/brocoli.png",
+    "disponible": true,
+    "marque": "Potager Bio",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "LEG7",
+    "nom": "Aubergine",
+    "nomCourt": "aubergine",
+    "categorie": "Légumes",
+    "description": "Aubergines violettes, idéales pour les plats méditerranéens.",
+    "prix": 3.49,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/FruitsLegumes/aubergine.png",
+    "disponible": true,
+    "marque": "Jardin Vert",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "LEG8",
+    "nom": "Pommes de terre",
+    "nomCourt": "pommesTerre",
+    "categorie": "Légumes",
+    "description": "Pommes de terre polyvalentes pour purées, frites et gratins.",
+    "prix": 1.49,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/FruitsLegumes/pommesTerre.png",
+    "disponible": true,
+    "marque": "Terroir d’Argile",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "LEG9",
+    "nom": "Oignon rouge",
+    "nomCourt": "oignonRouge",
+    "categorie": "Légumes",
+    "description": "Oignons rouges au goût doux, parfaits pour la cuisine.",
+    "prix": 1.99,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/FruitsLegumes/oignonRouge.png",
+    "disponible": true,
+    "marque": "Légumes du Marché",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "LEG10",
+    "nom": "Chou-fleur",
+    "nomCourt": "chouFleur",
+    "categorie": "Légumes",
+    "description": "Chou-fleur blanc et croquant, idéal pour gratins et purées.",
+    "prix": 2.69,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/FruitsLegumes/chouFleur.png",
+    "disponible": true,
+    "marque": "Potager Bio",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "LEG11",
+    "nom": "Épinard",
+    "nomCourt": "epinard",
+    "categorie": "Légumes",
+    "description": "Épinards frais, riches en fer et vitamines.",
+    "prix": 2.19,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/FruitsLegumes/epinard.png",
+    "disponible": true,
+    "marque": "Jardin Vert",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "LEG12",
+    "nom": "Ail",
+    "nomCourt": "ail",
+    "categorie": "Légumes",
+    "description": "Ail frais, parfait pour relever les plats.",
+    "prix": 0.99,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/FruitsLegumes/ail.png",
+    "disponible": true,
+    "marque": "Terroir d’Argile",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "LEG13",
+    "nom": "Champignon de Paris",
+    "nomCourt": "champignonParis",
+    "categorie": "Légumes",
+    "description": "Champignons de Paris frais, parfaits pour les salades et les plats cuisinés.",
+    "prix": 3.29,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/FruitsLegumes/champignonParis.png",
+    "disponible": true,
+    "marque": "FungiFresh",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "LEG14",
+    "nom": "Maïs doux",
+    "nomCourt": "maisDoux",
+    "categorie": "Légumes",
+    "description": "Maïs doux en épi, sucré et tendre.",
+    "prix": 1.89,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/FruitsLegumes/maisDoux.png",
+    "disponible": true,
+    "marque": "Terroir d’Argile",
+    "promo": false,
+    "bio": false
+  },
+
+
+
+
+
+
+
+
+  
+  {
+    "id": "EPI1",
+    "nom": "Pâtes complètes",
+    "nomCourt": "patesCompletes",
+    "categorie": "Épicerie",
+    "description": "Pâtes complètes bio riches en fibres.",
+    "prix": 2.49,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Epicerie/patesCompletes.png",
+    "disponible": true,
+    "marque": "BioNature",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "EPI2",
+    "nom": "Riz basmati",
+    "nomCourt": "rizBasmati",
+    "categorie": "Épicerie",
+    "description": "Riz basmati parfumé, idéal pour les plats indiens.",
+    "prix": 3.29,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Epicerie/rizBasmati.png",
+    "disponible": true,
+    "marque": "Grain d’Or",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "EPI3",
+    "nom": "Lentilles vertes",
+    "nomCourt": "lentillesVertes",
+    "categorie": "Épicerie",
+    "description": "Lentilles vertes riches en protéines et fibres.",
+    "prix": 2.89,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Epicerie/lentillesVertes.png",
+    "disponible": true,
+    "marque": "Terres Bio",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "EPI4",
+    "nom": "Farine de blé",
+    "nomCourt": "farineBle",
+    "categorie": "Épicerie",
+    "description": "Farine de blé T55 idéale pour pâtisserie et pain.",
+    "prix": 1.79,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Epicerie/farineBle.png",
+    "disponible": true,
+    "marque": "Moulin d’Argent",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "EPI5",
+    "nom": "Sucre roux",
+    "nomCourt": "sucreRoux",
+    "categorie": "Épicerie",
+    "description": "Sucre roux de canne non raffiné.",
+    "prix": 2.19,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Epicerie/sucreRoux.png",
+    "disponible": true,
+    "marque": "SweetCane",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "EPI6",
+    "nom": "Huile d'olive",
+    "nomCourt": "huileOlive",
+    "categorie": "Épicerie",
+    "description": "Huile d'olive vierge extra, première pression à froid.",
+    "prix": 6.99,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Epicerie/huileOlive.png",
+    "disponible": true,
+    "marque": "Olea Verde",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "EPI7",
+    "nom": "Vinaigre balsamique",
+    "nomCourt": "vinaigreBalsamique",
+    "categorie": "Épicerie",
+    "description": "Vinaigre balsamique de Modène vieilli.",
+    "prix": 4.59,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Epicerie/vinaigreBalsamique.png",
+    "disponible": true,
+    "marque": "Modena Gold",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "EPI8",
+    "nom": "Café moulu",
+    "nomCourt": "cafeMoulu",
+    "categorie": "Épicerie",
+    "description": "Café moulu 100% arabica, torréfaction lente.",
+    "prix": 5.49,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Epicerie/cafeMoulu.png",
+    "disponible": true,
+    "marque": "Café des Andes",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "EPI9",
+    "nom": "Thé vert",
+    "nomCourt": "theVert",
+    "categorie": "Épicerie",
+    "description": "Thé vert nature issu de l’agriculture biologique.",
+    "prix": 3.99,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Epicerie/theVert.png",
+    "disponible": true,
+    "marque": "ZenLeaf",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "EPI10",
+    "nom": "Chocolat noir",
+    "nomCourt": "chocolatNoir",
+    "categorie": "Épicerie",
+    "description": "Chocolat noir 70% cacao, intense et fondant.",
+    "prix": 2.99,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Epicerie/chocolatNoir.png",
+    "disponible": true,
+    "marque": "Cacao Passion",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "EPI11",
+    "nom": "Miel de fleurs",
+    "nomCourt": "mielFleurs",
+    "categorie": "Épicerie",
+    "description": "Miel de fleurs sauvages, doux et parfumé.",
+    "prix": 4.29,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Epicerie/mielFleurs.png",
+    "disponible": true,
+    "marque": "Douceur des Abeilles",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "EPI12",
+    "nom": "Sel marin",
+    "nomCourt": "selMarin",
+    "categorie": "Épicerie",
+    "description": "Sel marin non raffiné, riche en minéraux.",
+    "prix": 1.49,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Epicerie/selMarin.png",
+    "disponible": true,
+    "marque": "Mer & Terre",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "EPI13",
+    "nom": "Poivre noir",
+    "nomCourt": "poivreNoir",
+    "categorie": "Épicerie",
+    "description": "Poivre noir entier, idéal pour moudre frais.",
+    "prix": 3.19,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Epicerie/poivreNoir.png",
+    "disponible": true,
+    "marque": "Epicéa",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "EPI14",
+    "nom": "Sauce tomate",
+    "nomCourt": "sauceTomate",
+    "categorie": "Épicerie",
+    "description": "Sauce tomate bio, prête à l'emploi pour vos plats.",
+    "prix": 2.79,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Epicerie/sauceTomate.png",
+    "disponible": true,
+    "marque": "TomatoFresh",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "EPI15",
+    "nom": "Huile de tournesol",
+    "nomCourt": "huileTournesol",
+    "categorie": "Épicerie",
+    "description": "Huile de tournesol vierge, légère et polyvalente.",
+    "prix": 3.49,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Epicerie/huileTournesol.png",
+    "disponible": true,
+    "marque": "Soleil d’Or",
+    "promo": false,
+    "bio": false  
+  },
+  {
+    "id": "EPI16",
+    "nom": "Pâtes à tartiner",
+    "nomCourt": "patesTartiner",
+    "categorie": "Épicerie",
+    "description": "Pâte à tartiner chocolat-noisette, onctueuse et gourmande.",
+    "prix": 3.99,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Epicerie/patesTartiner.png",
+    "disponible": true,
+    "marque": "ChocoNut",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "EPI17",
+    "nom": "Céréales petit déjeuner",
+    "nomCourt": "cerealesPetitDejeuner",
+    "categorie": "Épicerie",
+    "description": "Céréales complètes pour un petit déjeuner équilibré.",
+    "prix": 2.99,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Epicerie/cerealesPetitDejeuner.png",
+    "disponible": true,
+    "marque": "CerealJoy",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "EPI18",
+    "nom": "café fin",
+    "nomCourt": "cafeFin",
+    "categorie": "Épicerie",
+    "description": "Café fin, parfait pour les amateurs de café.",
+    "prix": 4.99,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Epicerie/cafeFin.png",
+    "disponible": true,
+    "marque": "Café Gourmet",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "EPI19",
+    "nom": "Pâtes Spaghetti",
+    "nomCourt": "patesSpaghetti",
+    "categorie": "Épicerie",
+    "description": "Pâtes spaghetti italiennes, idéales pour vos plats de pâtes.",
+    "prix": 1.99,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Epicerie/patesSpaghetti.png",
+    "disponible": true,
+    "marque": "Nature & Saveurs",
+    "promo": false,
+    "bio": true
+  },
+  
+
+
+
+
+
+
+
+
+
+  {
+    "id": "BOU1",
+    "nom": "Baguette tradition",
+    "nomCourt": "baguetteTradition",
+    "categorie": "Boulangerie",
+    "description": "Baguette tradition à la mie moelleuse et croûte croustillante.",
+    "prix": 1.20,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boulangerie/baguetteTradition.png",
+    "disponible": true,
+    "marque": "Four du Village",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "BOU2",
+    "nom": "Pain complet",
+    "nomCourt": "painComplet",
+    "categorie": "Boulangerie",
+    "description": "Pain complet riche en fibres, idéal pour le petit-déjeuner.",
+    "prix": 2.10,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boulangerie/painComplet.png",
+    "disponible": true,
+    "marque": "Four du Village",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "BOU3",
+    "nom": "Croissant pur beurre",
+    "nomCourt": "croissantPurBeurre",
+    "categorie": "Boulangerie",
+    "description": "Croissant pur beurre doré et feuilleté.",
+    "prix": 1.00,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boulangerie/croissantPurBeurre.png",
+    "disponible": true,
+    "marque": "Maison Gourmande",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "BOU4",
+    "nom": "Pain de mie",
+    "nomCourt": "painMie",
+    "categorie": "Boulangerie",
+    "description": "Pain de mie moelleux et sans croûte.",
+    "prix": 2.50,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boulangerie/painMie.png",
+    "disponible": true,
+    "marque": "Douceur du Pain",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "BOU5",
+    "nom": "Brioche tressée",
+    "nomCourt": "briocheTressee",
+    "categorie": "Boulangerie",
+    "description": "Brioche tressée moelleuse au goût délicatement sucré.",
+    "prix": 3.20,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boulangerie/briocheTressee.png",
+    "disponible": true,
+    "marque": "Maison Gourmande",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "BOU6",
+    "nom": "Pain au chocolat",
+    "nomCourt": "painChocolat",
+    "categorie": "Boulangerie",
+    "description": "Pain au chocolat croustillant avec une garniture fondante.",
+    "prix": 1.50,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boulangerie/painChocolat.png",
+    "disponible": true,
+    "marque": "Maison Gourmande",
+    "promo": false,
+    "bio": false
+  },
+  
+  {
+    "id": "BOU7",
+    "nom": "Chausson aux pommes",
+    "nomCourt": "chaussonPommes",
+    "categorie": "Boulangerie",
+    "description": "Chausson aux pommes fait maison, avec une pâte feuilletée croustillante.",
+    "prix": 2.00,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boulangerie/chaussonPommes.png",
+    "disponible": true,
+    "marque": "Maison Gourmande",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "BOU8",
+    "nom": "Pain pita",
+    "nomCourt": "painPita",
+    "categorie": "Boulangerie",
+    "description": "Pain pita souple et moelleux, parfait pour les sandwichs.",
+    "prix": 2.90,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boulangerie/painPita.png",
+    "disponible": true,
+    "marque": "Saveurs Méditerranéennes",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "BOU9",
+    "nom": "Fougasse aux olives",
+    "nomCourt": "fougasseOlives",
+    "categorie": "Boulangerie",
+    "description": "Fougasse provençale aux olives noires et vertes.",
+    "prix": 3.50,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boulangerie/fougasseOlives.png",
+    "disponible": true,
+    "marque": "Saveurs Méditerranéennes",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "BOU10",
+    "nom": "Pain sans gluten",
+    "nomCourt": "painSansGluten",
+    "categorie": "Boulangerie",
+    "description": "Pain moelleux sans gluten, adapté aux régimes spécifiques.",
+    "prix": 4.20,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boulangerie/painSansGluten.png",
+    "disponible": true,
+    "marque": "Douceur du Pain",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "BOU11",
+    "nom": "Bagel nature",
+    "nomCourt": "bagelNature",
+    "categorie": "Boulangerie",
+    "description": "Bagel nature, parfait pour les garnitures salées ou sucrées.",
+    "prix": 1.80,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boulangerie/bagelNature.png",
+    "disponible": true,
+    "marque": "Four du Village",
+    "promo": false,
+    "bio": false
+  },
+
+
+
+
+
+
+
+
+  {
+    "id": "VIA1",
+    "nom": "Steak haché",
+    "nomCourt": "steakHache",
+    "categorie": "Viandes",
+    "description": "Steak haché de bœuf 100% pur muscle, tendre et savoureux.",
+    "prix": 5.50,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ViandesPoissons/steakHache.png",
+    "disponible": true,
+    "marque": "Boucherie du Terroir",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "VIA2",
+    "nom": "Escalope de poulet",
+    "nomCourt": "escalopePoulet",
+    "categorie": "Viandes",
+    "description": "Escalope de poulet ferme et juteuse, prête à cuisiner.",
+    "prix": 6.20,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ViandesPoissons/escalopePoulet.png",
+    "disponible": true,
+    "marque": "Volaille de France",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "VIA3",
+    "nom": "Côte de porc",
+    "nomCourt": "cotePorc",
+    "categorie": "Viandes",
+    "description": "Côte de porc tendre et savoureuse, idéale au grill.",
+    "prix": 4.80,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ViandesPoissons/cotePorc.png",
+    "disponible": true,
+    "marque": "Boucherie du Terroir",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "VIA4",
+    "nom": "Gigot d'agneau",
+    "nomCourt": "gigotAgneau",
+    "categorie": "Viandes",
+    "description": "Gigot d'agneau tendre, parfait pour les repas de fête.",
+    "prix": 18.90,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ViandesPoissons/gigotAgneau.png",
+    "disponible": true,
+    "marque": "Ferme des Collines",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "VIA5",
+    "nom": "Filet mignon",
+    "nomCourt": "filetMignon",
+    "categorie": "Viandes",
+    "description": "Filet mignon de porc tendre et fondant.",
+    "prix": 15.50,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ViandesPoissons/filetMignon.png",
+    "disponible": true,
+    "marque": "Boucherie du Terroir",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "VIA6",
+    "nom": "Magret de canard",
+    "nomCourt": "magretCanard",
+    "categorie": "Viandes",
+    "description": "Magret de canard savoureux, à cuire à la poêle ou au four.",
+    "prix": 13.80,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ViandesPoissons/magretCanard.png",
+    "disponible": true,
+    "marque": "Saveurs du Sud-Ouest",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "VIA7",
+    "nom": "Jarret de veau",
+    "nomCourt": "jarretVeau",
+    "categorie": "Viandes",
+    "description": "Jarret de veau tendre, idéal pour un osso buco.",
+    "prix": 12.40,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ViandesPoissons/jarretVeau.png",
+    "disponible": true,
+    "marque": "Ferme des Collines",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "VIA8",
+    "nom": "Bavette d'aloyau",
+    "nomCourt": "bavetteAloyau",
+    "categorie": "Viandes",
+    "description": "Bavette d'aloyau tendre et savoureuse, parfaite grillée.",
+    "prix": 14.60,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ViandesPoissons/bavetteAloyau.png",
+    "disponible": true,
+    "marque": "Boucherie du Terroir",
+    "promo": false,
+    "bio": false
+  },
+
+  
+  {
+    "id": "VIA10",
+    "nom": "Caille fermière",
+    "nomCourt": "cailleFermiere",
+    "categorie": "Viandes",
+    "description": "Caille fermière tendre et savoureuse, élevée en plein air.",
+    "prix": 8.90,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ViandesPoissons/cailleFermiere.png",
+    "disponible": true,
+    "marque": "Volaille de France",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "VIA11",
+    "nom": "Rouelle de porc",
+    "nomCourt": "rouellePorc",
+    "categorie": "Viandes",
+    "description": "Rouelle de porc tendre et juteuse, idéale pour un repas familial.",
+    "prix": 11.50,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ViandesPoissons/rouellePorc.png",
+    "disponible": true,
+    "marque": "Boucherie du Terroir",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "VIA12",
+    "nom": "Échine de porc",
+    "nomCourt": "echinePorc",
+    "categorie": "Viandes",
+    "description": "Échine de porc tendre, parfaite pour les rôtis.",
+    "prix": 7.90,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ViandesPoissons/echinePorc.png",
+    "disponible": true,
+    "marque": "Boucherie du Terroir",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "VIA13",
+    "nom": "Poulet rôti",
+    "nomCourt": "pouletRoti",
+    "categorie": "Viandes",
+    "description": "Poulet rôti fermier, prêt à déguster.",
+    "prix": 12.00,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ViandesPoissons/pouletRoti.png",
+    "disponible": true,
+    "marque": "Volaille de France",
+    "promo": false,
+    "bio": false
+  },
+
+
+
+
+
+
+
+
+
+  {
+    "id": "POI1",
+    "nom": "Saumon frais",
+    "nomCourt": "saumonFrais",
+    "categorie": "Poissons",
+    "description": "Saumon frais de l'Atlantique, riche en oméga-3.",
+    "prix": 19.90,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ViandesPoissons/saumonFrais.png",
+    "disponible": true,
+    "marque": "Océan Sélection",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "POI2",
+    "nom": "Filet de cabillaud",
+    "nomCourt": "filetCabillaud",
+    "categorie": "Poissons",
+    "description": "Filet de cabillaud blanc et tendre, sans arêtes.",
+    "prix": 17.50,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ViandesPoissons/filetCabillaud.png",
+    "disponible": true,
+    "marque": "Mer Pure",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "POI3",
+    "nom": "Truite fumée",
+    "nomCourt": "truiteFumee",
+    "categorie": "Poissons",
+    "description": "Truite fumée au bois de hêtre, délicatement salée.",
+    "prix": 12.80,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ViandesPoissons/truiteFumee.png",
+    "disponible": true,
+    "marque": "Saveurs des Rivières",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "POI4",
+    "nom": "Bar entier",
+    "nomCourt": "barEntier",
+    "categorie": "Poissons",
+    "description": "Bar entier vidé, idéal au four ou au grill.",
+    "prix": 15.40,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ViandesPoissons/barEntier.png",
+    "disponible": true,
+    "marque": "Pêche Côtière",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "POI5",
+    "nom": "Daurade royale",
+    "nomCourt": "dauradeRoyale",
+    "categorie": "Poissons",
+    "description": "Daurade royale fraîche, parfaite grillée ou en papillote.",
+    "prix": 16.90,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ViandesPoissons/dauradeRoyale.png",
+    "disponible": true,
+    "marque": "Mer Pure",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "POI6",
+    "nom": "Crevettes grises",
+    "nomCourt": "crevettesGrises",
+    "categorie": "Poissons",
+    "description": "Crevettes grises décortiquées, prêtes à l'emploi.",
+    "prix": 11.50,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ViandesPoissons/crevettesGrises.png",
+    "disponible": true,
+    "marque": "Pêche Artisanale",
+    "promo": false,
+    "bio": false
+  },
+  
+  {
+    "id": "POI7",
+    "nom": "Thon rouge",
+    "nomCourt": "thonRouge",
+    "categorie": "Poissons",
+    "description": "Thon rouge frais, idéal pour sushi et sashimi.",
+    "prix": 29.90,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ViandesPoissons/thonRouge.png",
+    "disponible": true,
+    "marque": "Sélection Japon",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "POI8",
+    "nom": "Poisson chat",
+    "nomCourt": "poissonChat",
+    "categorie": "Poissons",
+    "description": "Poisson chat frais, à la chair délicate.",
+    "prix": 10.20,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ViandesPoissons/poissonChat.png",
+    "disponible": true,
+    "marque": "Pêche Artisanale",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "POI9",
+    "nom": "Maquereau frais",
+    "nomCourt": "maquereauFrais",
+    "categorie": "Poissons",
+    "description": " Maquereau entier frais, idéal pour les grillades.",
+    "prix": 9.50,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ViandesPoissons/maquereauFrais.png",
+    "disponible": true,
+    "marque": "Saveurs Maritimes",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "POI10",
+    "nom": "Sardines fraîches",
+    "nomCourt": "sardinesFraiches",
+    "categorie": "Poissons",
+    "description": "Sardines fraîches idéales au barbecue.",
+    "prix": 7.40,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ViandesPoissons/sardinesFraiches.png",
+    "disponible": true,
+    "marque": "Pêche Traditionnelle",
+    "promo": false,
+    "bio": false
+  },
+
+
+
+
+
+
+
+
+
+  {
+    "id": "PLA1",
+    "nom": "Lait demi-écrémé",
+    "nomCourt": "laitDemiEcreme",
+    "categorie": "Produits laitiers",
+    "description": "Lait demi-écrémé pasteurisé, riche en calcium.",
+    "prix": 1.20,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ProduitLaitiers/laitDemiEcreme.png",
+    "disponible": true,
+    "marque": "Lait Pur",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "PLA2",
+    "nom": "Fromage camembert",
+    "nomCourt": "fromageCamembert",
+    "categorie": "Produits laitiers",
+    "description": "Camembert au lait cru affiné 21 jours.",
+    "prix": 2.50,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ProduitLaitiers/fromageCamembert.png",
+    "disponible": true,
+    "marque": "Normandie Saveurs",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "PLA3",
+    "nom": "Yaourt nature",
+    "nomCourt": "yaourtNature",
+    "categorie": "Produits laitiers",
+    "description": "Yaourt nature au lait entier, texture onctueuse.",
+    "prix": 1.80,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ProduitLaitiers/yaourtNature.png",
+    "disponible": true,
+    "marque": "Douce Ferme",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "PLA4",
+    "nom": "Crème fraîche épaisse",
+    "nomCourt": "cremeFraicheEpaisse",
+    "categorie": "Produits laitiers",
+    "description": "Crème fraîche épaisse à 30% de matière grasse.",
+    "prix": 2.10,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ProduitLaitiers/cremeFraicheEpaisse.png",
+    "disponible": true,
+    "marque": "Ferme & Goût",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "PLA5",
+    "nom": "Beurre doux",
+    "nomCourt": "beurreDoux",
+    "categorie": "Produits laitiers",
+    "description": "Beurre doux de baratte, parfait pour pâtisserie et cuisine.",
+    "prix": 2.30,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ProduitLaitiers/beurreDoux.png",
+    "disponible": true,
+    "marque": "Tradition Fermière",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "PLA6",
+    "nom": "Fromage de chèvre",
+    "nomCourt": "fromageChevre",
+    "categorie": "Produits laitiers",
+    "description": "Fromage de chèvre frais au goût délicat.",
+    "prix": 3.40,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ProduitLaitiers/fromageChevre.png",
+    "disponible": true,
+    "marque": "Chèvre d’Or",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "PLA7",
+    "nom": "Lait d’amande",
+    "nomCourt": "laitAmande",
+    "categorie": "Produits laitiers",
+    "description": "Boisson végétale au lait d’amande, sans lactose.",
+    "prix": 2.90,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ProduitLaitiers/laitAmande.png",
+    "disponible": true,
+    "marque": "Veggie Drink",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "PLA8",
+    "nom": "Yaourt à la fraise",
+    "nomCourt": "yaourtFraise",
+    "categorie": "Produits laitiers",
+    "description": "Yaourt brassé à la fraise, naturellement sucré.",
+    "prix": 2.20,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ProduitLaitiers/yaourtFraise.png",
+    "disponible": true,
+    "marque": "Douce Ferme",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "PLA9",
+    "nom": "Fromage comté",
+    "nomCourt": "fromageComte",
+    "categorie": "Produits laitiers",
+    "description": "Comté affiné 12 mois, goût fruité et intense.",
+    "prix": 4.80,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ProduitLaitiers/fromageComte.png",
+    "disponible": true,
+    "marque": "Montagne Saveur",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "PLA10",
+    "nom": "Fromage Roquefort",
+    "nomCourt": "fromageRoquefort",
+    "categorie": "Produits laitiers",
+    "description": "Fromage Roquefort AOP, bleu crémeux et savoureux.",
+    "prix": 5.50,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ProduitLaitiers/fromageRoquefort.png",
+    "disponible": true,
+    "marque": "Bleu des Causses",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "PLA11",
+    "nom": "Lait de coco",
+    "nomCourt": "laitCoco",
+    "categorie": "Produits laitiers",
+    "description": "Lait de coco crémeux, idéal pour les currys et desserts.",
+    "prix": 2.70,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ProduitLaitiers/laitCoco.png",
+    "disponible": true,
+    "marque": "Tropical Taste",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "PLA12",
+    "nom": "Fromage mozzarella",
+    "nomCourt": "fromageMozzarella",
+    "categorie": "Produits laitiers",
+    "description": "Mozzarella fraîche, parfaite pour les salades et pizzas.",
+    "prix": 3.00,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ProduitLaitiers/fromageMozzarella.png",
+    "disponible": true,
+    "marque": "Bella Italia",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "PLA13",
+    "nom": "Yaourt à la vanille", 
+    "nomCourt": "yaourtVanille",
+    "categorie": "Produits laitiers",
+    "description": "Yaourt à la vanille onctueux, avec de véritables gousses de vanille.",
+    "prix": 2.40,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ProduitLaitiers/yaourtVanille.png",
+    "disponible": true,
+    "marque": "Douce Ferme",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "PLA14",
+    "nom": "Fromage Parmigiano",
+    "nomCourt": "fromageParmigiano",
+    "categorie": "Produits laitiers",
+    "description": "Parmigiano Reggiano AOP, fromage italien à pâte dure.",
+    "prix": 6.50,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ProduitLaitiers/fromageParmigiano.png",
+    "disponible": true,
+    "marque": "Gusto Italiano",
+    "promo": false,
+    "bio": false
+  },
+  
+
+
+
+
+
+
+
+  
+  {
+    "id": "BOI1",
+    "nom": "Eau minérale naturelle",
+    "nomCourt": "eauMinerale",
+    "categorie": "Boissons",
+    "description": "Eau minérale naturelle plate, bouteille 1,5L.",
+    "prix": 0.80,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boissons/eauMinerale.png",
+    "disponible": true,
+    "marque": "Pure Source",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "BOI2",
+    "nom": "Jus d'orange frais",
+    "nomCourt": "jusOrange",
+    "categorie": "Boissons",
+    "description": "Jus d'orange 100% pur jus sans sucre ajouté.",
+    "prix": 2.30,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boissons/jusOrange.png",
+    "disponible": true,
+    "marque": "Citrus Fresh",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "BOI4",
+    "nom": "Thé vert bio",
+    "nomCourt": "theVertBio",
+    "categorie": "Boissons",
+    "description": "Boisson thé vert bio, riche en antioxydants.",
+    "prix": 3.20,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boissons/theVertBio.png",
+    "disponible": true,
+    "marque": "Nature & Thé",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "BOI5",
+    "nom": "Coca Cola",
+    "nomCourt": "cocaCola",
+    "categorie": "Boissons",
+    "description": "Boisson gazeuse sucrée classique, bouteille de 33cl.",
+    "prix": 1.50,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boissons/cocaCola.png",
+    "disponible": true,
+    "marque": "Coca-Cola",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "BOI6",
+    "nom": "Limonade artisanale",
+    "nomCourt": "limonadeArtisanale",
+    "categorie": "Boissons",
+    "description": "Limonade artisanale au citron, bouteille en verre.",
+    "prix": 2.70,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boissons/limonadeArtisanale.png",
+    "disponible": true,
+    "marque": "Verre Pétillant",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "BOI7",
+    "nom": "Vin rouge Bordeaux",
+    "nomCourt": "vinRouge",
+    "categorie": "Boissons",
+    "description": "Vin rouge Bordeaux AOC, millésime 2018.",
+    "prix": 8.90,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boissons/vinRouge.png",
+    "disponible": true,
+    "marque": "Château Bellevue",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "BOI8",
+    "nom": "Bière blonde",
+    "nomCourt": "biereBlonde",
+    "categorie": "Boissons",
+    "description": "Bière blonde artisanale, bouteille de 33cl.",
+    "prix": 1.80,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boissons/biereBlonde.png",
+    "disponible": true,
+    "marque": "Brasserie Locale",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "BOI9",
+    "nom": "Eau gazeuse",
+    "nomCourt": "eauGazeuse",
+    "categorie": "Boissons",
+    "description": "Eau gazeuse naturelle, bouteille 1L.",
+    "prix": 0.90,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boissons/eauGazeuse.png",
+    "disponible": true,
+    "marque": "Bulles Claires",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "BOI10",
+    "nom": "Jus de pomme bio",
+    "nomCourt": "jusPomme",
+    "categorie": "Boissons",
+    "description": "Jus de pomme bio 100% pur jus.",
+    "prix": 2.80,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boissons/jusPomme.png",
+    "disponible": true,
+    "marque": "Verger Bio",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "BOI11",
+    "nom": "Pepsi",
+    "nomCourt": "pepsi",
+    "categorie": "Boissons",
+    "description": "Boisson gazeuse sucrée Pepsi, bouteille de 33cl.",
+    "prix": 1.50,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boissons/pepsi.png",
+    "disponible": true,
+    "marque": "Pepsi",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "BOI12",
+    "nom": "Thé noir",
+    "nomCourt": "theNoir",
+    "categorie": "Boissons",
+    "description": "Thé noir Earl Grey aux arômes de bergamote.",
+    "prix": 3.60,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boissons/theNoir.png",
+    "disponible": true,
+    "marque": "Nature & Thé",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "BOI13",
+    "nom": "Smoothie mangue",
+    "nomCourt": "smoothieMangue",
+    "categorie": "Boissons",
+    "description": "Smoothie mangue fraîche, sans sucres ajoutés.",
+    "prix": 3.00,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boissons/smoothieMangue.png",
+    "disponible": true,
+    "marque": "Fruit’Up",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "BOI14",
+    "nom": "Eau de coco",
+    "nomCourt": "eauCoco",
+    "categorie": "Boissons",
+    "description": "Eau de coco naturelle, bouteille 500ml.",
+    "prix": 2.50,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boissons/eauCoco.png",
+    "disponible": true,
+    "marque": "Tropic’Nature",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "BOI15",
+    "nom": "Cidre brut",
+    "nomCourt": "cidreBrut",
+    "categorie": "Boissons",
+    "description": "Cidre brut artisanal, bouteille 75cl.",
+    "prix": 4.50,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boissons/cidreBrut.png",
+    "disponible": true,
+    "marque": "Cidrerie Artisanale",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "BOI16",
+    "nom": "Bourbon",
+    "nomCourt": "bourbon",
+    "categorie": "Boissons",
+    "description": "Bourbon américain, bouteille 70cl.",
+    "prix": 25.00,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boissons/bourbon.png",
+    "disponible": true,
+    "marque": "Kentucky Spirit",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "BOI17",
+    "nom": "Whisky écossais",
+    "nomCourt": "whiskyEcossais",
+    "categorie": "Boissons",
+    "description": "Whisky écossais single malt, bouteille 70cl.",
+    "prix": 35.00,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boissons/whiskyEcossais.png",
+    "disponible": true,
+    "marque": "Highland Distillery",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "BOI18",
+    "nom": "Vodka russe",
+    "nomCourt": "vodkaRusse",
+    "categorie": "Boissons",
+    "description": "Vodka russe pure, bouteille 70cl.",
+    "prix": 30.00,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boissons/vodkaRusse.png",
+    "disponible": true,
+    "marque": "Moscou Spirit",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "BOI19",
+    "nom": "Rhum",
+    "nomCourt": "rhum",
+    "categorie": "Boissons",
+    "description": " Rhum des Caraïbes, bouteille 70cl.",
+    "prix": 22.00,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boissons/rhum.png",
+    "disponible": true,
+    "marque": "Caribbean Gold",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "BOI20",
+    "nom": "Heineken",
+    "nomCourt": "heineken",
+    "categorie": "Boissons",
+    "description": "Bière blonde Heineken, bouteille de 33cl.",
+    "prix": 1.80, 
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boissons/heineken.png",
+    "disponible": true,
+    "marque": "Heineken",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "BOI21",
+    "nom": "Fanta agrumes",
+    "nomCourt": "fantaAgrumes",
+    "categorie": "Boissons",
+    "description": "Fanta agrumes, boisson gazeuse rafraîchissante, bouteille de 33cl.",
+    "prix": 1.60,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boissons/fantaAgrumes.png",
+    "disponible": true,
+    "marque": "Fanta",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "BOI22",
+    "nom": "Pack Eau",
+    "nomCourt": "packEau",
+    "categorie": "Boissons",
+    "description": "Pack de 6 bouteilles d'eau minérale naturelle, 1,5L chacune.",
+    "prix": 4.50,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boissons/packEau.png",
+    "disponible": true,
+    "marque": "Pure Source",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "BOI23",
+    "nom": "Pack jus de fruits",
+    "nomCourt": "packJusFruits",
+    "categorie": "Boissons",
+    "description": "Pack de 4 jus de fruits variés (orange, pomme, multifruits, ananas), 1L chacun.",
+    "prix": 8.00,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boissons/packJusFruits.png",
+    "disponible": true,
+    "marque": "Fruit Mix",
+    "promo": false,
+    "bio": true
+  },
+
+
+
+
+
+
+
+
+
+  {
+    "id": "SUR1",
+    "nom": "Colin surgelé",
+    "nomCourt": "colinSurgele",
+    "categorie": "Surgelés",
+    "description": "Colin surgelé de qualité, idéal pour les plats rapides.",
+    "prix": 9.90,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Surgeles/colinSurgele.png",
+    "disponible": true,
+    "marque": "Océan Express",
+    "promo": false,
+    "bio": false
+  },
+  
+  {
+    "id": "SUR2",
+    "nom": "Frites croustillantes",
+    "nomCourt": "fritesCroustillantes",
+    "categorie": "Surgelés",
+    "description": "Frites surgelées prêtes à frire ou au four.",
+    "prix": 2.90,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Surgeles/fritesCroustillantes.png",
+    "disponible": true,
+    "marque": "Patata",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "SUR3",
+    "nom": "Légumes pour wok",
+    "nomCourt": "legumesWok",
+    "categorie": "Surgelés",
+    "description": "Mélange de légumes surgelés prêts pour le wok.",
+    "prix": 3.40,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Surgeles/legumesWok.png",
+    "disponible": true,
+    "marque": "Green Mix",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "SUR4",
+    "nom": "Filets de colin panés",
+    "nomCourt": "filetsColinPanes",
+    "categorie": "Surgelés",
+    "description": "Filets de colin panés croustillants.",
+    "prix": 5.20,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Surgeles/filetsColinPanes.png",
+    "disponible": true,
+    "marque": "Ocean Crispy",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "SUR5",
+    "nom": "Pizza Margherita",
+    "nomCourt": "pizzaMargherita",
+    "categorie": "Surgelés",
+    "description": "Pizza Margherita surgelée, prête à cuire.",
+    "prix": 6.50,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Surgeles/pizzaMargherita.png",
+    "disponible": true,
+    "marque": "Pizzeria Bella",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "SUR6",
+    "nom": "Poêlée campagnarde",
+    "nomCourt": "poeleeCampagnarde",
+    "categorie": "Surgelés",
+    "description": "Poêlée de pommes de terre, oignons et lardons.",
+    "prix": 4.10,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Surgeles/poeleeCampagnarde.png",
+    "disponible": true,
+    "marque": "Saveurs d’Antan",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "SUR7",
+    "nom": "Crevettes",
+    "nomCourt": "crevettes",
+    "categorie": "Surgelés",
+    "description": "Crevettes roses surgelées.",
+    "prix": 7.50,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Surgeles/crevettes.png",
+    "disponible": true,
+    "marque": "SeaFresh",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "SUR8",
+    "nom": "Lasagnes bolognaise",
+    "nomCourt": "lasagnesBolognaise",
+    "categorie": "Surgelés",
+    "description": "Lasagnes surgelées à la sauce bolognaise.",
+    "prix": 5.80,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Surgeles/lasagnesBolognaise.png",
+    "disponible": true,
+    "marque": "Pasta Mia",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "SUR9",
+    "nom": "Mélange de fruits rouges",
+    "nomCourt": "melangeFruitsRouges",
+    "categorie": "Surgelés",
+    "description": "Mélange surgelé de fraises, framboises, mûres et myrtilles.",
+    "prix": 6.20,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Surgeles/melangeFruitsRouges.png",
+    "disponible": true,
+    "marque": "Berry Mix",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "SUR10",
+    "nom": "Pain surgelé",
+    "nomCourt": "painSurgele",
+    "categorie": "Surgelés",
+    "description": " Pain surgelé, idéal pour les petits déjeuners.",
+    "prix": 3.00,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Surgeles/painSurgele.png",
+    "disponible": true,
+    "marque": "Boulangerie Maison",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "SUR11",
+    "nom": "Daurade blanche",
+    "nomCourt": "dauradeBlanche",
+    "categorie": "Surgelés",
+    "description": "Daurade blanche surgelée, prête à cuisiner.",
+    "prix": 12.50,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Surgeles/dauradeBlanche.png",
+    "disponible": true,
+    "marque": "Fishy Go",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "SUR12",
+    "nom": "Crème glacée",
+    "nomCourt": "cremeGlacee",
+    "categorie": "Surgelés",
+    "description": "Coupe de crème glacée multisaveur, onctueuse et savoureuse.",
+    "prix": 3.50,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Surgeles/cremeGlacee.png",
+    "disponible": true,
+    "marque": "Glaces Artisanales",
+    "promo": false,
+    "bio": true
+  },
+
+
+
+
+
+
+
+
+
+
+
+  {
+    "id": "CHA1",
+    "nom": "Saucisses de Toulouse",
+    "nomCourt": "saucissesToulouse",
+    "categorie": "Charcuterie et traiteurs",
+    "description": "Saucisses de Toulouse artisanales au goût authentique.",
+    "prix": 9.20,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/CharcutTraiteur/saucissesToulouse.png",
+    "disponible": true,
+    "marque": "Charcuterie Fine",
+    "promo": false,
+    "bio": false
+  },
+
+  {
+    "id": "CHA2",
+    "nom": "Jambon blanc supérieur",
+    "nomCourt": "jambonBlancSuperieur",
+    "categorie": "Charcuterie et traiteur",
+    "description": "Tranches de jambon blanc supérieur sans conservateur.",
+    "prix": 3.50,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/CharcutTraiteur/jambonBlancSuperieur.png",
+    "disponible": true,
+    "marque": "Trad’Ham",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "CHA3",
+    "nom": "Saucisson sec",
+    "nomCourt": "saucissonSec",
+    "categorie": "Charcuterie et traiteur",
+    "description": "Saucisson sec artisanal affiné lentement.",
+    "prix": 4.20,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/CharcutTraiteur/saucissonSec.png",
+    "disponible": true,
+    "marque": "Saveurs du Terroir",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "CHA4",
+    "nom": "Rillettes de porc",
+    "nomCourt": "rillettesPorc",
+    "categorie": "Charcuterie et traiteur",
+    "description": "Rillettes fondantes préparées à l’ancienne.",
+    "prix": 3.90,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/CharcutTraiteur/rillettesPorc.png",
+    "disponible": true,
+    "marque": "Maison Fermière",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "CHA5",
+    "nom": "Terrine de campagne",
+    "nomCourt": "terrineCampagne",
+    "categorie": "Charcuterie et traiteur",
+    "description": "Terrine de campagne aux épices douces.",
+    "prix": 3.70,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/CharcutTraiteur/terrineCampagne.png",
+    "disponible": true,
+    "marque": "Gourmet Champêtre",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "CHA6",
+    "nom": "Pâté de foie",
+    "nomCourt": "pateFoie",
+    "categorie": "Charcuterie et traiteur",
+    "description": "Pâté de foie onctueux et parfumé.",
+    "prix": 2.80,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/CharcutTraiteur/pateFoie.png",
+    "disponible": true,
+    "marque": "Fines Saveurs",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "CHA7",
+    "nom": "Boudin noir",
+    "nomCourt": "boudinNoir",
+    "categorie": "Charcuterie et traiteur",
+    "description": "Boudin noir traditionnel prêt à réchauffer.",
+    "prix": 4.10,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/CharcutTraiteur/boudinNoir.png",
+    "disponible": true,
+    "marque": "Charcuterie du Marché",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "CHA8",
+    "nom": "Jambon cru fumé",
+    "nomCourt": "jambonCruFume",
+    "categorie": "Charcuterie et traiteur",
+    "description": "Jambon cru fumé au bois de hêtre.",
+    "prix": 5.80,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/CharcutTraiteur/jambonCruFume.png",
+    "disponible": true,
+    "marque": "Trad’Ham",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "CHA9",
+    "nom": "Hotdog maison",
+    "nomCourt": "hotdogMaison",
+    "categorie": "Charcuterie et traiteur",
+    "description": " Hotdog maison avec saucisse de porc et pain moelleux.",
+    "prix": 4.50,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/CharcutTraiteur/hotdogMaison.png",
+    "disponible": true,
+    "marque": "Boucherie Artisanale",
+    "promo": false,
+    "bio": false
+  },
+  
+  {
+    "id": "CHA10",
+    "nom": "Chipolata de Guéméné",
+    "nomCourt": "chipolataGuemene",
+    "categorie": "Charcuterie et traiteur",
+    "description": "Chipolata de Guéméné, saucisse fine et savoureuse.",
+    "prix": 3.90,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/CharcutTraiteur/chipolataGuemene.png",
+    "disponible": true,
+    "marque": "Bretagne Saveurs",
+    "promo": false,
+    "bio": false
+  },
+
+  {
+    "id": "CHA11",
+    "nom": "Quiche lorraine",
+    "nomCourt": "quicheLorraine",
+    "categorie": "Charcuterie et traiteur",
+    "description": "Quiche lorraine garnie de lardons et d’emmental.",
+    "prix": 4.50,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/CharcutTraiteur/quicheLorraine.png",
+    "disponible": true,
+    "marque": "Maison Gourmande",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "CHA12",
+    "nom": "Salade piémontaise",
+    "nomCourt": "saladePiemontaise",
+    "categorie": "Charcuterie et traiteur",
+    "description": "Salade piémontaise à base de pommes de terre, jambon et mayonnaise.",
+    "prix": 3.80,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/CharcutTraiteur/saladePiemontaise.png",
+    "disponible": true,
+    "marque": "Frais Délices",
+    "promo": false,
+    "bio": false
+  },
+
+  {
+    "id": "CHA13",
+    "nom": "Lasagnes au saumon",
+    "nomCourt": "lasagnesSaumon",
+    "categorie": "Charcuterie et traiteur",
+    "description": "Lasagnes fraîches au saumon et épinards.",
+    "prix": 5.90,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/CharcutTraiteur/lasagnesSaumon.png",
+    "disponible": true,
+    "marque": "Pasta Fresca",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "CHA14",
+    "nom": "Pizza royale",
+    "nomCourt": "pizzaRoyale",
+    "categorie": "Charcuterie et traiteur",
+    "description": "Pizza royale garnie de jambon, champignons et mozzarella.",
+    "prix": 6.20,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/CharcutTraiteur/pizzaRoyale.png",
+    "disponible": true,
+    "marque": "Bella Italia",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "CHA15",
+    "nom": "Pizza aux crevettes",
+    "nomCourt": "pizzaCrevettes",
+    "categorie": "Charcuterie et traiteur",
+    "description": "Pizza aux crevettes et sauce tomate épicée.",
+    "prix": 7.00,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/CharcutTraiteur/pizzaCrevettes.png",
+    "disponible": true,
+    "marque": "Pizzeria Mare",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "CHA16",
+    "nom": "Ramen au porc",
+    "nomCourt": "ramenPorc",
+    "categorie": "Charcuterie et traiteur",
+    "description": "Ramen au porc avec bouillon savoureux et légumes croquants.",
+    "prix": 8.50,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/CharcutTraiteur/ramenPorc.png",
+    "disponible": true,
+    "marque": "Asie Délices",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "CHA17",
+    "nom": "Gamja jorim",
+    "nomCourt": "gamjaJorim",
+    "categorie": "Charcuterie et traiteur",
+    "description": "Assiète de Gamja jorim, pommes de terre sautées à la coréenne.",
+    "prix": 4.00,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/CharcutTraiteur/gamjaJorim.png",
+    "disponible": true,
+    "marque": "Corée Gourmande",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "CHA18",
+    "nom": "Couscous royal",
+    "nomCourt": "couscousRoyal",
+    "categorie": "Charcuterie et traiteur",
+    "description": "Couscous royal avec agneau, poulet et légumes.",
+    "prix": 9.50,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/CharcutTraiteur/couscousRoyal.png",
+    "disponible": true,
+    "marque": "Délices du Maghreb",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "CHA19",
+    "nom": "Poisson et frites",
+    "nomCourt": "poissonFrites",
+    "categorie": "Charcuterie et traiteur",
+    "description": "Filet de poisson pané avec frites croustillantes.",
+    "prix": 7.20,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/CharcutTraiteur/poissonFrites.png",
+    "disponible": true,
+    "marque": "Friture du Port",
+    "promo": false,
+    "bio": false
+  }
+
+
+  
+]
+
+
+
+
+
+
+
+
+
