@@ -20,7 +20,7 @@ export class Supermarket{
         
 
     this.getProduits = async function() {
-        const reponse = await fetch("./produits.json");
+        const reponse = await fetch("produits.json");
         const products = reponse.json()
         this.produits = products        
         return this.produits
