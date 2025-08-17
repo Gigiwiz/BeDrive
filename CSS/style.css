@@ -75,7 +75,8 @@ img[alt]{
 }
 
 header a, footer a{
-    color:var(--text-two)
+    color:var(--text-two);
+    text-align: center;
 }
 
 

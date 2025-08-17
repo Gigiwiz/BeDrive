@@ -69,7 +69,8 @@ export class Supermarket{
     })
     .then(produitsAvailable => {
 // Pour afficher les produits en fonction du choix du spermarché
-        const newProduits = produitsAvailable;
+        const newProduits = produitsAvailable.sort((a, b) => a.marque.localeCompare(b.marque))
+
 
         const section1ProduitsAcceuil = document.querySelectorAll(".section1Produits.accueil");
 
@@ -326,11 +327,3 @@ const Auchan = new Supermarket("Auchan","Logo_Auchan.svg", "10 rue des Oliviers 
 
 // const Aldi = new Supermarket("Aldi","Logo_Aldi.svg","30 avenue de Choisy Ivry-sur-Seine 75013")
 
-
-
-
-
-
-
-
-console.log("BeDrive JFJDJKKDJKJJKDJKDGGHBNDK");

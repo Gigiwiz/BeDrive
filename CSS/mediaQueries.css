@@ -155,7 +155,7 @@ nav svg{
     top: 2px;
 }
 
-.choixProduits .produit{
+.containerProduits .produit{
     height: 120px;
     width: 100px;
 }
@@ -346,22 +346,22 @@ footer{
         flex-grow: 1;
         height: 95%;
     }
-    .choixProduits .produit {
+    .containerProduits .produit {
         height: 120px;
         width: 100px;
     }
    
-    .choixProduits .produit img {
+    .containerProduits .produit img {
         height: 50px;
         width: 50px;
     }
-    .choixProduits .produit .nom {
+    .containerProduits .produit .nom {
         font-size: clamp(8px, 1.5vw, 12px);
     }
-    .choixProduits .produit .prix {
+    .containerProduits .produit .prix {
         font-size: clamp(8px, 1.5vw, 12px);
     }
-    .choixProduits .produit svg {
+    .containerProduits .produit svg {
         height: 20px;
         width: 20px;
     }
