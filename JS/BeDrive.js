@@ -69,88 +69,119 @@ export class Supermarket{
     })
     .then(produitsAvailable => {
 // Pour afficher les produits en fonction du choix du spermarché
-        const newProduits = produitsAvailable
-        const produitsContainer = document.querySelectorAll(".choixProduits");
+        const newProduits = produitsAvailable;
+
+        const section1ProduitsAcceuil = document.querySelectorAll(".section1Produits.accueil");
+
+        /* Création du container des produits de la page d'accueil
+            dans le but d'automatiser l'ajout des produits en fonction des catégories (ajoutée.s ou rétirée.s)
+        */
+        const containerProduitsAcceuilClass = ["containerProduits "];
+        const containerProduitsAcceuil = document.createElement('div');
+
 
         for (const produit of newProduits) {
-            if(produit.disponible){
-                const produitDiv = document.createElement("div");
-                        produitDiv.className = `produit ${this.nom}`;
-                        produitDiv.id = produit.nomCourt
 
-                const img = document.createElement("img");
-                        img.src = produit.image;
-                        img.className = `img ${produit.nomCourt}`;
-                        img.id = produit.nomCourt;
-                        img.alt = produit.nom;
+            if (produit.categorie) {
+                containerProduitsAcceuilClass.push(produit.categorie)
+                containerProduitsAcceuil.className = containerProduitsAcceuilClass;
+                section1ProduitsAcceuil.forEach(section => {
+                    section.appendChild(containerProduitsAcceuil);                    
+                })
 
-                const div1 = document.createElement("div");
-                        div1.className="prix-AddToCart";
+                const allContainersProduits = document.querySelectorAll(".containerProduits");
+                    allContainersProduits.forEach((container) => {
 
-                const span = document.createElement("span");
-                        span.className = "prix" ;
-                        span.id = produit.nomCourt
-                        if(!produit.promo){
-                            span.textContent = `${(produit.prix)} €`;
+                    if(produit.disponible){                        
+                        // création du produit
+                        const produitDiv = document.createElement("div");
+                                produitDiv.className = `produit ${this.nom}`;
+                                produitDiv.id = produit.nomCourt
+
+                        const img = document.createElement("img");
+                                img.src = produit.image;
+                                img.className = `img ${produit.nomCourt}`;
+                                img.id = produit.nomCourt;
+                                img.alt = produit.nom;
+
+                        const div1 = document.createElement("div");
+                                div1.className="prix-AddToCart";
+
+                        const span = document.createElement("span");
+                                span.className = "prix" ;
+                                span.id = produit.nomCourt
+                                if(!produit.promo){
+                                    span.textContent = `${(produit.prix)} €`;
+                                }
+                                else{
+                                    span.textContent = `${(produit.prix)} €, -${produit.promo}%`;
+                                    span.style.color = 'red'
+                                }
+
+                        const svgNS = "http://www.w3.org/2000/svg";
+                        const svg = document.createElementNS(svgNS, "svg");
+                            svg.setAttribute("class", "addToCart");
+                            svg.setAttribute("width", "24px");
+                            svg.setAttribute("height", "24px");
+                            svg.setAttribute("viewBox", "0 -960 960 960" );
+                            svg.setAttribute("fill", "#000000");
+                        const path = document.createElementNS(svgNS, "path");
+                            path.setAttribute("d", "M440-600v-120H320v-80h120v-120h80v120h120v80H520v120h-80ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z");
+                        svg.appendChild(path);
+                                    
+                        const span1 = document.createElement("span")
+                                span1.className="nom";
+                                span1.id = produit.nomCourt;
+                                span1.textContent = produit.nom;
+
+                    // Ajout du produit dans chaque container
+                        if(container.className.toLowerCase().includes(produit.categorie.toLowerCase())){
+                            container.appendChild(produitDiv);
+                            produitDiv.appendChild(img);
+                            produitDiv.appendChild(div1);
+                            div1.appendChild(span);
+                            div1.appendChild(svg);
+                            produitDiv.appendChild(span1);   
                         }
-                        else{
-                            span.textContent = `${(produit.prix)} €, -${produit.promo}%`;
-                            span.style.color = 'red'
-                        }
 
-                const svgNS = "http://www.w3.org/2000/svg";
-                const svg = document.createElementNS(svgNS, "svg");
-                    svg.setAttribute("class", "addToCart");
-                    svg.setAttribute("width", "24px");
-                    svg.setAttribute("height", "24px");
-                    svg.setAttribute("viewBox", "0 -960 960 960" );
-                    svg.setAttribute("fill", "#000000");
-                const path = document.createElementNS(svgNS, "path");
-                    path.setAttribute("d", "M440-600v-120H320v-80h120v-120h80v120h120v80H520v120h-80ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z");
-                svg.appendChild(path);
-                            
-                const span1 = document.createElement("span")
-                        span1.className="nom";
-                        span1.id = produit.nomCourt;
-                        span1.textContent = produit.nom;
-                    
-                    produitsContainer.forEach(container => container.appendChild(produitDiv));
-                    produitDiv.appendChild(img);
-                    produitDiv.appendChild(div1);
-                    div1.appendChild(span);
-                    div1.appendChild(svg);
-                    produitDiv.appendChild(span1);      
-                  
-                const lastOnesSupermarketOptions = document.querySelectorAll(".switchSupermarket option:not(:first-child)");
-                        lastOnesSupermarketOptions.forEach(option => {
-                            if (option.value === this.nom) {
-                                produitDiv.style.display = "none"
-                            }
-                        });
-
-                const switchSupermarketSelect = document.querySelectorAll(".switchSupermarket");                
-                        switchSupermarketSelect.forEach((select) => {
-                            select.addEventListener("change", (e) => {
-                                e.preventDefault();
-                                const value = e.target.value
-                                const displayedProduits = document.querySelectorAll(".choixProduits .produit")
-                                        displayedProduits.forEach((product) => {
-                                            if(product.className.includes(value))
-                                                product.style.display = "flex";
-                                            else 
-                                                product.style.display = "none";
-                                        })
-                            })
+                    // On affiche qu'un seul container n'oubliant pas que nous sommes dans une boucle ha ha ha 😂
+                        document.querySelectorAll(".section1Produits.accueil .containerProduits:not(:nth-child(3))").forEach(el => {
+                            el.style.backgroundColor ="red"
+                            el.style.display = "none" 
                         })
+                    
+                        const lastOnesSupermarketOptions = document.querySelectorAll(".switchSupermarket option:not(:first-child)");
+                                lastOnesSupermarketOptions.forEach(option => {
+                                    if (option.value === this.nom) {
+                                        produitDiv.style.display = "none"
+                                    }
+                                });
+
+                        const switchSupermarketSelect = document.querySelectorAll(".switchSupermarket");                
+                                switchSupermarketSelect.forEach((select) => {
+                                    select.addEventListener("change", (e) => {
+                                        e.preventDefault();
+                                        const value = e.target.value
+                                        const displayedProduits = document.querySelectorAll(".containerProduits .produit")
+                                                displayedProduits.forEach((product) => {
+                                                    if(product.className.includes(value))
+                                                        product.style.display = "flex";
+                                                    else 
+                                                        product.style.display = "none";
+                                                })
+                                    })
+                                })
+                        }
+                    })   
+                }
             }
-        }
 
         return newProduits
     })
     .then(newProduits => {
 
 // Pour afficher la description de chaque produit au clic de celui-ci
-        const produitsEl =  document.querySelectorAll('.choixProduits .produit');
+        const produitsEl =  document.querySelectorAll('.containerProduits .produit');
         const descriptionDiv = document.querySelector(".description-produit");
         const productDescriptionImg = document.querySelector(".description-produit img");
         const productDescription = document.querySelector(".description-produit p");
@@ -176,13 +207,8 @@ export class Supermarket{
                         }
 
                         descriptionDiv.classList.add("active")
-                        document.querySelector('.overlay').style.display='block';
-
-
-                        
-
+                        document.querySelector('.overlay').style.display='block'; 
                     }
-                    
 
                 })
             })
@@ -292,6 +318,7 @@ const Carrefour = new Supermarket("Carrefour", "Logo_Carrefour.svg", "60 bouleva
 
 const Auchan = new Supermarket("Auchan","Logo_Auchan.svg", "10 rue des Oliviers Paris 75013");
         Auchan.setPrice(["Fruits", "Légumes", "EPI3", "EPI4"], 0.89)
+        Auchan.setPromo(["via1"], 19.5)
 
 
 

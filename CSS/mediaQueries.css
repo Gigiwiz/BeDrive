@@ -241,7 +241,7 @@ footer .btn-contact{
         padding-right: 10px;
     }
 
-    .section1Partie2{
+    .section1Produits{
         height: 65%;
     }
 
@@ -322,7 +322,7 @@ footer{
     font-size: clamp(8px, 1.5vw, 15px);
 }
 
-  .section1Partie2 {
+  .section1Produits {
     gap: 3px;
   }
 
@@ -342,7 +342,7 @@ footer{
         align-items: end;
         gap: 5px;
     }
-    .section1Partie2 {
+    .section1Produits {
         flex-grow: 1;
         height: 95%;
     }
