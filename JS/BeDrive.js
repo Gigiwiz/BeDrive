@@ -71,7 +71,6 @@ export class Supermarket{
 // Pour afficher les produits en fonction du choix du spermarché
         const newProduits = produitsAvailable.sort((a, b) => a.marque.localeCompare(b.marque))
 
-
         const section1ProduitsAcceuil = document.querySelectorAll(".section1Produits.accueil");
 
         /* Création du container des produits de la page d'accueil
@@ -85,7 +84,10 @@ export class Supermarket{
 
             if (produit.categorie) {
                 containerProduitsAcceuilClass.push(produit.categorie)
-                containerProduitsAcceuil.className = containerProduitsAcceuilClass;
+                const newClass =  [...new Set(containerProduitsAcceuilClass)]
+
+                containerProduitsAcceuil.className = newClass;
+
                 section1ProduitsAcceuil.forEach(section => {
                     section.appendChild(containerProduitsAcceuil);                    
                 })
@@ -206,9 +208,14 @@ export class Supermarket{
                             prixDesc.textContent = `${(produit.prix)} €, -${produit.promo}%`;
                             prixDesc.style.color = 'red'
                         }
-
                         descriptionDiv.classList.add("active")
-                        document.querySelector('.overlay').style.display='block'; 
+
+                        const overlay =  document.querySelector('.overlay')
+                            overlay.style.display='block';
+                            overlay.addEventListener("click", () => {
+                                descriptionDiv.classList.remove("active")
+                            } )
+
                     }
 
                 })
@@ -326,4 +333,5 @@ const Auchan = new Supermarket("Auchan","Logo_Auchan.svg", "10 rue des Oliviers 
 // const Leclerc = new Supermarket("E.Leclerc","Logo_Leclerc.svg", "203 avenue des dominicaines Paris 75003");
 
 // const Aldi = new Supermarket("Aldi","Logo_Aldi.svg","30 avenue de Choisy Ivry-sur-Seine 75013")
+
 

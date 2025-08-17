@@ -536,7 +536,7 @@ document.querySelector(".clean-search-bar").addEventListener("click", () => {
 
 // Pour display la description des produits et le panierOnMobile
 
-function displayDescProduitAndPanier(displayBtn, displayEl) {
+function displayPanierOnMobile(displayBtn, displayEl) {
     document.querySelectorAll(displayBtn).forEach((btn) => {
         btn.addEventListener('click', () => {
             document.querySelectorAll(displayEl).forEach((el) => {
@@ -554,8 +554,7 @@ function displayDescProduitAndPanier(displayBtn, displayEl) {
     });
 }
 
-displayDescProduitAndPanier('.openPanier', '.panierOnmobile' );
-// displayDescProduitAndPanier('.containerProduits .produit', '.description-produit' );
+displayPanierOnMobile('.openPanier', '.panierOnmobile' );
 
 
 
