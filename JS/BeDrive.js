@@ -29,7 +29,7 @@
 
 export async function getProduits () {
         /** @type {[Produit]} */
-        const reponse = await fetch("/produitsV2.json");
+        const reponse = await fetch("produitsV2.json");
         return reponse.json()
 };
 
