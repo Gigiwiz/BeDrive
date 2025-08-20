@@ -1115,6 +1115,7 @@
     "promo": false,
     "bio": false
   },
+  
 
 
 
@@ -1782,7 +1783,7 @@
     "id": "CHA1",
     "nom": "Saucisses de Toulouse",
     "nomCourt": "saucissesToulouse",
-    "categorie": "Charcuterie et traiteurs",
+    "categorie": "Charcuterie et traiteur",
     "description": "Saucisses de Toulouse artisanales au goût authentique.",
     "prix": 9.20,
     "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/CharcutTraiteur/saucissesToulouse.png",

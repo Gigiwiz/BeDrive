@@ -1,0 +1,4006 @@
+[
+{
+  "id": "FRU1",
+  "nom": {
+    "fr": "Banane",
+    "en": "Banana",
+    "es": "Banana",
+    "ln": "Makemba",
+    "zho": "香蕉"
+  },
+  "description": {
+    "fr": "Bananes jaunes mûres, riches en potassium.",
+    "en": "Ripe yellow bananas, rich in potassium.",
+    "es": "Plátanos amarillos maduros, ricos en potasio.",
+    "ln": "Makemba ya motane soo, eza na potasiom mingi.",
+    "zho": "成熟的黄色香蕉，富含钾。"
+  },
+  "nomCourt": "banane",
+  "categorie": "Fruits",
+  "prix": 1.79,
+  "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/FruitsLegumes/banane.png",
+  "disponible": true,
+  "marque": "TropiFruit",
+  "promo": false,
+  "bio": false
+},
+{
+  "id": "FRU2",
+  "nom": {
+    "fr": "Pomme Gala",
+    "en": "Apple Gala",
+    "es": "Manzana Gala",
+    "ln": "Pɔmi Gala",
+    "zho": "加拉苹果"
+  },
+  "description": {
+    "fr": "Pommes Gala fraîches et sucrées, cultivées localement.",
+    "en": "Fresh, sweet Gala apples, grown locally.",
+    "es": "Manzanas Gala frescas y dulces, cultivadas localmente.",
+    "ln": "Eza pɔmi Gala ya kitoko ba loni na mboka",
+    "zho": "新鲜甜美的加拉苹果，本地种植"
+  },
+  "nomCourt": "pommeGala",
+  "categorie": "Fruits",
+  "prix": 2.99,
+  "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/FruitsLegumes/pommeGala.png",
+  "disponible": true,
+  "marque": "Verger du Soleil",
+  "promo": false,
+  "bio": true
+},
+{
+  "id": "FRU3",
+  "nom": {
+    "fr": "Orange",
+    "en": "Orange",
+    "es": "Naranja",
+    "ln": "Lilala",
+    "zho": "橙子"
+  },
+  "description": {
+    "fr": "Oranges juteuses et sans pépins, idéales pour le jus.",
+    "en": "Juicy, seedless oranges, perfect for juice.",
+    "es": "Naranjas jugosas y sin semillas, ideales para zumo.",
+    "ln": "Lilala ezanga mbuma, malamu mpo na jus.",
+    "zho": "多汁无籽的橙子，适合榨汁。"
+  },
+  "nomCourt": "orange",
+  "categorie": "Fruits",
+  "prix": 3.49,
+  "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/FruitsLegumes/orange.png",
+  "disponible": true,
+  "marque": "Agrume d’Or",
+  "promo": false,
+  "bio": false
+},
+{
+  "id": "FRU4",
+  "nom": {
+    "fr": "Fraise Gariguette",
+    "en": "Gariguette Strawberry",
+    "es": "Fresa Gariguette",
+    "ln": "Frèsi Gariguette",
+    "zho": "加里盖特草莓"
+  },
+  "description": {
+    "fr": "Fraises Gariguette parfumées et sucrées.",
+    "en": "Fragrant and sweet Gariguette strawberries.",
+    "es": "Fresas Gariguette fragantes y dulces.",
+    "ln": "Frèsi Gariguette solo kitoko mpe sukali.",
+    "zho": "芳香甜美的加里盖特草莓。"
+  },
+  "nomCourt": "fraiseGariguette",
+  "categorie": "Fruits",
+  "prix": 4.99,
+  "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/FruitsLegumes/fraiseGariguette.png",
+  "disponible": true,
+  "marque": "Jardin Rouge",
+  "promo": false,
+  "bio": false
+},
+{
+  "id": "FRU5",
+  "nom": {
+    "fr": "Raisin blanc",
+    "en": "White Grape",
+    "es": "Uva blanca",
+    "ln": "Mbuma vino ya mpembe",
+    "zho": "白葡萄"
+  },
+  "description": {
+    "fr": "Raisin blanc sans pépins, croquant et sucré.",
+    "en": "Seedless white grapes, crunchy and sweet.",
+    "es": "Uvas blancas sin semillas, crujientes y dulces.",
+    "ln": "Mbuma vino ezanga mbuma, kitoko mpe ya sukali.",
+    "zho": "无籽白葡萄，爽脆甜美。"
+  },
+  "nomCourt": "raisinBlanc",
+  "categorie": "Fruits",
+  "prix": 3.99,
+  "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/FruitsLegumes/raisinBlanc.png",
+  "disponible": true,
+  "marque": "Vignes d’Argent",
+  "promo": false,
+  "bio": false
+},
+{
+  "id": "FRU6",
+  "nom": {
+    "fr": "Pastèque",
+    "en": "Watermelon",
+    "es": "Sandía",
+    "ln": "Pasiteki",
+    "zho": "西瓜"
+  },
+  "description": {
+    "fr": "Pastèque rafraîchissante à chair rouge.",
+    "en": "Refreshing watermelon with red flesh.",
+    "es": "Sandía refrescante de pulpa roja.",
+    "ln": "Pasiteki ya motane ngbaa mpe na mayi sukali ebele.",
+    "zho": "清爽的红瓤西瓜。"
+  },
+  "nomCourt": "pasteque",
+  "categorie": "Fruits",
+  "prix": 5.49,
+  "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/FruitsLegumes/pasteque.png",
+  "disponible": true,
+  "marque": "Melon&Soleil",
+  "promo": false,
+  "bio": false
+},
+{
+  "id": "FRU7",
+  "nom": {
+    "fr": "Kiwi",
+    "en": "Kiwi",
+    "es": "Kiwi",
+    "ln": "Kiwi",
+    "zho": "奇异果"
+  },
+  "description": {
+    "fr": "Kiwi à chair verte acidulée et riche en vitamine C.",
+    "en": "Tangy green-fleshed kiwi, rich in vitamin C.",
+    "es": "Kiwi de pulpa verde y sabor ácido, rico en vitamina C.",
+    "ln": "Kiwi bondobó mpe ya vitamini C.",
+    "zho": "绿色果肉的奇异果, 富含维生素C。"
+  },
+  "nomCourt": "kiwi",
+  "categorie": "Fruits",
+  "prix": 2.59,
+  "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/FruitsLegumes/kiwi.png",
+  "disponible": true,
+  "marque": "ExoFresh",
+  "promo": false,
+  "bio": true
+},
+{
+  "id": "FRU8",
+  "nom": {
+    "fr": "Mangue",
+    "en": "Mango",
+    "es": "Mango",
+    "ln": "Manga",
+    "zho": "芒果"
+  },
+  "description": {
+    "fr": "Mangue bien mûre à chair fondante et sucrée.",
+    "en": "Ripe mango with tender, sweet flesh.",
+    "es": "Mango bien maduro de pulpa suave y dulce.",
+    "ln": "Manga ekoli malamu na mɔsuni ya sukali.",
+    "zho": "成熟柔嫩甜美的芒果。"
+  },
+  "nomCourt": "mangue",
+  "categorie": "Fruits",
+  "prix": 3.79,
+  "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/FruitsLegumes/mangue.png",
+  "disponible": true,
+  "marque": "TropiFruit",
+  "promo": false,
+  "bio": false
+},
+{
+  "id": "FRU9",
+  "nom": {
+    "fr": "Poire",
+    "en": "Pear",
+    "es": "Pera",
+    "ln": "Poiri",
+    "zho": "梨"
+  },
+  "description": {
+    "fr": "Poires Conférence juteuses et parfumées.",
+    "en": "Juicy and fragrant Conference pears.",
+    "es": "Peras Conferencia jugosas y aromáticas.",
+    "ln": "Poiri ya kitoko, eza na mɔsuni mpe solo malamu.",
+    "zho": "多汁芳香的会议梨。"
+  },
+  "nomCourt": "poire",
+  "categorie": "Fruits",
+  "prix": 2.89,
+  "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/FruitsLegumes/poire.png",
+  "disponible": true,
+  "marque": "Verger du Soleil",
+  "promo": false,
+  "bio": true
+},
+{
+  "id": "FRU10",
+  "nom": {
+    "fr": "Abricot",
+    "en": "Apricot",
+    "es": "Albaricoque",
+    "ln": "Abiliko",
+    "zho": "杏"
+  },
+  "description": {
+    "fr": "Abricots dorés au goût légèrement acidulé.",
+    "en": "Golden apricots with a slightly tangy flavor.",
+    "es": "Albaricoques dorados con un sabor ligeramente ácido.",
+    "ln": "Abiliko kitoko na poso ya wolo mpe bololo mukie.",
+    "zho": "金黄色的杏子，带有微微的酸味。"
+  },
+  "nomCourt": "abricot",
+  "categorie": "Fruits",
+  "prix": 4.29,
+  "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/FruitsLegumes/abricot.png",
+  "disponible": true,
+  "marque": "Fruitière Bio",
+  "promo": false,
+  "bio": true
+},
+
+{
+    "id": "FRU11",
+    "nom": {
+      "fr": "Cerise",
+      "en": "Cherry",
+      "es": "Cereza",
+      "ln": "Serizi",
+      "zho": "樱桃"
+    },
+    "description": {
+      "fr": "Cerises Burlat rouges, charnues et sucrées.",
+      "en": "Red Burlat cherries, juicy and sweet.",
+      "es": "Cerezas Burlat rojas, carnosas y dulces.",
+      "ln": "Serizi ya motane, mɔsuni mingi mpe ya sukali.",
+      "zho": "红色的布拉尔樱桃，肉质饱满香甜。"
+    },
+    "nomCourt": "cerise",
+    "categorie": "Fruits",
+    "prix": 6.99,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/FruitsLegumes/cerise.png",
+    "disponible": true,
+    "marque": "Jardin Rouge",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "FRU12",
+    "nom": {
+      "fr": "Prune",
+      "en": "Plum",
+      "es": "Ciruela",
+      "ln": "Pruni",
+      "zho": "李子"
+    },
+    "description": {
+      "fr": "Prunes Reine-Claude sucrées et juteuses.",
+      "en": "Sweet and juicy Reine-Claude plums.",
+      "es": "Ciruelas Reine-Claude dulces y jugosas.",
+      "ln": "Pruni Reine-Claude ya kitoko, na may'a sukali ebele.",
+      "zho": "甜美多汁的皇后李子。"
+    },
+    "nomCourt": "prune",
+    "categorie": "Fruits",
+    "prix": 3.59,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/FruitsLegumes/prune.png",
+    "disponible": true,
+    "marque": "Verger d’Or",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "FRU13",
+    "nom": {
+      "fr": "Ananas",
+      "en": "Pineapple",
+      "es": "Piña",
+      "ln": "Ananasi",
+      "zho": "菠萝"
+    },
+    "description": {
+      "fr": "Ananas sucré et parfumé, parfait pour les desserts.",
+      "en": "Sweet and fragrant pineapple, perfect for desserts.",
+      "es": "Piña dulce y aromática, ideal para postres.",
+      "ln": "Ananasi sukali mpe solo kitoko malamu mpo na koliya.",
+      "zho": "甜美芳香的菠萝，适合做甜点。"
+    },
+    "nomCourt": "ananas",
+    "categorie": "Fruits",
+    "prix": 3.99,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/FruitsLegumes/ananas.png",
+    "disponible": true,
+    "marque": "TropiFruit",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "FRU14",
+    "nom": {
+      "fr": "Framboise",
+      "en": "Raspberry",
+      "es": "Frambuesa",
+      "ln": "Frambuazi",
+      "zho": "覆盆子"
+    },
+    "description": {
+      "fr": "Framboises rouges, douces et acidulées.",
+      "en": "Red raspberries, sweet and tangy.",
+      "es": "Frambuesas rojas, dulces y ácidas.",
+      "ln": "Frambuazi motane, na sukali mpe ndambu ya solo.",
+      "zho": "红色覆盆子，甜中带酸。"
+    },
+    "nomCourt": "framboise",
+    "categorie": "Fruits",
+    "prix": 5.49,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/FruitsLegumes/framboise.png",
+    "disponible": true,
+    "marque": "Jardin Rouge",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "FRU15",
+    "nom": {
+      "fr": "Papaye",
+      "en": "Papaya",
+      "es": "Papaya",
+      "ln": "Payipayi",
+      "zho": "木瓜"
+    },
+    "description": {
+      "fr": "Papaye exotique à chair orange et goût sucré.",
+      "en": "Exotic papaya with orange flesh and sweet taste.",
+      "es": "Papaya exótica de pulpa naranja y sabor dulce.",
+      "ln": "Payipayi sukali, na mɔsuni ya bondobó.",
+      "zho": "橙色果肉的异域木瓜，味道香甜。"
+    },
+    "nomCourt": "papaye",
+    "categorie": "Fruits",
+    "prix": 4.99,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/FruitsLegumes/papaye.png",
+    "disponible": true,
+    "marque": "ExoFresh",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "FRU16",
+    "nom": {
+      "fr": "Citron",
+      "en": "Lemon",
+      "es": "Limón",
+      "ln": "Ndimo",
+      "zho": "柠檬"
+    },
+    "description": {
+      "fr": "Citrons jaunes, parfaits pour les boissons et les desserts.",
+      "en": "Yellow lemons, perfect for drinks and desserts.",
+      "es": "Limones amarillos, ideales para bebidas y postres.",
+      "ln": "Ndimo ya motane, malamu mpo na masanga mpe dessert.",
+      "zho": "黄色柠檬，非常适合饮品和甜点。"
+    },
+    "nomCourt": "citron",
+    "categorie": "Fruits",
+    "prix": 1.29,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/FruitsLegumes/citron.png",
+    "disponible": true,
+    "marque": "Agrume d’Or",
+    "promo": false,
+    "bio": true
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  {
+    "id": "LEG1",
+    "nom": {
+      "fr": "Carotte",
+      "en": "Carrot",
+      "es": "Zanahoria",
+      "ln": "Karoti",
+      "zho": "胡萝卜"
+    },
+    "description": {
+      "fr": "Carottes fraîches, croquantes et riches en bêta-carotène.",
+      "en": "Fresh carrots, crunchy and rich in beta-carotene.",
+      "es": "Zanahorias frescas, crujientes y ricas en betacaroteno.",
+      "ln": "Karoti ya sika, ya kosilika mpe na beta-carotène.",
+      "zho": "新鲜的胡萝卜，脆嫩且富含β-胡萝卜素。"
+    },
+    "nomCourt": "carotte",
+    "categorie": "Légumes",
+    "prix": 1.99,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/FruitsLegumes/carotte.png",
+    "disponible": true,
+    "marque": "Potager Bio",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "LEG2",
+    "nom": {
+      "fr": "Tomates rondes",
+      "en": "Round Tomatoes",
+      "es": "Tomates redondos",
+      "ln": "Tomati ya ronde",
+      "zho": "圆番茄"
+    },
+    "description": {
+      "fr": "Tomates rondes rouges et juteuses, idéales pour les salades.",
+      "en": "Red and juicy round tomatoes, ideal for salads.",
+      "es": "Tomates redondos rojos y jugosos, ideales para ensaladas.",
+      "ln": "Tomati motane mpe ya mayi, malamu mpo na salades.",
+      "zho": "红色多汁的圆番茄，适合做沙拉。"
+    },
+    "nomCourt": "tomatesRondes",
+    "categorie": "Légumes",
+    "prix": 2.49,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/FruitsLegumes/tomatesRondes.png",
+    "disponible": true,
+    "marque": "Ferme du Soleil",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "LEG3",
+    "nom": {
+      "fr": "Courgette",
+      "en": "Zucchini",
+      "es": "Calabacín",
+      "ln": "Sukini",
+      "zho": "西葫芦"
+    },
+    "description": {
+      "fr": "Courgettes vertes tendres, parfaites pour la cuisson ou les grillades.",
+      "en": "Tender green zucchinis, perfect for cooking or grilling.",
+      "es": "Calabacines verdes tiernos, perfectos para cocinar o asar.",
+      "ln": "Sukini langi mayi ya pondu malamu mpo na kososa mpe niama kotumba.",
+      "zho": "嫩绿的西葫芦，适合烹饪或烧烤。"
+    },
+    "nomCourt": "courgette",
+    "categorie": "Légumes",
+    "prix": 2.29,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/FruitsLegumes/courgette.png",
+    "disponible": true,
+    "marque": "Jardin Vert",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "LEG4",
+    "nom": {
+      "fr": "Poivron rouge",
+      "en": "Red Bell Pepper",
+      "es": "Pimiento rojo",
+      "ln": "Poivron ",
+      "zho": "红甜椒"
+    },
+    "description": {
+      "fr": "Poivrons rouges sucrés, riches en vitamine C.",
+      "en": "Sweet red peppers, rich in vitamin C.",
+      "es": "Pimientos rojos dulces, ricos en vitamina C.",
+      "ln": "Poivron motane, eza na vitamine C mingi mpe sukali.",
+      "zho": "甜红椒, 富含维生素C。"
+    },
+    "nomCourt": "poivronRouge",
+    "categorie": "Légumes",
+    "prix": 3.19,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/FruitsLegumes/poivronRouge.png",
+    "disponible": true,
+    "marque": "Légumes du Marché",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "LEG5",
+    "nom": {
+      "fr": "Concombre",
+      "en": "Cucumber",
+      "es": "Pepino",
+      "ln": "Konkombre",
+      "zho": "黄瓜"
+    },
+    "description": {
+      "fr": "Concombres croquants et rafraîchissants.",
+      "en": "Crunchy and refreshing cucumbers.",
+      "es": "Pepinos crujientes y refrescantes.",
+      "ln": "Konkombre ya mayi mingi mpe elengi na munoko.",
+      "zho": "清脆爽口的黄瓜。"
+    },
+    "nomCourt": "concombre",
+    "categorie": "Légumes",
+    "prix": 1.79,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/FruitsLegumes/concombre.png",
+    "disponible": true,
+    "marque": "Ferme du Soleil",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "LEG6",
+    "nom": {
+      "fr": "Brocoli",
+      "en": "Broccoli",
+      "es": "Brócoli",
+      "ln": "Brocoli",
+      "zho": "西兰花"
+    },
+    "description": {
+      "fr": "Brocolis verts tendres, riches en fibres et vitamines.",
+      "en": "Tender green broccoli, rich in fiber and vitamins.",
+      "es": "Brócoli verde tierno, rico en fibra y vitaminas.",
+      "ln": "Brocoli langi may'a pondu, etondi na fibre mpe vitamini.",
+      "zho": "嫩绿的西兰花，富含纤维和维生素。"
+    },
+    "nomCourt": "brocoli",
+    "categorie": "Légumes",
+    "prix": 2.99,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/FruitsLegumes/brocoli.png",
+    "disponible": true,
+    "marque": "Potager Bio",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "LEG7",
+    "nom": {
+      "fr": "Aubergine",
+      "en": "Eggplant",
+      "es": "Berenjena",
+      "ln": "Mosango",
+      "zho": "茄子"
+    },
+    "description": {
+      "fr": "Aubergines violettes, idéales pour les plats méditerranéens.",
+      "en": "Purple eggplants, ideal for Mediterranean dishes.",
+      "es": "Berenjenas moradas, ideales para platos mediterráneos.",
+      "ln": "Mosango langi ya nsafu, malamu mpo na bilya ya Mediterranea.",
+      "zho": "紫色的茄子，非常适合地中海菜肴。"
+    },
+    "nomCourt": "aubergine",
+    "categorie": "Légumes",
+    "prix": 3.49,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/FruitsLegumes/aubergine.png",
+    "disponible": true,
+    "marque": "Jardin Vert",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "LEG8",
+    "nom": {
+      "fr": "Pommes de terre",
+      "en": "Potatoes",
+      "es": "Patatas",
+      "ln": "Pomi ya mabele",
+      "zho": "土豆"
+    },
+    "description": {
+      "fr": "Pommes de terre polyvalentes pour purées, frites et gratins.",
+      "en": "Versatile potatoes for mash, fries and gratins.",
+      "es": "Patatas versátiles para puré, frituras y gratinados.",
+      "ln": "Pomi ya mabele ya ndenge na ndenge mpo na poto-poto, friti mpe gratin.",
+      "zho": "多用途土豆，适合做泥、炸薯条和烤菜。"
+    },
+    "nomCourt": "pommesTerre",
+    "categorie": "Légumes",
+    "prix": 1.49,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/FruitsLegumes/pommesTerre.png",
+    "disponible": true,
+    "marque": "Terroir d’Argile",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "LEG9",
+    "nom": {
+      "fr": "Oignon rouge",
+      "en": "Red Onion",
+      "es": "Cebolla roja",
+      "ln": "Litungulu",
+      "zho": "红洋葱"
+    },
+    "description": {
+      "fr": "Oignons rouges au goût doux, parfaits pour la cuisine.",
+      "en": "Red onions with a mild taste, perfect for cooking.",
+      "es": "Cebollas rojas de sabor suave, perfectas para cocinar.",
+      "ln": "Litungulu motane elengi na kolia mpe malamu na kolamba.",
+      "zho": "味道清淡的红洋葱，非常适合烹饪。"
+    },
+    "nomCourt": "oignonRouge",
+    "categorie": "Légumes",
+    "prix": 1.99,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/FruitsLegumes/oignonRouge.png",
+    "disponible": true,
+    "marque": "Légumes du Marché",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "LEG10",
+    "nom": {
+      "fr": "Chou-fleur",
+      "en": "Cauliflower",
+      "es": "Coliflor",
+      "ln": "Chou-fleur",
+      "zho": "花椰菜"
+    },
+    "description": {
+      "fr": "Chou-fleur blanc et croquant, idéal pour gratins et purées.",
+      "en": "White and crunchy cauliflower, ideal for gratins and mash.",
+      "es": "Coliflor blanca y crujiente, ideal para gratinados y puré.",
+      "ln": "Chou-fleur ya pembe, ya malamu mpo na gratin mpe poto-poto.",
+      "zho": "洁白爽脆的花椰菜，适合做焗菜和泥。"
+    },
+    "nomCourt": "chouFleur",
+    "categorie": "Légumes",
+    "prix": 2.69,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/FruitsLegumes/chouFleur.png",
+    "disponible": true,
+    "marque": "Potager Bio",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "LEG11",
+    "nom": {
+      "fr": "Épinard",
+      "en": "Spinach",
+      "es": "Espinaca",
+      "ln": "Bitekuteku",
+      "zho": "菠菜"
+    },
+    "description": {
+      "fr": "Épinards frais, riches en fer et vitamines.",
+      "en": "Fresh spinach, rich in iron and vitamins.",
+      "es": "Espinacas frescas, ricas en hierro y vitaminas.",
+      "ln": "Bitekuteku ya sika, eza na ebuni mpe vitamini.",
+      "zho": "新鲜菠菜，富含铁和维生素。"
+    },
+    "nomCourt": "epinard",
+    "categorie": "Légumes",
+    "prix": 2.19,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/FruitsLegumes/epinard.png",
+    "disponible": true,
+    "marque": "Jardin Vert",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "LEG12",
+    "nom": {
+      "fr": "Ail",
+      "en": "Garlic",
+      "es": "Ajo",
+      "ln": "Ayi",
+      "zho": "大蒜"
+    },
+    "description": {
+      "fr": "Ail frais, parfait pour relever les plats.",
+      "en": "Fresh garlic, perfect to enhance dishes.",
+      "es": "Ajo fresco, perfecto para realzar los platos.",
+      "ln": "Ayi ya sika, malamu mpo na kopesa elengi na biloko ya kolia.",
+      "zho": "新鲜的大蒜，非常适合提升菜肴风味。"
+    },
+    "nomCourt": "ail",
+    "categorie": "Légumes",
+    "prix": 0.99,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/FruitsLegumes/ail.png",
+    "disponible": true,
+    "marque": "Terroir d’Argile",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "LEG13",
+    "nom": {
+      "fr": "Champignon de Paris",
+      "en": "Button Mushroom",
+      "es": "Champiñón de París",
+      "ln": "Mayebo ya Paris",
+      "zho": "白蘑菇"
+    },
+    "description": {
+      "fr": "Champignons de Paris frais, parfaits pour les salades et les plats cuisinés.",
+      "en": "Fresh button mushrooms, perfect for salads and cooked dishes.",
+      "es": "Champiñones de París frescos, perfectos para ensaladas y platos cocinados.",
+      "ln": "Mayebo ya Paris ya sika, malamu mpo na saladi mpe biloko ya kolamba.",
+      "zho": "新鲜的白蘑菇，适合做沙拉和熟食。"
+    },
+    "nomCourt": "champignonParis",
+    "categorie": "Légumes",
+    "prix": 3.29,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/FruitsLegumes/champignonParis.png",
+    "disponible": true,
+    "marque": "FungiFresh",
+    "promo": false,
+    "bio": true
+  },
+  {
+  "id": "LEG14",
+  "nom": {
+    "fr": "Laitue",
+    "en": "Lettuce",
+    "es": "Lechuga",
+    "ln": "Leti",
+    "zho": "生菜"
+  },
+  "description": {
+    "fr": "Laitue fraîche et croquante, idéale pour les salades.",
+    "en": "Fresh and crunchy lettuce, ideal for salads.",
+    "es": "Lechuga fresca y crujiente, ideal para ensaladas.",
+    "ln": "Leti ya sika mpe elengi na munoko, malamu mpo na ba salade.",
+    "zho": "新鲜爽脆的生菜，非常适合做沙拉。"
+  },
+  "nomCourt": "laitue",
+  "categorie": "Légumes",
+  "prix": 1.59,
+  "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/FruitsLegumes/laitue.png",
+  "disponible": true,
+  "marque": "Jardin Vert",
+  "promo": false,
+  "bio": true
+},
+ {
+    "id": "LEG15",
+    "nom": {
+        "fr": "Maïs doux",
+        "en": "Sweet corn",
+        "es": "Maíz dulce",
+        "ln": "Lisangu",   
+        "zho": "甜玉米"             
+      },
+    "description": {
+        "fr": "Maïs doux en épi, sucré et tendre.",
+        "en": "Sweet corn on the cob, sweet and tender.",
+        "es": "Maíz dulce en mazorca, dulce y tierno.",
+        "ln": "Lisangu ya sukali mpe pete, sukali mpe malamu.",
+        "zho": "甜玉米棒，甜而嫩。"
+      },
+    "nomCourt": "maisDoux",
+    "categorie": "Légumes",
+    "prix": 1.89,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/FruitsLegumes/maisDoux.png",
+    "disponible": true,
+    "marque": "Terroir d’Argile",
+    "promo": false,
+    "bio": false
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+    "id": "EPI1",
+    "nom": {
+      "fr": "Pâtes complètes",
+      "en": "Whole Wheat Pasta",
+      "es": "Pasta integral",
+      "ln": "Pâti ya kokoka",
+      "zho": "全麦意面"
+    },
+    "description": {
+      "fr": "Pâtes complètes bio riches en fibres.",
+      "en": "Organic whole wheat pasta rich in fiber.",
+      "es": "Pasta integral ecológica rica en fibra.",
+      "ln": "Pâti ya kokoka ya solo, ezali na fibre mingi.",
+      "zho": "有机全麦意面，富含纤维。"
+    },
+    "nomCourt": "patesCompletes",
+    "categorie": "Épicerie",
+    "prix": 2.49,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Epicerie/patesCompletes.png",
+    "disponible": true,
+    "marque": "BioNature",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "EPI2",
+    "nom": {
+      "fr": "Riz basmati",
+      "en": "Basmati Rice",
+      "es": "Arroz basmati",
+      "ln": "Loso basmati",
+      "zho": "巴斯马蒂大米"
+    },
+    "description": {
+      "fr": "Riz basmati parfumé, idéal pour les plats indiens.",
+      "en": "Fragrant basmati rice, perfect for Indian dishes.",
+      "es": "Arroz basmati aromático, ideal para platos indios.",
+      "ln": "Loso basmati na solo kitoko, malamu mpo na biloko ya Inde.",
+      "zho": "香巴斯马蒂米，非常适合印度菜。"
+    },
+    "nomCourt": "rizBasmati",
+    "categorie": "Épicerie",
+    "prix": 3.29,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Epicerie/rizBasmati.png",
+    "disponible": true,
+    "marque": "Grain d’Or",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "EPI3",
+    "nom": {
+      "fr": "Lentilles vertes",
+      "en": "Green Lentils",
+      "es": "Lentejas verdes",
+      "ln": "Madesu ya mukie",
+      "zho": "绿扁豆"
+    },
+    "description": {
+      "fr": "Lentilles vertes riches en protéines et fibres.",
+      "en": "Green lentils rich in protein and fiber.",
+      "es": "Lentejas verdes ricas en proteínas y fibra.",
+      "ln": "Madesu ya mukie oyo ezali na protein mpe fibre mingi.",
+      "zho": "富含蛋白质和纤维的绿扁豆。"
+    },
+    "nomCourt": "lentillesVertes",
+    "categorie": "Épicerie",
+    "prix": 2.89,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Epicerie/lentillesVertes.png",
+    "disponible": true,
+    "marque": "Terres Bio",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "EPI4",
+    "nom": {
+      "fr": "Farine de blé",
+      "en": "Wheat Flour",
+      "es": "Harina de trigo",
+      "ln": "Fufu ya bleyi",
+      "zho": "小麦面粉"
+    },
+    "description": {
+      "fr": "Farine de blé T55 idéale pour pâtisserie et pain.",
+      "en": "T55 wheat flour, ideal for pastries and bread.",
+      "es": "Harina de trigo T55, ideal para repostería y pan.",
+      "ln": "Fufu ya bleyi T55, malamu mpo na bagato mpe mapa.",
+      "zho": "T55小麦粉, 适合糕点和面包。"
+    },
+    "nomCourt": "farineBle",
+    "categorie": "Épicerie",
+    "prix": 1.79,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Epicerie/farineBle.png",
+    "disponible": true,
+    "marque": "Moulin d’Argent",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "EPI5",
+    "nom": {
+      "fr": "Sucre roux",
+      "en": "Brown Sugar",
+      "es": "Azúcar moreno",
+      "ln": "Sukali ya motane",
+      "zho": "红糖"
+    },
+    "description": {
+      "fr": "Sucre roux de canne non raffiné.",
+      "en": "Unrefined brown cane sugar.",
+      "es": "Azúcar de caña moreno sin refinar.",
+      "ln": "Sukali ya motane ya nsuka, te ekomi na mayi.",
+      "zho": "未经精炼的红甘蔗糖。"
+    },
+    "nomCourt": "sucreRoux",
+    "categorie": "Épicerie",
+    "prix": 2.19,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Epicerie/sucreRoux.png",
+    "disponible": true,
+    "marque": "SweetCane",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "EPI6",
+    "nom": {
+      "fr": "Huile d'olive",
+      "en": "Olive Oil",
+      "es": "Aceite de oliva",
+      "ln": "Mafuta ya Olivi",
+      "zho": "橄榄油"
+    },
+    "description": {
+      "fr": "Huile d'olive vierge extra, première pression à froid.",
+      "en": "Extra virgin olive oil, first cold-pressed.",
+      "es": "Aceite de oliva virgen extra, primera presión en frío.",
+      "ln": "Mafuta ya olivi, epetolamaki sima ebukamki.",
+      "zho": "特级初榨橄榄油，冷榨。"
+    },
+    "nomCourt": "huileOlive",
+    "categorie": "Épicerie",
+    "prix": 6.99,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Epicerie/huileOlive.png",
+    "disponible": true,
+    "marque": "Olea Verde",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "EPI7",
+    "nom": {
+      "fr": "Vinaigre balsamique",
+      "en": "Balsamic Vinegar",
+      "es": "Vinagre balsámico",
+      "ln": "Vilinegri balsamique",
+      "zho": "意大利香醋"
+    },
+    "description": {
+      "fr": "Vinaigre balsamique de Modène vieilli.",
+      "en": "Aged Modena balsamic vinegar.",
+      "es": "Vinagre balsámico de Módena envejecido.",
+      "ln": "Vinaigre ya Modène ya kala.",
+      "zho": "摩德纳陈年香醋。"
+    },
+    "nomCourt": "vinaigreBalsamique",
+    "categorie": "Épicerie",
+    "prix": 4.59,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Epicerie/vinaigreBalsamique.png",
+    "disponible": true,
+    "marque": "Modena Gold",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "EPI8",
+    "nom": {
+      "fr": "Café moulu",
+      "en": "Ground Coffee",
+      "es": "Café molido",
+      "ln": "Kawa enikami",
+      "zho": "研磨咖啡"
+    },
+    "description": {
+      "fr": "Café moulu 100% arabica, torréfaction lente.",
+      "en": "100% Arabica ground coffee, slow roasted.",
+      "es": "Café molido 100% arábica, tueste lento.",
+      "ln": "Kawa ya konika 100% arabica, oyo batumbi malembe na malembe.",
+      "zho": "100%阿拉比卡研磨咖啡，慢烘焙。"
+    },
+    "nomCourt": "cafeMoulu",
+    "categorie": "Épicerie",
+    "prix": 5.49,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Epicerie/cafeMoulu.png",
+    "disponible": true,
+    "marque": "Café des Andes",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "EPI9",
+    "nom": {
+      "fr": "Thé vert",
+      "en": "Green Tea",
+      "es": "Té verde",
+      "ln": "Ti",
+      "zho": "绿茶"
+    },
+    "description": {
+      "fr": "Thé vert nature issu de l’agriculture biologique.",
+      "en": "Organic green tea, natural flavor.",
+      "es": "Té verde natural de agricultura ecológica.",
+      "ln": "Ti langi ya pondu ya solo, ewuti na bilanga ya solo.",
+      "zho": "有机绿茶，天然风味。"
+    },
+    "nomCourt": "theVert",
+    "categorie": "Épicerie",
+    "prix": 3.99,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Epicerie/theVert.png",
+    "disponible": true,
+    "marque": "ZenLeaf",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "EPI10",
+    "nom": {
+      "fr": "Chocolat noir",
+      "en": "Dark Chocolate",
+      "es": "Chocolate negro",
+      "ln": "Sokola ya mwindo",
+      "zho": "黑巧克力"
+    },
+    "description": {
+      "fr": "Chocolat noir 70% cacao, intense et fondant.",
+      "en": "70% cocoa dark chocolate, intense and smooth.",
+      "es": "Chocolate negro 70% cacao, intenso y suave.",
+      "ln": "Sokola ya mwindo 70% cacao, makasi mpe eyangisamaka.",
+      "zho": "70%可可黑巧克力，浓郁顺滑。"
+    },
+    "nomCourt": "chocolatNoir",
+    "categorie": "Épicerie",
+    "prix": 2.99,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Epicerie/chocolatNoir.png",
+    "disponible": true,
+    "marque": "Cacao Passion",
+    "promo": false,
+    "bio": false
+  },
+
+{
+    "id": "EPI11",
+    "nom": {
+      "fr": "Miel de fleurs",
+      "en": "Flower Honey",
+      "es": "Miel de flores",
+      "ln": "Bói ya fololo",
+      "zho": "花蜜"
+    },
+    "description": {
+      "fr": "Miel de fleurs sauvages, doux et parfumé.",
+      "en": "Wildflower honey, sweet and fragrant.",
+      "es": "Miel de flores silvestres, dulce y aromático.",
+      "ln": "Bói ya fololo ya solo, pete mpe na solo kitoko.",
+      "zho": "野花蜂蜜，甜美芳香。"
+    },
+    "nomCourt": "mielFleurs",
+    "categorie": "Épicerie",
+    "prix": 4.29,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Epicerie/mielFleurs.png",
+    "disponible": true,
+    "marque": "Douceur des Abeilles",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "EPI12",
+    "nom": {
+      "fr": "Sel marin",
+      "en": "Sea Salt",
+      "es": "Sal marina",
+      "ln": "Mungwa ya ebale",
+      "zho": "海盐"
+    },
+    "description": {
+      "fr": "Sel marin non raffiné, riche en minéraux.",
+      "en": "Unrefined sea salt, rich in minerals.",
+      "es": "Sal marina sin refinar, rica en minerales.",
+      "ln": "Mungwa ya ebale oyo bapetoli nanu te, ezali na minerali mingi.",
+      "zho": "未精制海盐，富含矿物质。"
+    },
+    "nomCourt": "selMarin",
+    "categorie": "Épicerie",
+    "prix": 1.49,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Epicerie/selMarin.png",
+    "disponible": true,
+    "marque": "Mer & Terre",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "EPI13",
+    "nom": {
+      "fr": "Poivre noir",
+      "en": "Black Pepper",
+      "es": "Pimienta negra",
+      "ln": "Mondongo",
+      "zho": "黑胡椒"
+    },
+    "description": {
+      "fr": "Poivre noir entier, idéal pour moudre frais.",
+      "en": "Whole black pepper, perfect for fresh grinding.",
+      "es": "Pimienta negra entera, ideal para moler fresca.",
+      "ln": "Mondongo ya mwindo, malamu mpo na konika.",
+      "zho": "整粒黑胡椒，非常适合现磨。"
+    },
+    "nomCourt": "poivreNoir",
+    "categorie": "Épicerie",
+    "prix": 3.19,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Epicerie/poivreNoir.png",
+    "disponible": true,
+    "marque": "Epicéa",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "EPI14",
+    "nom": {
+      "fr": "Sauce tomate",
+      "en": "Tomato Sauce",
+      "es": "Salsa de tomate",
+      "ln": "Sosi ya tomati",
+      "zho": "番茄酱"
+    },
+    "description": {
+      "fr": "Sauce tomate bio, prête à l'emploi pour vos plats.",
+      "en": "Organic tomato sauce, ready to use for your dishes.",
+      "es": "Salsa de tomate ecológica, lista para usar en tus platos.",
+      "ln": "Sosi ya tomati,mpo na biloko na kolamba.",
+      "zho": "有机番茄酱，随时可用。"
+    },
+    "nomCourt": "sauceTomate",
+    "categorie": "Épicerie",
+    "prix": 2.79,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Epicerie/sauceTomate.png",
+    "disponible": true,
+    "marque": "TomatoFresh",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "EPI15",
+    "nom": {
+      "fr": "Huile de tournesol",
+      "en": "Sunflower Oil",
+      "es": "Aceite de girasol",
+      "ln": "Mafuta ya tournesol",
+      "zho": "葵花籽油"
+    },
+    "description": {
+      "fr": "Huile de tournesol vierge, légère et polyvalente.",
+      "en": "Virgin sunflower oil, light and versatile.",
+      "es": "Aceite de girasol virgen, ligero y versátil.",
+      "ln": "Mafuta ya tournesol mpo na biliya ya ndenge na ndenge.",
+      "zho": "初榨葵花籽油，轻盈多用途。"
+    },
+    "nomCourt": "huileTournesol",
+    "categorie": "Épicerie",
+    "prix": 3.49,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Epicerie/huileTournesol.png",
+    "disponible": true,
+    "marque": "Soleil d’Or",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "EPI16",
+    "nom": {
+      "fr": "Pâtes à tartiner",
+      "en": "Spreadable Chocolate Paste",
+      "es": "Crema para untar",
+      "ln": "Sokola",
+      "zho": "巧克力榛子酱"
+    },
+    "description": {
+      "fr": "Pâte à tartiner chocolat-noisette, onctueuse et gourmande.",
+      "en": "Chocolate-hazelnut spread, creamy and indulgent.",
+      "es": "Crema de chocolate y avellana, suave y deliciosa.",
+      "ln": "Sokola na lobila, ya mafuta mpe elengi na koliya.",
+      "zho": "巧克力榛子酱，顺滑美味。"
+    },
+    "nomCourt": "patesTartiner",
+    "categorie": "Épicerie",
+    "prix": 3.99,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Epicerie/patesTartiner.png",
+    "disponible": true,
+    "marque": "ChocoNut",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "EPI17",
+    "nom": {
+      "fr": "Céréales petit déjeuner",
+      "en": "Breakfast Cereals",
+      "es": "Cereales para el desayuno",
+      "ln": "Masango",
+      "zho": "早餐谷物"
+    },
+    "description": {
+      "fr": "Céréales complètes pour un petit déjeuner équilibré.",
+      "en": "Whole grain cereals for a balanced breakfast.",
+      "es": "Cereales integrales para un desayuno equilibrado.",
+      "ln": "Masango oyo eliyamaka na tongo.",
+      "zho": "全麦谷物，均衡早餐选择。"
+    },
+    "nomCourt": "cerealesPetitDejeuner",
+    "categorie": "Épicerie",
+    "prix": 2.99,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Epicerie/cerealesPetitDejeuner.png",
+    "disponible": true,
+    "marque": "CerealJoy",
+    "promo": false,
+    "bio": false
+  },
+
+  {
+    "id": "EPI18",
+    "nom": {
+      "fr": "Café fin",
+      "en": "Fine Coffee",
+      "es": "Café fino",
+      "ln": "Kawa",
+      "zho": "优质咖啡"
+    },
+    "description": {
+      "fr": "Café fin, parfait pour les amateurs de café.",
+      "en": "Fine coffee, perfect for coffee lovers.",
+      "es": "Café fino, perfecto para los amantes del café.",
+      "ln": "Kawa, malamu mpo na ba amateurs ya kawa.",
+      "zho": "优质咖啡，咖啡爱好者的首选。"
+    },
+    "nomCourt": "cafeFin",
+    "categorie": "Épicerie",
+    "prix": 4.99,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Epicerie/cafeFin.png",
+    "disponible": true,
+    "marque": "Café Gourmet",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "EPI19",
+    "nom": {
+      "fr": "Pâtes Spaghetti",
+      "en": "Spaghetti Pasta",
+      "es": "Pasta espagueti",
+      "ln": "Pâti Spaghetti",
+      "zho": "意大利面"
+    },
+    "description": {
+      "fr": "Pâtes spaghetti italiennes, idéales pour vos plats de pâtes.",
+      "en": "Italian spaghetti pasta, perfect for your pasta dishes.",
+      "es": "Pasta espagueti italiana, ideal para tus platos de pasta.",
+      "ln": "Pâti spaghetti, malamu mpo na ba biliya ya pâti.",
+      "zho": "意大利意面，非常适合各类意面料理。"
+    },
+    "nomCourt": "patesSpaghetti",
+    "categorie": "Épicerie",
+    "prix": 1.99,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Epicerie/patesSpaghetti.png",
+    "disponible": true,
+    "marque": "Nature & Saveurs",
+    "promo": false,
+    "bio": true
+  },
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  {
+    "id": "BOU1",
+    "nom": {
+      "fr": "Baguette tradition",
+      "en": "Traditional baguette",
+      "es": "Baguette tradicional",
+      "ln": "Lipa",
+      "zho": "传统法棍"
+    },
+    "description": {
+      "fr": "Baguette tradition à la mie moelleuse et croûte croustillante.",
+      "en": "Traditional baguette with soft crumb and crispy crust.",
+      "es": "Baguette tradicional con miga suave y corteza crujiente.",
+      "ln": "Lipa ya sembe, na sebo ya malamu mpe mokuta ya kitoko.",
+      "zho": "传统法棍，内里柔软，外皮酥脆。"
+    },
+    "nomCourt": "baguetteTradition",
+    "categorie": "Boulangerie",
+    "prix": 1.20,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boulangerie/baguetteTradition.png",
+    "disponible": true,
+    "marque": "Four du Village",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "BOU2",
+    "nom": {
+      "fr": "Pain complet",
+      "en": "Wholemeal bread",
+      "es": "Pan integral",
+      "ln": "Lipa ya kotanda",
+      "zho": "全麦面包"
+    },
+    "description": {
+      "fr": "Pain complet riche en fibres, idéal pour le petit-déjeuner.",
+      "en": "Wholemeal bread rich in fiber, perfect for breakfast.",
+      "es": "Pan integral rico en fibra, ideal para el desayuno.",
+      "ln": "Lipa etondi na ebele ya fibre, malamu mpo na kolia na ntongo.",
+      "zho": "全麦面包，富含纤维，非常适合早餐。"
+    },
+    "nomCourt": "painComplet",
+    "categorie": "Boulangerie",
+    "prix": 2.10,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boulangerie/painComplet.png",
+    "disponible": true,
+    "marque": "Four du Village",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "BOU3",
+    "nom": {
+      "fr": "Croissant pur beurre",
+      "en": "Butter croissant",
+      "es": "Croissant de mantequilla",
+      "ln": "Gato na manteka",
+      "zho": "黄油可颂"
+    },
+    "description": {
+      "fr": "Croissant pur beurre doré et feuilleté.",
+      "en": "Golden and flaky butter croissant.",
+      "es": "Croissant dorado y hojaldrado de mantequilla.",
+      "ln": "Gato na manteka, na langi ya wolo mpe efongoimaka lokola makasa.",
+      "zho": "金黄酥脆的黄油可颂。"
+    },
+    "nomCourt": "croissantPurBeurre",
+    "categorie": "Boulangerie",
+    "prix": 1.00,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boulangerie/croissantPurBeurre.png",
+    "disponible": true,
+    "marque": "Maison Gourmande",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "BOU4",
+    "nom": {
+      "fr": "Pain de mie",
+      "en": "Soft bread",
+      "es": "Pan de molde",
+      "ln": "Lipa ya pete",
+      "zho": "吐司面包"
+    },
+    "description": {
+      "fr": "Pain de mie moelleux et sans croûte.",
+      "en": "Soft bread without crust.",
+      "es": "Pan de molde suave y sin corteza.",
+      "ln": "Lipa ya pete pete mpe ezanga sebo.",
+      "zho": "松软吐司，无外皮。"
+    },
+    "nomCourt": "painMie",
+    "categorie": "Boulangerie",
+    "prix": 2.50,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boulangerie/painMie.png",
+    "disponible": true,
+    "marque": "Douceur du Pain",
+    "promo": false,
+    "bio": false
+  },
+
+{
+    "id": "BOU5",
+    "nom": {
+      "fr": "Brioche tressée",
+      "en": "Braided brioche",
+      "es": "Brioche trenzada",
+      "ln": "Lipa batongi",
+      "zho": "编织布里欧修"
+    },
+    "description": {
+      "fr": "Brioche tressée moelleuse au goût délicatement sucré.",
+      "en": "Soft braided brioche with a delicately sweet taste.",
+      "es": "Brioche trenzada suave con un sabor delicadamente dulce.",
+      "ln": "Lipa ya sukali batongi kitoko mpe pete pete.",
+      "zho": "松软编织布里欧修，口感微甜。"
+    },
+    "nomCourt": "briocheTressee",
+    "categorie": "Boulangerie",
+    "prix": 3.20,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boulangerie/briocheTressee.png",
+    "disponible": true,
+    "marque": "Maison Gourmande",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "BOU6",
+    "nom": {
+      "fr": "Pain au chocolat",
+      "en": "Chocolate pastry",
+      "es": "Pan de chocolate",
+      "ln": "Gato ya sokola",
+      "zho": "巧克力面包"
+    },
+    "description": {
+      "fr": "Pain au chocolat croustillant avec une garniture fondante.",
+      "en": "Crispy chocolate pastry with a soft filling.",
+      "es": "Pan de chocolate crujiente con relleno suave.",
+      "ln": "Gato ya sokola, ya kotonda, ekangami mpe pete na monoko.",
+      "zho": "外脆内软的巧克力面包。"
+    },
+    "nomCourt": "painChocolat",
+    "categorie": "Boulangerie",
+    "prix": 1.50,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boulangerie/painChocolat.png",
+    "disponible": true,
+    "marque": "Maison Gourmande",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "BOU7",
+    "nom": {
+      "fr": "Chausson aux pommes",
+      "en": "Apple turnover",
+      "es": "Empanada de manzana",
+      "ln": "Chausson ya pomi",
+      "zho": "苹果酥"
+    },
+    "description": {
+      "fr": "Chausson aux pommes fait maison, avec une pâte feuilletée croustillante.",
+      "en": "Homemade apple turnover with flaky pastry.",
+      "es": "Empanada de manzana casera con masa hojaldrada.",
+      "ln": "Chausson ya pomi balambi na ndako, na patí lokola makasa.",
+      "zho": "自制苹果酥，酥脆可口。"
+    },
+    "nomCourt": "chaussonPommes",
+    "categorie": "Boulangerie",
+    "prix": 2.00,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boulangerie/chaussonPommes.png",
+    "disponible": true,
+    "marque": "Maison Gourmande",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "BOU8",
+    "nom": {
+      "fr": "Pain pita",
+      "en": "Pita bread",
+      "es": "Pan pita",
+      "ln": "Lipita",
+      "zho": "皮塔饼"
+    },
+    "description": {
+      "fr": "Pain pita souple et moelleux, parfait pour les sandwichs.",
+      "en": "Soft and fluffy pita bread, perfect for sandwiches.",
+      "es": "Pan pita suave y esponjoso, perfecto para bocadillos.",
+      "ln": "Lipita ya sembe, malamu mpo na sandwich.",
+      "zho": "柔软蓬松的皮塔饼，适合做三明治。"
+    },
+    "nomCourt": "painPita",
+    "categorie": "Boulangerie",
+    "prix": 2.90,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boulangerie/painPita.png",
+    "disponible": true,
+    "marque": "Saveurs Méditerranéennes",
+    "promo": false,
+    "bio": false
+  },
+ {
+    "id": "BOU9",
+    "nom": {
+      "fr": "Fougasse aux olives",
+      "en": "Olive fougasse",
+      "es": "Fougasse con aceitunas",
+      "ln": "Fougasse na olivi",
+      "zho": "橄榄佛卡夏"
+    },
+    "description": {
+      "fr": "Fougasse provençale aux olives noires et vertes.",
+      "en": "Provencal fougasse with black and green olives.",
+      "es": "Fougasse provenzal con aceitunas negras y verdes.",
+      "ln": "Fougasse ya Provence na ba olivi ya mwindo mpe langi ya pondu.",
+      "zho": "普罗旺斯风味佛卡夏，搭配黑橄榄和青橄榄。"
+    },
+    "nomCourt": "fougasseOlives",
+    "categorie": "Boulangerie",
+    "prix": 3.50,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boulangerie/fougasseOlives.png",
+    "disponible": true,
+    "marque": "Saveurs Méditerranéennes",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "BOU10",
+    "nom": {
+      "fr": "Pain sans gluten",
+      "en": "Gluten-free bread",
+      "es": "Pan sin gluten",
+      "ln": "Lipa ezanga gluten",
+      "zho": "无麸质面包"
+    },
+    "description": {
+      "fr": "Pain moelleux sans gluten, adapté aux régimes spécifiques.",
+      "en": "Soft gluten-free bread, suitable for specific diets.",
+      "es": "Pan suave sin gluten, adecuado para dietas específicas.",
+      "ln": "Lipa ezanga gluten, malamu mpo na ba oyo baliya kilikli te.",
+      "zho": "松软无麸质面包，适合特定饮食。"
+    },
+    "nomCourt": "painSansGluten",
+    "categorie": "Boulangerie",
+    "prix": 4.20,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boulangerie/painSansGluten.png",
+    "disponible": true,
+    "marque": "Douceur du Pain",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "BOU11",
+    "nom": {
+      "fr": "Bagel nature",
+      "en": "Plain bagel",
+      "es": "Bagel natural",
+      "ln": "Bagel ya solo",
+      "zho": "原味百吉饼"
+    },
+    "description": {
+      "fr": "Bagel nature, parfait pour les garnitures salées ou sucrées.",
+      "en": "Plain bagel, perfect for sweet or savory toppings.",
+      "es": "Bagel natural, perfecto para rellenos dulces o salados.",
+      "ln": "Bagel ya solo, malamu mpo biloko ya mungwa to ya sukali.",
+      "zho": "原味百吉饼，非常适合甜味或咸味配料。"
+    },
+    "nomCourt": "bagelNature",
+    "categorie": "Boulangerie",
+    "prix": 1.80,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boulangerie/bagelNature.png",
+    "disponible": true,
+    "marque": "Four du Village",
+    "promo": false,
+    "bio": false
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+    "id": "VIA1",
+    "nom": {
+      "fr": "Steak haché",
+      "en": "Minced beef",
+      "es": "Carne picada",
+      "ln": "Ngombe ya kokata",
+      "zho": "牛肉饼"
+    },
+    "description": {
+      "fr": "Steak haché de bœuf 100% pur muscle, tendre et savoureux.",
+      "en": "100% pure beef minced steak, tender and flavorful.",
+      "es": "Steak de carne de res 100% pura, tierno y sabroso.",
+      "ln": "Ngombe ya kokata 100% mɔsuni, sembe sembe mpe elengi na munoko.",
+      "zho": "100%纯瘦牛肉汉堡，鲜嫩多汁。"
+    },
+    "nomCourt": "steakHache",
+    "categorie": "Viandes",
+    "prix": 5.50,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ViandesPoissons/steakHache.png",
+    "disponible": true,
+    "marque": "Boucherie du Terroir",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "VIA2",
+    "nom": {
+      "fr": "Escalope de poulet",
+      "en": "Chicken cutlet",
+      "es": "Escalope de pollo",
+      "ln": "Ntolo ya soso",
+      "zho": "鸡肉片"
+    },
+    "description": {
+      "fr": "Escalope de poulet ferme et juteuse, prête à cuisiner.",
+      "en": "Firm and juicy chicken cutlet, ready to cook.",
+      "es": "Escalope de pollo firme y jugosa, lista para cocinar.",
+      "ln": "Ntolo ya soso ekangami, elengi na koliya mpe ko lamba.",
+      "zho": "鸡胸肉片，紧实多汁，烹饪方便。"
+    },
+    "nomCourt": "escalopePoulet",
+    "categorie": "Viandes",
+    "prix": 6.20,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ViandesPoissons/escalopePoulet.png",
+    "disponible": true,
+    "marque": "Volaille de France",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "VIA3",
+    "nom": {
+      "fr": "Côte de porc",
+      "en": "Pork chop",
+      "es": "Chuleta de cerdo",
+      "ln": "Mopanzi ya ngulu",
+      "zho": "猪排"
+    },
+    "description": {
+      "fr": "Côte de porc tendre et savoureuse, idéale au grill.",
+      "en": "Tender and flavorful pork chop, ideal for grilling.",
+      "es": "Chuleta de cerdo tierna y sabrosa, ideal para la parrilla.",
+      "ln": "Mopanzi ya ngulu tendre sembe sembe, malamu mpo na kobabula,.",
+      "zho": "嫩猪排，风味十足，适合烧烤。"
+    },
+    "nomCourt": "cotePorc",
+    "categorie": "Viandes",
+    "prix": 4.80,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ViandesPoissons/cotePorc.png",
+    "disponible": true,
+    "marque": "Boucherie du Terroir",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "VIA4",
+    "nom": {
+      "fr": "Gigot d'agneau",
+      "en": "Leg of lamb",
+      "es": "Pierna de cordero",
+      "ln": "Mopende ya meme",
+      "zho": "羊腿"
+    },
+    "description": {
+      "fr": "Gigot d'agneau tendre, parfait pour les repas de fête.",
+      "en": "Tender leg of lamb, perfect for festive meals.",
+      "es": "Pierna de cordero tierna, perfecta para comidas festivas.",
+      "ln": "Mopende ya meme ya sembe sembe, ebonga mpo na biliya ya feti.",
+      "zho": "嫩羊腿，非常适合节日大餐。"
+    },
+    "nomCourt": "gigotAgneau",
+    "categorie": "Viandes",
+    "prix": 18.90,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ViandesPoissons/gigotAgneau.png",
+    "disponible": true,
+    "marque": "Ferme des Collines",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "VIA5",
+    "nom": {
+      "fr": "Filet mignon",
+      "en": "Pork tenderloin",
+      "es": "Solomillo de cerdo",
+      "ln": "Mɔsuni sembe ya ngulu",
+      "zho": "猪里脊"
+    },
+    "description": {
+      "fr": "Filet mignon de porc tendre et fondant.",
+      "en": "Tender and melt-in-the-mouth pork tenderloin.",
+      "es": "Solomillo de cerdo tierno y jugoso.",
+      "ln": "Mɔsuni ya ngulu sembe sembe mpe pete na munoko.",
+      "zho": "嫩滑猪里脊，美味多汁。"
+    },
+    "nomCourt": "filetMignon",
+    "categorie": "Viandes",
+    "prix": 15.50,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ViandesPoissons/filetMignon.png",
+    "disponible": true,
+    "marque": "Boucherie du Terroir",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "VIA6",
+    "nom": {
+      "fr": "Magret de canard",
+      "en": "Duck breast",
+      "es": "Pechuga de pato",
+      "ln": "Ntolo ya libata",
+      "zho": "鸭胸"
+    },
+    "description": {
+      "fr": "Magret de canard savoureux, à cuire à la poêle ou au four.",
+      "en": "Flavorful duck breast, to cook in pan or oven.",
+      "es": "Pechuga de pato sabrosa, para cocinar en sartén u horno.",
+      "ln": "Ntolo ya libata elengi na koliya, ya kolamba na ekálengele to na etumbelo.",
+      "zho": "美味鸭胸，可煎或烤。"
+    },
+    "nomCourt": "magretCanard",
+    "categorie": "Viandes",
+    "prix": 13.80,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ViandesPoissons/magretCanard.png",
+    "disponible": true,
+    "marque": "Saveurs du Sud-Ouest",
+    "promo": false,
+    "bio": false
+  },
+{
+    "id": "VIA7",
+    "nom": {
+      "fr": "Jarret de veau",
+      "en": "Veal shank",
+      "es": "Jarrete de ternera",
+      "ln": "Mɔsuni'a mokolo",
+      "zho": "小牛膝"
+    },
+    "description": {
+      "fr": "Jarret de veau tendre, idéal pour un osso buco.",
+      "en": "Tender veal shank, ideal for osso buco.",
+      "es": "Jarrete de ternera tierno, ideal para ossobuco.",
+      "ln": "Mɔsuni'a mokolo ya ngombe sembe sembe, malamu mpo na osso buco.",
+      "zho": "嫩小牛膝，非常适合炖菜。"
+    },
+    "nomCourt": "jarretVeau",
+    "categorie": "Viandes",
+    "prix": 12.40,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ViandesPoissons/jarretVeau.png",
+    "disponible": true,
+    "marque": "Ferme des Collines",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "VIA8",
+    "nom": {
+      "fr": "Bavette d'aloyau",
+      "en": "Flank steak",
+      "es": "Bavette de aloyau",
+      "ln": "Libumu ya ngombe",
+      "zho": "牛腹肉"
+    },
+    "description": {
+      "fr": "Bavette d'aloyau tendre et savoureuse, parfaite grillée.",
+      "en": "Tender and flavorful flank steak, perfect grilled.",
+      "es": "Bavette de aloyau tierna y sabrosa, perfecta a la parrilla.",
+      "ln": "Libumu ya ngombe sembe, malamu mpo na kobabula.",
+      "zho": "嫩牛腹肉，非常适合烧烤。"
+    },
+    "nomCourt": "bavetteAloyau",
+    "categorie": "Viandes",
+    "prix": 14.60,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ViandesPoissons/bavetteAloyau.png",
+    "disponible": true,
+    "marque": "Boucherie du Terroir",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "VIA9",
+    "nom": {
+      "fr": "Caille fermière",
+      "en": "Farm-raised quail",
+      "es": "Codorniz de granja",
+      "ln": "Soso ya mukie",
+      "zho": "农场鹌鹑"
+    },
+    "description": {
+      "fr": "Caille fermière tendre et savoureuse, élevée en plein air.",
+      "en": "Tender and flavorful farm-raised quail, free-range.",
+      "es": "Codorniz de granja tierna y sabrosa, criada en libertad.",
+      "ln": "Soso ya mukie sembe sembe mpe kitoko, ba kolisa na esika libanda.",
+      "zho": "嫩农场鹌鹑，自由放养。"
+    },
+    "nomCourt": "cailleFermiere",
+    "categorie": "Viandes",
+    "prix": 8.90,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ViandesPoissons/cailleFermiere.png",
+    "disponible": true,
+    "marque": "Volaille de France",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "VIA10",
+    "nom": {
+      "fr": "Rouelle de porc",
+      "en": "Pork round",
+      "es": "Rodaja de cerdo",
+      "ln": "Mopende ya ngulu",
+      "zho": "猪肉轮切"
+    },
+    "description": {
+      "fr": "Rouelle de porc tendre et juteuse, idéale pour un repas familial.",
+      "en": "Tender and juicy pork round, perfect for a family meal.",
+      "es": "Rodaja de cerdo tierna y jugosa, ideal para una comida familiar.",
+      "ln": "Mopende ya ngulu sembe sembe, malamu mpo na kolia na libota.",
+      "zho": "嫩猪肉轮切，非常适合家庭餐。"
+    },
+    "nomCourt": "rouellePorc",
+    "categorie": "Viandes",
+    "prix": 11.50,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ViandesPoissons/rouellePorc.png",
+    "disponible": true,
+    "marque": "Boucherie du Terroir",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "VIA11",
+    "nom": {
+      "fr": "Échine de porc",
+      "en": "Pork shoulder",
+      "es": "Espalda de cerdo",
+      "ln": "Mokongo ya ngulu",
+      "zho": "猪肩肉"
+    },
+    "description": {
+      "fr": "Échine de porc tendre, parfaite pour les rôtis.",
+      "en": "Tender pork shoulder, perfect for roasting.",
+      "es": "Espalda de cerdo tierna, perfecta para asar.",
+      "ln": "Mokongo ya ngulu, malamu mpo na kobabula.",
+      "zho": "嫩猪肩肉，非常适合烤制。"
+    },
+    "nomCourt": "echinePorc",
+    "categorie": "Viandes",
+    "prix": 7.90,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ViandesPoissons/echinePorc.png",
+    "disponible": true,
+    "marque": "Boucherie du Terroir",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "VIA12",
+    "nom": {
+      "fr": "Poulet rôti",
+      "en": "Roast chicken",
+      "es": "Pollo asado",
+      "ln": "Soso bakobabuli",
+      "zho": "烤鸡"
+    },
+    "description": {
+      "fr": "Poulet rôti fermier, prêt à déguster.",
+      "en": "Farm-raised roast chicken, ready to enjoy.",
+      "es": "Pollo asado de granja, listo para disfrutar.",
+      "ln": "Soso ya kobabula kitoko elengi na kolia.",
+      "zho": "农场烤鸡，即可食用。"
+    },
+    "nomCourt": "pouletRoti",
+    "categorie": "Viandes",
+    "prix": 12.00,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ViandesPoissons/pouletRoti.png",
+    "disponible": true,
+    "marque": "Volaille de France",
+    "promo": false,
+    "bio": false
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+    "id": "POI1",
+    "nom": {
+      "fr": "Saumon frais",
+      "en": "Fresh salmon",
+      "es": "Salmón fresco",
+      "ln": "Salmona ya sika",
+      "zho": "新鲜三文鱼"
+    },
+    "description": {
+      "fr": "Saumon frais de l'Atlantique, riche en oméga-3.",
+      "en": "Fresh Atlantic salmon, rich in omega-3.",
+      "es": "Salmón fresco del Atlántico, rico en omega-3.",
+      "ln": "Salmona ya sika ya Atilantiki, etonda na omega-3.",
+      "zho": "大西洋新鲜三文鱼，富含Omega-3。"
+    },
+    "nomCourt": "saumonFrais",
+    "categorie": "Poissons",
+    "prix": 19.90,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ViandesPoissons/saumonFrais.png",
+    "disponible": true,
+    "marque": "Océan Sélection",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "POI2",
+    "nom": {
+      "fr": "Filet de cabillaud",
+      "en": "Cod fillet",
+      "es": "Filete de bacalao",
+      "ln": "Mɔsuni na cabillaud",
+      "zho": "鳕鱼片"
+    },
+    "description": {
+      "fr": "Filet de cabillaud blanc et tendre, sans arêtes.",
+      "en": "Tender white cod fillet, boneless.",
+      "es": "Filete de bacalao blanco y tierno, sin espinas.",
+      "ln": "Mɔsuni na cabillaud ya pembe mpe sembe sembe, ezanga sèndè.",
+      "zho": "嫩白鳕鱼片，无骨。"
+    },
+    "nomCourt": "filetCabillaud",
+    "categorie": "Poissons",
+    "prix": 17.50,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ViandesPoissons/filetCabillaud.png",
+    "disponible": true,
+    "marque": "Mer Pure",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "POI3",
+    "nom": {
+      "fr": "Truite fumée",
+      "en": "Smoked trout",
+      "es": "Trucha ahumada",
+      "ln": "Truite ya kobabula",
+      "zho": "熏鳟鱼"
+    },
+    "description": {
+      "fr": "Truite fumée au bois de hêtre, délicatement salée.",
+      "en": "Smoked trout with beechwood, lightly salted.",
+      "es": "Trucha ahumada con madera de haya, ligeramente salada.",
+      "ln": "Truite  ba baboli na kuni, na mungwa mukie.",
+      "zho": "榉木熏鳟鱼，轻微加盐。"
+    },
+    "nomCourt": "truiteFumee",
+    "categorie": "Poissons",
+    "prix": 12.80,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ViandesPoissons/truiteFumee.png",
+    "disponible": true,
+    "marque": "Saveurs des Rivières",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "POI4",
+    "nom": {
+      "fr": "Bar entier",
+      "en": "Whole sea bass",
+      "es": "Lubina entera",
+      "ln": "Bar ya mobimba",
+      "zho": "整条海鲈鱼"
+    },
+    "description": {
+      "fr": "Bar entier vidé, idéal au four ou au grill.",
+      "en": "Whole gutted sea bass, ideal for oven or grill.",
+      "es": "Lubina entera eviscerada, ideal al horno o a la parrilla.",
+      "ln": "Bar ya mobimba mpe polele, malamu mpo na fùlu to na kobabula.",
+      "zho": "整条去内脏海鲈鱼，适合烤或烧烤。"
+    },
+    "nomCourt": "barEntier",
+    "categorie": "Poissons",
+    "prix": 15.40,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ViandesPoissons/barEntier.png",
+    "disponible": true,
+    "marque": "Pêche Côtière",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "POI5",
+    "nom": {
+      "fr": "Daurade royale",
+      "en": "Royal sea bream",
+      "es": "Dorada real",
+      "ln": "Libúndú",
+      "zho": "皇家鲷鱼"
+    },
+    "description": {
+      "fr": "Daurade royale fraîche, parfaite grillée ou en papillote.",
+      "en": "Fresh royal sea bream, perfect grilled or in papillote.",
+      "es": "Dorada real fresca, perfecta a la parrilla o en papillote.",
+      "ln": "Libúndúya sika, malamu mpo na kobabula to na papillote.",
+      "zho": "新鲜皇家鲷鱼，适合烤或纸包烹调。"
+    },
+    "nomCourt": "dauradeRoyale",
+    "categorie": "Poissons",
+    "prix": 16.90,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ViandesPoissons/dauradeRoyale.png",
+    "disponible": true,
+    "marque": "Mer Pure",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "POI6",
+    "nom": {
+      "fr": "Crevettes grises",
+      "en": "Grey shrimps",
+      "es": "Camarones grises",
+      "ln": "Kosákosá ya mbwé",
+      "zho": "灰虾"
+    },
+    "description": {
+      "fr": "Crevettes grises décortiquées, prêtes à l'emploi.",
+      "en": "Peeled grey shrimps, ready to use.",
+      "es": "Camarones grises pelados, listas para usar.",
+      "ln": "Kosákosá ya mbwé mpe sika, ya komibongisa mpo na kosalela.",
+      "zho": "去壳灰虾，即用即食。"
+    },
+    "nomCourt": "crevettesGrises",
+    "categorie": "Poissons",
+    "prix": 11.50,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ViandesPoissons/crevettesGrises.png",
+    "disponible": true,
+    "marque": "Pêche Artisanale",
+    "promo": false,
+    "bio": false
+  },
+
+  {
+    "id": "POI7",
+    "nom": {
+      "fr": "Moules de Bouchot",
+      "en": "Bouchot mussels",
+      "es": "Mejillones de Bouchot",
+      "ln": "Kodia ya Bouchot",
+      "zho": "布绍牡蛎"
+    },
+    "description": {
+      "fr": "Moules de Bouchot fraîches, idéales pour la cuisson à la marinière.",
+      "en": "Fresh Bouchot mussels, perfect for marinière style cooking.",
+      "es": "Mejillones de Bouchot frescos, ideales para cocinar a la marinera.",
+      "ln": "Kodia ya Bouchot ya sika, malamu mpo na kobabula na marinière.",
+      "zho": "新鲜布绍牡蛎，非常适合白葡萄酒蒸煮。"
+    },
+    "nomCourt": "moulesBouchot",
+    "categorie": "Poissons",
+    "prix": 9.90,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ViandesPoissons/moulesBouchot.png",
+    "disponible": true,
+    "marque": "Mer du Nord",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "POI8",
+    "nom": {
+      "fr": "Saint-Jacques",
+      "en": "Scallops",
+      "es": "Vieiras",
+      "ln": "Saint-Jacques",
+      "zho": "扇贝"
+    },
+    "description": {
+      "fr": "Coquilles Saint-Jacques fraîches, parfaites poêlées ou au four.",
+      "en": "Fresh scallops, perfect pan-seared or baked.",
+      "es": "Vieiras frescas, perfectas a la plancha o al horno.",
+      "ln": "Saint-Jacques ya sika, malamu mpo na kobabula na kikalungu to na fùlu.",
+      "zho": "新鲜扇贝，适合煎或烤。"
+    },
+    "nomCourt": "saintJacques",
+    "categorie": "Poissons",
+    "prix": 22.50,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ViandesPoissons/saintJacques.png",
+    "disponible": true,
+    "marque": "Coquillages d’Exception",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "POI9",
+    "nom": {
+      "fr": "Calamars entiers",
+      "en": "Whole squid",
+      "es": "Calamares enteros",
+      "ln": "Calamars ya mobimba",
+      "zho": "整章鱼"
+    },
+    "description": {
+      "fr": "Calamars entiers frais, parfaits pour grillades ou friture.",
+      "en": "Fresh whole squid, perfect for grilling or frying.",
+      "es": "Calamares enteros frescos, perfectos para la parrilla o fritos.",
+      "ln": "Calamars ya mobimba mpe ya sika, malamu mpo na kobabola to na kokálinga.",
+      "zho": "新鲜整章鱼，适合烧烤或油炸。"
+    },
+    "nomCourt": "calamarsEntiers",
+    "categorie": "Poissons",
+    "prix": 13.80,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ViandesPoissons/calamarsEntiers.png",
+    "disponible": true,
+    "marque": "Océan Sauvage",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "POI10",
+    "nom": {
+      "fr": "Homard vivant",
+      "en": "Live lobster",
+      "es": "Langosta viva",
+      "ln": "Homard na bomoi",
+      "zho": "活龙虾"
+    },
+    "description": {
+      "fr": "Homard vivant de l’Atlantique, idéal pour cuisson vapeur ou bouillon.",
+      "en": "Live Atlantic lobster, perfect for steaming or boiling.",
+      "es": "Langosta viva del Atlántico, ideal para cocinar al vapor o hervida.",
+      "ln": "Homard na bomoi ya Atilantiki, malamu na kolamba na molingna mayi moto.",
+      "zho": "大西洋活龙虾，适合蒸或煮汤。"
+    },
+    "nomCourt": "homardVivant",
+    "categorie": "Poissons",
+    "prix": 38.00,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ViandesPoissons/homardVivant.png",
+    "disponible": true,
+    "marque": "Océan Prestige",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "POI11",
+    "nom": {
+      "fr": "Maquereau frais",
+      "en": "Fresh mackerel",
+      "es": "Caballa fresca",
+      "ln": "Mpíodi ya sika",
+      "zho": "新鲜鲭鱼"
+    },
+    "description": {
+      "fr": "Maquereau entier frais, idéal pour les grillades.",
+      "en": "Whole fresh mackerel, ideal for grilling.",
+      "es": "Caballa entera fresca, ideal para asar a la parrilla.",
+      "ln": "Mpíodi mobimba ya sika, ezali malamu mpo na kobabula na moto.",
+      "zho": "新鲜的整条鲭鱼，非常适合烧烤。"
+    },
+    "nomCourt": "maquereauFrais",
+    "categorie": "Poissons",
+    "prix": 9.50,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ViandesPoissons/maquereauFrais.png",
+    "disponible": true,
+    "marque": "Saveurs Maritimes",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "POI12",
+    "nom": {
+      "fr": "Sardines fraîches",
+      "en": "Fresh sardines",
+      "es": "Sardinas frescas",
+      "ln": "Saladini ya sika",
+      "zho": "新鲜沙丁鱼"
+    },
+    "description": {
+      "fr": "Sardines entières fraîches, idéales pour le barbecue, la friture ou vos recettes méditerranéennes.",
+      "en": "Whole fresh sardines, perfect for grilling, frying, or adding to your Mediterranean dishes.",
+      "es": "Sardinas enteras frescas, ideales para la parrilla, la fritura o tus recetas mediterráneas.",
+      "ln": "Saladini mobimba ya sika, ezalaka kitoko mpo na kobabula, kotumba na mafuta to mpo bilia ya Mediteranea.",
+      "zho": "新鲜整条沙丁鱼，适合烧烤、油炸或用于地中海风味菜肴。"
+    },
+    "nomCourt": "sardinesFraiches",
+    "categorie": "Poissons",
+    "prix": 7.40,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ViandesPoissons/sardinesFraiches.png",
+    "disponible": true,
+    "marque": "Pêche Traditionnelle",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "POI13",
+    "nom": {
+      "fr": "Poisson-chat",
+      "en": "Catfish",
+      "es": "Bagre",
+      "ln": "Nyumi",
+      "zho": "鲶鱼"
+    },
+   "description": {
+      "fr": "Poisson-chat frais, à la chair tendre et délicate, idéal pour vos plats raffinés.",
+      "en": "Fresh catfish with tender, delicate flesh, perfect for refined dishes.",
+      "es": "Bagre fresco, de carne tierna y delicada, ideal para platos refinados.",
+      "ln": "Nyomi ya sika na mosuni pete mpe elengi, malamu mpo na bilei ya kitoko.",
+      "zho": "新鲜鲶鱼，肉质细嫩鲜美，非常适合精致菜肴。"
+    },
+    "nomCourt": "poissonChat",
+    "categorie": "Poissons",
+    "prix": 10.20,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ViandesPoissons/poissonChat.png",
+    "disponible": true,
+    "marque": "Pêche Artisanale",
+    "promo": false,
+    "bio": false
+  },
+   {
+    "id": "POI14",
+    "nom": {
+      "fr": "Thon rouge",
+      "en": "Bluefin tuna",
+      "es": "Atún rojo",
+      "ln": "Ton ya motane",
+      "zho": "蓝鳍金枪鱼"
+    },
+    "description": {
+      "fr": "Thon rouge frais, idéal pour sushi et sashimi.",
+      "en": "Fresh bluefin tuna, perfect for sushi and sashimi.",
+      "es": "Atún rojo fresco, ideal para sushi y sashimi.",
+      "ln": "Ton ya motane ya sika, eza kitoko mpo na kosala sushi mpe sashimi.",
+      "zho": "新鲜蓝鳍金枪鱼，非常适合制作寿司和刺身。"
+    },
+    "nomCourt": "thonRouge",
+    "categorie": "Poissons",
+    "prix": 29.90,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ViandesPoissons/thonRouge.png",
+    "disponible": true,
+    "marque": "Sélection Japon",
+    "promo": false,
+    "bio": false
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+  {
+    "id": "PLA1",
+    "nom": {
+      "fr": "Lait demi-écrémé",
+      "en": "Semi-skimmed milk",
+      "es": "Leche semidesnatada",
+      "ln": "Miliki fáfálá",
+      "zho": "半脱脂牛奶"
+    },
+    "description": {
+      "fr": "Lait demi-écrémé pasteurisé, riche en calcium.",
+      "en": "Pasteurized semi-skimmed milk, rich in calcium.",
+      "es": "Leche semidesnatada pasteurizada, rica en calcio.",
+      "ln": "Miliki fáfálá ezanga ngenge mpe etonda na calcium.",
+      "zho": "巴氏杀菌半脱脂牛奶，富含钙。"
+    },
+    "nomCourt": "laitDemiEcreme",
+    "categorie": "Produits laitiers",
+    "prix": 1.20,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ProduitLaitiers/laitDemiEcreme.png",
+    "disponible": true,
+    "marque": "Lait Pur",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "PLA2",
+    "nom": {
+      "fr": "Fromage camembert",
+      "en": "Camembert cheese",
+      "es": "Queso camembert",
+      "ln": "Fromaje camembert",
+      "zho": "卡门贝尔奶酪"
+    },
+    "description": {
+      "fr": "Camembert au lait cru affiné 21 jours.",
+      "en": "Raw milk camembert matured 21 days.",
+      "es": "Camembert de leche cruda madurado 21 días.",
+      "ln": "Fromaje camembert na miliki ya sika, esimbami na mikolo 21.",
+      "zho": "生牛奶卡门贝尔奶酪，熟成21天。"
+    },
+    "nomCourt": "fromageCamembert",
+    "categorie": "Produits laitiers",
+    "prix": 2.50,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ProduitLaitiers/fromageCamembert.png",
+    "disponible": true,
+    "marque": "Normandie Saveurs",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "PLA3",
+    "nom": {
+      "fr": "Yaourt nature",
+      "en": "Plain yogurt",
+      "es": "Yogur natural",
+      "ln": "Yaout ya solo",
+      "zho": "原味酸奶"
+    },
+    "description": {
+      "fr": "Yaourt nature au lait entier, texture onctueuse.",
+      "en": "Whole milk plain yogurt, creamy texture.",
+      "es": "Yogur natural de leche entera, textura cremosa.",
+      "ln": "Yaout ya solo na miliki ya mobimba, mpe lokola mafuta.",
+      "zho": "全脂原味酸奶，质地细腻。"
+    },
+    "nomCourt": "yaourtNature",
+    "categorie": "Produits laitiers",
+    "prix": 1.80,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ProduitLaitiers/yaourtNature.png",
+    "disponible": true,
+    "marque": "Douce Ferme",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "PLA4",
+    "nom": {
+      "fr": "Crème fraîche épaisse",
+      "en": "Thick fresh cream",
+      "es": "Crema fresca espesa",
+      "ln": "Crème ya sika",
+      "zho": "厚鲜奶油"
+    },
+    "description": {
+      "fr": "Crème fraîche épaisse à 30% de matière grasse.",
+      "en": "Thick fresh cream with 30% fat content.",
+      "es": "Crema fresca espesa con 30% de materia grasa.",
+      "ln": "Crème ya sika mpe etondi na 30% ya mafuta.",
+      "zho": "厚鲜奶油，脂肪含量30%。"
+    },
+    "nomCourt": "cremeFraicheEpaisse",
+    "categorie": "Produits laitiers",
+    "prix": 2.10,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ProduitLaitiers/cremeFraicheEpaisse.png",
+    "disponible": true,
+    "marque": "Ferme & Goût",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "PLA5",
+    "nom": {
+      "fr": "Beurre doux",
+      "en": "Unsalted butter",
+      "es": "Mantequilla sin sal",
+      "ln": "Manteka elengi",
+      "zho": "淡味黄油"
+    },
+    "description": {
+      "fr": "Beurre doux de baratte, parfait pour pâtisserie et cuisine.",
+      "en": "Churned unsalted butter, perfect for baking and cooking.",
+      "es": "Mantequilla sin sal de batido, perfecta para repostería y cocina.",
+      "ln": "Manteka elengi ya baratte, malamu mpo na kosala gato mpe kolamba.",
+      "zho": "搅打淡味黄油，适合烘焙和烹饪。"
+    },
+    "nomCourt": "beurreDoux",
+    "categorie": "Produits laitiers",
+    "prix": 2.30,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ProduitLaitiers/beurreDoux.png",
+    "disponible": true,
+    "marque": "Tradition Fermière",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "PLA6",
+    "nom": {
+      "fr": "Fromage de chèvre",
+      "en": "Goat cheese",
+      "es": "Queso de cabra",
+      "ln": "Fromaje na ntaba",
+      "zho": "山羊奶酪"
+    },
+    "description": {
+      "fr": "Fromage de chèvre frais au goût délicat.",
+      "en": "Fresh goat cheese with delicate taste.",
+      "es": "Queso de cabra fresco de sabor delicado.",
+      "ln": "Fromaje na ntaba ya sika, mpe lolenge ya malamu.",
+      "zho": "新鲜山羊奶酪，口味细腻。"
+    },
+    "nomCourt": "fromageChevre",
+    "categorie": "Produits laitiers",
+    "prix": 3.40,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ProduitLaitiers/fromageChevre.png",
+    "disponible": true,
+    "marque": "Chèvre d’Or",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "PLA7",
+    "nom": {
+      "fr": "Lait d’amande",
+      "en": "Almond milk",
+      "es": "Leche de almendra",
+      "ln": "Miliki na lomande",
+      "zho": "杏仁奶"
+    },
+    "description": {
+      "fr": "Boisson végétale au lait d’amande, sans lactose.",
+      "en": "Plant-based almond milk drink, lactose-free.",
+      "es": "Bebida vegetal de leche de almendra, sin lactosa.",
+      "ln": "Miliki na lomande, ezanga lactose.",
+      "zho": "植物性杏仁奶饮品，无乳糖。"
+    },
+    "nomCourt": "laitAmande",
+    "categorie": "Produits laitiers",
+    "prix": 2.90,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ProduitLaitiers/laitAmande.png",
+    "disponible": true,
+    "marque": "Veggie Drink",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "PLA8",
+    "nom": {
+      "fr": "Yaourt à la fraise",
+      "en": "Strawberry yogurt",
+      "es": "Yogur de fresa",
+      "ln": "Yaout ya fraisi",
+      "zho": "草莓酸奶"
+    },
+    "description": {
+      "fr": "Yaourt brassé à la fraise, naturellement sucré.",
+      "en": "Strawberry stirred yogurt, naturally sweet.",
+      "es": "Yogur batido de fresa, naturalmente dulce.",
+      "ln": "Yaout ya fraisi, na sukali ya ngo moko.",
+      "zho": "草莓搅拌酸奶，自然甜味。"
+    },
+    "nomCourt": "yaourtFraise",
+    "categorie": "Produits laitiers",
+    "prix": 2.20,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ProduitLaitiers/yaourtFraise.png",
+    "disponible": true,
+    "marque": "Douce Ferme",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "PLA9",
+    "nom": {
+      "fr": "Fromage comté",
+      "en": "Comté cheese",
+      "es": "Queso Comté",
+      "ln": "Fromaje Comté",
+      "zho": "孔泰干酪"
+    },
+    "description": {
+      "fr": "Comté affiné 12 mois, goût fruité et intense.",
+      "en": "Comté matured 12 months, fruity and intense flavor.",
+      "es": "Comté madurado 12 meses, sabor afrutado e intenso.",
+      "ln": "Fromaje Comté esimbami na mikolo 12, elengi lokola mbuma mpe makasi.",
+      "zho": "孔泰干酪成熟12个月，果香浓郁。"
+    },
+    "nomCourt": "fromageComte",
+    "categorie": "Produits laitiers",
+    "prix": 4.80,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ProduitLaitiers/fromageComte.png",
+    "disponible": true,
+    "marque": "Montagne Saveur",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "PLA10",
+    "nom": {
+      "fr": "Fromage Roquefort",
+      "en": "Roquefort cheese",
+      "es": "Queso Roquefort",
+      "ln": "Fromaje Roquefort",
+      "zho": "洛克福蓝纹奶酪"
+    },
+    "description": {
+      "fr": "Fromage Roquefort AOP, bleu crémeux et savoureux.",
+      "en": "Roquefort AOP cheese, creamy and flavorful blue cheese.",
+      "es": "Queso Roquefort AOP, azul cremoso y sabroso.",
+      "ln": "Fromaje Roquefort AOP, bulu ya krem mpe elengi.",
+      "zho": "AOP洛克福奶酪, 蓝纹奶油风味浓郁。"
+    },
+    "nomCourt": "fromageRoquefort",
+    "categorie": "Produits laitiers",
+    "prix": 5.50,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ProduitLaitiers/fromageRoquefort.png",
+    "disponible": true,
+    "marque": "Bleu des Causses",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "PLA11",
+    "nom": {
+      "fr": "Lait de coco",
+      "en": "Coconut milk",
+      "es": "Leche de coco",
+      "ln": "Miliki na kokoti",
+      "zho": "椰奶"
+    },
+    "description": {
+      "fr": "Lait de coco crémeux, idéal pour les currys et desserts.",
+      "en": "Creamy coconut milk, ideal for curries and desserts.",
+      "es": "Leche de coco cremosa, ideal para currys y postres.",
+      "ln": "Miliki na kokoti ya krem, malamu mpo na curry mpe dessert.",
+      "zho": "椰奶，适合咖喱和甜点。"
+    },
+    "nomCourt": "laitCoco",
+    "categorie": "Produits laitiers",
+    "prix": 2.70,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ProduitLaitiers/laitCoco.png",
+    "disponible": true,
+    "marque": "Tropical Taste",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "PLA12",
+    "nom": {
+      "fr": "Fromage mozzarella",
+      "en": "Mozzarella cheese",
+      "es": "Queso mozzarella",
+      "ln": "Fromaje mozzarella",
+      "zho": "莫扎里拉奶酪"
+    },
+    "description": {
+      "fr": "Mozzarella fraîche, parfaite pour les salades et pizzas.",
+      "en": "Fresh mozzarella, perfect for salads and pizzas.",
+      "es": "Mozzarella fresca, perfecta para ensaladas y pizzas.",
+      "ln": "Fromaje mozzarella ya sika, malamu mpo na salade mpe pizza.",
+      "zho": "新鲜莫扎里拉奶酪，适合沙拉和披萨。"
+    },
+    "nomCourt": "fromageMozzarella",
+    "categorie": "Produits laitiers",
+    "prix": 3.00,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ProduitLaitiers/fromageMozzarella.png",
+    "disponible": true,
+    "marque": "Bella Italia",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "PLA13",
+    "nom": {
+      "fr": "Yaourt à la vanille",
+      "en": "Vanilla yogurt",
+      "es": "Yogur de vainilla",
+      "ln": "Yaout na vanille",
+      "zho": "香草酸奶"
+    },
+    "description": {
+      "fr": "Yaourt à la vanille onctueux, avec de véritables gousses de vanille.",
+      "en": "Creamy vanilla yogurt with real vanilla beans.",
+      "es": "Yogur de vainilla cremoso con auténticas vainas de vainilla.",
+      "ln": "Yaout ya vanille ya krem, na vanille ya solo.",
+      "zho": "香草酸奶，使用真正香草荚。"
+    },
+    "nomCourt": "yaourtVanille",
+    "categorie": "Produits laitiers",
+    "prix": 2.40,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ProduitLaitiers/yaourtVanille.png",
+    "disponible": true,
+    "marque": "Douce Ferme",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "PLA14",
+    "nom": {
+      "fr": "Fromage Parmigiano",
+      "en": "Parmigiano cheese",
+      "es": "Queso Parmigiano",
+      "ln": "Fromaje Parmigiano",
+      "zho": "帕尔马干酪"
+    },
+    "description": {
+      "fr": "Parmigiano Reggiano AOP, fromage italien à pâte dure.",
+      "en": "Parmigiano Reggiano AOP, hard Italian cheese.",
+      "es": "Parmigiano Reggiano AOP, queso duro italiano.",
+      "ln": "Fromaje Parmigiano Reggiano AOP, ya Italie mpe makasi.",
+      "zho": "帕尔马干酪AOP，意大利硬奶酪。"
+    },
+    "nomCourt": "fromageParmigiano",
+    "categorie": "Produits laitiers",
+    "prix": 6.50,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/ProduitLaitiers/fromageParmigiano.png",
+    "disponible": true,
+    "marque": "Gusto Italiano",
+    "promo": false,
+    "bio": false
+  },
+  
+
+
+
+
+
+
+
+
+
+
+{
+    "id": "BOI1",
+    "nom": {
+      "fr": "Eau minérale naturelle",
+      "en": "Natural mineral water",
+      "es": "Agua mineral natural",
+      "ln": "Mai ya mboka ya naturel",
+      "zho": "天然矿泉水"
+    },
+    "description": {
+      "fr": "Eau minérale naturelle plate, bouteille 1,5L.",
+      "en": "Still natural mineral water, 1.5L bottle.",
+      "es": "Agua mineral natural sin gas, botella de 1,5L.",
+      "ln": "Mai ya mboka ya naturel, ya 1,5L.",
+      "zho": "天然矿泉水，1.5升瓶装。"
+    },
+    "nomCourt": "eauMinerale",
+    "categorie": "Boissons",
+    "prix": 0.80,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boissons/eauMinerale.png",
+    "disponible": true,
+    "marque": "Pure Source",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "BOI2",
+    "nom": {
+      "fr": "Jus d'orange frais",
+      "en": "Fresh orange juice",
+      "es": "Jugo de naranja fresco",
+      "ln": "Mayi ya lilala",
+      "zho": "新鲜橙汁"
+    },
+    "description": {
+      "fr": "Jus d'orange 100% pur jus sans sucre ajouté.",
+      "en": "100% pure orange juice, no added sugar.",
+      "es": "Jugo de naranja 100% puro, sin azúcar añadida.",
+      "ln": "Mayi ya lilala 100% ya solo, na sukali na yango moko",
+      "zho": "100%纯橙汁，无添加糖。"
+    },
+    "nomCourt": "jusOrange",
+    "categorie": "Boissons",
+    "prix": 2.30,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boissons/jusOrange.png",
+    "disponible": true,
+    "marque": "Citrus Fresh",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "BOI4",
+    "nom": {
+      "fr": "Thé vert bio",
+      "en": "Organic green tea",
+      "es": "Té verde orgánico",
+      "ln": "Tii langi na pondu",
+      "zho": "有机绿茶"
+    },
+    "description": {
+      "fr": "Boisson thé vert bio, riche en antioxydants.",
+      "en": "Organic green tea drink, rich in antioxidants.",
+      "es": "Bebida de té verde orgánico, rica en antioxidantes.",
+      "ln": "Masanga ya Tii langi na pondu, eza na antioxydants mingi.",
+      "zho": "有机绿茶饮料，富含抗氧化物。"
+    },
+    "nomCourt": "theVertBio",
+    "categorie": "Boissons",
+    "prix": 3.20,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boissons/theVertBio.png",
+    "disponible": true,
+    "marque": "Nature & Thé",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "BOI5",
+    "nom": {
+      "fr": "Coca Cola",
+      "en": "Coca Cola",
+      "es": "Coca Cola",
+      "ln": "Koca Kola",
+      "zho": "可口可乐"
+    },
+    "description": {
+      "fr": "Boisson gazeuse sucrée classique, bouteille de 33cl.",
+      "en": "Classic sweet carbonated drink, 33cl bottle.",
+      "es": "Bebida gaseosa clásica y dulce, botella de 33cl.",
+      "ln": "Masanga ya fulufulu mpe sukali, molangi ya 33cl.",
+      "zho": "经典甜味碳酸饮料，33cl瓶装。"
+    },
+    "nomCourt": "cocaCola",
+    "categorie": "Boissons",
+    "prix": 1.50,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boissons/cocaCola.png",
+    "disponible": true,
+    "marque": "Coca-Cola",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "BOI6",
+    "nom": {
+      "fr": "Limonade artisanale",
+      "en": "Artisanal lemonade",
+      "es": "Limonada artesanal",
+      "ln": "Masanga ya ndimo",
+      "zho": "手工柠檬水"
+    },
+    "description": {
+      "fr": "Limonade artisanale au citron, bouteille en verre.",
+      "en": "Artisanal lemon lemonade, glass bottle.",
+      "es": "Limonada artesanal de limón, botella de vidrio.",
+      "ln": "Masanga ya ndimo ba sali na maboko, molangi ya vere.",
+      "zho": "手工柠檬水，玻璃瓶装。"
+    },
+    "nomCourt": "limonadeArtisanale",
+    "categorie": "Boissons",
+    "prix": 2.70,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boissons/limonadeArtisanale.png",
+    "disponible": true,
+    "marque": "Verre Pétillant",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "BOI7",
+    "nom": {
+      "fr": "Vin rouge Bordeaux",
+      "en": "Red Bordeaux wine",
+      "es": "Vino tinto Burdeos",
+      "ln": "Vino motane Bordeaux",
+      "zho": "波尔多红酒"
+    },
+    "description": {
+      "fr": "Vin rouge Bordeaux AOC, millésime 2018.",
+      "en": "Bordeaux AOC red wine, vintage 2018.",
+      "es": "Vino tinto Bordeaux AOC, cosecha 2018.",
+      "ln": "Vino motane Bordeaux AOC, milésime 2018.",
+      "zho": "波尔多AOC红酒，2018年份。"
+    },
+    "nomCourt": "vinRouge",
+    "categorie": "Boissons",
+    "prix": 8.90,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boissons/vinRouge.png",
+    "disponible": true,
+    "marque": "Château Bellevue",
+    "promo": false,
+    "bio": false
+  },
+
+ {
+    "id": "BOI8",
+    "nom": {
+      "fr": "Bière blonde",
+      "en": "Blonde beer",
+      "es": "Cerveza rubia",
+      "ln": "Masanga ya bule",
+      "zho": "金色啤酒"
+    },
+    "description": {
+      "fr": "Bière blonde artisanale, bouteille de 33cl.",
+      "en": "Craft blonde beer, 33cl bottle.",
+      "es": "Cerveza rubia artesanal, botella de 33cl.",
+      "ln": "Masanga ya bule ba sali na moboko, molangi ya 33cl.",
+      "zho": "手工金色啤酒，33毫升瓶。"
+    },
+    "nomCourt": "biereBlonde",
+    "categorie": "Boissons",
+    "prix": 1.80,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boissons/biereBlonde.png",
+    "disponible": true,
+    "marque": "Brasserie Locale",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "BOI9",
+    "nom": {
+      "fr": "Eau gazeuse",
+      "en": "Sparkling water",
+      "es": "Agua con gas",
+      "ln": "Mayi ya fulufulu",
+      "zho": "气泡水"
+    },
+    "description": {
+      "fr": "Eau gazeuse naturelle, bouteille 1L.",
+      "en": "Natural sparkling water, 1L bottle.",
+      "es": "Agua con gas natural, botella de 1L.",
+      "ln": "Mayi ya fulufulu ya solo, molangi ya 1L.",
+      "zho": "天然气泡水，1升瓶。"
+    },
+    "nomCourt": "eauGazeuse",
+    "categorie": "Boissons",
+    "prix": 0.90,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boissons/eauGazeuse.png",
+    "disponible": true,
+    "marque": "Bulles Claires",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "BOI10",
+    "nom": {
+      "fr": "Jus de pomme bio",
+      "en": "Organic apple juice",
+      "es": "Jugo de manzana orgánico",
+      "ln": "Mayi ya pome",
+      "zho": "有机苹果汁"
+    },
+    "description": {
+      "fr": "Jus de pomme bio 100% pur jus.",
+      "en": "100% pure organic apple juice.",
+      "es": "Jugo de manzana orgánico 100% puro.",
+      "ln": "Mayi ya pome bio 100% mayi na mayi.",
+      "zho": "100%纯有机苹果汁。"
+    },
+    "nomCourt": "jusPomme",
+    "categorie": "Boissons",
+    "prix": 2.80,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boissons/jusPomme.png",
+    "disponible": true,
+    "marque": "Verger Bio",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "BOI11",
+    "nom": {
+      "fr": "Pepsi",
+      "en": "Pepsi",
+      "es": "Pepsi",
+      "ln": "Pepsi",
+      "zho": "百事可乐"
+    },
+    "description": {
+      "fr": "Boisson gazeuse sucrée Pepsi, bouteille de 33cl.",
+      "en": "Sweetened Pepsi soft drink, 33cl bottle.",
+      "es": "Bebida gaseosa dulce Pepsi, botella de 33cl.",
+      "ln": "Mansanga Pepsi sukali mpe na fulufulu, molangi ya de 33cl.",
+      "zho": "甜味百事可乐，33毫升瓶。"
+    },
+    "nomCourt": "pepsi",
+    "categorie": "Boissons",
+    "prix": 1.50,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boissons/pepsi.png",
+    "disponible": true,
+    "marque": "Pepsi",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "BOI12",
+    "nom": {
+      "fr": "Thé noir",
+      "en": "Black tea",
+      "es": "Té negro",
+      "ln": "Tii mwindo",
+      "zho": "红茶"
+    },
+    "description": {
+      "fr": "Thé noir Earl Grey aux arômes de bergamote.",
+      "en": "Earl Grey black tea with bergamot flavor.",
+      "es": "Té negro Earl Grey con aroma a bergamota.",
+      "ln": "Tii mwindo Earl Grey na lolenge ya de bergamote.",
+      "zho": "伯爵红茶，带佛手柑香味。"
+    },
+    "nomCourt": "theNoir",
+    "categorie": "Boissons",
+    "prix": 3.60,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boissons/theNoir.png",
+    "disponible": true,
+    "marque": "Nature & Thé",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "BOI13",
+    "nom": {
+      "fr": "Smoothie mangue",
+      "en": "Mango smoothie",
+      "es": "Batido de mango",
+      "ln": "Smoothie na manga",
+      "zho": "芒果奶昔"
+    },
+    "description": {
+      "fr": "Smoothie mangue fraîche, sans sucres ajoutés.",
+      "en": "Fresh mango smoothie, no added sugar.",
+      "es": "Batido de mango fresco, sin azúcares añadidos.",
+      "ln": "Smoothie na manga ya solo, ezanga sukali ya ko bakisa.",
+      "zho": "新鲜芒果奶昔，无添加糖。"
+    },
+    "nomCourt": "smoothieMangue",
+    "categorie": "Boissons",
+    "prix": 3.00,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boissons/smoothieMangue.png",
+    "disponible": true,
+    "marque": "Fruit’Up",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "BOI14",
+    "nom": {
+      "fr": "Eau de coco",
+      "en": "Coconut water",
+      "es": "Agua de coco",
+      "ln": "Mayi na kokoti",
+      "zho": "椰子水"
+    },
+    "description": {
+      "fr": "Eau de coco naturelle, bouteille 500ml.",
+      "en": "Natural coconut water, 500ml bottle.",
+      "es": "Agua de coco natural, botella de 500ml.",
+      "ln": "Mayi na kokoti ya solo, molangi ya 500ml.",
+      "zho": "天然椰子水，500毫升瓶。"
+    },
+    "nomCourt": "eauCoco",
+    "categorie": "Boissons",
+    "prix": 2.50,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boissons/eauCoco.png",
+    "disponible": true,
+    "marque": "Tropic’Nature",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "BOI15",
+    "nom": {
+      "fr": "Cidre brut",
+      "en": "Dry cider",
+      "es": "Sidra seca",
+      "ln": "Sidre ya sika",
+      "zho": "干苹果酒"
+    },
+    "description": {
+      "fr": "Cidre brut artisanal, bouteille 75cl.",
+      "en": "Artisanal dry cider, 75cl bottle.",
+      "es": "Sidra seca artesanal, botella de 75cl.",
+      "ln": "Sidre ya sika basali na maboko, molangi ya 75cl.",
+      "zho": "手工干苹果酒，75毫升瓶。"
+    },
+    "nomCourt": "cidreBrut",
+    "categorie": "Boissons",
+    "prix": 4.50,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boissons/cidreBrut.png",
+    "disponible": true,
+    "marque": "Cidrerie Artisanale",
+    "promo": false,
+    "bio": false
+  },
+
+ {
+    "id": "BOI16",
+    "nom": {
+      "fr": "Bourbon",
+      "en": "Bourbon",
+      "es": "Bourbon",
+      "ln": "Bourbon",
+      "zho": "波本威士忌"
+    },
+    "description": {
+      "fr": "Bourbon américain, bouteille 70cl.",
+      "en": "American bourbon, 70cl bottle.",
+      "es": "Bourbon americano, botella de 70cl.",
+      "ln": "Bourbon ya Amerika, molangi ya 70cl.",
+      "zho": "美国波本威士忌，70毫升瓶。"
+    },
+    "nomCourt": "bourbon",
+    "categorie": "Boissons",
+    "prix": 25.00,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boissons/bourbon.png",
+    "disponible": true,
+    "marque": "Kentucky Spirit",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "BOI17",
+    "nom": {
+      "fr": "Whisky écossais",
+      "en": "Scottish whisky",
+      "es": "Whisky escocés",
+      "ln": "Whisky ya Scotland",
+      "zho": "苏格兰威士忌"
+    },
+    "description": {
+      "fr": "Whisky écossais single malt, bouteille 70cl.",
+      "en": "Scottish single malt whisky, 70cl bottle.",
+      "es": "Whisky escocés single malt, botella de 70cl.",
+      "ln": "Whisky ya Scotland single malt, molangi ya 70cl.",
+      "zho": "苏格兰单一麦芽威士忌，70毫升瓶。"
+    },
+    "nomCourt": "whiskyEcossais",
+    "categorie": "Boissons",
+    "prix": 35.00,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boissons/whiskyEcossais.png",
+    "disponible": true,
+    "marque": "Highland Distillery",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "BOI18",
+    "nom": {
+      "fr": "Vodka russe",
+      "en": "Russian vodka",
+      "es": "Vodka ruso",
+      "ln": "Vodka ya Russie",
+      "zho": "俄罗斯伏特加"
+    },
+    "description": {
+      "fr": "Vodka russe pure, bouteille 70cl.",
+      "en": "Pure Russian vodka, 70cl bottle.",
+      "es": "Vodka ruso puro, botella de 70cl.",
+      "ln": "Vodka ya Russie pure, molangi ya 70cl.",
+      "zho": "纯正俄罗斯伏特加，70毫升瓶。"
+    },
+    "nomCourt": "vodkaRusse",
+    "categorie": "Boissons",
+    "prix": 30.00,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boissons/vodkaRusse.png",
+    "disponible": true,
+    "marque": "Moscou Spirit",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "BOI19",
+    "nom": {
+      "fr": "Rhum",
+      "en": "Rum",
+      "es": "Ron",
+      "ln": "Rhum",
+      "zho": "朗姆酒"
+    },
+    "description": {
+      "fr": "Rhum des Caraïbes, bouteille 70cl.",
+      "en": "Caribbean rum, 70cl bottle.",
+      "es": "Ron del Caribe, botella de 70cl.",
+      "ln": "Rhum ya Karayibe, molangi ya 70cl.",
+      "zho": "加勒比朗姆酒，70毫升瓶。"
+    },
+    "nomCourt": "rhum",
+    "categorie": "Boissons",
+    "prix": 22.00,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boissons/rhum.png",
+    "disponible": true,
+    "marque": "Caribbean Gold",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "BOI20",
+    "nom": {
+      "fr": "Heineken",
+      "en": "Heineken",
+      "es": "Heineken",
+      "ln": "Heineken",
+      "zho": "喜力啤酒"
+    },
+    "description": {
+      "fr": "Bière blonde Heineken, bouteille 33cl.",
+      "en": "Heineken blonde beer, 33cl bottle.",
+      "es": "Cerveza rubia Heineken, botella de 33cl.",
+      "ln": "Massanga ya Heineken, molangi ya 33cl.",
+      "zho": "喜力金色啤酒，33毫升瓶。"
+    },
+    "nomCourt": "heineken",
+    "categorie": "Boissons",
+    "prix": 1.80,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boissons/heineken.png",
+    "disponible": true,
+    "marque": "Heineken",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "BOI21",
+    "nom": {
+      "fr": "Fanta agrumes",
+      "en": "Citrus Fanta",
+      "es": "Fanta cítricos",
+      "ln": "Fanta ya biloko ya libumu",
+      "zho": "芬达柑橘味"
+    },
+    "description": {
+      "fr": "Fanta agrumes, boisson gazeuse rafraîchissante, bouteille 33cl.",
+      "en": "Citrus Fanta, refreshing soft drink, 33cl bottle.",
+      "es": "Fanta cítricos, bebida refrescante, botella de 33cl.",
+      "ln": "Fanta ya biloko ya libumu, mayi ya gazé, molangi ya 33cl.",
+      "zho": "芬达柑橘味，清爽汽水，33毫升瓶。"
+    },
+    "nomCourt": "fantaAgrumes",
+    "categorie": "Boissons",
+    "prix": 1.60,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boissons/fantaAgrumes.png",
+    "disponible": true,
+    "marque": "Fanta",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "BOI22",
+    "nom": {
+      "fr": "Pack Eau",
+      "en": "Water pack",
+      "es": "Pack de agua",
+      "ln": "Paki ya mai",
+      "zho": "水礼包"
+    },
+    "description": {
+      "fr": "Pack de 6 bouteilles d'eau minérale naturelle, 1,5L chacune.",
+      "en": "Pack of 6 natural mineral water bottles, 1.5L each.",
+      "es": "Pack de 6 botellas de agua mineral natural, 1,5L cada una.",
+      "ln": "Paki ya milangi 6 ya mai minéral ya solo, 1,5L moko na moko.",
+      "zho": "6瓶天然矿泉水礼包，每瓶1.5L。"
+    },
+    "nomCourt": "packEau",
+    "categorie": "Boissons",
+    "prix": 4.50,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boissons/packEau.png",
+    "disponible": true,
+    "marque": "Pure Source",
+    "promo": false,
+    "bio": false
+  },
+
+  {
+    "id": "BOI23",
+    "nom": {
+      "fr": "Pack jus de fruits",
+      "en": "Fruit juice pack",
+      "es": "Pack de jugos de frutas",
+      "ln": "Paki ya mayi ya biloko ya mbuma",
+      "zho": "水果汁礼包"
+    },
+    "description": {
+      "fr": "Pack de 4 jus de fruits variés (orange, pomme, multifruits, ananas), 1L chacun.",
+      "en": "Pack of 4 assorted fruit juices (orange, apple, mixed fruits, pineapple), 1L each.",
+      "es": "Pack de 4 jugos de frutas variados (naranja, manzana, multifrutas, piña), 1L cada uno.",
+      "ln": "Paki ya bamayi ya ba mbuma 4 (lilala, pome, ba mbuma mingi, ananasi), 1L moko na moko.",
+      "zho": "4瓶混合水果汁礼包（橙子、苹果、综合果汁、菠萝），每瓶1L。"
+    },
+    "nomCourt": "packJusFruits",
+    "categorie": "Boissons",
+    "prix": 8.00,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Boissons/packJusFruits.png",
+    "disponible": true,
+    "marque": "Fruit Mix",
+    "promo": false,
+    "bio": true
+  },
+
+
+
+
+
+
+
+
+
+
+
+  {
+    "id": "SUR1",
+    "nom": {
+      "fr": "Colin surgelé",
+      "en": "Frozen cod",
+      "es": "Bacalao congelado",
+      "ln": "Colin ya malili",
+      "zho": "冷冻鳕鱼"
+    },
+    "description": {
+      "fr": "Colin surgelé de qualité, idéal pour les plats rapides.",
+      "en": "High-quality frozen cod, perfect for quick meals.",
+      "es": "Bacalao congelado de calidad, ideal para comidas rápidas.",
+      "ln": "Colin ya malili ya kitoko, malamu pona bilei ya noki.",
+      "zho": "优质冷冻鳕鱼，适合快速餐点。"
+    },
+    "nomCourt": "colinSurgele",
+    "categorie": "Surgelés",
+    "prix": 9.90,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Surgeles/colinSurgele.png",
+    "disponible": true,
+    "marque": "Océan Express",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "SUR2",
+    "nom": {
+      "fr": "Frites croustillantes",
+      "en": "Crispy fries",
+      "es": "Papas fritas crujientes",
+      "ln": "Batifri",
+      "zho": "脆薯条"
+    },
+    "description": {
+      "fr": "Frites surgelées prêtes à frire ou au four.",
+      "en": "Frozen fries ready to fry or bake.",
+      "es": "Papas fritas congeladas listas para freír o hornear.",
+      "ln": "Batifri ya malili, ekokoma ya kobongama mpo na kokalinga to na fùlu.",
+      "zho": "冷冻薯条，可直接炸或烤。"
+    },
+    "nomCourt": "fritesCroustillantes",
+    "categorie": "Surgelés",
+    "prix": 2.90,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Surgeles/fritesCroustillantes.png",
+    "disponible": true,
+    "marque": "Patata",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "SUR3",
+    "nom": {
+      "fr": "Légumes pour wok",
+      "en": "Wok vegetables",
+      "es": "Verduras para wok",
+      "ln": "Bandunda ya woki",
+      "zho": "炒菜蔬菜"
+    },
+    "description": {
+      "fr": "Mélange de légumes surgelés prêts pour le wok.",
+      "en": "Frozen vegetable mix ready for the wok.",
+      "es": "Mezcla de verduras congeladas listas para el wok.",
+      "ln": "Bandunda ya woki ya malili, ya kobongama mpo na woki.",
+      "zho": "冷冻蔬菜混合，适合炒锅使用。"
+    },
+    "nomCourt": "legumesWok",
+    "categorie": "Surgelés",
+    "prix": 3.40,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Surgeles/legumesWok.png",
+    "disponible": true,
+    "marque": "Green Mix",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "SUR4",
+    "nom": {
+      "fr": "Filets de colin panés",
+      "en": "Breaded cod fillets",
+      "es": "Filetes de bacalao empanados",
+      "ln": "File ya colin ya pané",
+      "zho": "裹面包屑鳕鱼片"
+    },
+    "description": {
+      "fr": "Filets de colin panés croustillants.",
+      "en": "Crispy breaded cod fillets.",
+      "es": "Filetes de bacalao crujientes empanados.",
+      "ln": "Mɔsuni ya colin elatama.",
+      "zho": "酥脆裹面包屑鳕鱼片。"
+    },
+    "nomCourt": "filetsColinPanes",
+    "categorie": "Surgelés",
+    "prix": 5.20,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Surgeles/filetsColinPanes.png",
+    "disponible": true,
+    "marque": "Ocean Crispy",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "SUR5",
+    "nom": {
+      "fr": "Pizza Margherita",
+      "en": "Margherita pizza",
+      "es": "Pizza Margherita",
+      "ln": "Pizza Margherita",
+      "zho": "玛格丽塔披萨"
+    },
+    "description": {
+      "fr": "Pizza Margherita surgelée, prête à cuire.",
+      "en": "Frozen Margherita pizza, ready to bake.",
+      "es": "Pizza Margherita congelada, lista para hornear.",
+      "ln": "Pizza Margherita ya malili, ya kobongama mpo na kolamba .",
+      "zho": "冷冻玛格丽塔披萨，可直接烘烤。"
+    },
+    "nomCourt": "pizzaMargherita",
+    "categorie": "Surgelés",
+    "prix": 6.50,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Surgeles/pizzaMargherita.png",
+    "disponible": true,
+    "marque": "Pizzeria Bella",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "SUR6",
+    "nom": {
+      "fr": "Poêlée campagnarde",
+      "en": "Country-style pan",
+      "es": "Salteado campestre",
+      "ln": "Poêlée ya bisanga",
+      "zho": "田园炒菜"
+    },
+    "description": {
+      "fr": "Poêlée de pommes de terre, oignons et lardons.",
+      "en": "Pan of potatoes, onions, and bacon.",
+      "es": "Salteado de patatas, cebollas y tocino.",
+      "ln": "Poêlée ya malili, pome ya mabele, anyanisi, mpe bacon.",
+      "zho": "土豆、洋葱和培根炒菜。"
+    },
+    "nomCourt": "poeleeCampagnarde",
+    "categorie": "Surgelés",
+    "prix": 4.10,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Surgeles/poeleeCampagnarde.png",
+    "disponible": true,
+    "marque": "Saveurs d’Antan",
+    "promo": false,
+    "bio": false
+  },
+
+  {
+    "id": "SUR7",
+    "nom": {
+      "fr": "Crevettes",
+      "en": "Shrimps",
+      "es": "Camarones",
+      "ln": "Kosákosá",
+      "zho": "虾"
+    },
+    "description": {
+      "fr": "Crevettes roses surgelées.",
+      "en": "Frozen pink shrimps.",
+      "es": "Camarones rosas congelados.",
+      "ln": "Kosákosáya ya motane mukie mpe malili.",
+      "zho": "冷冻粉色虾。"
+    },
+    "nomCourt": "crevettes",
+    "categorie": "Surgelés",
+    "prix": 7.50,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Surgeles/crevettes.png",
+    "disponible": true,
+    "marque": "SeaFresh",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "SUR8",
+    "nom": {
+      "fr": "Lasagnes bolognaise",
+      "en": "Bolognese lasagna",
+      "es": "Lasaña boloñesa",
+      "ln": "Lasagne ya bolognese",
+      "zho": "博洛尼亚千层面"
+    },
+    "description": {
+      "fr": "Lasagnes surgelées à la sauce bolognaise.",
+      "en": "Frozen lasagna with Bolognese sauce.",
+      "es": "Lasaña congelada con salsa boloñesa.",
+      "ln": "Lasagne ya malili na supu bolognese.",
+      "zho": "冷冻博洛尼亚酱千层面。"
+    },
+    "nomCourt": "lasagnesBolognaise",
+    "categorie": "Surgelés",
+    "prix": 5.80,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Surgeles/lasagnesBolognaise.png",
+    "disponible": true,
+    "marque": "Pasta Mia",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "SUR9",
+    "nom": {
+      "fr": "Mélange de fruits rouges",
+      "en": "Mixed red fruits",
+      "es": "Mezcla de frutos rojos",
+      "ln": "Ba mbuma ya motane",
+      "zho": "混合红色水果"
+    },
+    "description": {
+      "fr": "Mélange surgelé de fraises, framboises, mûres et myrtilles.",
+      "en": "Frozen mix of strawberries, raspberries, blackberries, and blueberries.",
+      "es": "Mezcla congelada de fresas, frambuesas, moras y arándanos.",
+      "ln": "Ba mbuma ya motaneya ya malili, fresi, framboisi, mure mpe myrtille.",
+      "zho": "冷冻草莓、覆盆子、黑莓和蓝莓混合。"
+    },
+    "nomCourt": "melangeFruitsRouges",
+    "categorie": "Surgelés",
+    "prix": 6.20,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Surgeles/melangeFruitsRouges.png",
+    "disponible": true,
+    "marque": "Berry Mix",
+    "promo": false,
+    "bio": true
+  },
+  {
+    "id": "SUR10",
+    "nom": {
+      "fr": "Pain surgelé",
+      "en": "Frozen bread",
+      "es": "Pan congelado",
+      "ln": "Lipa ya malili",
+      "zho": "冷冻面包"
+    },
+    "description": {
+      "fr": " Pain surgelé, idéal pour les petits déjeuners.",
+      "en": "Frozen bread, ideal for breakfasts.",
+      "es": "Pan congelado, ideal para desayunos.",
+      "ln": "Lipa ya malili, malamu mpo na petit-déjeuner.",
+      "zho": "冷冻面包，早餐理想选择。"
+    },
+    "nomCourt": "painSurgele",
+    "categorie": "Surgelés",
+    "prix": 3.00,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Surgeles/painSurgele.png",
+    "disponible": true,
+    "marque": "Boulangerie Maison",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "SUR11",
+    "nom": {
+      "fr": "Daurade blanche",
+      "en": "White sea bream",
+      "es": "Dorada blanca",
+      "ln": "Libúndú ya pembe",
+      "zho": "白鲷鱼"
+    },
+    "description": {
+      "fr": "Daurade blanche surgelée, prête à cuisiner.",
+      "en": "Frozen white sea bream, ready to cook.",
+      "es": "Dorada blanca congelada, lista para cocinar.",
+      "ln": "Libúndú ya pembe mpe ya malili, ya kobongama mpo na kolamba.",
+      "zho": "冷冻白鲷鱼，可直接烹饪。"
+    },
+    "nomCourt": "dauradeBlanche",
+    "categorie": "Surgelés",
+    "prix": 12.50,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Surgeles/dauradeBlanche.png",
+    "disponible": true,
+    "marque": "Fishy Go",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "SUR12",
+    "nom": {
+      "fr": "Crème glacée",
+      "en": "Ice cream",
+      "es": "Helado",
+      "ln": "Glasi",
+      "zho": "冰淇淋"
+    },
+    "description": {
+      "fr": "Coupe de crème glacée multisaveur, onctueuse et savoureuse.",
+      "en": "Multiflavor ice cream cup, creamy and tasty.",
+      "es": "Copa de helado de varios sabores, cremosa y deliciosa.",
+      "ln": "Glasi ya malili ya ndenge na ndenge, na kitoko mpe elengi lokola mafuta.",
+      "zho": "多口味冰淇淋杯，柔滑美味。"
+    },
+    "nomCourt": "cremeGlacee",
+    "categorie": "Surgelés",
+    "prix": 3.50,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/Surgeles/cremeGlacee.png",
+    "disponible": true,
+    "marque": "Glaces Artisanales",
+    "promo": false,
+    "bio": true
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+    "id": "CHA1",
+    "nom": {
+      "fr": "Saucisses de Toulouse",
+      "en": "Toulouse sausages",
+      "es": "Salchichas de Toulouse",
+      "ln": "Basosisi ya Toulouse",
+      "zho": "图卢兹香肠"
+    },
+    "description": {
+      "fr": "Saucisses de Toulouse artisanales au goût authentique.",
+      "en": "Traditional Toulouse sausages with authentic taste.",
+      "es": "Salchichas de Toulouse artesanales con sabor auténtico.",
+      "ln": "Basosisi ya Toulouse ya maboko, na lolenge ya solo.",
+      "zho": "传统图卢兹香肠，正宗口味。"
+    },
+    "nomCourt": "saucissesToulouse",
+    "categorie": "Charcuterie et traiteur",
+    "prix": 9.20,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/CharcutTraiteur/saucissesToulouse.png",
+    "disponible": true,
+    "marque": "Charcuterie Fine",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "CHA2",
+    "nom": {
+      "fr": "Jambon blanc supérieur",
+      "en": "Superior white ham",
+      "es": "Jamón blanco superior",
+      "ln": "Jambon mpembe kitoko koleka",
+      "zho": "特级白火腿"
+    },
+    "description": {
+      "fr": "Tranches de jambon blanc supérieur sans conservateur.",
+      "en": "Slices of superior white ham without preservatives.",
+      "es": "Lonchas de jamón blanco superior sin conservantes.",
+      "ln": "Biteni ya jambon ya mpembe kitoko koleka, ezanga biloko oyo ebatelaka.",
+      "zho": "无防腐剂特级白火腿片。"
+    },
+    "nomCourt": "jambonBlancSuperieur",
+    "categorie": "Charcuterie et traiteur",
+    "prix": 3.50,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/CharcutTraiteur/jambonBlancSuperieur.png",
+    "disponible": true,
+    "marque": "Trad’Ham",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "CHA3",
+    "nom": {
+      "fr": "Saucisson sec",
+      "en": "Dry sausage",
+      "es": "Salchichón seco",
+      "ln": "Sosisí ya makasi",
+      "zho": "风干香肠"
+    },
+    "description": {
+      "fr": "Saucisson sec artisanal affiné lentement.",
+      "en": "Traditional dry sausage slowly cured.",
+      "es": "Salchichón seco artesanal curado lentamente.",
+      "ln": "Sosisí ya makasi ya maboko, ba petoli na malembe.",
+      "zho": "传统风干香肠，慢慢腌制。"
+    },
+    "nomCourt": "saucissonSec",
+    "categorie": "Charcuterie et traiteur",
+    "prix": 4.20,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/CharcutTraiteur/saucissonSec.png",
+    "disponible": true,
+    "marque": "Saveurs du Terroir",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "CHA4",
+    "nom": {
+      "fr": "Rillettes de porc",
+      "en": "Pork rillettes",
+      "es": "Rillettes de cerdo",
+      "ln": "Rilɛtɛ ya ngulu",
+      "zho": "猪肉酱"
+    },
+    "description": {
+      "fr": "Rillettes fondantes préparées à l’ancienne.",
+      "en": "Tender pork rillettes prepared in a traditional way.",
+      "es": "Rillettes de cerdo tiernas preparadas a la antigua.",
+      "ln": "Rilɛtɛ ya ngulu ya kolamba na lolenge ya kala.",
+      "zho": "传统工艺制作的嫩猪肉酱。"
+    },
+    "nomCourt": "rillettesPorc",
+    "categorie": "Charcuterie et traiteur",
+    "prix": 3.90,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/CharcutTraiteur/rillettesPorc.png",
+    "disponible": true,
+    "marque": "Maison Fermière",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "CHA5",
+    "nom": {
+      "fr": "Terrine de campagne",
+      "en": "Country terrine",
+      "es": "Terrina de campo",
+      "ln": "Patí ya mboka",
+      "zho": "乡村肉酱"
+    },
+    "description": {
+      "fr": "Terrine de campagne aux épices douces.",
+      "en": "Country terrine with mild spices.",
+      "es": "Terrina de campo con especias suaves.",
+      "ln": "Terine ya mboka na ba episi elengi.",
+      "zho": "带有淡香料的乡村肉酱。"
+    },
+    "nomCourt": "terrineCampagne",
+    "categorie": "Charcuterie et traiteur",
+    "prix": 3.70,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/CharcutTraiteur/terrineCampagne.png",
+    "disponible": true,
+    "marque": "Gourmet Champêtre",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "CHA6",
+    "nom": {
+      "fr": "Pâté de foie",
+      "en": "Liver pâté",
+      "es": "Paté de hígado",
+      "ln": "Patí ya libalé",
+      "zho": "肝酱"
+    },
+    "description": {
+      "fr": "Pâté de foie onctueux et parfumé.",
+      "en": "Smooth and flavorful liver pâté.",
+      "es": "Paté de hígado suave y sabroso.",
+      "ln": "Patí ya libale ya kitoko mpe na solo malamu.",
+      "zho": "柔滑香浓的肝酱。"
+    },
+    "nomCourt": "pateFoie",
+    "categorie": "Charcuterie et traiteur",
+    "prix": 2.80,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/CharcutTraiteur/pateFoie.png",
+    "disponible": true,
+    "marque": "Fines Saveurs",
+    "promo": false,
+    "bio": false
+  },
+
+ {
+    "id": "CHA7",
+    "nom": {
+      "fr": "Boudin noir",
+      "en": "Black pudding",
+      "es": "Morcilla",
+      "ln": "Budɛ ya mwindɔ",
+      "zho": "黑香肠"
+    },
+    "description": {
+      "fr": "Boudin noir traditionnel prêt à réchauffer.",
+      "en": "Traditional black pudding ready to reheat.",
+      "es": "Morcilla tradicional lista para calentar.",
+      "ln": "Budɛ ya mwindɔ ya kala oyo ekoki kosila ya kolamba lisusu.",
+      "zho": "传统黑香肠，可加热即食。"
+    },
+    "nomCourt": "boudinNoir",
+    "categorie": "Charcuterie et traiteur",
+    "prix": 4.10,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/CharcutTraiteur/boudinNoir.png",
+    "disponible": true,
+    "marque": "Charcuterie du Marché",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "CHA8",
+    "nom": {
+      "fr": "Jambon cru fumé",
+      "en": "Smoked raw ham",
+      "es": "Jamón crudo ahumado",
+      "ln": "Jambon mobeso",
+      "zho": "熏生火腿"
+    },
+    "description": {
+      "fr": "Jambon cru fumé au bois de hêtre.",
+      "en": "Smoked raw ham with beech wood.",
+      "es": "Jamón crudo ahumado con madera de haya.",
+      "ln": "Jambon ya mobeso ba lekisi na molinga na nzete ya hêtre.",
+      "zho": "山毛榉木熏制生火腿。"
+    },
+    "nomCourt": "jambonCruFume",
+    "categorie": "Charcuterie et traiteur",
+    "prix": 5.80,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/CharcutTraiteur/jambonCruFume.png",
+    "disponible": true,
+    "marque": "Trad’Ham",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "CHA9",
+    "nom": {
+      "fr": "Hotdog maison",
+      "en": "Homemade hotdog",
+      "es": "Hotdog casero",
+      "ln": "Hotdog ya ndako",
+      "zho": "自制热狗"
+    },
+    "description": {
+      "fr": "Hotdog maison avec saucisse de porc et pain moelleux.",
+      "en": "Homemade hotdog with pork sausage and soft bread.",
+      "es": "Hotdog casero con salchicha de cerdo y pan suave.",
+      "ln": "Hotdog ya ndako na basosisi ya ngulu mpe lipa ya pɛtɛ pɛtɛ.",
+      "zho": "自制热狗，配猪肉香肠和松软面包。"
+    },
+    "nomCourt": "hotdogMaison",
+    "categorie": "Charcuterie et traiteur",
+    "prix": 4.50,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/CharcutTraiteur/hotdogMaison.png",
+    "disponible": true,
+    "marque": "Boucherie Artisanale",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "CHA10",
+    "nom": {
+      "fr": "Chipolata de Guéméné",
+      "en": "Guéméné chipolata",
+      "es": "Chipolata de Guéméné",
+      "ln": "Sosisí ya Guéméné",
+      "zho": "盖梅内小香肠"
+    },
+    "description": {
+      "fr": "Chipolata de Guéméné, saucisse fine et savoureuse.",
+      "en": "Guéméné chipolata, fine and tasty sausage.",
+      "es": "Chipolata de Guéméné, salchicha fina y sabrosa.",
+      "ln": "Sosisí ya Guéméné, ya pɛtɛ mpe na solo kitoko.",
+      "zho": "盖梅内小香肠，细腻美味。"
+    },
+    "nomCourt": "chipolataGuemene",
+    "categorie": "Charcuterie et traiteur",
+    "prix": 3.90,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/CharcutTraiteur/chipolataGuemene.png",
+    "disponible": true,
+    "marque": "Bretagne Saveurs",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "CHA11",
+    "nom": {
+      "fr": "Quiche lorraine",
+      "en": "Lorraine quiche",
+      "es": "Quiche lorraine",
+      "ln": "Kiche ya Lorraine",
+      "zho": "洛林咸派"
+    },
+    "description": {
+      "fr": "Quiche lorraine garnie de lardons et d’emmental.",
+      "en": "Lorraine quiche with bacon and Emmental cheese.",
+      "es": "Quiche lorraine con bacon y queso emmental.",
+      "ln": "Kiche ya Lorraine oyo ezali na biteni ya ngulu mpe fromaji Emmental.",
+      "zho": "洛林咸派，配培根和埃门塔奶酪。"
+    },
+    "nomCourt": "quicheLorraine",
+    "categorie": "Charcuterie et traiteur",
+    "prix": 4.50,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/CharcutTraiteur/quicheLorraine.png",
+    "disponible": true,
+    "marque": "Maison Gourmande",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "CHA12",
+    "nom": {
+      "fr": "Salade piémontaise",
+      "en": "Piedmontese salad",
+      "es": "Ensalada piamontesa",
+      "ln": "Salade ya Piemonte",
+      "zho": "皮埃蒙特沙拉"
+    },
+    "description": {
+      "fr": "Salade piémontaise à base de pommes de terre, jambon et mayonnaise.",
+      "en": "Piedmontese salad with potatoes, ham and mayonnaise.",
+      "es": "Ensalada piamontesa con patatas, jamón y mayonesa.",
+      "ln": "Salade ya Piemonte na pomɛ ya mabele, jambon mpe mayonnaise.",
+      "zho": "皮埃蒙特沙拉，含土豆、火腿和蛋黄酱。"
+    },
+    "nomCourt": "saladePiemontaise",
+    "categorie": "Charcuterie et traiteur",
+    "prix": 3.80,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/CharcutTraiteur/saladePiemontaise.png",
+    "disponible": true,
+    "marque": "Frais Délices",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "CHA13",
+    "nom": {
+      "fr": "Lasagnes au saumon",
+      "en": "Salmon lasagna",
+      "es": "Lasaña de salmón",
+      "ln": "Lasagne ya sémɔ",
+      "zho": "三文鱼千层面"
+    },
+    "description": {
+      "fr": "Lasagnes fraîches au saumon et épinards.",
+      "en": "Fresh salmon lasagna with spinach.",
+      "es": "Lasaña fresca de salmón con espinacas.",
+      "ln": "Lasagne na sémɔné ya sika na bitekuteku .",
+      "zho": "新鲜三文鱼菠菜千层面。"
+    },
+    "nomCourt": "lasagnesSaumon",
+    "categorie": "Charcuterie et traiteur",
+    "prix": 5.90,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/CharcutTraiteur/lasagnesSaumon.png",
+    "disponible": true,
+    "marque": "Pasta Fresca",
+    "promo": false,
+    "bio": false
+  },
+
+   {
+    "id": "CHA14",
+    "nom": {
+      "fr": "Pizza royale",
+      "en": "Royal pizza",
+      "es": "Pizza real",
+      "ln": "Mɔkɔnzi Pizza",
+      "zho": "皇家披萨"
+    },
+    "description": {
+      "fr": "Pizza royale garnie de jambon, champignons et mozzarella.",
+      "en": "Royal pizza topped with ham, mushrooms, and mozzarella.",
+      "es": "Pizza real con jamón, champiñones y mozzarella.",
+      "ln": "Pizza ya mɔkɔnzi na jambon, mayebo mpe mozzarella.",
+      "zho": "皇家披萨，配火腿、蘑菇和马苏里拉奶酪。"
+    },
+    "nomCourt": "pizzaRoyale",
+    "categorie": "Charcuterie et traiteur",
+    "prix": 6.20,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/CharcutTraiteur/pizzaRoyale.png",
+    "disponible": true,
+    "marque": "Bella Italia",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "CHA15",
+    "nom": {
+      "fr": "Pizza aux crevettes",
+      "en": "Shrimp pizza",
+      "es": "Pizza de camarones",
+      "ln": "Pizza na kosákosá",
+      "zho": "虾仁披萨"
+    },
+    "description": {
+      "fr": "Pizza aux crevettes et sauce tomate épicée.",
+      "en": "Shrimp pizza with spicy tomato sauce.",
+      "es": "Pizza de camarones con salsa de tomate picante.",
+      "ln": "Pizza na kosákosá mpe supu ya tomatí mpe pilipili.",
+      "zho": "虾仁披萨，配辣番茄酱。"
+    },
+    "nomCourt": "pizzaCrevettes",
+    "categorie": "Charcuterie et traiteur",
+    "prix": 7.00,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/CharcutTraiteur/pizzaCrevettes.png",
+    "disponible": true,
+    "marque": "Pizzeria Mare",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "CHA16",
+    "nom": {
+      "fr": "Ramen au porc",
+      "en": "Pork ramen",
+      "es": "Ramen de cerdo",
+      "ln": "Ramen ya ngulu",
+      "zho": "猪肉拉面"
+    },
+    "description": {
+      "fr": "Ramen au porc avec bouillon savoureux et légumes croquants.",
+      "en": "Pork ramen with flavorful broth and crunchy vegetables.",
+      "es": "Ramen de cerdo con caldo sabroso y verduras crujientes.",
+      "ln": "Ramen ya ngulu na supu ya kitoko mpe bandunda.",
+      "zho": "猪肉拉面，配美味汤底和爽脆蔬菜。"
+    },
+    "nomCourt": "ramenPorc",
+    "categorie": "Charcuterie et traiteur",
+    "prix": 8.50,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/CharcutTraiteur/ramenPorc.png",
+    "disponible": true,
+    "marque": "Asie Délices",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "CHA17",
+    "nom": {
+      "fr": "Gamja jorim",
+      "en": "Gamja jorim",
+      "es": "Gamja jorim",
+      "ln": "Gamja jorim",
+      "zho": "酱油炖土豆"
+    },
+    "description": {
+      "fr": "Assiète de Gamja jorim, pommes de terre sautées à la coréenne.",
+      "en": "Gamja jorim dish, Korean-style braised potatoes.",
+      "es": "Plato de Gamja jorim, patatas salteadas al estilo coreano.",
+      "ln": "Sani ya Gamja jorim na mbala balambi na ndenge ya Corée.",
+      "zho": "韩式酱油炖土豆。"
+    },
+    "nomCourt": "gamjaJorim",
+    "categorie": "Charcuterie et traiteur",
+    "prix": 4.00,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/CharcutTraiteur/gamjaJorim.png",
+    "disponible": true,
+    "marque": "Corée Gourmande",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "CHA18",
+    "nom": {
+      "fr": "Couscous royal",
+      "en": "Royal couscous",
+      "es": "Cuscús real",
+      "ln": "Mɔkɔnzi Couscous",
+      "zho": "皇家蒸粗麦粉"
+    },
+    "description": {
+      "fr": "Couscous royal avec agneau, poulet et légumes.",
+      "en": "Royal couscous with lamb, chicken, and vegetables.",
+      "es": "Cuscús real con cordero, pollo y verduras.",
+      "ln": "Couscous ya mɔkɔnzi na mwana ntaba, sɔsɔ mpe bandunda.",
+      "zho": "皇家蒸粗麦粉，配羊肉、鸡肉和蔬菜。"
+    },
+    "nomCourt": "couscousRoyal",
+    "categorie": "Charcuterie et traiteur",
+    "prix": 9.50,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/CharcutTraiteur/couscousRoyal.png",
+    "disponible": true,
+    "marque": "Délices du Maghreb",
+    "promo": false,
+    "bio": false
+  },
+  {
+    "id": "CHA19",
+    "nom": {
+      "fr": "Poisson et frites",
+      "en": "Fish and chips",
+      "es": "Pescado con papas fritas",
+      "ln": "Mbisì na friti",
+      "zho": "炸鱼薯条"
+    },
+    "description": {
+      "fr": "Filet de poisson pané avec frites croustillantes.",
+      "en": "Breaded fish fillet with crispy fries.",
+      "es": "Filete de pescado empanado con papas fritas crujientes.",
+      "ln": "Mɔsuni na mbisì na friti ya kotɔbɔ.",
+      "zho": "裹面包屑的鱼排配香脆薯条。"
+    },
+    "nomCourt": "poissonFrites",
+    "categorie": "Charcuterie et traiteur",
+    "prix": 7.20,
+    "image": "https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/produits/CharcutTraiteur/poissonFrites.png",
+    "disponible": true,
+    "marque": "Friture du Port",
+    "promo": false,
+    "bio": false
+  }
+]
+
+
+
+
+
+
+
+
+
+

@@ -1118,6 +1118,11 @@ footer button.btn-contact:hover{
     border-color: var(--cart-border-color);
 }
 
+.choixSupermarche .supermarketImage{
+    width: 35px;
+    height: 100%;
+    background-color: coral;
+}
 .choixSupermarche img{
     width: 35px 
     

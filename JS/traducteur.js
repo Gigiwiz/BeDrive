@@ -134,9 +134,9 @@ languesSB.addEventListener('change', (e) =>{
 
 
 
-// import { Supermarket } from "./BeDrive.js";
+// import { Supermarket as Mpouo }  from "./BeDrive.js";
 
-// const recupDonnées =  new Supermarket()
+// const recupDonnées =  new Mpouo()
       
 
 // recupDonnées.getProduits().then(resp => console.log(resp));
