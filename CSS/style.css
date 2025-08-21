@@ -893,6 +893,9 @@ footer button.btn-contact:hover{
 }
 .prix-AddToCart .prix{
    flex-grow: 1;
+   display: flex;
+   align-items: center;
+   height: 100%;
 }
 
 .prix-AddToCart svg{
@@ -918,7 +921,7 @@ footer button.btn-contact:hover{
 }
 
 
-.produit .description-produit{
+.description-produit{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -946,11 +949,16 @@ footer button.btn-contact:hover{
     transition: var(--transition2s);
 }
 
-.produit .description-produit.active{
+.description-produit.active{
     scale: 1;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
 }
 
-.produit .description-produit .img-description{
+.description-produit .img-description{
     display: flex;
     align-items: center;
     justify-content: start;
@@ -961,7 +969,7 @@ footer button.btn-contact:hover{
     max-height: 40em;
     overflow: hidden;
 }
-.produit .description-produit img{
+.description-produit img{
     height: clamp(100px,5vw, 200px);
     width: clamp(100px,5vw, 200px);
     border-radius: 10px;
@@ -969,18 +977,18 @@ footer button.btn-contact:hover{
 
 }
 
-.produit .description-produit div:first-child p{
+.description-produit div:first-child p{
     width: 70%;
     text-align:justify;
     height: auto;
     line-height: 1.5em ;
 }
 
-.produit .description-produit span.prix{
+.description-produit span.prix{
     margin-left: auto;
 }
 
-.produit .description-produit .addToCart{
+.description-produit .addToCart{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -994,7 +1002,7 @@ footer button.btn-contact:hover{
 
     background-color: var(--button-color);
 }
-.produit .description-produit .addToCart:hover{
+.description-produit .addToCart:hover{
      scale: 1.05;
 }
 

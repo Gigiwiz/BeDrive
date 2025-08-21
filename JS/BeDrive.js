@@ -233,6 +233,7 @@ export class Supermarket{
                         const svgNS = "http://www.w3.org/2000/svg";
                         const svg = document.createElementNS(svgNS, "svg");
                             svg.setAttribute("class", "addToCart");
+                            svg.setAttribute("id", "addToCartBtn");
                             svg.setAttribute("width", "24px");
                             svg.setAttribute("height", "24px");
                             svg.setAttribute("viewBox", "0 -960 960 960" );
@@ -296,6 +297,7 @@ export class Supermarket{
         const produitsDescripDiv =  document.createElement('div');
             produitsDescripDiv.className = `description-produit ${produit.nomCourt}  `;
             produitsDescripDiv.id = this.nom ;
+            produitsDescripDiv.style.position = "absolute"
         
             const produitImgDescrip =  document.createElement('div');
                 produitImgDescrip.className = "img-description";
@@ -331,33 +333,31 @@ export class Supermarket{
         produitsDescripDiv.appendChild(prixDesc);
         produitsDescripDiv.appendChild(descripBtnAddToCart);
 
-       
 
-    //  Affichage de la description du produit lors de son clique 
-       
-        document.querySelectorAll('.containerProduits .produit').forEach(divProduit =>{
-            
-            // Ajout de la description dans la divProduit correspondante  
+        // Ajout de chaque description dans chaque section1Produit(voir html)
+        document.querySelectorAll(".section1Produits").forEach(container => {
+            container.appendChild(produitsDescripDiv)
+        })
 
-            if(divProduit.className.includes(produitsDescripDiv.id) && produitsDescripDiv.className.includes(divProduit.id) ){
+        // Rappel de toutes les div des produits
+        document.querySelectorAll(".containerProduits .produit").forEach(divProduit => {
+            // Evenement "click" sur chaque produit
+            divProduit.addEventListener("click", (e) => {
+                e.preventDefault();
+                const produitID = e.target.id // on récupere l'id de la div du produit lors du clique
 
-                divProduit.appendChild(produitsDescripDiv)
-
-                divProduit.addEventListener("click", (e) => {
-                    console.log(divProduit);
-                    
-                    console.log(produitsDescripDiv);
-                  
+                if (produitID  && produitsDescripDiv.className.includes(produitID) && divProduit.className.includes(produitsDescripDiv.id)) {
                     produitsDescripDiv.classList.add("active")
                     const overlay =  document.querySelector('.overlay')
                         overlay.style.display='block';
                         overlay.addEventListener("click", () => {
                             produitsDescripDiv.classList.remove("active")
                         } )
-                })
-                
-            }
-
+                }
+                // else if(produitID ==="addToCartBtn"){
+                //     return
+                // }
+            })            
         })
             
         }
