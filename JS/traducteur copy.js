@@ -1,82 +1,35 @@
 import { dataTraductions } from "./traductions.js";
-import { getProduits } from "./BeDrive.js";
-
-
-
-function translateProductsName(codeLangue) {
-  getProduits().then(Produits => {
-      document.querySelectorAll(".produit .nom").forEach(produitSpanName => {
-        Produits.forEach(produit => {
-          if(produitSpanName.id === produit.nomCourt){
-            produitSpanName.textContent = produit.nom[codeLangue]
-          }
-        })
-      })
-    })
-  localStorage.setItem("langueNomProduit", codeLangue); // sauvegarde de la langue nom du produit
-}
-
-
-function translateProductsDescrip(codeLangue) {
-  getProduits().then(Produits => {
-      document.querySelectorAll(".description-produit p").forEach(description => {
-        Produits.forEach(produit => {
-          if(description.id === produit.nomCourt){
-            description.textContent = produit.description[codeLangue]
-          }
-        })
-      })
-    })
-  localStorage.setItem("langueDescripProduit", codeLangue); // sauvegarde de la langue nom du produit
-}
 
 
 
 
 
-const langues = document.querySelectorAll('#langMenu div');
-const displayedFlag = document.querySelector("#output .displayedImage")
-
-const languesFlags = {
-  fr: "https://flagsapi.com/FR/flat/24.png",
-  en: "https://flagsapi.com/US/flat/24.png",
-  es: "https://flagsapi.com/ES/flat/24.png",
-  ln: "https://flagsapi.com/CG/flat/24.png", 
-  zho: "https://flagsapi.com/CN/flat/24.png", 
-};
 
 
-function showLangFlag(codeLange) {
-  displayedFlag.src = languesFlags[codeLange];
-  localStorage.setItem("langueFlag", codeLange); // sauvegarde du drapeau du pays
-}
-
-
-
- 
+ const langues = document.querySelectorAll('#langMenu a');
  for (const langue of langues) {
   langue.addEventListener("click", (e)=>{
     e.preventDefault();
     const codeLangue = e.target.id
-    Traduire(codeLangue);
-    showLangFlag(codeLangue);
-    translateProductsName(codeLangue);
-    translateProductsDescrip(codeLangue)
-    
+    const lang = langue.innerHTML;
+    const outPut =  document.getElementById('output')
+    outPut.innerHTML = lang;
+  
     localStorage.setItem('langueCode', codeLangue);
+    Traduire(codeLangue);
   })
  }
 
-
+ 
 
 //  For the sideBar
-const languesSB = document.querySelector('.traducteurSB');
+const languesSB = document.querySelector('.traducteurSB')
 
 languesSB.addEventListener('change', (e) =>{
-  const codeLangue = e.target.value
+  const attr = e.target.value
   for (const el of languesSB) {
-    localStorage.setItem('langueCode', codeLangue);
-    Traduire(codeLangue);    
+    localStorage.setItem('langueCode', attr);
+    Traduire(attr);    
   }
 });
 
@@ -85,15 +38,8 @@ languesSB.addEventListener('change', (e) =>{
 // Lors du chargement de la page
 document.addEventListener('DOMContentLoaded', () => {
   const savedLang = localStorage.getItem('langueCode'); 
-  const savedLangFlag = localStorage.getItem('langueFlag'); 
-  const langueNomProduit = localStorage.getItem("langueNomProduit");
-  const langueDescripProduit = localStorage.getItem("langueDescripProduit");
-
-  if (savedLang && savedLangFlag && langueNomProduit && langueDescripProduit) {
+  if (savedLang) {
     Traduire(savedLang);
-    showLangFlag(savedLangFlag);
-    translateProductsName(langueNomProduit)
-    translateProductsDescrip(langueDescripProduit)
   }
 });
 
@@ -109,31 +55,31 @@ function Traduire(codeLangue) {
         try {
             // le header
             document.querySelectorAll('#lesRayons').forEach((el) => {
-              if(el) el.textContent = dataTraductions[codeLangue].lesRayons;
+                el.textContent = dataTraductions[codeLangue].lesRayons;
             });
             document.querySelectorAll('#fruitsLegumes').forEach((el) => {
-               if(el) el.textContent = dataTraductions[codeLangue].fruitsLegumes;
+                el.textContent = dataTraductions[codeLangue].fruitsLegumes;
             });
             document.querySelectorAll('#viandesPoissons').forEach((el) => {
-               if(el) el.textContent = dataTraductions[codeLangue].viandesPoissons;
+                el.textContent = dataTraductions[codeLangue].viandesPoissons;
             });
             document.querySelectorAll('#prodLaitiersEuf').forEach((el) => {
-               if(el) el.textContent = dataTraductions[codeLangue].prodLaitiersEuf;
+                el.textContent = dataTraductions[codeLangue].prodLaitiersEuf;
             });
             document.querySelectorAll('#epicerie').forEach((el) => {
-               if(el) el.textContent = dataTraductions[codeLangue].epicerie;
+                el.textContent = dataTraductions[codeLangue].epicerie;
             });
             document.querySelectorAll('#painVienois').forEach((el) => {
-               if(el) el.textContent = dataTraductions[codeLangue].painVienois;
+                el.textContent = dataTraductions[codeLangue].painVienois;
             });
             document.querySelectorAll('#prodSurgeles').forEach((el) => {
-               if(el) el.textContent = dataTraductions[codeLangue].prodSurgeles;
+                el.textContent = dataTraductions[codeLangue].prodSurgeles;
             });
             document.querySelectorAll('#boissons').forEach((el) => {
-               if(el) el.textContent = dataTraductions[codeLangue].boissons;
+                el.textContent = dataTraductions[codeLangue].boissons;
             });
             document.querySelectorAll('#charcutTraiteur').forEach((el) => {
-               if(el) el.textContent = dataTraductions[codeLangue].charcutTraiteur;
+                el.textContent = dataTraductions[codeLangue].charcutTraiteur;
             });
 
             rechercher.placeholder = dataTraductions[codeLangue].rechercher;

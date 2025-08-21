@@ -307,10 +307,9 @@ nav .Traducteur{
 
 nav .Traducteur:hover #langMenu{
       visibility:visible;
-
 }
 
-#langMenu a{
+#langMenu div{
 display: flex;
 align-items: center;
 text-decoration:none;
@@ -323,20 +322,18 @@ cursor: pointer;
 /* transition: var(--transition2s); */
 padding:10px;
 }
-#langMenu a:hover{
+#langMenu div:hover{
     background-color: var(--second-color);
 }
 
-#langMenu span{
-    overflow-y: hidden;
-}
 
-#fr span::after,
-#en span::after,
-#es span::after,
-#ln span::after,
-#zho span::after{
-    content: attr(name);
+
+div#fr::after,
+div#en::after,
+div#es::after,
+div#ln::after,
+div#zho::after{
+    content: attr(class);
     position: relative;
     top: 2px;
     font-size:16px ;
@@ -921,7 +918,7 @@ footer button.btn-contact:hover{
 }
 
 
-.description-produit{
+.produit .description-produit{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -949,11 +946,11 @@ footer button.btn-contact:hover{
     transition: var(--transition2s);
 }
 
-.description-produit.active{
+.produit .description-produit.active{
     scale: 1;
 }
 
-.description-produit .img-description{
+.produit .description-produit .img-description{
     display: flex;
     align-items: center;
     justify-content: start;
@@ -964,7 +961,7 @@ footer button.btn-contact:hover{
     max-height: 40em;
     overflow: hidden;
 }
-.description-produit img{
+.produit .description-produit img{
     height: clamp(100px,5vw, 200px);
     width: clamp(100px,5vw, 200px);
     border-radius: 10px;
@@ -972,18 +969,18 @@ footer button.btn-contact:hover{
 
 }
 
-.description-produit div:first-child p{
+.produit .description-produit div:first-child p{
     width: 70%;
     text-align:justify;
     height: auto;
     line-height: 1.5em ;
 }
 
-.description-produit span.prix{
+.produit .description-produit span.prix{
     margin-left: auto;
 }
 
-.description-produit .addToCart{
+.produit .description-produit .addToCart{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -997,7 +994,7 @@ footer button.btn-contact:hover{
 
     background-color: var(--button-color);
 }
-.description-produit .addToCart:hover{
+.produit .description-produit .addToCart:hover{
      scale: 1.05;
 }
 

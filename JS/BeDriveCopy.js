@@ -186,7 +186,6 @@ export class Supermarket{
         return produitsAvailable
     })
     .then(produitsAvailable => {
-
         
         // On trie les produits par marque
         const newProduits = produitsAvailable.sort((a, b) => a.marque.localeCompare(b.marque))
@@ -207,8 +206,7 @@ export class Supermarket{
                       // création du produit
                         const produitDiv = document.createElement("div");
                                 produitDiv.className = `produit ${this.nom}`;
-                                produitDiv.id = produit.nomCourt;
-                                produitDiv.setAttribute("data-supermarket", this.nom)
+                                produitDiv.id = produit.nomCourt
 
                         const imgProduit = document.createElement("img");
                                 imgProduit.src = produit.image;
@@ -290,30 +288,23 @@ export class Supermarket{
     .then(newProduits => {
 
 // Pour afficher la description de chaque produit au clic de celui-ci
+        const produitsEl =  document.querySelectorAll('.containerProduits .produit');
+        const descriptionDiv = document.querySelector(".description-produit");
+        const productDescriptionImg = document.querySelector(".description-produit img");
+        const productDescription = document.querySelector(".description-produit p");
+        const prixDesc = document.querySelector(".description-produit .prix");
 
         for (const produit of newProduits) {
-    // Création de la description de chaque produit
-        const produitsDescripDiv =  document.createElement('div');
-            produitsDescripDiv.className = `description-produit ${produit.nomCourt}  `;
-            produitsDescripDiv.id = this.nom ;
-        
-            const produitImgDescrip =  document.createElement('div');
-                produitImgDescrip.className = "img-description";
-
-                    const imgProduit = document.createElement("img")
-                            imgProduit.src = produit.image
-                            imgProduit.id = produit.nomCourt
-                            imgProduit.alt = produit.nom.fr
-                    const produitDesc = document.createElement("p")
-                            produitDesc.id = produit.nomCourt;
-                            produitDesc.textContent = produit.description.fr
-
-                produitImgDescrip.appendChild(imgProduit);
-                produitImgDescrip.appendChild(produitDesc);
-
-            const prixDesc= document.createElement("span");
-                    prixDesc.className = `prix ${produit.nomCourt}`
-                    if(!produit.promo){
+            
+                produitsEl.forEach(el => {
+                el.addEventListener("click", (e) => {                    
+                    e.preventDefault()
+                    const value = e.target.id
+                    if(value === produit.nomCourt && el.className.includes(this.nom) ){
+                        productDescriptionImg.src = produit.image;
+                        productDescription.textContent = produit.description.fr;
+                        productDescription.id = produit.nomCourt
+                        if(!produit.promo){
                             prixDesc.textContent = `${produit.prix} €`;
                             prixDesc.style.color = 'white'
                         }
@@ -321,45 +312,16 @@ export class Supermarket{
                             prixDesc.textContent = `${(produit.prix)} €, -${produit.promo}%`;
                             prixDesc.style.color = 'red'
                         }
-            
-            const descripBtnAddToCart= document.createElement("div");
-                        descripBtnAddToCart.className = `addToCart ${produit.nomCourt}`
-                        descripBtnAddToCart.innerHTML = `<span id="addToCart" class=${produit.nomCourt}>Ajouter au panier</span>
-                            <svg class=${produit.nomCourt} xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fcfcfc"><path d="M440-600v-120H320v-80h120v-120h80v120h120v80H520v120h-80ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z"></path></svg>`
-              
-        produitsDescripDiv.appendChild(produitImgDescrip);
-        produitsDescripDiv.appendChild(prixDesc);
-        produitsDescripDiv.appendChild(descripBtnAddToCart);
+                        descriptionDiv.classList.add("active")
 
-       
-
-    //  Affichage de la description du produit lors de son clique 
-       
-        document.querySelectorAll('.containerProduits .produit').forEach(divProduit =>{
-            
-            // Ajout de la description dans la divProduit correspondante  
-
-            if(divProduit.className.includes(produitsDescripDiv.id) && produitsDescripDiv.className.includes(divProduit.id) ){
-
-                divProduit.appendChild(produitsDescripDiv)
-
-                divProduit.addEventListener("click", (e) => {
-                    console.log(divProduit);
-                    
-                    console.log(produitsDescripDiv);
-                  
-                    produitsDescripDiv.classList.add("active")
-                    const overlay =  document.querySelector('.overlay')
-                        overlay.style.display='block';
-                        overlay.addEventListener("click", () => {
-                            produitsDescripDiv.classList.remove("active")
-                        } )
+                        const overlay =  document.querySelector('.overlay')
+                            overlay.style.display='block';
+                            overlay.addEventListener("click", () => {
+                                descriptionDiv.classList.remove("active")
+                            } )
+                    }
                 })
-                
-            }
-
-        })
-            
+            })
         }
 
         return newProduits
@@ -510,7 +472,7 @@ Lidl.setPromoByCategory("chart traiteur",35, ["CHA1", "CHA2", "BOI2", "CHA11", "
 
 // Lidl.setPromoByCategory("fruits", 2)
 
-// console.log(Lidl);
+console.log(Lidl);
 
        
         
