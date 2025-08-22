@@ -372,7 +372,7 @@ export class Supermarket{
 
 // Cet appel du getter chooseSupermarket() dans le constructeur permet d'ajouter automatiquement au dessus du panier le nom et l'image de chaque supermarché crée afin de le choisir si besoin
     this.chooseSupermarket;
-    this.showSupermarketLogo(this.logo)
+    // this.showSupermarketLogo(this.logo)
     };
 
    get chooseSupermarket(){
