@@ -3,8 +3,9 @@ import { getProduits } from "./BeDrive.js";
 
 
 
-function translateProductsName(codeLangue) {
+function translateProductsInfos(codeLangue) {
   getProduits().then(Produits => {
+    // Traduction des noms de chaque produits 
       document.querySelectorAll(".produit .nom").forEach(produitSpanName => {
         Produits.forEach(produit => {
           if(produitSpanName.id === produit.nomCourt){
@@ -12,31 +13,27 @@ function translateProductsName(codeLangue) {
           }
         })
       })
-    })
-  localStorage.setItem("langueNomProduit", codeLangue); // sauvegarde de la langue nom du produit
-}
-
-
-function translateProductsDescrip(codeLangue) {
-  getProduits().then(Produits => {
-      document.querySelectorAll(".description-produit p").forEach(description => {
+      // Traduction des descriptions de chaque produit
+       document.querySelectorAll(".description-produit p").forEach(description => {
         Produits.forEach(produit => {
           if(description.id === produit.nomCourt){
             description.textContent = produit.description[codeLangue]
           }
         })
       })
-    })
-  localStorage.setItem("langueDescripProduit", codeLangue); // sauvegarde de la langue nom du produit
+    }
+  );
+
+  localStorage.setItem("langueNomProduit", codeLangue); // sauvegarde de la langue du nom du produit
+  localStorage.setItem("langueDescripProduit", codeLangue); // sauvegarde de la langue de la description du produit
+
 }
 
 
 
-
-
 const langues = document.querySelectorAll('#langMenu div');
+const languesSB = document.querySelector('.traducteurSB');
 const displayedFlag = document.querySelector("#output .displayedImage")
-
 const languesFlags = {
   fr: "https://flagsapi.com/FR/flat/24.png",
   en: "https://flagsapi.com/US/flat/24.png",
@@ -46,54 +43,57 @@ const languesFlags = {
 };
 
 
-function showLangFlag(codeLange) {
-  displayedFlag.src = languesFlags[codeLange];
-  localStorage.setItem("langueFlag", codeLange); // sauvegarde du drapeau du pays
+function showLangueFlagAndSelectedSBlangueName(codeLangue) {
+  displayedFlag.src = languesFlags[codeLangue];
+  languesSB.value = codeLangue;
+
+  localStorage.setItem("langueFlag", codeLangue); // sauvegarde du drapeau du pays
+  localStorage.setItem('selectedLangueValueSB', codeLangue); // sauvegarde de la value de chaque langue selectionnée
+
 }
 
 
-
- 
+// Lors du clique de chaque langue(sur ordinateur)
  for (const langue of langues) {
   langue.addEventListener("click", (e)=>{
     e.preventDefault();
-    const codeLangue = e.target.id
+    const codeLangue = e.target.id //récupération de l'id de la div cliqué ("fr", "en", ...)
     Traduire(codeLangue);
-    showLangFlag(codeLangue);
-    translateProductsName(codeLangue);
-    translateProductsDescrip(codeLangue)
+    showLangueFlagAndSelectedSBlangueName(codeLangue);
+    translateProductsInfos(codeLangue);
     
-    localStorage.setItem('langueCode', codeLangue);
+    localStorage.setItem('langueCode', codeLangue); // sauvegarde de cet id
   })
  }
 
-
-
-//  For the sideBar
-const languesSB = document.querySelector('.traducteurSB');
-
+// Lors de la selection d'une langue dans la sideBar
 languesSB.addEventListener('change', (e) =>{
-  const codeLangue = e.target.value
-  for (const el of languesSB) {
-    localStorage.setItem('langueCode', codeLangue);
-    Traduire(codeLangue);    
-  }
+  const codeLangue = e.target.value // récupération de la value de chaque <option> selectionée ("fr", "en", ...)
+    Traduire(codeLangue);
+    translateProductsInfos(codeLangue);
+    showLangueFlagAndSelectedSBlangueName(codeLangue);
+
+    localStorage.setItem('langueCode', codeLangue); //sauvegarde de cette value
 });
 
 
 
 // Lors du chargement de la page
 document.addEventListener('DOMContentLoaded', () => {
+  // récupération de tous les éléments sauvegardés
   const savedLang = localStorage.getItem('langueCode'); 
   const savedLangFlag = localStorage.getItem('langueFlag'); 
   const langueNomProduit = localStorage.getItem("langueNomProduit");
   const langueDescripProduit = localStorage.getItem("langueDescripProduit");
+  const selectedLangueValueSB = localStorage.getItem("selectedLangueValueSB");
 
-  if (savedLang && savedLangFlag && langueNomProduit && langueDescripProduit) {
+  // Rappel des fonctions
+  if (savedLang && langueNomProduit && langueDescripProduit && savedLangFlag && selectedLangueValueSB) {
     Traduire(savedLang);
-    showLangFlag(savedLangFlag);
-    translateProductsName(langueNomProduit)
-    translateProductsDescrip(langueDescripProduit)
+    translateProductsInfos(langueNomProduit)
+    translateProductsInfos(langueDescripProduit)
+    showLangueFlagAndSelectedSBlangueName(savedLangFlag);
+    showLangueFlagAndSelectedSBlangueName(selectedLangueValueSB);
   }
 });
 
@@ -192,17 +192,4 @@ function Traduire(codeLangue) {
   }   
 }
 
-
- 
-
-// ! SÉLECTION DE CHAQUE ÉLÉEMENT À TRADUIRE - Variable en fonction du contenu de la page
-
-
-
-// import { Supermarket as Mpouo }  from "./BeDrive.js";
-
-// const recupDonnées =  new Mpouo()
-      
-
-// recupDonnées.getProduits().then(resp => console.log(resp));
 

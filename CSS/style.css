@@ -1128,8 +1128,13 @@ footer button.btn-contact:hover{
     height: 100%;
     background-color: coral;
 }
-.choixSupermarche img{
-    width: 35px 
+.choixSupermarche img,
+.choixSupermarche .img{
+    width: 35px;
+
+
+
+    
     
 }
 

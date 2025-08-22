@@ -232,8 +232,8 @@ export class Supermarket{
 
                         const svgNS = "http://www.w3.org/2000/svg";
                         const svg = document.createElementNS(svgNS, "svg");
-                            svg.setAttribute("class", "addToCart");
-                            svg.setAttribute("id", "addToCartBtn");
+                            svg.setAttribute("class", `addToCart ${produit.nomCourt}`);
+                            svg.setAttribute("id", this.nom);
                             svg.setAttribute("width", "24px");
                             svg.setAttribute("height", "24px");
                             svg.setAttribute("viewBox", "0 -960 960 960" );
@@ -269,10 +269,15 @@ export class Supermarket{
                                 switchSupermarketSelect.forEach((select) => {
                                     select.addEventListener("change", (e) => {
                                         e.preventDefault();
-                                        const value = e.target.value
+                                        const value = e.target.value;
+
+                                        localStorage.setItem("supermarketName", value)
+
                                         const displayedProduits = document.querySelectorAll(".containerProduits .produit")
                                                 displayedProduits.forEach((product) => {
-                                                    if(product.className.includes(value))
+
+                                                    const savedSupermaketName = localStorage.getItem("supermarketName")
+                                                    if(product.className.includes(savedSupermaketName))
                                                         product.style.display = "flex";
                                                     else 
                                                         product.style.display = "none";
@@ -326,7 +331,7 @@ export class Supermarket{
             
             const descripBtnAddToCart= document.createElement("div");
                         descripBtnAddToCart.className = `addToCart ${produit.nomCourt}`
-                        descripBtnAddToCart.innerHTML = `<span id="addToCart" class=${produit.nomCourt}>Ajouter au panier</span>
+                        descripBtnAddToCart.innerHTML = `<span class="addToCart ${produit.nomCourt}" id=${this.nom} >Ajouter au panier</span>
                             <svg class=${produit.nomCourt} xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fcfcfc"><path d="M440-600v-120H320v-80h120v-120h80v120h120v80H520v120h-80ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z"></path></svg>`
               
         produitsDescripDiv.appendChild(produitImgDescrip);
@@ -367,6 +372,7 @@ export class Supermarket{
 
 // Cet appel du getter chooseSupermarket() dans le constructeur permet d'ajouter automatiquement au dessus du panier le nom et l'image de chaque supermarché crée afin de le choisir si besoin
     this.chooseSupermarket;
+    this.showSupermarketLogo(this.logo)
     };
 
    get chooseSupermarket(){
@@ -498,7 +504,26 @@ setPromoByCategory(categorie, promo, [...elements]){
 makeProductUnavailable(...elements){
     return this.#unavailableElements.push(...elements)
 };
+
+showSupermarketLogo(image){
+    const supermarketImageOutput = document.querySelectorAll(".choixSupermarche .img");
+
+        supermarketImageOutput.forEach(imageOutput => {
+            imageOutput.src = image
+        })
+}
+
+
 };
+
+const selectedSupermarket = document.querySelectorAll(".choixSupermarche select").forEach(select => {
+
+console.log(select.childNodes.length);
+
+})
+
+
+
 
 
 
@@ -520,7 +545,7 @@ Carrefour.setPromoByCategory("fruits",30,["FRU3", "FRU16"])
 
        
 
-// const Auchan = new Supermarket("Auchan","Logo_Auchan.svg", "10 rue des Oliviers Paris 75013");
+const Auchan = new Supermarket("Auchan","Logo_Auchan.svg", "10 rue des Oliviers Paris 75013");
         
 
 
@@ -528,4 +553,7 @@ Carrefour.setPromoByCategory("fruits",30,["FRU3", "FRU16"])
 // const Leclerc = new Supermarket("E.Leclerc","Logo_Leclerc.svg", "203 avenue des dominicaines Paris 75003");
 
 // const Aldi = new Supermarket("Aldi","Logo_Aldi.svg","30 avenue de Choisy Ivry-sur-Seine 75013")
+
+
+
 
