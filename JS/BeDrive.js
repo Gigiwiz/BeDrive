@@ -257,33 +257,28 @@ export class Supermarket{
                             produitDiv.appendChild(spanNomProduit);   
                         }
 
-                    // Pour afficher les produits en fonction des supermarchés
+                    // Pour n'afficher que les produits du premier supermarché
                         const lastOnesSupermarketOptions = document.querySelectorAll(".switchSupermarket option:not(:first-child)");
                                 lastOnesSupermarketOptions.forEach(option => {
                                     if (option.value === this.nom) {
                                         produitDiv.style.display = "none"
                                     }
                                 });
+                        // Pour changer l'affichaque en fonction du supermarché selectionné
+                        document.querySelectorAll(".choixSupermarche select").forEach((select) => {
+                                select.addEventListener("change", (e) => {
+                                    e.preventDefault();
+                                    const selectedSupermarketName = e.target.value;
 
-                        const switchSupermarketSelect = document.querySelectorAll(".switchSupermarket");                
-                                switchSupermarketSelect.forEach((select) => {
-                                    select.addEventListener("change", (e) => {
-                                        e.preventDefault();
-                                        const value = e.target.value;
-
-                                        localStorage.setItem("supermarketName", value)
-
-                                        const displayedProduits = document.querySelectorAll(".containerProduits .produit")
-                                                displayedProduits.forEach((product) => {
-
-                                                    const savedSupermaketName = localStorage.getItem("supermarketName")
-                                                    if(product.className.includes(savedSupermaketName))
-                                                        product.style.display = "flex";
-                                                    else 
-                                                        product.style.display = "none";
-                                                })
-                                    })
+                                    const displayedProduits = document.querySelectorAll(".containerProduits .produit")
+                                        displayedProduits.forEach((product) => {
+                                            if(product.className.includes(selectedSupermarketName))
+                                                product.style.display = "flex";
+                                            else 
+                                                product.style.display = "none";
+                                        })
                                 })
+                            })
                         }
                     })   
                 }
@@ -295,7 +290,27 @@ export class Supermarket{
     })
     .then(newProduits => {
 
-// Pour afficher la description de chaque produit au clic de celui-ci
+                        /**  LocalStorage DES PRODUITS DE CHAQUE SUPERMARCHÉ SAUVEGARDÉ */
+        
+        // récupération du nom du spermarché selectionné dans LocaStorage préalablement sauvégardé avec le getter chooseSupermarket
+        const savedSupermaket = localStorage.getItem('selectedSupermarket'); 
+
+        if (savedSupermaket) {
+            // Changement de l'affichage des produits en fonction du supermarché sauvegaré
+            document.querySelectorAll(".containerProduits .produit").forEach((product) => {
+                if(product.className.includes(savedSupermaket))
+                    product.style.display = "flex";
+                else 
+                    product.style.display = "none";
+            })
+        }
+
+
+        return newProduits
+    })
+    .then(newProduits => {
+
+// Pour afficher la description de chaque produit au clique de celui-ci
 
         for (const produit of newProduits) {
     // Création de la description de chaque produit
@@ -331,8 +346,9 @@ export class Supermarket{
             
             const descripBtnAddToCart= document.createElement("div");
                         descripBtnAddToCart.className = `addToCart ${produit.nomCourt}`
+                        descripBtnAddToCart.id = this.nom
                         descripBtnAddToCart.innerHTML = `<span class="addToCart ${produit.nomCourt}" id=${this.nom} >Ajouter au panier</span>
-                            <svg class=${produit.nomCourt} xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fcfcfc"><path d="M440-600v-120H320v-80h120v-120h80v120h120v80H520v120h-80ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z"></path></svg>`
+                            <svg class="addToCart${produit.nomCourt}" id=${this.nom}  xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fcfcfc"><path d="M440-600v-120H320v-80h120v-120h80v120h120v80H520v120h-80ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z"></path></svg>`
               
         produitsDescripDiv.appendChild(produitImgDescrip);
         produitsDescripDiv.appendChild(prixDesc);
@@ -359,9 +375,6 @@ export class Supermarket{
                             produitsDescripDiv.classList.remove("active")
                         } )
                 }
-                // else if(produitID ==="addToCartBtn"){
-                //     return
-                // }
             })            
         })
             
@@ -369,12 +382,33 @@ export class Supermarket{
 
         return newProduits
     })
+    .then(newProduits => {
 
-// Cet appel du getter chooseSupermarket() dans le constructeur permet d'ajouter automatiquement au dessus du panier le nom et l'image de chaque supermarché crée afin de le choisir si besoin
+        const produitsPanierContainer = document.querySelectorAll(".produits-panier");
+
+        console.log(produitsPanierContainer);
+        
+
+        for (const produit of newProduits) {
+            
+
+
+            
+        }
+    })
+
+
+
+
+
+
+// Cet appel du getter chooseSupermarket() dans le constructeur permet d'ajouter automatiquement au dessus du panier le nom et le logo de chaque supermarché crée afin de le choisir si besoin
     this.chooseSupermarket;
     // this.showSupermarketLogo(this.logo)
     };
 
+   
+    // Ce getter a pour but de créér et d'ajouter dans chaque panier le logo ainsi que  le nom de chaque supermarché à sélèctionner
    get chooseSupermarket(){
 
     document.querySelectorAll(".choixSupermarche .imgContainer").forEach((container) =>{
@@ -396,22 +430,47 @@ export class Supermarket{
 
         // Appel de tous les select<option> afin d'appliquer l'event "change" 
         supermarketSelect.forEach((select) => {
-            // Création de l'option du supermarché
+            // Création de l'option(nom) du supermarché
             const option = document.createElement("option")
                     option.value = this.nom
                     option.innerText = this.nom
 
-            // Ajout de l'option dans le select
+            // Ajout de l'option(nom) dans le select
             select.appendChild(option);
-
-            // Changement de l'image du supermarché au select de l'option correspondante
-            select.addEventListener("change", (event)=>{
-                const optionValue = event.target.value
-                    imageContainers.forEach((container) =>{
-                        container.id === optionValue ? container.style.display = "flex" : container.style.display = "none";
-                });
-                })
         });
+
+        
+             // stockage dans localStorage de la value(nom) du supermarché sélèctionné
+            supermarketSelect.forEach((select) => {
+            select.addEventListener("change", (event)=>{
+                const selectedSupermarket = event.target.value; // récupération du nom du supermarcé
+
+                localStorage.setItem("selectedSupermarket", selectedSupermarket) // stockage du nom
+
+                window.location.reload();
+            })
+        })
+
+        /**
+         *  Lors du chargement de la page
+         * 1 - On récupère la value(nom) du supermarché sauvégardé,
+         * 2 - On change et maintient le logo du supermarché sélèctionné ainsi que son nom
+         */
+        document.addEventListener('DOMContentLoaded', () => {
+        const savedSupermaket = localStorage.getItem('selectedSupermarket'); // récupération de la value
+
+        if (savedSupermaket) {
+            //Changement et  Maintient du logo du supermarché sélèctionné
+            imageContainers.forEach((container) =>{
+                container.id === savedSupermaket ? container.style.display = "flex" : container.style.display = "none";
+        });
+            //Changement et Maintient du nom du supermarché sélèctionné
+            document.querySelectorAll(".choixSupermarche select").forEach(select => {
+                select.value = savedSupermaket
+            })
+        }
+        });
+
 };
 
     /**
@@ -516,11 +575,7 @@ showSupermarketLogo(image){
 
 };
 
-const selectedSupermarket = document.querySelectorAll(".choixSupermarche select").forEach(select => {
 
-console.log(select.childNodes.length);
-
-})
 
 
 
@@ -557,3 +612,24 @@ const Auchan = new Supermarket("Auchan","Logo_Auchan.svg", "10 rue des Oliviers 
 
 
 
+
+
+
+// getProduits().then(p => {
+
+
+//              // récupération de tous les éléments sauvegardés
+//             const savedSupermaket = localStorage.getItem('productSupermarketName'); 
+
+//             if (savedSupermaket) {
+
+//                 document.querySelectorAll(".containerProduits .produit").forEach((product) => {
+
+//                     if(product.className.includes(savedSupermaket))
+//                         product.style.display = "flex";
+//                     else 
+//                         product.style.display = "none";
+//                 })
+//             }
+
+// })
