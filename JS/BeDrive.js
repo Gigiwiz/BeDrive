@@ -270,15 +270,15 @@ export class Supermarket{
                                 });
                         // Pour afficher les produits en fonction du supermarché selectionné
                         document.querySelectorAll(".choixSupermarche select").forEach((select) => {
-                                select.addEventListener("change", (e) => {
-                                    e.preventDefault();
-                                    e.stopPropagation();
+                                // select.addEventListener("change", (e) => {
+                                //     e.preventDefault();
+                                //     e.stopPropagation();
 
-                                    const selectedSupermarketProducts = e.target.value;
+                                //     const selectedSupermarketProducts = e.target.value;
 
-                                    localStorage.setItem("selectedSupermarketProducts", selectedSupermarketProducts);
+                                //     localStorage.setItem("selectedSupermarketProducts", selectedSupermarketProducts);
 
-                                    window.location.reload();
+                                //     window.location.reload();
 
 
                                     // const displayedProduits = document.querySelectorAll(".containerProduits .produit")
@@ -288,7 +288,7 @@ export class Supermarket{
                                     //         else 
                                     //             product.style.display = "none";
                                     //     })
-                                })
+                                // })
                             })
                         }
                     })   
@@ -452,17 +452,17 @@ export class Supermarket{
 
         
              // stockage dans localStorage de la value(nom) du supermarché sélèctionné
-            supermarketSelect.forEach((select) => {
-            select.addEventListener("change", (event)=>{
-                event.preventDefault();
-                event.stopPropagation();
-                const selectedSupermarket = event.target.value; // récupération du nom du supermarcé
+        //     supermarketSelect.forEach((select) => {
+        //     select.addEventListener("change", (event)=>{
+        //         event.preventDefault();
+        //         event.stopPropagation();
+        //         const selectedSupermarket = event.target.value; // récupération du nom du supermarcé
 
-                localStorage.setItem("selectedSupermarket", selectedSupermarket) // stockage du nom
+        //         localStorage.setItem("selectedSupermarket", selectedSupermarket) // stockage du nom
 
-                // window.location.reload();
-            })
-        })
+        //         // window.location.reload();
+        //     })
+        // })
 
         /**
          *  Lors du chargement de la page

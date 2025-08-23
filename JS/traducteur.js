@@ -68,6 +68,8 @@ function showLangueFlagAndSelectedSBlangueName(codeLangue) {
 
 // Lors de la selection d'une langue dans la sideBar
 languesSB.addEventListener('change', (e) =>{
+  e.preventDefault();
+  e.stopPropagation();
   const codeLangue = e.target.value // récupération de la value de chaque <option> selectionée ("fr", "en", ...)
     Traduire(codeLangue);
     translateProductsInfos(codeLangue);
