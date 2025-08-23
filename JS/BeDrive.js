@@ -272,17 +272,22 @@ export class Supermarket{
                         document.querySelectorAll(".choixSupermarche select").forEach((select) => {
                                 select.addEventListener("change", (e) => {
                                     e.preventDefault();
+                                    e.stopPropagation();
+
                                     const selectedSupermarketProducts = e.target.value;
 
-                                    localStorage.setItem("selectedSupermarketProducts", selectedSupermarketProducts)
+                                    localStorage.setItem("selectedSupermarketProducts", selectedSupermarketProducts);
 
-                                    const displayedProduits = document.querySelectorAll(".containerProduits .produit")
-                                        displayedProduits.forEach((product) => {
-                                            if(product.className.includes(selectedSupermarketProducts))
-                                                product.style.display = "flex";
-                                            else 
-                                                product.style.display = "none";
-                                        })
+                                    window.location.reload();
+
+
+                                    // const displayedProduits = document.querySelectorAll(".containerProduits .produit")
+                                    //     displayedProduits.forEach((product) => {
+                                    //         if(product.className.includes(selectedSupermarketProducts))
+                                    //             product.style.display = "flex";
+                                    //         else 
+                                    //             product.style.display = "none";
+                                    //     })
                                 })
                             })
                         }
@@ -449,11 +454,13 @@ export class Supermarket{
              // stockage dans localStorage de la value(nom) du supermarché sélèctionné
             supermarketSelect.forEach((select) => {
             select.addEventListener("change", (event)=>{
+                event.preventDefault();
+                event.stopPropagation();
                 const selectedSupermarket = event.target.value; // récupération du nom du supermarcé
 
                 localStorage.setItem("selectedSupermarket", selectedSupermarket) // stockage du nom
 
-                window.location.reload();
+                // window.location.reload();
             })
         })
 
@@ -462,7 +469,7 @@ export class Supermarket{
          * 1 - On récupère la value(nom) du supermarché sauvégardé,
          * 2 - On change et maintient le logo du supermarché sélèctionné ainsi que son nom
          */
-        document.addEventListener('DOMContentLoaded', () => {
+        // document.addEventListener('DOMContentLoaded', () => {
         const savedSupermaket = localStorage.getItem('selectedSupermarket'); // récupération de la value
 
         if (savedSupermaket) {
@@ -475,7 +482,7 @@ export class Supermarket{
                 select.value = savedSupermaket
             })
         }
-        });
+        // });
 
 };
 
