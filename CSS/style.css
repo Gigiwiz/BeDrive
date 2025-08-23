@@ -65,6 +65,13 @@ body{
 
 /* Les styles génériques */
 
+input,
+textarea,
+select {
+  font-size: 16px; /* au minimum */
+}
+
+
 a{
     cursor: pointer;
     text-decoration: none;

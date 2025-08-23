@@ -276,7 +276,7 @@ export class Supermarket{
 
                                     const selectedSupermarketProducts = e.target.value;
 
-                                    localStorage.setItem("selectedSupermarketProducts", selectedSupermarketProducts);
+                                    localStorage.setItem("selectedSupermarket", selectedSupermarketProducts);
 
                                     const displayedProduits = document.querySelectorAll(".containerProduits .produit")
                                         displayedProduits.forEach((product) => {
@@ -301,12 +301,12 @@ export class Supermarket{
                         /**  LocalStorage DES PRODUITS DE CHAQUE SUPERMARCHÉ SAUVEGARDÉ */
         
         // récupération du nom du spermarché selectionné dans LocaStorage préalablement sauvégardé avec le getter chooseSupermarket
-        const selectedSupermarketProducts = localStorage.getItem('selectedSupermarketProducts'); 
+        const savedSupermarketProducts = localStorage.getItem("selectedSupermarket"); 
 
-        if (selectedSupermarketProducts) {
+        if (savedSupermarketProducts) {
             // Changement de l'affichage des produits en fonction du supermarché sauvegaré
             document.querySelectorAll(".containerProduits .produit").forEach((product) => {
-                if(product.className.includes(selectedSupermarketProducts))
+                if(product.className.includes(savedSupermarketProducts))
                     product.style.display = "flex";
                 else 
                     product.style.display = "none";
@@ -470,6 +470,7 @@ export class Supermarket{
          * 1 - On récupère la value(nom) du supermarché sauvégardé,
          * 2 - On change et maintient le logo du supermarché sélèctionné ainsi que son nom
          */
+
         // document.addEventListener('DOMContentLoaded', () => {
         const savedSupermaket = localStorage.getItem('selectedSupermarket'); // récupération de la value
 

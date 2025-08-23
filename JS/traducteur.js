@@ -23,10 +23,6 @@ function translateProductsInfos(codeLangue) {
       })
     }
   );
-
-  localStorage.setItem("langueNomProduit", codeLangue); // sauvegarde de la langue du nom du produit
-  localStorage.setItem("langueDescripProduit", codeLangue); // sauvegarde de la langue de la description du produit
-
 }
 
 
@@ -46,10 +42,6 @@ const languesFlags = {
 function showLangueFlagAndSelectedSBlangueName(codeLangue) {
   displayedFlag.src = languesFlags[codeLangue];
   languesSB.value = codeLangue;
-
-  localStorage.setItem("langueFlag", codeLangue); // sauvegarde du drapeau du pays
-  localStorage.setItem('selectedLangueValueSB', codeLangue); // sauvegarde de la value de chaque langue selectionnée
-
 }
 
 
@@ -78,24 +70,18 @@ languesSB.addEventListener('change', (e) =>{
     localStorage.setItem('langueCode', codeLangue); //sauvegarde de cette value
 });
 
-
+      
 
 // Lors du chargement de la page
 document.addEventListener('DOMContentLoaded', () => {
   // récupération de tous les éléments sauvegardés
   const savedLang = localStorage.getItem('langueCode'); 
-  const savedLangFlag = localStorage.getItem('langueFlag'); 
-  const langueNomProduit = localStorage.getItem("langueNomProduit");
-  const langueDescripProduit = localStorage.getItem("langueDescripProduit");
-  const selectedLangueValueSB = localStorage.getItem("selectedLangueValueSB");
 
   // Rappel des fonctions
-  if (savedLang && langueNomProduit && langueDescripProduit && savedLangFlag && selectedLangueValueSB) {
+  if (savedLang) {
     Traduire(savedLang);
-    translateProductsInfos(langueNomProduit)
-    translateProductsInfos(langueDescripProduit)
-    showLangueFlagAndSelectedSBlangueName(savedLangFlag);
-    showLangueFlagAndSelectedSBlangueName(selectedLangueValueSB);
+    translateProductsInfos(savedLang)
+    showLangueFlagAndSelectedSBlangueName(savedLang);
   }
 });
 
