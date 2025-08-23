@@ -1022,7 +1022,6 @@ footer button.btn-contact:hover{
 .section2{
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
     width: 19%;
     height: 100%;
