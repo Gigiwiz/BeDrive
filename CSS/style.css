@@ -880,6 +880,7 @@ footer button.btn-contact:hover{
 .containerProduits .produit img{
     height: clamp(50px, 8vw, 80px);
     width: clamp(50px, 8vw, 80px);
+
 }
 .containerProduits .produit:hover{
     scale: 1.05;
@@ -918,6 +919,9 @@ footer button.btn-contact:hover{
 .containerProduits .nom,
 .section1Produits .container .nom{
     text-align: center;
+    font-size:clamp(10px, 2.5vw, 18px);
+
+    overflow: hidden;
 }
 
 

@@ -80,9 +80,13 @@ export class Supermarket{
         this.adresse = adresse;        
        
 
-// Pour modifier ou pas le prix originel des produits 
+    this.displaySupermarket = () => {
+
+    }
+
 
     getProduits().then(produits => {
+// Pour modifier ou pas le prix originel des produits 
 
         const produitsPriceToChange = produits
         this.#changePriceElements.forEach(el => {
@@ -264,15 +268,17 @@ export class Supermarket{
                                         produitDiv.style.display = "none"
                                     }
                                 });
-                        // Pour changer l'affichaque en fonction du supermarché selectionné
+                        // Pour afficher les produits en fonction du supermarché selectionné
                         document.querySelectorAll(".choixSupermarche select").forEach((select) => {
                                 select.addEventListener("change", (e) => {
                                     e.preventDefault();
-                                    const selectedSupermarketName = e.target.value;
+                                    const selectedSupermarketProducts = e.target.value;
+
+                                    localStorage.setItem("selectedSupermarketProducts", selectedSupermarketProducts)
 
                                     const displayedProduits = document.querySelectorAll(".containerProduits .produit")
                                         displayedProduits.forEach((product) => {
-                                            if(product.className.includes(selectedSupermarketName))
+                                            if(product.className.includes(selectedSupermarketProducts))
                                                 product.style.display = "flex";
                                             else 
                                                 product.style.display = "none";
@@ -293,12 +299,12 @@ export class Supermarket{
                         /**  LocalStorage DES PRODUITS DE CHAQUE SUPERMARCHÉ SAUVEGARDÉ */
         
         // récupération du nom du spermarché selectionné dans LocaStorage préalablement sauvégardé avec le getter chooseSupermarket
-        const savedSupermaket = localStorage.getItem('selectedSupermarket'); 
+        const selectedSupermarketProducts = localStorage.getItem('selectedSupermarketProducts'); 
 
-        if (savedSupermaket) {
+        if (selectedSupermarketProducts) {
             // Changement de l'affichage des produits en fonction du supermarché sauvegaré
             document.querySelectorAll(".containerProduits .produit").forEach((product) => {
-                if(product.className.includes(savedSupermaket))
+                if(product.className.includes(selectedSupermarketProducts))
                     product.style.display = "flex";
                 else 
                     product.style.display = "none";
