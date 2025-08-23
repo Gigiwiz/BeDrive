@@ -278,16 +278,13 @@ export class Supermarket{
 
                                     localStorage.setItem("selectedSupermarketProducts", selectedSupermarketProducts);
 
-                                    window.location.reload();
-
-
-                                    // const displayedProduits = document.querySelectorAll(".containerProduits .produit")
-                                    //     displayedProduits.forEach((product) => {
-                                    //         if(product.className.includes(selectedSupermarketProducts))
-                                    //             product.style.display = "flex";
-                                    //         else 
-                                    //             product.style.display = "none";
-                                    //     })
+                                    const displayedProduits = document.querySelectorAll(".containerProduits .produit")
+                                        displayedProduits.forEach((product) => {
+                                            if(product.className.includes(selectedSupermarketProducts))
+                                                product.style.display = "flex";
+                                            else 
+                                                product.style.display = "none";
+                                        })
                                 })
                             })
                         }
@@ -453,16 +450,20 @@ export class Supermarket{
         
              // stockage dans localStorage de la value(nom) du supermarché sélèctionné
             supermarketSelect.forEach((select) => {
-            select.addEventListener("change", (event)=>{
-                event.preventDefault();
-                event.stopPropagation();
-                const selectedSupermarket = event.target.value; // récupération du nom du supermarcé
+                select.addEventListener("change", (event)=>{
+                    event.preventDefault();
+                    event.stopPropagation();
+                    const selectedSupermarket = event.target.value; // récupération du nom du supermarcé
 
-                localStorage.setItem("selectedSupermarket", selectedSupermarket) // stockage du nom
+                    imageContainers.forEach((container) =>{
+                    container.id === selectedSupermarket ? container.style.display = "flex" : container.style.display = "none";
 
-                // window.location.reload();
+                    localStorage.setItem("selectedSupermarket", selectedSupermarket) // stockage du nom
+
+                    // window.location.reload();
+                    })
+                })
             })
-        })
 
         /**
          *  Lors du chargement de la page
