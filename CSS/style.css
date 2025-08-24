@@ -734,7 +734,7 @@ footer button.btn-contact:hover{
 
 /* Le container parent */
  .container{
-    flex: 1;
+    /* flex: 1; */
     display: flex;
     align-items: center;
     justify-content:space-between;
