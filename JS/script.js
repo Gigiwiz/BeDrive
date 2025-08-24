@@ -4,7 +4,7 @@ const searchsInputs = document.querySelectorAll(".searchInput");
 searchsInputs.forEach(searchInput => {
 
     searchInput.addEventListener("focus", () => {
-        document.body.style.backgroundColor = "yellow"
+        document.body.style.backgroundColor = "orange"
 
         console.log("c'est en focus");
         
