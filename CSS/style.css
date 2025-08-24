@@ -932,12 +932,11 @@ footer button.btn-contact:hover{
 
 
 .description-produit{
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     
-    scale: 0;
     z-index: 15;
     transform:translate(-50%, -50%);
     background-color: var(--cart-color);
@@ -960,12 +959,7 @@ footer button.btn-contact:hover{
 }
 
 .description-produit.active{
-    scale: 1;
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform:translate(-50%, -50%);
+    display: flex;
 }
 
 .description-produit .img-description{
