@@ -733,7 +733,6 @@ footer button.btn-contact:hover{
 
 /* Le container parent */
  .container{
-    /* flex: 1; */
     display: flex;
     align-items: center;
     justify-content:space-between;
@@ -741,6 +740,7 @@ footer button.btn-contact:hover{
     width: 100%;
     overflow: hidden; 
     padding: 5px;
+    overflow-y: auto;
 }
 
         /* LES SECTIONS  */
