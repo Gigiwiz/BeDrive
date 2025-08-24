@@ -17,3 +17,4 @@ searchsInputs.forEach(searchInput => {
     })
     
 })
+

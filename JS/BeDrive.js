@@ -460,7 +460,6 @@ export class Supermarket{
 
                     localStorage.setItem("selectedSupermarket", selectedSupermarket) // stockage du nom
 
-                    // window.location.reload();
                     })
                 })
             })
