@@ -275,9 +275,8 @@ footer .btn-contact{
  
 body{
     min-width: 100dvw;
-    min-width: 100vw;
 
-    background-color:darkgoldenrod;
+    background-color:rgba(155, 56, 157);
 }
   /* Le CONTAINER */
 

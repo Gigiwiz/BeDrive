@@ -61,7 +61,6 @@ body{
     color: var(--text-two);
     font-family: var(--font-familly1);
     min-height: 100dvh;
-    min-height: 100vh;
 }
 
 /* Les styles génériques */
@@ -738,7 +737,7 @@ footer button.btn-contact:hover{
     display: flex;
     align-items: center;
     justify-content:space-between;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     overflow: hidden; 
     padding: 5px;
