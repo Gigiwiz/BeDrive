@@ -38,6 +38,9 @@
     .openPanier{
 display: block;
 }
+ .sideBar{
+    height: 150dvh;
+ }
 
     /* Le footer */
     footer{
@@ -167,7 +170,7 @@ footer .btn-contact{
 @media screen and (max-width:1024px) and (min-width:539px) and (orientation: landscape) { 
 
     .sideBar{
-    height: 150%;
+    height: 150dvh;
 }
 
     .welcome-message {
@@ -245,6 +248,10 @@ nav svg{
 }
 .clean-search-bar{
     width:15px ;
+}
+
+   .sideBar{
+    height: 150dvh;
 }
 
 
@@ -519,7 +526,7 @@ nav ul{
 
 
 .sideBar{
-    height: 150%;
+    height: 150dvh;
 }
 .sideBar.active{
     width: 30%;
