@@ -243,7 +243,7 @@
 
    .sideBar{
     height: 125vh;
-}
+    }
 
 
 
@@ -434,7 +434,7 @@
     background-color: var(--cart-color); 
     box-shadow: var(--panier-box-shadow);
     width: 80%;
-    height: 90%;
+    height: 80%;
     border-radius: 20px;
     transition: var(--transition3s);
     z-index: 15;

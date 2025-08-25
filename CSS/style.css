@@ -55,9 +55,9 @@
 
 body{
     display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background-color: var(--principal-color); 
     color: var(--text-two);
     font-family: var(--font-familly1);
@@ -1175,13 +1175,6 @@ footer button.btn-contact:hover{
     content: " €";
  }
 
- /* .produits-panier input{
-    width: 35%;
-    background-color:#bdbdea;
-    border: none;
-    border-radius: 3px;
-    padding: 2px 0;
- } */
 
  .quantite-prix .quantite{
     display: flex;
