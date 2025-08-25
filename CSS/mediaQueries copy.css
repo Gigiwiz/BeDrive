@@ -127,9 +127,7 @@ nav svg{
         gap:5px ;
     };
 
-   .social-media .twitter{
-    display: none;
-}
+  
 
 
   /* Le container */
@@ -165,12 +163,7 @@ nav svg{
         font-size: clamp(12px, 1.5vw, 12px);
     }
 
-.panierOnmobile{
-    width: 80%;
-    height: 60%;
-    border-radius: 15px;
 
-}
 
 .description-produit{
     width: 70%;

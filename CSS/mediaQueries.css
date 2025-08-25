@@ -22,13 +22,7 @@
 
 @media screen and (max-width:1024px) and (min-width:539px)  {
 
-    body{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-
-    }
+   
     /* Le header */
 
     nav ul{
@@ -85,6 +79,7 @@ footer .btn-contact{
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-right: 15px;
 
     }
     
@@ -171,6 +166,10 @@ footer .btn-contact{
 
 @media screen and (max-width:1024px) and (min-width:539px) and (orientation: landscape) { 
 
+    .sideBar{
+    height: 150%;
+}
+
     .welcome-message {
        gap: 5px;
        margin: 0 0 2%;
@@ -216,22 +215,99 @@ footer .btn-contact{
 /* Pour les téléphones */
 
 @media screen and (max-width:540px) {
-
-    body{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-
+     #onMobilePhone{
+        display: none;
     }
+
     /* Le header */
+    header{
+        height: 50px;
+    }
 
     nav ul{
     gap: 5px;   
 }
-    #onMobilePhone{
-        display: none;
-    }
+
+nav svg{
+    width: 20px;
+}
+
+.search input{
+    padding: 0 0 0 20px;
+    height: 25px;
+}
+
+.search-icon{
+    position: relative;
+    top: 0 ;
+    left: 16px ;
+    width:15px ;
+}
+.clean-search-bar{
+    width:15px ;
+}
+
+
+
+.sideBar > li{
+    padding: 3px;
+}
+.sideBar li:first-child,
+ .closeSideBar{
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+.closeSideBar{
+    height: 70px;
+}
+
+.sideBar .theme-mode-btn{
+    height: 20px;
+    width: 20px;
+}
+.sideBar .theme-mode-btn svg{
+    height: 1em;
+    width: 1em;
+}
+
+.sideBar li:last-child{
+    overflow: hidden;
+}
+
+.closeSideBar{
+    height: 20px;
+    width: 20px;
+}
+
+
+.btn-lesRayons svg{
+    position: relative;
+    top:6px;
+    height: 16px;
+    width: 16px;
+}
+.traducteurSB{
+        font-size: clamp(10px, 3vw, 15px);
+
+}
+.lesRayonsSBContainer{
+    margin-left: 15px;
+    font-size: clamp(10px, 3vw, 15px);
+}
+
+.lesRayonsSBContainer ul{
+    margin:5px ;
+    height: 100%;
+}
+
+.lesRayonsSB{
+    padding: 5px 0;
+}
+.lesRayonsSB li:first-child{
+    margin-bottom: 15px;
+}
+
+
 
     .openSideBar{
         display: flex;
@@ -242,12 +318,17 @@ display: block;
 
     /* Le footer */
     footer{
-        font-size: clamp(3px, 1.5vw, 15px);
-
+        font-size: clamp(6px, 1.5vw, 15px);
+        height: 60px;
     }
+
+
+
     footer ul{
         flex-direction: column;
         gap: 5px;
+        flex: 1;
+
     }
  
 footer .btn-contact{
@@ -259,17 +340,12 @@ footer .btn-contact{
 
     /* Le container */
     
-    .welcome-message{
-        gap: 2vw;
-    }
-
     .container{
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         width: 96%;
-
         gap: 10px;
         
     }
@@ -280,22 +356,71 @@ footer .btn-contact{
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-right: 15px;
+    }
+
+     .section1Produits{
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+
+    .welcome-message{
+        gap: 2vw;
+        margin: 0 0 8% 0;
 
     }
-    
+
+    .welcome1{
+    gap: 5px;
+}
+    .welcome1 h1{
+        font-size: 12px;
+        overflow: hidden;
+}
+
+    .welcome-message h3{
+        font-size: 7px;
+    }
+
+    .welcome1 .Drive{
+        position: relative;
+        top: 2px;
+    }
+
+    .containerProduits .produit{
+        height: 120px;
+        width: 100px;
+    }
+
+    .description-produit{
+    width: 80%;
+    height: 22%;
+    padding: 10px;
+    font-size: clamp(10px, 3vw, 20px);
+}
+.description-produit div:first-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.description-produit img{
+    height: clamp(70px, 9vw, 80px);
+    width: clamp(70px, 9vw, 80px);
+}
+.description-produit p{
+    width: auto;
+}
+
 
     .section2{
         width: 100%;
         height: 30%;
         padding: 0;
-
     }
 
-    .section1Produits{
-        height: 100%;
-        padding: 0;
-        margin: 0;
-    }
+   
 
     .choixSupermarche img{
     width: 40px 
@@ -311,14 +436,13 @@ footer .btn-contact{
     scale: 0;
     background-color: var(--cart-color); 
     box-shadow: var(--panier-box-shadow);
-    width: 50%;
-    height: 50%;
+    width: 80%;
+    height: 60%;
     border-radius: 20px;
     transition: var(--transition3s);
     z-index: 15;
     font-size:clamp(11px, 2.5vw, 23px);
 
-    background-color: aquamarine;
 }
 .panier.active{
     position: absolute;
@@ -328,6 +452,17 @@ footer .btn-contact{
     scale: 1;
 }
 
+.choixSupermarche select {
+        height: 65%;
+        font-size: clamp(12px, 1.5vw, 12px);
+    }
+
+.produits-panier .produit .image-nom {
+
+    font-size: clamp(11px, 2.5vw, 15px);
+
+
+}
 
 .choixSupermarche img{
         width: 50px;
@@ -346,8 +481,6 @@ footer .btn-contact{
         scale: 1;
     }
 
-
-
     .ranking{
         display: flex;
         width: 100%;
@@ -363,7 +496,6 @@ footer .btn-contact{
 }
 
 
-
 /* Pour les téléphones en mode paysage */
 @media screen and (max-width:1024px) and (max-height:570px) and (orientation: landscape) {
  
@@ -371,7 +503,6 @@ body{
     min-width: 100dvw;
     min-height: 100dvh;
 }
-  /* Le CONTAINER */
 
   /* Le header et le footer */
 header , footer{
@@ -386,6 +517,10 @@ nav ul{
 
 }
 
+
+.sideBar{
+    height: 150%;
+}
 .sideBar.active{
     width: 30%;
 }
@@ -419,14 +554,18 @@ footer{
 
 
 /* LE CONTAINER */
+.container{
+    flex-direction: row;
+    gap: 0;
+}
 
   .section1Produits {
     gap: 3px;
   }
 
-  .welcome-message {
+  /* .welcome-message {
     display: none;
-  }
+  } */
 
     .header #sect1P2H2,
     .header #trierPar,
@@ -435,10 +574,11 @@ footer{
     }
 
     .section1{
-        flex-direction: row;
-        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
         align-items: end;
         gap: 10px;
+        height: 95%;
     }
     .section1Produits {
         flex-grow: 1;
@@ -464,9 +604,16 @@ footer{
         width: 20px;
     }
 
+
+    .section2{
+        justify-content: center;
+        height: 100%;
+        width: 30%;
+    }
+
     .ranking {
-        width: 25%;
-        height: 90%;
+        width: 100%;
+        height: 95%;
        
     }
     .ranking .titre, 

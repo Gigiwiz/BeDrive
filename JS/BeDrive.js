@@ -483,7 +483,6 @@ export class Supermarket{
             // console.log(produitPanier);
 
             produitsPanierContainer.forEach(container => {
-                container.style.backgroundColor = "orange"
                 container.appendChild(produitPanier)
             })
         }

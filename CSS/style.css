@@ -54,6 +54,10 @@
 }
 
 body{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     background-color: var(--principal-color); 
     color: var(--text-two);
     font-family: var(--font-familly1);
@@ -392,7 +396,7 @@ div#zho::after{
     position: absolute;
     top: 0;
     right: 0;
-    height: 100vh;
+    height: 120%;
     width:0% ;
     visibility: hidden;
     font-family: var(--font-familly1);
@@ -737,8 +741,6 @@ footer button.btn-contact:hover{
     width: 100%;
     overflow: hidden; 
     padding: 15px;
-
-    overflow-y: auto;
 }
 
         /* LES SECTIONS  */
@@ -751,11 +753,16 @@ footer button.btn-contact:hover{
     flex-direction: column;
     width:78%;
     height: 100%;
+    padding-left: 15px;
     overflow-x: hidden;
 }
 
 .section1 h2{
     font-size: clamp(8px, 3vw, 20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 /* Le message d'accueil */
@@ -848,7 +855,7 @@ footer button.btn-contact:hover{
     font-size: clamp(8px, 2vw, 15px);
     font-family: var(--font-familly1);
     overflow: hidden;
-    margin: 0 15px;
+    margin: 0 15px 0 0;
 }
 
 /* La liste des produits au choix */
@@ -1015,12 +1022,13 @@ footer button.btn-contact:hover{
 
 .section2{
     display: flex;
-    align-items: center;
+    align-items: end;
+    justify-content: flex-start;
     flex-direction: column;
     width: 22%;
     height: 100%;
-    gap: 8px;
-    padding: 10px 20px 10px 0;
+    gap: 10px;
+    padding: 10px 15px 0 0;
 }
 
         /* La premiere partie de la section2 */
@@ -1103,7 +1111,6 @@ footer button.btn-contact:hover{
 .choixSupermarche .supermarketImage{
     width: 40px;
     height: 100%;
-    background-color: coral;
 }
 .choixSupermarche img,
 .choixSupermarche .img{
@@ -1162,6 +1169,10 @@ footer button.btn-contact:hover{
     justify-content: space-between;
     width: 50%;
     height: 100%;
+ }
+
+ .produits-panier .prix::after{
+    content: " €";
  }
 
  /* .produits-panier input{
@@ -1257,7 +1268,7 @@ footer button.btn-contact:hover{
    flex-direction: column;
     background-color:  var(--second-color); 
     width: 95%;
-    height: 41%;
+    height: 40.5%;
     border-radius: 15px;
     overflow: hidden;
     padding: 5px 0;
