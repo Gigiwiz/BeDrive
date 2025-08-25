@@ -229,6 +229,7 @@ footer .btn-contact{
 }
 
     /* Le container */
+    
     .welcome-message{
         gap: 1vw;
     }
@@ -238,7 +239,8 @@ footer .btn-contact{
     }
     .section1{
         width: 100%;
-        padding-right: 10px;
+        margin-right: 30px;
+
     }
 
     .section1Produits{
@@ -276,8 +278,6 @@ footer .btn-contact{
 body{
     min-width: 100dvw;
     min-height: 100dvh;
-
-    background-color:rgb(36, 64, 103);
 }
   /* Le CONTAINER */
 
@@ -325,6 +325,9 @@ footer{
     font-size: clamp(8px, 1.5vw, 15px);
 }
 
+
+/* LE CONTAINER */
+
   .section1Produits {
     gap: 3px;
   }
@@ -343,7 +346,7 @@ footer{
         flex-direction: row;
         justify-content: space-between;
         align-items: end;
-        gap: 5px;
+        gap: 10px;
     }
     .section1Produits {
         flex-grow: 1;

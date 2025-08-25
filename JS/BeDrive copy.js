@@ -77,79 +77,12 @@ export class Supermarket{
     constructor(nom, Logo_Supermarket, adresse){
         this.nom = nom;
         this.logo = `https://raw.githubusercontent.com/Gigiwiz/BeDrive/f82b2c96e7eb2869f26b5b71e7f3796c51dcf582/Images/supermarket/${Logo_Supermarket}`;
-        this.adresse = adresse;      
-        
-        
+        this.adresse = adresse;        
        
-    // Cette fonction a pour but d'afficher automatiquement le logo et le nom de chaque supermarché dans le panier
+
     this.displaySupermarket = () => {
 
-         document.querySelectorAll(".choixSupermarche .imgContainer").forEach((container) =>{
-        // Création du parent(balise <a>) de l'image du supermarché et l'image en mème temps
-        const imgParent = document.createElement("a");
-            imgParent.href = "#"
-            imgParent.id = this.nom
-            imgParent.target = "_blank"
-            imgParent.innerHTML = `<img src="${this.logo}" class="logoSupermarche" id=${this.nom} alt="Logo de ${this.nom}" title="${this.adresse}">`
-
-        // Ajout du parent de l'image dans chaque container des logo des supermarchés
-        container.appendChild(imgParent)
-
-        // Affichage que de la première image qui correspond à la première option de 
-        document.querySelectorAll(".imgContainer a:not(:first-child)").forEach(image => image.style.display = "none")
-        });
-    const imageContainers = document.querySelectorAll(".imgContainer a")
-
-        // Appel de tous les select<option> afin d'appliquer l'event "change" 
-    const supermarketSelect = document.querySelectorAll(".choixSupermarche select");
-        supermarketSelect.forEach((select) => {
-            // Création de l'option(nom) du supermarché
-            const option = document.createElement("option")
-                    option.value = this.nom
-                    option.innerText = this.nom
-
-            // Ajout de l'option(nom) dans le select
-            select.appendChild(option);
-        });
-
-        
-             // stockage dans localStorage de la value(nom) du supermarché sélèctionné
-            supermarketSelect.forEach((select) => {
-                select.addEventListener("change", (event)=>{
-                    event.preventDefault();
-                    event.stopPropagation();
-                    const selectedSupermarket = event.target.value; // récupération du nom du supermarcé
-
-                    localStorage.setItem("selectedSupermarket", selectedSupermarket) // stockage du nom
-
-                    window.location.reload();
-                })
-            })
-
-        /**
-         *  Lors du chargement de la page
-         * 1 - On récupère la value(nom) du supermarché sauvégardé,
-         * 2 - On change et maintient le logo du supermarché sélèctionné ainsi que son nom
-         */
-
-        document.addEventListener('DOMContentLoaded', () => {
-        const savedSupermaket = localStorage.getItem('selectedSupermarket'); // récupération de la value/ du nom stocké
-
-        if (savedSupermaket) {
-            //Changement et  Maintient du logo du supermarché sélèctionné
-            imageContainers.forEach((container) =>{
-                container.id === savedSupermaket ? container.style.display = "flex" : container.style.display = "none";
-        });
-            //Changement et Maintient du nom du supermarché sélèctionné
-            document.querySelectorAll(".choixSupermarche select").forEach(select => {
-                select.value = savedSupermaket
-            })
-        }
-        });
-
     }
-
-    this.displaySupermarket()
 
 
     getProduits().then(produits => {
@@ -473,7 +406,86 @@ export class Supermarket{
     })
 
 
+
+
+
+
+// Cet appel du getter chooseSupermarket() dans le constructeur permet d'ajouter automatiquement au dessus du panier le nom et le logo de chaque supermarché crée afin de le choisir si besoin
+    this.chooseSupermarket;
+    // this.showSupermarketLogo(this.logo)
     };
+
+   
+    // Ce getter a pour but de créér et d'ajouter dans chaque panier le logo ainsi que  le nom de chaque supermarché à sélèctionner
+   get chooseSupermarket(){
+
+    document.querySelectorAll(".choixSupermarche .imgContainer").forEach((container) =>{
+        // Création du parent(balise <a>) de l'image du supermarché et l'image en mème temps
+        const imgParent = document.createElement("a");
+            imgParent.href = "#"
+            imgParent.id = this.nom
+            imgParent.target = "_blank"
+            imgParent.innerHTML = `<img src="${this.logo}" class="logoSupermarche" id=${this.nom} alt="Logo de ${this.nom}" title="${this.adresse}">`
+
+        // Ajout du parent de l'image dans chaque container des logo des supermarchés
+        container.appendChild(imgParent)
+
+        // Affichage que de la première image qui correspond à la première option de 
+        document.querySelectorAll(".imgContainer a:not(:first-child)").forEach(image => image.style.display = "none")
+        });
+    const supermarketSelect = document.querySelectorAll(".choixSupermarche select");
+    const imageContainers = document.querySelectorAll(".imgContainer a")
+
+        // Appel de tous les select<option> afin d'appliquer l'event "change" 
+        supermarketSelect.forEach((select) => {
+            // Création de l'option(nom) du supermarché
+            const option = document.createElement("option")
+                    option.value = this.nom
+                    option.innerText = this.nom
+
+            // Ajout de l'option(nom) dans le select
+            select.appendChild(option);
+        });
+
+        
+             // stockage dans localStorage de la value(nom) du supermarché sélèctionné
+            supermarketSelect.forEach((select) => {
+                select.addEventListener("change", (event)=>{
+                    event.preventDefault();
+                    event.stopPropagation();
+                    const selectedSupermarket = event.target.value; // récupération du nom du supermarcé
+
+                    imageContainers.forEach((container) =>{
+                    container.id === selectedSupermarket ? container.style.display = "flex" : container.style.display = "none";
+
+                    localStorage.setItem("selectedSupermarket", selectedSupermarket) // stockage du nom
+
+                    })
+                })
+            })
+
+        /**
+         *  Lors du chargement de la page
+         * 1 - On récupère la value(nom) du supermarché sauvégardé,
+         * 2 - On change et maintient le logo du supermarché sélèctionné ainsi que son nom
+         */
+
+        // document.addEventListener('DOMContentLoaded', () => {
+        const savedSupermaket = localStorage.getItem('selectedSupermarket'); // récupération de la value
+
+        if (savedSupermaket) {
+            //Changement et  Maintient du logo du supermarché sélèctionné
+            imageContainers.forEach((container) =>{
+                container.id === savedSupermaket ? container.style.display = "flex" : container.style.display = "none";
+        });
+            //Changement et Maintient du nom du supermarché sélèctionné
+            document.querySelectorAll(".choixSupermarche select").forEach(select => {
+                select.value = savedSupermaket
+            })
+        }
+        // });
+
+};
 
     /**
      * @param {[string]} elements Tableau des id et/ou des catégories des produits dont le prix originel va être modifier.
