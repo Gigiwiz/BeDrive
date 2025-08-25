@@ -394,7 +394,7 @@
 
     .description-produit{
     width: 80%;
-    height: 22%;
+    height: 25%;
     padding: 10px;
     font-size: clamp(10px, 3vw, 20px);
     }
@@ -434,7 +434,7 @@
     background-color: var(--cart-color); 
     box-shadow: var(--panier-box-shadow);
     width: 80%;
-    height: 80%;
+    height: 75%;
     border-radius: 20px;
     transition: var(--transition3s);
     z-index: 15;
