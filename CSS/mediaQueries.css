@@ -39,7 +39,7 @@
 display: block;
 }
  .sideBar{
-    height: 100dvh;
+    height: 120dvh;
  }
 
     /* Le footer */
@@ -170,7 +170,7 @@ footer .btn-contact{
 @media screen and (max-width:1024px) and (min-width:539px) and (orientation: landscape) { 
 
     .sideBar{
-    height: 100dvh;
+    height: 120dvh;
 }
 
     .welcome-message {
@@ -251,7 +251,7 @@ nav svg{
 }
 
    .sideBar{
-    height: 100dvh;
+    height: 120dvh;
 }
 
 
@@ -526,7 +526,7 @@ nav ul{
 
 
 .sideBar{
-    height: 100dvh;
+    height: 120dvh;
 }
 .sideBar.active{
     width: 30%;
