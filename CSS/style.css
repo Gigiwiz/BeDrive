@@ -932,7 +932,7 @@ footer button.btn-contact:hover{
 
 
 .description-produit{
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -948,8 +948,9 @@ footer button.btn-contact:hover{
     left: 50%;
     transform:translate(-50%, -50%);
 
-    height: 0px;
-    width: 0px;
+    height: 200px;
+    width: 400px;
+    padding: 15px;
     border-radius: 10px;
     gap: 10px;
     overflow: hidden;
@@ -959,11 +960,6 @@ footer button.btn-contact:hover{
 
 .description-produit.active{
     display: flex;
-    height: 200px;
-    width: 400px;
-    padding: 15px;
-
-
 }
 
 .description-produit .img-description{
