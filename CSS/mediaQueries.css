@@ -121,7 +121,6 @@ footer .btn-contact{
     z-index: 15;
     font-size:clamp(11px, 2.5vw, 23px);
 
-    background-color: aquamarine;
 }
 .panier.active{
     position: absolute;
@@ -170,7 +169,7 @@ footer .btn-contact{
 @media screen and (max-width:1024px) and (min-width:539px) and (orientation: landscape) { 
 
     .sideBar{
-    height: 140vh;
+    height: 150vh;
 }
 
     .welcome-message {
@@ -526,7 +525,7 @@ nav ul{
 
 
 .sideBar{
-    height: 140vh;
+    height: 150vh;
 }
 .sideBar.active{
     width: 30%;
@@ -616,6 +615,10 @@ footer{
         justify-content: center;
         height: 100%;
         width: 30%;
+    }
+
+    .panie{
+        height: 80%;
     }
 
     .ranking {
