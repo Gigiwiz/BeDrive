@@ -81,9 +81,9 @@ export class Supermarket{
         
         
        
-    // Cette fonction a pour but d'afficher automatiquement le logo et le nom de chaque supermarché dans le panier
+    //Tout d'abord, nous allons afficher automatiquement chaque supermarket dans le panier (logo et nom) 
     this.displaySupermarket = () => {
-
+    // Affichage du logo
          document.querySelectorAll(".choixSupermarche .imgContainer").forEach((container) =>{
         // Création du parent(balise <a>) de l'image du supermarché et l'image en mème temps
         const imgParent = document.createElement("a");
@@ -98,9 +98,8 @@ export class Supermarket{
         // Affichage que de la première image qui correspond à la première option de 
         document.querySelectorAll(".imgContainer a:not(:first-child)").forEach(image => image.style.display = "none")
         });
-    const imageContainers = document.querySelectorAll(".imgContainer a")
 
-        // Appel de tous les select<option> afin d'appliquer l'event "change" 
+    // Affichage du nom
     const supermarketSelect = document.querySelectorAll(".choixSupermarche select");
         supermarketSelect.forEach((select) => {
             // Création de l'option(nom) du supermarché
@@ -108,21 +107,23 @@ export class Supermarket{
                     option.value = this.nom
                     option.innerText = this.nom
 
-            // Ajout de l'option(nom) dans le select
             select.appendChild(option);
         });
 
-        
-             // stockage dans localStorage de la value(nom) du supermarché sélèctionné
+        const imageContainers = document.querySelectorAll(".imgContainer a")
+             // Sélèction et stockage dans localStorage nom(a value) du supermarché 
             supermarketSelect.forEach((select) => {
                 select.addEventListener("change", (event)=>{
                     event.preventDefault();
                     event.stopPropagation();
-                    const selectedSupermarket = event.target.value; // récupération du nom du supermarcé
+                    const selectedSupermarket = event.target.value; // récupération du nom du supermarcé(la value de <option>)
 
                     localStorage.setItem("selectedSupermarket", selectedSupermarket) // stockage du nom
 
-                    window.location.reload();
+                    //Changement du logo du supermarché sélèctionné
+                    imageContainers.forEach((container) =>{
+                        container.id === selectedSupermarket ? container.style.display = "flex" : container.style.display = "none";
+                });
                 })
             })
 
@@ -131,7 +132,6 @@ export class Supermarket{
          * 1 - On récupère la value(nom) du supermarché sauvégardé,
          * 2 - On change et maintient le logo du supermarché sélèctionné ainsi que son nom
          */
-
         document.addEventListener('DOMContentLoaded', () => {
         const savedSupermaket = localStorage.getItem('selectedSupermarket'); // récupération de la value/ du nom stocké
 
@@ -152,9 +152,10 @@ export class Supermarket{
     this.displaySupermarket()
 
 
+// Viens ensuite la gestion des produits, modif prix, mise en promo, affichage, ...
+
     getProduits().then(produits => {
 // Pour modifier ou pas le prix originel des produits 
-
         const produitsPriceToChange = produits
         this.#changePriceElements.forEach(el => {
             for (const produit of produitsPriceToChange) {
@@ -458,19 +459,39 @@ export class Supermarket{
         return newProduits
     })
     .then(newProduits => {
-
-        const produitsPanierContainer = document.querySelectorAll(".produits-panier");
-
-        console.log(produitsPanierContainer);
-        
+        const produitsPanierContainer = document.querySelectorAll(".panier .produits-panier");
 
         for (const produit of newProduits) {
-            
+            // Création des produits à ajouter au panier
 
+        const produitPanier = document.createElement("div")
+                produitPanier.className = `produit ${produit.nomCourt}`;
+                produitPanier.id = this.nom
+                produitPanier.innerHTML = `<div class="image-nom ${produit.nomCourt}"> 
+                            <img src=${produit.image} alt=${produit.nom.fr}>
+                            <span class="nom">${produit.nom.fr}</span>
+                        </div>
+                        <div class="quantite-prix ${produit.nomCourt}">
+                            <div class="quantite ${produit.nomCourt}">
+                                <img class="remove ${produit.nomCourt}" src="https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/icons/remove_.svg" alt="remove">                                
+                                <span>0</span>
+                                <img class="add ${produit.nomCourt}" src="https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/icons/add_.svg" alt="add">
+                            </div>
+                            <span class="prix">${produit.prix}</span>
+                        </div>`
+        
+            // console.log(produitPanier);
 
-            
+            produitsPanierContainer.forEach(container => {
+                container.style.backgroundColor = "orange"
+                container.appendChild(produitPanier)
+            })
         }
+
+        return newProduits;
     })
+
+    
 
 
     };

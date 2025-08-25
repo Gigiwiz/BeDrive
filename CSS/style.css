@@ -1028,33 +1028,7 @@ footer button.btn-contact:hover{
 /* Le panier sur ordi et sur mobile */
 
 
-.panierOnmobile{
-    display:flex ;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    position: absolute;
-    top: 0;
-    right: 0;
-    scale: 0;
-    gap: 10px;
-    padding: 10px;
-    background-color: var(--cart-color); 
-    box-shadow: var(--panier-box-shadow);
-    width: 50%;
-    height: 50%;
-    border-radius: 20px;
-    transition: var(--transition3s);
-    z-index: 15;
-    font-size:clamp(11px, 2.5vw, 23px);
-}
-.panierOnmobile.active{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    scale: 1;
-}
+
 
 .panierOnmobile .produits-panier span{
     font-size:clamp(12px, 1.8vw, 23px);
@@ -1190,13 +1164,13 @@ footer button.btn-contact:hover{
     height: 100%;
  }
 
- .produits-panier input{
+ /* .produits-panier input{
     width: 35%;
     background-color:#bdbdea;
     border: none;
     border-radius: 3px;
     padding: 2px 0;
- }
+ } */
 
  .quantite-prix .quantite{
     display: flex;

@@ -201,39 +201,6 @@
                         </div>
                 </div>
             </div>
-            
-             <!-- Le classement des supermarchés par prix total des produits sélectionnés -->
-            <div class="rankingOnMobile" >
-                <span class="titre ranking" id="classement">Classement</span>
-                <div class="supermarche ranking">
-                    <div>
-                        <img src="https://raw.githubusercontent.com/Gigiwiz/Images-BeDrive/refs/heads/main/supermarket/Logo-Intermarché.svg" alt=" logo Intermarche" class="logoSupermarche">
-                        <span class="prixTotal"> 10 €</span>
-                    </div>
-                    <div>
-                        <img src="https://raw.githubusercontent.com/Gigiwiz/Images-BeDrive/refs/heads/main/supermarket/Aldi_Nord_201x_logo.svg" alt=" logo Aldi" class="logoSupermarche">
-                        <span class="prixTotal"> 13.53 €</span>
-                    </div>
-                    <div>
-                        <img src="https://raw.githubusercontent.com/Gigiwiz/Images-BeDrive/refs/heads/main/supermarket/E.Leclerc_logo.svg" alt=" logo Leclerc" class="logoSupermarche">
-                        <span class="prixTotal"> 10.5 €</span>
-                    </div>
-                    <div>
-                        <img src="https://raw.githubusercontent.com/Gigiwiz/Images-BeDrive/refs/heads/main/supermarket/Logo_Auchan_(2015).svg" alt=" logo Auchan" class="logoSupermarche">
-                        <span class="prixTotal"> 22.38 €</span>
-                    </div>
-                    <div>
-                        <img src="https://raw.githubusercontent.com/Gigiwiz/Images-BeDrive/refs/heads/main/supermarket/Logo_Carrefour.svg" alt=" logo Carrefour" class="logoSupermarche">
-                        <span class="prixTotal"> 100.43 €</span>
-                    </div>
-                    <div>
-                        <img src="https://raw.githubusercontent.com/Gigiwiz/Images-BeDrive/refs/heads/main/supermarket/lidl.svg" alt=" logo Lidl" class="logoSupermarche">
-                        <span class="prixTotal"> 115.47 €</span>
-                    </div>
-
-
-                </div> 
-            </div>
         </section>
             <!-- Le deuxieme section -->
         <section class="section2">
@@ -269,16 +236,7 @@
                         </div>
                     </div>
                     
-                    <div class="produit">
-                        <div class="image-nom"> 
-                            <img src="https://raw.githubusercontent.com/Gigiwiz/Images-BeDrive/refs/heads/main/produits/FruitLe%CC%81gumes/kiwi.png" alt=" Kiwi">
-                            <span class="nom">Kiwi</span>
-                        </div>
-                        <div class="quantite-prix">
-                            <input type="number" value="1" min="0"  step="1" name="quantite" onkeydown="return false;" oninput="this.value = Math.max(0, this.value)" onchange="console.log(this.value)">
-                            <span class="prix">1€</span>
-                        </div>
-                    </div>
+                    
 
                 </div>
 
@@ -332,65 +290,7 @@
 
         </section>
 
-         <!-- Le panier onMobile-->
-            <div class="panierOnmobile">
-                <div class="choixSupermarche">
-                    <select class="switchSupermarket" name="select">
-                    </select>
-                    
-                    <div class="imgContainer">
-                    </div> 
-                </div>
-            
-                <div class="produits-panier" style="background-image: url(https://raw.githubusercontent.com/Gigiwiz/Images-BeDrive/refs/heads/main/icons/shopping_cart.svg);
-    background-size: 50px;
-    background-repeat: no-repeat;
-    background-position: center;">
-                        
-                    <!-- Ici s'ajouteront tous les produits du panier -->
-
-                    <div class="produit">
-                        <div class="image-nom"> 
-                            <img src="https://raw.githubusercontent.com/Gigiwiz/Images-BeDrive/refs/heads/main/produits/Boissons/Coca cola 33cl.png" alt=" Coca cola 33cl">
-                            <span class="nom"> Coca cola 33cl</span>
-                        </div>
-                        <div class="quantite-prix">
-                            <div class="quantite">
-                                <img class="remove" src="https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/icons/remove_.svg" alt="remove">                                
-                                <span>1</span>
-                                <img class="add" src="https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/icons/add_.svg" alt="add">
-                            </div>
-                            <span class="prix">1€</span>
-                        </div>
-                    </div>
-                    <div class="produit">
-                        <div class="image-nom"> 
-                            <img src="https://raw.githubusercontent.com/Gigiwiz/Images-BeDrive/refs/heads/main/produits/FruitLe%CC%81gumes/kiwi.png" alt=" Kiwi">
-                            <span class="nom">Kiwi</span>
-                        </div>
-                        <div class="quantite-prix">
-                            <input type="number" value="1" min="0"  step="1" name="quantite" onkeydown="return false;" oninput="this.value = Math.max(0, this.value)" onchange="console.log(this.value)">
-                            <span class="prix">1€</span>
-                        </div>
-                    </div>
-
-
-                </div>
-
-                <!-- Le prix total du panier -->
-                <div class="Total">
-                    <span id="total">Total:</span>
-                    <span class="prixTotal">100 €</span>
-                </div>
-                <!-- Les bouttons  -->
-                <div class="button">
-                       <!-- Le boutton de validation du panier -->
-                    <button class="btn valider">Valider le panier</button>
-
-                        <!-- Le boutton pour vider le panier -->
-                    <button class="btn vider">Vider</button>
-                </div>
-            </div>
+        
 
               <!-- Le pop-pop du formulaire de contact -->
 
@@ -560,7 +460,7 @@ function displayPanierOnMobile(displayBtn, displayEl) {
     });
 }
 
-displayPanierOnMobile('.openPanier', '.panierOnmobile' );
+displayPanierOnMobile('.openPanier', '.panier' );
 
 
 
