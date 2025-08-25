@@ -185,6 +185,10 @@
         height: 75%;
         width: 40%;
     }
+
+    .choixSupermarche select {
+    height: 70%;
+    }
     .choixSupermarche img{
         width: 50px;
     }
@@ -604,10 +608,6 @@
         width: 30%;
     }
 
-    .panie{
-        height: 90%;
-    }
-
     .ranking {
         width: 100%;
         height: 95%;
@@ -620,16 +620,16 @@
 
     .panier {
         width: 40%;
-        height: 85%;
+        height: 95%;
         font-size: clamp(8px, 1.5vw, 15px);
     }
     .panier select {
-        height: 50%;
+        height: 70%;
         font-size: clamp(8px, 1.5vw, 12px);
     }
 
     .choixSupermarche img {
-        width: 20px;
+        width: 25px;
     }
    
     .panier #total,

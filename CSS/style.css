@@ -1101,6 +1101,7 @@ footer button.btn-contact:hover{
 .choixSupermarche select{
     flex-grow: .1;
     height: 50%;
+    padding-left: 2px;
     font: 0.8em sans-serif;
     border-radius: 8px;
     color: black; 
