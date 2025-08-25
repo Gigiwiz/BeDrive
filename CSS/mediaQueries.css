@@ -20,14 +20,12 @@
 
 /* Pour les tablettes */
 
-@media screen and (max-width:1024px) and (min-width:539px)  {
-
-   
+@media screen and (max-width:1024px) and (min-width:539px)  {   
     /* Le header */
 
     nav ul{
     gap: 5px;   
-}
+    }
     #onMobilePhone{
         display: none;
     }
@@ -36,11 +34,11 @@
         display: flex;
     }
     .openPanier{
-display: block;
-}
- .sideBar{
-    height: 125vh;
- }
+    display: block;
+    }
+    .sideBar{
+        height: 125vh;
+    }
 
     /* Le footer */
     footer{
@@ -52,12 +50,12 @@ display: block;
         gap: 5px;
     }
  
-footer .btn-contact{
-    height: 2.5em;
-    font-size: clamp(3px, 1.5vw, 15px);
-    margin: 0 5px;
+    footer .btn-contact{
+        height: 2.5em;
+        font-size: clamp(3px, 1.5vw, 15px);
+        margin: 0 5px;
 
-}
+    }
 
     /* Le container */
     
@@ -83,9 +81,7 @@ footer .btn-contact{
         align-items: center;
         justify-content: center;
         margin-right: 15px;
-
     }
-    
 
     .section2{
         width: 100%;
@@ -104,7 +100,6 @@ footer .btn-contact{
     width: 40px 
 }
 
-
     .panier{
     position: absolute;
     top: 0;
@@ -113,25 +108,24 @@ footer .btn-contact{
     background-color: var(--cart-color); 
     box-shadow: var(--panier-box-shadow);
     width: 50%;
-    height: 65%;
+    height: 75%;
     border-radius: 20px;
     transition: var(--transition3s);
     z-index: 15;
     font-size:clamp(11px, 2.5vw, 23px);
-
-}
-.panier.active{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    scale: 1;
-}
-
-
-.choixSupermarche img{
-        width: 50px;
     }
+    .panier.active{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        scale: 1;
+    }
+
+
+    .choixSupermarche img{
+            width: 50px;
+        }
     .panier .prix{
         font-size: clamp(11px, 2.5vw, 15px);
     }
@@ -226,26 +220,26 @@ footer .btn-contact{
 
     nav ul{
     gap: 5px;   
-}
+    }
 
-nav svg{
-    width: 20px;
-}
+    nav svg{
+        width: 20px;
+    }
 
-.search input{
-    padding: 0 0 0 20px;
-    height: 25px;
-}
+    .search input{
+        padding: 0 0 0 20px;
+        height: 25px;
+    }
 
-.search-icon{
-    position: relative;
-    top: 0 ;
-    left: 16px ;
-    width:15px ;
-}
-.clean-search-bar{
-    width:15px ;
-}
+    .search-icon{
+        position: relative;
+        top: 0 ;
+        left: 16px ;
+        width:15px ;
+    }
+    .clean-search-bar{
+        width:15px ;
+    }
 
    .sideBar{
     height: 125vh;
@@ -253,63 +247,63 @@ nav svg{
 
 
 
-.sideBar > li{
-    padding: 3px;
-}
-.sideBar li:first-child,
- .closeSideBar{
-    cursor: pointer;
-    margin-bottom: 5px;
-}
-.closeSideBar{
-    height: 70px;
-}
+    .sideBar > li{
+        padding: 3px;
+    }
+    .sideBar li:first-child,
+    .closeSideBar{
+        cursor: pointer;
+        margin-bottom: 5px;
+    }
+    .closeSideBar{
+        height: 70px;
+    }
 
-.sideBar .theme-mode-btn{
-    height: 20px;
-    width: 20px;
-}
-.sideBar .theme-mode-btn svg{
-    height: 1em;
-    width: 1em;
-}
+    .sideBar .theme-mode-btn{
+        height: 20px;
+        width: 20px;
+    }
+    .sideBar .theme-mode-btn svg{
+        height: 1em;
+        width: 1em;
+    }
 
-.sideBar li:last-child{
-    overflow: hidden;
-}
+    .sideBar li:last-child{
+        overflow: hidden;
+    }
 
-.closeSideBar{
-    height: 20px;
-    width: 20px;
-}
+    .closeSideBar{
+        height: 20px;
+        width: 20px;
+    }
 
 
-.btn-lesRayons svg{
-    position: relative;
-    top:6px;
-    height: 16px;
-    width: 16px;
-}
-.traducteurSB{
+    .btn-lesRayons svg{
+        position: relative;
+        top:6px;
+        height: 16px;
+        width: 16px;
+    }
+    .traducteurSB{
         font-size: clamp(10px, 3vw, 15px);
 
-}
-.lesRayonsSBContainer{
-    margin-left: 15px;
-    font-size: clamp(10px, 3vw, 15px);
-}
+    }
+    .lesRayonsSBContainer{
+        margin-left: 15px;
+        font-size: clamp(10px, 3vw, 15px);
+    }
 
-.lesRayonsSBContainer ul{
-    margin:5px ;
-    height: 100%;
-}
+    .lesRayonsSBContainer ul{
+        margin:5px ;
+        height: 100%;
+    }
 
-.lesRayonsSB{
-    padding: 5px 0;
-}
-.lesRayonsSB li:first-child{
-    margin-bottom: 15px;
-}
+    .lesRayonsSB{
+        padding: 5px 0;
+    }
+    .lesRayonsSB li:first-child{
+        margin-bottom: 15px;
+    }
 
 
 
@@ -317,8 +311,8 @@ nav svg{
         display: flex;
     }
     .openPanier{
-display: block;
-}
+        display: block;
+    }
 
     /* Le footer */
     footer{
@@ -378,11 +372,11 @@ display: block;
 
     .welcome1{
     gap: 5px;
-}
+    }
     .welcome1 h1{
         font-size: 12px;
         overflow: hidden;
-}
+    }
 
     .welcome-message h3{
         font-size: 7px;
@@ -424,11 +418,10 @@ display: block;
         padding: 0;
     }
 
-   
 
     .choixSupermarche img{
     width: 40px 
-}
+    }
 
 
 
@@ -441,7 +434,7 @@ display: block;
     background-color: var(--cart-color); 
     box-shadow: var(--panier-box-shadow);
     width: 80%;
-    height: 75%;
+    height: 90%;
     border-radius: 20px;
     transition: var(--transition3s);
     z-index: 15;
@@ -499,69 +492,69 @@ display: block;
 /* Pour les téléphones en mode paysage */
 @media screen and (max-width:1024px) and (max-height:570px) and (orientation: landscape) {
  
-body{
-    min-width: 100dvw;
-    min-height: 100dvh;
-}
+    body{
+        min-width: 100dvw;
+        min-height: 100dvh;
+    }
 
-  /* Le header et le footer */
-header , footer{
-    width: 100%;
-    /* font-size: clamp(8px, 1.5vw, 15px); */
-}
+    /* Le header et le footer */
+    header , footer{
+        width: 100%;
+        /* font-size: clamp(8px, 1.5vw, 15px); */
+    }
 
-/* le header */
-nav ul{
-    gap: 5px;
-    font-size: clamp(13px, 4vh, 20px);
+    /* le header */
+    nav ul{
+        gap: 5px;
+        font-size: clamp(13px, 4vh, 20px);
 
-}
-
-
-.sideBar{
-    height: 150vh;
-}
-.sideBar.active{
-    width: 30%;
-}
-
-.sideBar select,#lesRayons{
-    font-size: clamp(13px, 4vh, 20px);
-
-}
-
-.lesRayonsSBContainer ul{
-    margin:5px ;
-    height: 100%;
-}
-.lesRayonsSB{
-    padding-top: 0;
-}
-
-.lesRayonsSB li{
-    height: clamp(18px, 2.5vw, 35px);
-    font-size: clamp(13px, 3.5vh, 18px);
-    margin-bottom: 5px;
-}
-.lesRayonsSB li:first-child{
-    margin-bottom: 6px;
-}
-
-footer{
-    height: 70px;
-    font-size: clamp(8px, 1.5vw, 15px);
-}
+    }
 
 
-/* LE CONTAINER */
-.container{
-    flex-direction: row;
-    gap: 0;
-}
+    .sideBar{
+        height: 150vh;
+    }
+    .sideBar.active{
+        width: 30%;
+    }
 
-  .section1Produits {
-    gap: 3px;
-  }
+    .sideBar select,#lesRayons{
+        font-size: clamp(13px, 4vh, 20px);
+
+    }
+
+    .lesRayonsSBContainer ul{
+        margin:5px ;
+        height: 100%;
+    }
+    .lesRayonsSB{
+        padding-top: 0;
+    }
+
+    .lesRayonsSB li{
+        height: clamp(18px, 2.5vw, 35px);
+        font-size: clamp(13px, 3.5vh, 18px);
+        margin-bottom: 5px;
+    }
+    .lesRayonsSB li:first-child{
+        margin-bottom: 6px;
+    }
+
+    footer{
+        height: 70px;
+        font-size: clamp(8px, 1.5vw, 15px);
+    }
+
+
+    /* LE CONTAINER */
+    .container{
+        flex-direction: row;
+        gap: 0;
+    }
+
+    .section1Produits {
+        gap: 3px;
+    }
 
   /* .welcome-message {
     display: none;
@@ -646,15 +639,14 @@ footer{
         overflow: hidden;
     }
 
-    button{
+   .panier button{
         height: 30px;
         overflow: hidden;
     }
+
     .button{
         overflow: hidden;
     }
-
-    
 }
 
 
