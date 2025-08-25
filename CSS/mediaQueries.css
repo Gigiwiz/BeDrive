@@ -105,8 +105,6 @@ footer .btn-contact{
 }
 
 
-
-
     .panier{
     position: absolute;
     top: 0;
@@ -115,7 +113,7 @@ footer .btn-contact{
     background-color: var(--cart-color); 
     box-shadow: var(--panier-box-shadow);
     width: 50%;
-    height: 50%;
+    height: 65%;
     border-radius: 20px;
     transition: var(--transition3s);
     z-index: 15;
@@ -190,7 +188,7 @@ footer .btn-contact{
     }
 
     .panier{
-        height: 70%;
+        height: 75%;
         width: 40%;
     }
     .choixSupermarche img{
@@ -337,12 +335,12 @@ display: block;
 
     }
  
-footer .btn-contact{
-    height: 2.5em;
-    font-size: clamp(3px, 1.5vw, 15px);
-    margin: 0 5px;
+    footer .btn-contact{
+        height: 2.5em;
+        font-size: clamp(3px, 1.5vw, 15px);
+        margin: 0 5px;
 
-}
+    }
 
     /* Le container */
     
@@ -405,19 +403,19 @@ footer .btn-contact{
     height: 22%;
     padding: 10px;
     font-size: clamp(10px, 3vw, 20px);
-}
-.description-produit div:first-child{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.description-produit img{
-    height: clamp(70px, 9vw, 80px);
-    width: clamp(70px, 9vw, 80px);
-}
-.description-produit p{
-    width: auto;
-}
+    }
+    .description-produit div:first-child{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .description-produit img{
+        height: clamp(70px, 9vw, 80px);
+        width: clamp(70px, 9vw, 80px);
+    }
+    .description-produit p{
+        width: auto;
+    }
 
 
     .section2{
@@ -443,36 +441,33 @@ footer .btn-contact{
     background-color: var(--cart-color); 
     box-shadow: var(--panier-box-shadow);
     width: 80%;
-    height: 60%;
+    height: 75%;
     border-radius: 20px;
     transition: var(--transition3s);
     z-index: 15;
     font-size:clamp(11px, 2.5vw, 23px);
 
-}
-.panier.active{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    scale: 1;
-}
-
-.choixSupermarche select {
-        height: 65%;
-        font-size: clamp(12px, 1.5vw, 12px);
+    }
+    .panier.active{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        scale: 1;
     }
 
-.produits-panier .produit .image-nom {
+    .choixSupermarche select {
+            height: 65%;
+            font-size: clamp(12px, 1.5vw, 12px);
+        }
 
-    font-size: clamp(11px, 2.5vw, 15px);
-
-
-}
-
-.choixSupermarche img{
-        width: 50px;
+    .produits-panier .produit .image-nom {
+        font-size: clamp(11px, 2.5vw, 15px);
     }
+
+    .choixSupermarche img{
+            width: 50px;
+        }
     .panier .prix{
         font-size: clamp(11px, 2.5vw, 15px);
     }
@@ -496,7 +491,6 @@ footer .btn-contact{
 
     .titre.ranking{
         font-size: clamp(3px, 3vw, 15px);
-
     }
 
 }
@@ -618,7 +612,7 @@ footer{
     }
 
     .panie{
-        height: 80%;
+        height: 90%;
     }
 
     .ranking {
