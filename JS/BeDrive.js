@@ -427,7 +427,7 @@ export class Supermarket{
                         descripBtnAddToCart.className = `addToCart ${produit.nomCourt} ${this.nom}`
                         descripBtnAddToCart.id = produit.id
                         descripBtnAddToCart.innerHTML = `<span class="addToCart  ${produit.nomCourt} ${this.nom}" id=${produit.id} >Ajouter au panier</span>
-                            <svg class="addToCart ${produit.nomCourt} ${this.nom}" id=${produit.id}xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fcfcfc"><path class="addToCart ${produit.nomCourt} ${this.nom}" id=${produit.id}  d="M440-600v-120H320v-80h120v-120h80v120h120v80H520v120h-80ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z"></path></svg>`
+                            <svg class="addToCart ${produit.nomCourt} ${this.nom}" id="${produit.id}" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fcfcfc"><path class="addToCart ${produit.nomCourt} ${this.nom}" id=${produit.id}  d="M440-600v-120H320v-80h120v-120h80v120h120v80H520v120h-80ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z"></path></svg>`
               
         produitsDescripDiv.appendChild(produitImgDescrip);
         produitsDescripDiv.appendChild(prixDesc);
@@ -464,6 +464,8 @@ export class Supermarket{
     .then(newProduits => {
         const produitsPanierContainer = document.querySelectorAll(".panier .produits-panier");
         const choixSupermarche = document.querySelectorAll(".choixSupermarche select");
+        const addToCartBtns = document.querySelectorAll(".addToCart")
+
 
         let quantiteProduit = 0
 
@@ -485,61 +487,90 @@ export class Supermarket{
                             </div>
                             <span class="prix ${this.nom} ${produit.nomCourt}" id=${produit.id}>${produit.prix}</span>
                         </div>`
-            
+
+                        document.querySelector(".section2").appendChild(produitPanier)
+                        produitPanier.style.display = "none"
+
+        
+        }
+
+         function addProductToCart(productID) {
+                produitsPanierContainer.forEach(container => {
+                    choixSupermarche.forEach(choix => {
+                        document.querySelectorAll(".section2 .produit").forEach(produitPanier => {
+                            if(produitPanier.className.includes(choix.value) && productID === produitPanier.id){
+                            container.appendChild(produitPanier);
+                            produitPanier.style.display = "flex"
+                            document.querySelectorAll(".produits-panier span.quantite").forEach(quantiteProd => {
+                                quantiteProd.textContent = 1
+                            })
+                        }
+
+
+                            })
+                        
+                    })
+                })
+            }
+
+
+
             // Ajout des produits-panier crées à chaque panier d'un supermarché
-            produitsPanierContainer.forEach(container => {
-                choixSupermarche.forEach(choix => {
-                     if(produitPanier.className.includes(choix.value)){
-                        container.appendChild(produitPanier)
-                        produitPanier.style.display = "none" // On cache le produit pour le faire apparaitre lorsqu'on l'ajoute
-                    }
+        
+            addToCartBtns.forEach(button => {
+                button.addEventListener("click", (e) => {
+                    const produitID = button.id
+                    addProductToCart(produitID)
+                    localStorage.setItem(`btn${produitID}`, produitID) // sauvegarde de l'id du produit
                 })
             })
-        }
+            
+            // LocalStorage
+            addToCartBtns.forEach(button => {
+            const savedProductID = localStorage.getItem(`btn${button.id}`)
+                addProductToCart(savedProductID)
+            })
+            
 
         return newProduits;
     })
-    .then(newProduits => {
-        // Ajout(ou plutôt affichage) du produit au panier lors du clique de son button "addToCart"
 
-        const addToCartBtns = document.querySelectorAll(".addToCart")
-        const produitsPanier = document.querySelectorAll(".produits-panier .produit")
 
-        addToCartBtns.forEach(button => {
-            button.addEventListener('click', (e) => {
-                e.preventDefault();
-                localStorage.setItem(`btn${button.id}`, button.id)
-                produitsPanier.forEach(produitPanier => {
-                    if (button.id === produitPanier.id) {
-                        produitPanier.style.display = "flex"
-                    }
-            })
-        })
-        })
+    // .then(newProduits => {
+    //     // Ajout(ou plutôt affichage) du produit au panier lors du clique de son button "addToCart"
 
-        addToCartBtns.forEach(button => {
-             const savedButtonID = localStorage.getItem(`btn${button.id}`)
-        produitsPanier.forEach(produitPanier => {
-            if (savedButtonID === produitPanier.id ) {
-                produitPanier.style.display = "flex"
-            }
-    })
+    //     const addToCartBtns = document.querySelectorAll(".addToCart")
+    //     const produitsPanier = document.querySelectorAll(".produits-panier .produit")
 
-        })
+    //     addToCartBtns.forEach(button => {
+    //         button.addEventListener('click', (e) => {
+    //             e.preventDefault();
+    //             localStorage.setItem(`btn${button.id}`, button.id)
+    //             produitsPanier.forEach(produitPanier => {
+    //                 if (button.id === produitPanier.id) {
+    //                     produitPanier.style.display = "flex"
+    //                 }
+    //         })
+    //     })
+    //     })
 
-       
+    //     addToCartBtns.forEach(button => {
+    //          const savedButtonID = localStorage.getItem(`btn${button.id}`)
+    //     produitsPanier.forEach(produitPanier => {
+    //         if (savedButtonID === produitPanier.id ) {
+    //             produitPanier.style.display = "flex"
+    //         }
+    // })
 
-        
+        // })
 
     
     
     
     
     
-    
-    
-    return newProduits
-    })
+    // return newProduits
+    // })
     
 
     
