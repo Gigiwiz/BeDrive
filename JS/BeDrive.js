@@ -123,8 +123,9 @@ export class Supermarket{
                     //Changement du logo du supermarché sélèctionné
                     imageContainers.forEach((container) =>{
                         container.id === selectedSupermarket ? container.style.display = "flex" : container.style.display = "none";
-                });
-                })
+                });    
+                window.location.reload()
+            })
             })
 
         /**
@@ -304,14 +305,16 @@ export class Supermarket{
 
                         const svgNS = "http://www.w3.org/2000/svg";
                         const svg = document.createElementNS(svgNS, "svg");
-                            svg.setAttribute("class", `addToCart ${produit.nomCourt}`);
-                            svg.setAttribute("id", this.nom);
+                            svg.setAttribute("class", `addToCart ${produit.nomCourt} ${this.nom}`);
+                            svg.setAttribute("id", produit.id);
                             svg.setAttribute("width", "24px");
                             svg.setAttribute("height", "24px");
                             svg.setAttribute("viewBox", "0 -960 960 960" );
                             svg.setAttribute("fill", "#000000");
                         const path = document.createElementNS(svgNS, "path");
                             path.setAttribute("d", "M440-600v-120H320v-80h120v-120h80v120h120v80H520v120h-80ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z");
+                            path.setAttribute("class", `addToCart ${produit.nomCourt} ${this.nom}`);
+                            path.setAttribute("id", produit.id);
                         svg.appendChild(path);
                                     
                         const spanNomProduit = document.createElement("span")
@@ -421,10 +424,10 @@ export class Supermarket{
                         }
             
             const descripBtnAddToCart= document.createElement("div");
-                        descripBtnAddToCart.className = `addToCart ${produit.nomCourt}`
-                        descripBtnAddToCart.id = this.nom
-                        descripBtnAddToCart.innerHTML = `<span class="addToCart ${produit.nomCourt}" id=${this.nom} >Ajouter au panier</span>
-                            <svg class="addToCart${produit.nomCourt}" id=${this.nom}  xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fcfcfc"><path d="M440-600v-120H320v-80h120v-120h80v120h120v80H520v120h-80ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z"></path></svg>`
+                        descripBtnAddToCart.className = `addToCart ${produit.nomCourt} ${this.nom}`
+                        descripBtnAddToCart.id = produit.id
+                        descripBtnAddToCart.innerHTML = `<span class="addToCart  ${produit.nomCourt} ${this.nom}" id=${produit.id} >Ajouter au panier</span>
+                            <svg class="addToCart ${produit.nomCourt} ${this.nom}" id=${produit.id}xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fcfcfc"><path class="addToCart ${produit.nomCourt} ${this.nom}" id=${produit.id}  d="M440-600v-120H320v-80h120v-120h80v120h120v80H520v120h-80ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z"></path></svg>`
               
         produitsDescripDiv.appendChild(produitImgDescrip);
         produitsDescripDiv.appendChild(prixDesc);
@@ -460,35 +463,102 @@ export class Supermarket{
     })
     .then(newProduits => {
         const produitsPanierContainer = document.querySelectorAll(".panier .produits-panier");
+        const choixSupermarche = document.querySelectorAll(".choixSupermarche select");
+        const addToCartBtns = document.querySelectorAll(".addToCart")
+
+
+        let quantiteProduit = 0
 
         for (const produit of newProduits) {
-            // Création des produits à ajouter au panier
 
+            // Création des produits à ajouter au panier
         const produitPanier = document.createElement("div")
-                produitPanier.className = `produit ${produit.nomCourt}`;
-                produitPanier.id = this.nom
+                produitPanier.className = `produit ${this.nom} ${produit.nomCourt} `;
+                produitPanier.id = produit.id
                 produitPanier.innerHTML = `<div class="image-nom ${produit.nomCourt}"> 
                             <img src=${produit.image} alt=${produit.nom.fr}>
                             <span class="nom">${produit.nom.fr}</span>
                         </div>
                         <div class="quantite-prix ${produit.nomCourt}">
                             <div class="quantite ${produit.nomCourt}">
-                                <img class="remove ${produit.nomCourt}" src="https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/icons/remove_.svg" alt="remove">                                
-                                <span>0</span>
-                                <img class="add ${produit.nomCourt}" src="https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/icons/add_.svg" alt="add">
+                                <img class="remove ${this.nom} ${produit.nomCourt} id=${produit.id}" src="https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/icons/remove_.svg" alt="remove">                                
+                                <span class="quantite ${this.nom} ${produit.nomCourt}" id=${produit.id}>${quantiteProduit}</span>
+                                <img class="add ${this.nom} ${produit.nomCourt} id=${produit.id}" src="https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/icons/add_.svg" alt="add">
                             </div>
-                            <span class="prix">${produit.prix}</span>
+                            <span class="prix ${this.nom} ${produit.nomCourt}" id=${produit.id}>${produit.prix}</span>
                         </div>`
-        
-            // console.log(produitPanier);
 
-            produitsPanierContainer.forEach(container => {
-                container.appendChild(produitPanier)
+            
+            function addProductTocart(productID) {
+                produitsPanierContainer.forEach(container => {
+                    choixSupermarche.forEach(choix => {
+                        if(produitPanier.className.includes(choix.value) && productID === produitPanier.id){
+                            container.appendChild(produitPanier);
+                            document.querySelectorAll(".produits-panier span.quantite").forEach(quantiteProd => {
+                                quantiteProd.textContent = 1
+                            })
+                        }
+                    })
+                })
+            }
+            // Ajout des produits-panier crées à chaque panier d'un supermarché
+            addToCartBtns.forEach(button => {
+                button.addEventListener("click", (e) => {
+                    const produitID = button.id
+                    addProductTocart(produitID)
+                    localStorage.setItem(`btn${produitID}`, produitID) // sauvegarde de l'id du produit
+                })
             })
+            
+            // LocalStorage
+            addToCartBtns.forEach(button => {
+            const savedButtonID = localStorage.getItem(`btn${button.id}`)
+                addProductTocart(savedButtonID)
+            })
+            
+        
         }
 
         return newProduits;
     })
+
+
+    // .then(newProduits => {
+    //     // Ajout(ou plutôt affichage) du produit au panier lors du clique de son button "addToCart"
+
+    //     const addToCartBtns = document.querySelectorAll(".addToCart")
+    //     const produitsPanier = document.querySelectorAll(".produits-panier .produit")
+
+    //     addToCartBtns.forEach(button => {
+    //         button.addEventListener('click', (e) => {
+    //             e.preventDefault();
+    //             localStorage.setItem(`btn${button.id}`, button.id)
+    //             produitsPanier.forEach(produitPanier => {
+    //                 if (button.id === produitPanier.id) {
+    //                     produitPanier.style.display = "flex"
+    //                 }
+    //         })
+    //     })
+    //     })
+
+    //     addToCartBtns.forEach(button => {
+    //          const savedButtonID = localStorage.getItem(`btn${button.id}`)
+    //     produitsPanier.forEach(produitPanier => {
+    //         if (savedButtonID === produitPanier.id ) {
+    //             produitPanier.style.display = "flex"
+    //         }
+    // })
+
+        // })
+
+    
+    
+    
+    
+    
+    // return newProduits
+    // })
+    
 
     
 

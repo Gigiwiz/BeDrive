@@ -1099,9 +1099,9 @@ footer button.btn-contact:hover{
     overflow: hidden;
 }
 .choixSupermarche select{
-    flex-grow: .1;
+    flex-grow: .2;
     height: 50%;
-    padding-left: 2px;
+    padding:0 2px;
     font: 0.8em sans-serif;
     border-radius: 8px;
     color: black; 
@@ -1273,8 +1273,10 @@ footer button.btn-contact:hover{
  .titre.ranking{
     border-radius: 0;
     height: 6%;
+    width: 93%;
     border-bottom: 1px solid var(--cart-color);
     box-shadow: initial;
+
 }
 
  .supermarche.ranking{
