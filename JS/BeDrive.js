@@ -488,36 +488,49 @@ export class Supermarket{
                             <span class="prix ${this.nom} ${produit.nomCourt}" id=${produit.id}>${produit.prix}</span>
                         </div>`
 
-            
-            function addProductTocart(productID) {
+                        document.querySelector(".section2").appendChild(produitPanier)
+                        produitPanier.style.display = "none"
+
+        
+        }
+
+         function addProductToCart(productID) {
                 produitsPanierContainer.forEach(container => {
                     choixSupermarche.forEach(choix => {
-                        if(produitPanier.className.includes(choix.value) && productID === produitPanier.id){
+                        document.querySelectorAll(".section2 .produit").forEach(produitPanier => {
+                            if(produitPanier.className.includes(choix.value) && productID === produitPanier.id){
                             container.appendChild(produitPanier);
+                            produitPanier.style.display = "flex"
                             document.querySelectorAll(".produits-panier span.quantite").forEach(quantiteProd => {
                                 quantiteProd.textContent = 1
                             })
                         }
+
+
+                            })
+                        
                     })
                 })
             }
+
+
+
             // Ajout des produits-panier crées à chaque panier d'un supermarché
+        
             addToCartBtns.forEach(button => {
                 button.addEventListener("click", (e) => {
                     const produitID = button.id
-                    addProductTocart(produitID)
+                    addProductToCart(produitID)
                     localStorage.setItem(`btn${produitID}`, produitID) // sauvegarde de l'id du produit
                 })
             })
             
             // LocalStorage
             addToCartBtns.forEach(button => {
-            const savedButtonID = localStorage.getItem(`btn${button.id}`)
-                addProductTocart(savedButtonID)
+            const savedProductID = localStorage.getItem(`btn${button.id}`)
+                addProductToCart(savedProductID)
             })
             
-        
-        }
 
         return newProduits;
     })
