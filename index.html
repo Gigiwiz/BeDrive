@@ -221,7 +221,7 @@
                         
                     <!-- Ici s'ajouteront tous les produits du panier -->
 
-                    <div class="produit" style="display: none;">
+                    <!-- <div class="produit" style="display: none;">
                         <div class="image-nom"> 
                             <img src="https://raw.githubusercontent.com/Gigiwiz/Images-BeDrive/refs/heads/main/produits/Boissons/Coca cola 33cl.png" alt=" Coca cola 33cl">
                             <span class="nom"> Coca cola 33cl</span>
@@ -234,7 +234,7 @@
                             </div>
                             <span class="prix">1€</span>
                         </div>
-                    </div>
+                    </div> -->
                     
                 </div>
 
@@ -387,8 +387,8 @@
 
     // Pour cacher l'image du panier vide en filigrane au remplissage de celui-ci
 
-    document.querySelectorAll('.produit input').forEach((element) => {
-            if(element.value > 0) {
+    document.querySelectorAll('.produit quantite').forEach((element) => {
+            if(element.textContent > 0) {
                 document.querySelectorAll('div.produits-panier').forEach((el) => {
                     el.style.backgroundImage = 'none';
                 });

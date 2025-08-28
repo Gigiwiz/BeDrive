@@ -112,35 +112,21 @@ export class Supermarket{
 
         const imageContainers = document.querySelectorAll(".imgContainer a")
              // Sélèction et stockage dans localStorage nom(a value) du supermarché 
+            supermarketSelect.forEach((select) => {
+                select.addEventListener("change", (event)=>{
+                    event.preventDefault();
+                    event.stopPropagation();
+                    const selectedSupermarket = event.target.value; // récupération du nom du supermarcé(la value de <option>)
 
-             document.addEventListener("DOMContentLoaded", () => {
-                supermarketSelect.forEach((select) => {
-                    select.addEventListener("change", (event)=>{
-                        event.preventDefault();
-                        event.stopPropagation();
-                        const selectedSupermarket = event.target.value; // récupération du nom du supermarcé(la value de <option>)
+                    localStorage.setItem("selectedSupermarket", selectedSupermarket) // stockage du nom
 
-                        localStorage.setItem("selectedSupermarket", selectedSupermarket) // stockage du nom
-
-                        //Changement du logo du supermarché sélèctionné
-                        imageContainers.forEach((container) =>{
-                            container.id === selectedSupermarket ? container.style.display = "flex" : container.style.display = "none";
-                        });
-
-
-
-                    document.querySelectorAll(".produits-panier span.prix").forEach(produitPrix => {
-                        console.log(produitPrix);
-                        
-                    })
-                    
-                    
-                
-                    // window.location.reload()
-                    })
-                    })
+                    //Changement du logo du supermarché sélèctionné
+                    imageContainers.forEach((container) =>{
+                        container.id === selectedSupermarket ? container.style.display = "flex" : container.style.display = "none";
+                });    
+                window.location.reload()
             })
-
+            })
 
         /**
          *  Lors du chargement de la page
@@ -480,14 +466,8 @@ export class Supermarket{
         const choixSupermarche = document.querySelectorAll(".choixSupermarche select");
         const addToCartBtns = document.querySelectorAll(".addToCart")
 
-        choixSupermarche.forEach(choix => {
-            choix.addEventListener("change", (e) => {
+        //  console.log(document.querySelectorAll(".produits-panier span.prix"))
 
-                console.log(e);
-                
-                window.location.reload()
-            })
-        })
 
 
 
@@ -518,65 +498,35 @@ export class Supermarket{
                         document.querySelector(".section2").appendChild(produitPanier)
                         produitPanier.style.display = "none"
 
-
-                         document.addEventListener("DOMContentLoaded", () => {
-                            console.log("DOM est toujours prêt !");
-                        });
         
         }
-
-
-
-
-
-
-
-
-
-        function increaseQuantiteAndPrice(productID) {
-
-            document.querySelectorAll(".produits-panier img.add").forEach(buttonAdd => {
-                buttonAdd.addEventListener("click", (e) => {
-                    e.preventDefault()
-                    e.stopImmediatePropagation()
-
-                // Incrémentation de la quatité du produit
-                document.querySelectorAll(".produits-panier span.quantite").forEach(quantiteProd => {
-                    if(quantiteProd.id === productID){
-                        quantiteProd.textContent++
-                        localStorage.setItem(`quantite${productID}`, quantiteProd.textContent) // sauvegarde de la quatité du produit
-                    }
-
-                // Augmentation du prix du produit en fonction de sa quantité
-                    document.querySelectorAll(".produits-panier span.prix").forEach(produitPrix => {
-                        if(produitPrix.id === quantiteProd.id){
-                            newProduits.forEach(produitJson => {
-                                if(produitPrix.id === produitJson.id && quantiteProd.textContent >= 1){
-                                    produitPrix.textContent = parseFloat(produitJson.prix * quantiteProd.textContent).toFixed(2)
-
-                                    //! localStorage.setItem(`prix${produitPrix.id}`, produitPrix.textContent) // sauvegarde du prix du produit
-                                }
-                                choixSupermarche.forEach(choix => {                
-                                    choix.addEventListener("change", (e) => {
-                                        console.log(choix.value);
-                                    })
-                                })
-                            })
-                        }
-                    })
-                })
-                })
-            });
-        }
-
-
-
-
-        function decreaseQuantiteAndPrice(productID) {
+        function increaseAndDecreaseQuantiteAndPrice(productID) {
             document.querySelectorAll(".section2 .produit").forEach(produitPanier => {
                 if(productID === produitPanier.id){
                     document.querySelectorAll(".produits-panier span.quantite").forEach(quantiteProd => {
                         if(quantiteProd.id === productID){
+                            // Incrémentation de la quatité du produit
+                            document.querySelectorAll(".produits-panier img.add").forEach(buttonAdd => {
+                                buttonAdd.addEventListener("click", (e) => {
+                                    e.preventDefault()
+                                    e.stopImmediatePropagation()
+                                    quantiteProd.textContent++
+                                    localStorage.setItem(`quantite${productID}`, quantiteProd.textContent) // sauvegarde de la quatité du produit
+                                    
+                                    // Augmentation du prix du produit en fonction de sa quantité
+                                    document.querySelectorAll(".produits-panier span.prix").forEach(produitPrix => {
+                                        if(produitPrix.id === quantiteProd.id){
+                                            newProduits.forEach(produitJson => {
+                                                if(produitPrix.id === produitJson.id && quantiteProd.textContent >= 1){
+                                                    produitPrix.textContent = parseFloat(produitJson.prix * quantiteProd.textContent).toFixed(2)
+
+                                                    localStorage.setItem(`prix${produitPrix.id}`, produitPrix.textContent) // sauvegarde du prix du produit
+                                                }
+                                            })
+                                        }
+                                    })
+                                })
+                            })
                             // décrémentation de la quatité du produit
                             document.querySelectorAll(".produits-panier img.remove").forEach(buttonRemove => {
                                 buttonRemove.addEventListener("click", (e) => {
@@ -593,7 +543,7 @@ export class Supermarket{
                                                 if(produitPrix.id === produitJson.id && quantiteProd.textContent >= 1){
                                                     produitPrix.textContent = parseFloat(produitJson.prix * quantiteProd.textContent).toFixed(2)
 
-                                                    //! localStorage.setItem(`prix${produitPrix.id}`, produitPrix.textContent) // sauvegarde du prix du produit
+                                                    localStorage.setItem(`prix${produitPrix.id}`, produitPrix.textContent) // sauvegarde du prix du produit
                                                 }
                                             })
                                         }
@@ -616,16 +566,6 @@ export class Supermarket{
             })           
         }
 
-
-       
-
-
-
-
-
-
-
-
         function addProductToCart(productID) {
             produitsPanierContainer.forEach(container => {
                 choixSupermarche.forEach(choix => {
@@ -635,14 +575,8 @@ export class Supermarket{
                             produitPanier.style.display = "flex"
                             localStorage.setItem(`produit${produitPanier.id}`, produitPanier.id)
 
-                            increaseQuantiteAndPrice(productID)
-                            decreaseQuantiteAndPrice(productID)
+                            increaseAndDecreaseQuantiteAndPrice(productID)
                         }
-                        // choix.addEventListener("change", (e) => {
-                        //     window.location.reload()
-                        // })
-
-
                     })
                 })
             })
@@ -669,21 +603,37 @@ export class Supermarket{
                                         if(produitPrix.id === produitJson.id && quantiteProd.textContent >= 1){
                                             produitPrix.textContent = parseFloat(produitJson.prix * quantiteProd.textContent).toFixed(2)
 
-                                            //! localStorage.setItem(`prix${produitPrix.id}`, produitPrix.textContent) // sauvegarde du prix du produit
+                                            localStorage.setItem(`prix${produitPrix.id}`, produitPrix.textContent) // sauvegarde du prix du produit
                                         }
                                     })
                                 }
                             })
                         }
                     });
-
                     addProductToCart(produitID)
 
                 })
             })
 
-            
 
+            // choixSupermarche.forEach(choix => {
+        //     choix.addEventListener("change", (e) => {
+
+        //     const savedSupermaket = localStorage.getItem("selectedSupermarket") 
+            
+        //     console.log(savedSupermaket);
+
+        //         document.querySelectorAll(".produits-panier span.prix").forEach(produitPrix => {
+        //              if(produitPrix.className.includes(savedSupermaket)){
+        //                 // console.log(choix.value);
+        //                 console.log(produitPrix.className);
+        //              }
+        //         })
+        //     })
+        // })
+
+
+            
             
             // LocalStorage (maintient) du produit dans le panier
             addToCartBtns.forEach(button => {
@@ -701,17 +651,17 @@ export class Supermarket{
 
             // Maintien du prix du produit
             document.querySelectorAll(".produits-panier span.prix").forEach(produitPrix => {
-                // const savedProductPrice = localStorage.getItem(`prix${produitPrix.id}`)
+                const savedProductPrice = localStorage.getItem(`prix${produitPrix.id}`)
                 
-                //     if (savedProductPrice) {
-                //         produitPrix.textContent = savedProductPrice
-                //     }
+                    if (savedProductPrice) {
+                        produitPrix.textContent = savedProductPrice
+                    }
                 
                     // newProduits.forEach(produitJson => {
                     //     if(produitPrix.id === produitJson.id && quantiteProd.textContent >= 1){
                     //         produitPrix.textContent = parseFloat(produitJson.prix * quantiteProd.textContent).toFixed(2)
 
-                            // localStorage.setItem(`prix${produitPrix.id}`, produitPrix.textContent) // sauvegarde du prix du produit
+                    //         localStorage.setItem(`prix${produitPrix.id}`, produitPrix.textContent) // sauvegarde du prix du produit
                     //     }
                     // })
             })
@@ -725,6 +675,19 @@ export class Supermarket{
         return newProduits;
     })
     .then(newProduits => {
+
+        let tousLesProduitsPrix = [];
+            tousLesProduitsPrix.push(document.querySelectorAll(".produits-panier span.prix"));
+
+        const produitsPrix = tousLesProduitsPrix[0]
+
+        let toutesLesQuantitesProduit = [];
+            toutesLesQuantitesProduit.push(document.querySelectorAll(".produits-panier span.quantite"));
+
+        const quantiteProduits = [... new Set(toutesLesQuantitesProduit[0])]
+
+        // console.log(quantiteProduits);
+        
 
         
 
@@ -912,5 +875,3 @@ const Aldi = new Supermarket("Aldi","Logo_Aldi.svg","30 avenue de Choisy Ivry-su
 //             }
 
 // })
-
-
