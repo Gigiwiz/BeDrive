@@ -798,8 +798,8 @@ Carrefour.setPromoByCategory("fruits",30,["FRU3", "FRU16"])
 
        
 
-const Auchan = new Supermarket("Auchan","Logo_Auchan.svg", "10 rue des Oliviers Paris 75013");
-Auchan.setPromoByCategory("fruits",50,["FRU3", "FRU16"])
+// const Auchan = new Supermarket("Auchan","Logo_Auchan.svg", "10 rue des Oliviers Paris 75013");
+// Auchan.setPromoByCategory("fruits",50,["FRU3", "FRU16"])
 
         
 

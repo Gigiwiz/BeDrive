@@ -508,8 +508,11 @@ export class Supermarket{
         }
 
          // TODO - Sauvegarde des prix des produits de chaque supermarchés afin de les modifier en meme temps en fonction de leur quantité (voir fonctions.js)
-            document.querySelectorAll(".section2 .produit .prix").forEach(section2ProduitPrix => {
-                sessionStorage.setItem(`${section2ProduitPrix.className} ${section2ProduitPrix.id}`, section2ProduitPrix.textContent)
+
+         const tousLesPrixProduit =  document.querySelectorAll(".section2 .produit .prix");
+         
+            tousLesPrixProduit.forEach(section2ProduitPrix => {
+                    sessionStorage.setItem(`${section2ProduitPrix.className} ${section2ProduitPrix.id}`, section2ProduitPrix.textContent)
             })
 
         
