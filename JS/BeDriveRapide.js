@@ -457,12 +457,14 @@ export class Supermarket{
             })            
         })
             
+            
         }
 
         return newProduits
     })
     .then(newProduits => {
         const produitsPanierContainer = document.querySelectorAll(".panier .produits-panier");
+        const produitsPanier = document.querySelectorAll(".produit span.prix");
         const choixSupermarche = document.querySelectorAll(".choixSupermarche select");
 
         let quantiteProduit = 0
@@ -495,6 +497,13 @@ export class Supermarket{
                     }
                 })
             })
+
+            produitsPanier.forEach(produitPanier => {
+            console.log(produitPanier);
+            
+        })
+
+
         }
 
         return newProduits;
@@ -527,10 +536,12 @@ export class Supermarket{
 
         })
 
+
+
        
 
         
-
+        
     
     
     

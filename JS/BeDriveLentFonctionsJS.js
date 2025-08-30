@@ -1,3 +1,7 @@
+    import {addProductToCart} from "./fonctions.js"
+    
+    
+    
     /**
      * @typedef {Object} Produit
      * @property {string} id - Identifiant unique du produit
@@ -32,6 +36,10 @@ export async function getProduits () {
         const reponse = await fetch("./Json/produits.json");
         return reponse.json()
 };
+
+
+
+
 
 
 
@@ -499,152 +507,12 @@ export class Supermarket{
         
         }
 
-         // TODO - Sauvegarde des prix des produits de chaque supermarchés afin de les modifier en meme temps en fonction de leur quantité
+         // TODO - Sauvegarde des prix des produits de chaque supermarchés afin de les modifier en meme temps en fonction de leur quantité (voir fonctions.js)
             document.querySelectorAll(".section2 .produit .prix").forEach(section2ProduitPrix => {
                 sessionStorage.setItem(`${section2ProduitPrix.className} ${section2ProduitPrix.id}`, section2ProduitPrix.textContent)
             })
 
-
-
-      function increaseQuantite(productID) {
-            document.querySelectorAll(".section2 .produit").forEach(produitPanier => {
-                if(productID === produitPanier.id){
-                    document.querySelectorAll(".produits-panier span.quantite").forEach(quantiteProd => {
-                        if(quantiteProd.id === productID){
-                            // Incrémentation de la quatité du produit
-                            document.querySelectorAll(".produits-panier img.add").forEach(buttonAdd => {
-                                buttonAdd.addEventListener("click", (e) => {
-                                    e.preventDefault()
-                                    e.stopImmediatePropagation()
-                                    quantiteProd.textContent++
-                                    localStorage.setItem(`quantite${productID}`, quantiteProd.textContent) // sauvegarde de la quatité du produit
-
-                                    increasePrice(productID) // augmentation du prix en même temps
-                                })
-                            })
-                        }
-                    })
-                }
-            })
-        }
-
-
-
-
-    function increasePrice(productID) {
-        document.querySelectorAll(".produits-panier span.quantite").forEach(quantiteProd => {
-            if(quantiteProd.id === productID){  
-                // Augmentation du prix du produit en fonction de sa quantité
-                document.querySelectorAll(".produits-panier span.prix").forEach(produitPrix => {
-                    if(produitPrix.id === quantiteProd.id){
-                        newProduits.forEach(produitJson => {
-                            if(produitPrix.id === produitJson.id && quantiteProd.textContent >= 1){
-                                produitPrix.textContent = parseFloat(produitJson.prix * quantiteProd.textContent).toFixed(2)
-                            }
-                            // Augmentation des prix des memes produits de différents supermarchés
-                            for (let i = 0; i < sessionStorage.length; i++) {
-                                let cle = sessionStorage.key(i); 
-                                    if(cle.includes(`${produitPrix.id}`) ){
-
-                                        let valeur = parseFloat(sessionStorage.getItem(cle) * quantiteProd.textContent).toFixed(2) // récupère la valeur associée
-                                        localStorage.setItem(`${cle}`,valeur )
-                                    } 
-                                }
-                        })
-                    }
-                })
-            }
-        })   
-    }
-
-
-
-
-
-
-
-
-        function decreaseQuantite(productID) {
-            document.querySelectorAll(".section2 .produit").forEach(produitPanier => {
-                if(productID === produitPanier.id){
-                    document.querySelectorAll(".produits-panier span.quantite").forEach(quantiteProd => {
-                        if(quantiteProd.id === productID){
-                            // décrémentation de la quatité du produit
-                            document.querySelectorAll(".produits-panier img.remove").forEach(buttonRemove => {
-                                buttonRemove.addEventListener("click", (e) => {
-                                    e.preventDefault()
-                                    e.stopImmediatePropagation()
-                                    if(quantiteProd.textContent >= 1){
-                                        quantiteProd.textContent--
-                                        localStorage.setItem(`quantite${productID}`, quantiteProd.textContent) // sauvegarde de la quatité du produit
-
-                                        decreasePrice(productID) // On diminue en même temps le prix des produits
-                                    }
-
-                                    if (quantiteProd.textContent == 0 && quantiteProd.id === produitPanier.id) { //retrait du produit du panier
-                                        produitPanier.style.display = "none"
-                                        localStorage.removeItem(`quantite${productID}`);
-                                        localStorage.removeItem(`produit${productID}`);
-                                    }   
-                                    if (quantiteProd.textContent == 1) { // remise du produit dans le panier
-                                        // produitPanier.style.display = "flex"
-                                    }   
-                                })
-                            })
-                        }
-                    })
-                }
-            })           
-        }
-
-
-
         
-
-        function decreasePrice(productID) {
-            document.querySelectorAll(".produits-panier span.quantite").forEach(quantiteProd => {
-                if(quantiteProd.id === productID){
-                    // Diminution du prix du produit en fonction de sa quantité
-                    document.querySelectorAll(".produits-panier span.prix").forEach(produitPrix => {
-                        if(produitPrix.id === quantiteProd.id){
-                            newProduits.forEach(produitJson => {
-                                if(produitPrix.id === produitJson.id && quantiteProd.textContent >= 1){
-                                    produitPrix.textContent = parseFloat(produitJson.prix * quantiteProd.textContent).toFixed(2)
-                                }
-                            // Dimunition des prix des memes produits de différents supermarchés
-                            for (let i = 0; i < sessionStorage.length; i++) {
-                                let cle = sessionStorage.key(i); 
-                                    if(cle.includes(`${produitPrix.id}`) ){
-                                        let valeur = parseFloat(sessionStorage.getItem(cle) * quantiteProd.textContent).toFixed(2) 
-                                        localStorage.setItem(`${cle}`,valeur ) 
-                                    } 
-                                }
-                            })
-                        }
-                    })
-                }
-            })        
-        }
-
-
-
-        function addProductToCart(productID) {
-            produitsPanierContainer.forEach(container => {
-                choixSupermarche.forEach(choix => {
-                    document.querySelectorAll(".section2 .produit").forEach(produitPanier => {
-                        if(produitPanier.className.includes(choix.value) && productID === produitPanier.id){
-                            container.appendChild(produitPanier);
-                            produitPanier.style.display = "flex"
-                            localStorage.setItem(`produit${produitPanier.id}`, produitPanier.id)
-
-                            increaseQuantite(productID)
-                            decreaseQuantite(productID)
-                        }
-                    })
-                })
-            })
-        }
-
             // Ajout des produits-panier crées à chaque panier d'un supermarché et incrémentation de la quantité du produit
             addToCartBtns.forEach(button => {
                 button.addEventListener("click", (e) => {
@@ -662,27 +530,22 @@ export class Supermarket{
                             // Augmentation du prix du produit en fonction de sa quantité
                             document.querySelectorAll(".produits-panier span.prix").forEach(produitPrix => {
                                 if(produitPrix.id === quantiteProd.id){
-                                    newProduits.forEach(produitJson => {
-                                        if(produitPrix.id === produitJson.id && quantiteProd.textContent >= 1){
-                                            produitPrix.textContent = parseFloat(produitJson.prix * quantiteProd.textContent).toFixed(2)
-                                        }
+                                    for (let i = 0; i < sessionStorage.length; i++) {
+                                        let cle = sessionStorage.key(i);
+                                        if(cle.includes(`${produitPrix.id}`) && quantiteProd.textContent >= 1){
 
-                                        // Augmentation des prix du même produit de différents supermarchés
-                                        for (let i = 0; i < sessionStorage.length; i++) {
-                                            let cle = sessionStorage.key(i); 
-                                            if(cle.includes(`${produitID}`) ){
-
-                                                    let valeur = parseFloat(sessionStorage.getItem(cle) * quantiteProd.textContent).toFixed(2)
-                                                        localStorage.setItem(`${cle}`,valeur )
-                                            } 
-                                        }
-                                    })
+                                            let nouveauPrix = parseFloat(sessionStorage.getItem(cle) * quantiteProd.textContent).toFixed(2) //calcul du prix
+                                                
+                                                produitPrix.textContent = nouveauPrix //affichage du prix
+                                                localStorage.setItem(`${cle}`,nouveauPrix ) // stockage du prix
+                                        } 
+                                    }
                                 }
                             }) 
                         }
                     });
 
-                    addProductToCart(produitID)
+                    addProductToCart(produitID) // fonction importée depuis JS/fonctions.js
 
                 })
             })
