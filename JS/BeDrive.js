@@ -651,6 +651,16 @@ export class Supermarket{
                 newProduits.forEach(produitJson => {
                     if (produitJson.id === prixProduit.id && prixProduit.className.includes(this.nom) && savedProductQuantite) {
                         prixProduit.textContent = parseFloat(produitJson.prix * savedProductQuantite).toFixed(2)
+                                                        .replace(".00", "")
+                                                        .replace(".10", ".1")
+                                                        .replace(".20", ".2")
+                                                        .replace(".30", ".3")
+                                                        .replace(".40", ".4")
+                                                        .replace(".50", ".5")
+                                                        .replace(".60", ".6")
+                                                        .replace(".70", ".7")
+                                                        .replace(".80", ".8")
+                                                        .replace(".90", ".9")  
                     }
                 })
             });
