@@ -139,3 +139,9 @@ function decreasePrice(productID) {
         }
     })          
 }
+
+
+
+
+
+

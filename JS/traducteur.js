@@ -1,10 +1,11 @@
 import { dataTraductions } from "./traductions.js";
-import { getProduits } from "./BeDrive.js";
+import { getSupermarket, Supermarket } from "./BeDrive.js";
 
 
 
 function translateProductsInfos(codeLangue) {
-  getProduits().then(Produits => {
+  getSupermarket().then(supermarket => {
+    const Produits = supermarket
     // Traduction des noms de chaque produits 
       document.querySelectorAll(".produit .nom").forEach(produitSpanName => {
         Produits.forEach(produit => {
@@ -12,6 +13,12 @@ function translateProductsInfos(codeLangue) {
             produitSpanName.textContent = produit.nom[codeLangue]
           }
         })
+        // Cette adaptation de l'attribut data-text nous permettra de gérer les tries alphabétiques (voir script.js)
+      document.querySelectorAll(".containerProduits .produit").forEach(produitDiv => {
+        if(produitSpanName.id === produitDiv.id)
+          produitDiv.dataset.text = produitSpanName.textContent
+      })
+      
       })
       // Traduction des descriptions de chaque produit
        document.querySelectorAll(".description-produit p").forEach(description => {
@@ -29,18 +36,42 @@ function translateProductsInfos(codeLangue) {
 
 const langues = document.querySelectorAll('#langMenu div');
 const languesSB = document.querySelector('.traducteurSB');
-const displayedFlag = document.querySelector("#output .displayedImage")
-const languesFlags = {
-  fr: "https://flagsapi.com/FR/flat/24.png",
-  en: "https://flagsapi.com/US/flat/24.png",
-  es: "https://flagsapi.com/ES/flat/24.png",
-  ln: "https://flagsapi.com/CG/flat/24.png", 
-  zho: "https://flagsapi.com/CN/flat/24.png", 
-};
+const displayedFlag = document.querySelector("#output .displayedImage");
+
+
+const languesFlags =[
+    {
+      fr: {
+        url: "https://flagsapi.com/FR/flat/24.png",
+        code:"fr"
+      },
+      en: {
+        url: "https://flagsapi.com/US/flat/24.png",
+        code:"en"
+      },
+      es: {
+        url: "https://flagsapi.com/ES/flat/24.png",
+        code:"es"
+      },
+      ln: {
+        url: "https://flagsapi.com/CG/flat/24.png",
+        code:"ln"
+      },
+      zho: {
+        url: "https://flagsapi.com/CN/flat/24.png",
+        code:"zho"
+      },
+    },
+]
+
 
 
 function showLangueFlagAndSelectedSBlangueName(codeLangue) {
-  displayedFlag.src = languesFlags[codeLangue];
+  languesFlags.forEach(langue => {
+    displayedFlag.src = langue[codeLangue].url;
+    displayedFlag.id = langue[codeLangue].code;
+  })
+  
   languesSB.value = codeLangue;
 }
 

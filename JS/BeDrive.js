@@ -1,3 +1,4 @@
+    
     /**
      * @typedef {Object} Produit
      * @property {string} id - Identifiant unique du produit
@@ -27,7 +28,7 @@
      * @returns {Promise<[Produit]>} Tableau de produits
      */
 
-export async function getProduits () {
+export async function getSupermarket () {
         /** @type {[Produit]} */
         const reponse = await fetch("./Json/produits.json");
         return reponse.json()
@@ -37,7 +38,19 @@ export async function getProduits () {
 
 
 
+
+
+
+const dataForSupermarketRanking = []
+
+
+
+
+
+
 export class Supermarket{
+
+    
     
     #remiseViandes = 0;
     #viandesRemiseElements = [];
@@ -64,6 +77,10 @@ export class Supermarket{
     #reducePrice = 0;
     #changePriceElements = [];
     #unavailableElements = []
+
+
+    #cartPrices = []
+
     
     /**
       * @param {string} nom 
@@ -73,12 +90,27 @@ export class Supermarket{
     constructor(nom, Logo_Supermarket, adresse){
         this.nom = nom;
         this.logo = `https://raw.githubusercontent.com/Gigiwiz/BeDrive/f82b2c96e7eb2869f26b5b71e7f3796c51dcf582/Images/supermarket/${Logo_Supermarket}`;
-        this.adresse = adresse;      
+        this.adresse = adresse;
+        
+
+        
+        
+
+
+        dataForSupermarketRanking.push({
+            nom: this.nom,
+            logo: this.logo,
+            adresse: this.adresse,
+            // totalCartPrice: supermarketPanierTotal[this.nom],
+        },)
+
         
         
        
     //Tout d'abord, nous allons afficher automatiquement chaque supermarket dans le panier (logo et nom) 
     this.displaySupermarket = () => {
+
+        
     // Affichage du logo
          document.querySelectorAll(".choixSupermarche .imgContainer").forEach((container) =>{
         // Création du parent(balise <a>) de l'image du supermarché et l'image en mème temps
@@ -149,13 +181,53 @@ export class Supermarket{
 
     }
 
-    this.displaySupermarket()
+    this.displaySupermarket();
+
+    // Création du container des produits ajoutés au panier de chaque supermarché ainsi que la div "Total"
+    this.displaySupermarketCartProductAndTotalPrice = () => {
+        const produitsPanierContainerParent = document.querySelectorAll(".container-produits-panier");
+        const totalPriceContainersParent = document.querySelectorAll(".container-total");
+
+
+        // Création du container des produits ajoutés au panier de chaque supermarche
+        const produitPanierContainer = document.createElement("div")
+                produitPanierContainer.className = `produits-panier ${this.nom}`
+                produitPanierContainer.id = this.nom
+                produitPanierContainer.dataset.storeLogo = this.logo
+                produitPanierContainer.dataset.adresse = this.adresse
+
+         produitsPanierContainerParent.forEach(container => {container.appendChild(produitPanierContainer)})
+
+        // Création de la div Total(total du panier) de chaque supermarché
+
+        const divTotal = document.createElement("div")
+                divTotal.className = `Total ${this.nom}`
+                divTotal.id = this.nom
+                // divTotal.innerHTML = `<span id="total">Total</span> <span class="prixTotal ${this.nom}" id="${this.nom}">0 €</span>`
+
+            const spanText = document.createElement("span")
+                    spanText.id = "total"
+                    spanText.textContent = "Total" 
+            const spanTotalPrice = document.createElement("span")
+                    spanTotalPrice.className = `prixTotal ${this.nom}`
+                    spanTotalPrice.id = this.nom
+                    spanTotalPrice.dataset.store = this.nom
+                    spanTotalPrice.textContent = 0
+
+        divTotal.appendChild(spanText)
+        divTotal.appendChild(spanTotalPrice)
+
+        totalPriceContainersParent.forEach(container => container.appendChild(divTotal))
+    }
+
+    this.displaySupermarketCartProductAndTotalPrice()
+
 
 
 // Viens ensuite la gestion des produits, modif prix, mise en promo, affichage, ...
 
-    getProduits().then(produits => {
-// Pour modifier ou pas le prix originel des produits 
+    getSupermarket().then(produits => {
+// Pour modifier le prix originel des produits 
         const produitsPriceToChange = produits
         this.#changePriceElements.forEach(el => {
             for (const produit of produitsPriceToChange) {
@@ -173,7 +245,7 @@ export class Supermarket{
     
             for (const produit of produitsPromoToChange) {
 
-                //Calculer du prix avec propmotion des produits de la catégorie choisie avec la méthode setPromoToCategory()
+            //Calculer du prix avec propmotion des produits de la catégorie choisie avec la méthode setPromoToCategory()
                 if(produit.categorie.toLowerCase().includes(this.#promoCategory.toLowerCase())){
                     produit.promo = this.#remiseCategory
                     produit.prix = +(produit.prix - (produit.prix*(this.#remiseCategory/100))).toFixed(2)
@@ -245,7 +317,7 @@ export class Supermarket{
         return produitsPromoToChange
     })
     .then(produitsPromoToChange =>{
-// Pour rendre indisponible les produits
+    // Pour rendre indisponible les produits
         const produitsAvailable =  produitsPromoToChange
         this.#unavailableElements.forEach(el =>{
             for (const produit of produitsAvailable) {
@@ -260,12 +332,17 @@ export class Supermarket{
     .then(produitsAvailable => {
 
         
-        // On trie les produits par marque
+        // On trie les produits par pertinence(par marque)
         const newProduits = produitsAvailable.sort((a, b) => a.marque.localeCompare(b.marque))
+
+        
 
         // Pour afficher les produits en fonction du choix du spermarché
         const containerProduitsPageAcceuil = document.querySelector(".section1Produits.accueil .containerProduits");
         const containerProduitsPageAcceuilClass = ["containerProduits "];
+        // Pour afficher les noms des produits en fonction de la langue séléctionnée
+        const displayedFlag = document.querySelector("#output .displayedImage");
+        const languesSB = document.querySelector('.traducteurSB'); 
 
         for (const produit of newProduits) {
 
@@ -280,7 +357,13 @@ export class Supermarket{
                         const produitDiv = document.createElement("div");
                                 produitDiv.className = `produit ${this.nom}`;
                                 produitDiv.id = produit.nomCourt;
-                                produitDiv.setAttribute("data-supermarket", this.nom)
+                                produitDiv.dataset.store = this.nom
+                                produitDiv.dataset.price = produit.prix
+                                produitDiv.dataset.marque = produit.marque
+                                produitDiv.dataset.text = produit.nom.fr
+                                produitDiv.dataset.bio = produit.bio
+                                // produitDiv.dataset.nameEs = produit.nom.es
+                               
 
                         const imgProduit = document.createElement("img");
                                 imgProduit.src = produit.image;
@@ -292,8 +375,10 @@ export class Supermarket{
                                 divPrixBtnAddToCart.className="prix-AddToCart";
 
                         const span = document.createElement("span");
-                                span.className = "prix" ;
+                                span.className = `prix ${produit.id} ${this.nom} quantite${produit.id} `; ;
                                 span.id = produit.nomCourt
+                                span.dataset.user = produit.id
+                                span.dataset.id = produit.id
                                 if(!produit.promo){
                                     span.textContent = `${(produit.prix)} €`;
                                 }
@@ -338,6 +423,7 @@ export class Supermarket{
                                         produitDiv.style.display = "none"
                                     }
                                 });
+
                         // Pour afficher les produits en fonction du supermarché selectionné
                         document.querySelectorAll(".choixSupermarche select").forEach((select) => {
                                 select.addEventListener("change", (e) => {
@@ -392,6 +478,10 @@ export class Supermarket{
 
 // Pour afficher la description de chaque produit au clique de celui-ci
 
+// Pour afficher les noms des produits en fonction de la langue séléctionnée
+        const displayedFlag = document.querySelector("#output .displayedImage");
+        const languesSB = document.querySelector('.traducteurSB'); 
+
         for (const produit of newProduits) {
     // Création de la description de chaque produit
         const produitsDescripDiv =  document.createElement('div');
@@ -408,7 +498,7 @@ export class Supermarket{
                             imgProduit.alt = produit.nom.fr
                     const produitDesc = document.createElement("p")
                             produitDesc.id = produit.nomCourt;
-                            produitDesc.textContent = produit.description.fr
+                            produitDesc.textContent = produit.description.fr;
 
                 produitImgDescrip.appendChild(imgProduit);
                 produitImgDescrip.appendChild(produitDesc);
@@ -463,13 +553,23 @@ export class Supermarket{
         return newProduits
     })
     .then(newProduits => {
-        const produitsPanierContainer = document.querySelectorAll(".panier .produits-panier");
+
+        // SECTION DÉDIÉE AUX PRODUITS DU PANIER - AJOUT, VARIATION DE LA QUANTITÉ ET DU PRIX, CALCUL DU TOTAL, ...
+        const produitsPanierContainer = document.querySelectorAll(".container-produits-panier > .produits-panier");
         const choixSupermarche = document.querySelectorAll(".choixSupermarche select");
-        const addToCartBtns = document.querySelectorAll(".addToCart")
+        const totalPricesContainer = document.querySelectorAll(".container-total .Total");
+
+        
+        // On affiche qu'un seul container des produits du panier ainsi qu'un seul Total précédement crées dans displaySupermarketCartProductAndTotalPrice()
+
+        choixSupermarche.forEach(choix => {
+            produitsPanierContainer.forEach(container => {if(!container.className.includes(choix.value)) container.style.display = "none"});
+
+            totalPricesContainer.forEach(container => {if(container.id !== choix.value) container.style.display ="none"}  )
+        })
 
 
-
-        let quantiteProduit = 1
+        let quantiteProduit = 0
 
         for (const produit of newProduits) {
 
@@ -477,199 +577,67 @@ export class Supermarket{
         const produitPanier = document.createElement("div")
                 produitPanier.className = `produit ${this.nom} ${produit.nomCourt} `;
                 produitPanier.id = produit.id
+                produitPanier.dataset.id = `${this.nom}-${produit.id}`
+                produitPanier.dataset.store = this.nom;
                 produitPanier.innerHTML = `<div class="image-nom ${produit.nomCourt}"> 
                             <img src=${produit.image} alt=${produit.nom.fr}>
                             <span class="nom">${produit.nom.fr}</span>
                         </div>
                         <div class="quantite-prix ${produit.nomCourt}">
                             <div class="quantite ${produit.nomCourt}">
-                                <img class="remove ${this.nom} ${produit.nomCourt}" id="${produit.id}" src="https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/icons/remove_.svg" alt="remove">                                
-                                <span class="quantite ${this.nom} ${produit.nomCourt}" id="${produit.id}">${quantiteProduit}</span>
-                                <img class="add ${this.nom} ${produit.nomCourt}" id="${produit.id}" src="https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/icons/add_.svg" alt="add">
+                                <img class="remove ${this.nom} ${produit.nomCourt}" id="${produit.id}" data-id="${this.nom}-${produit.id}" data-store=${this.nom}  src="https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/icons/remove_.svg" alt="remove">                                
+                                <span class="quantite ${this.nom} ${produit.nomCourt}" id="${produit.id}" data-id="${this.nom}-${produit.id}" data-store=${this.nom}>${quantiteProduit}</span>
+                                <img class="add ${this.nom} ${produit.nomCourt}" id="${produit.id}" data-id="${this.nom}-${produit.id}" data-store=${this.nom}  src="https://raw.githubusercontent.com/Gigiwiz/BeDrive/refs/heads/main/Images/icons/add_.svg" alt="add">
                             </div>
-                            <span class="prix ${this.nom} ${produit.nomCourt}" id=${produit.id}>${produit.prix}</span>
+                            <span class="prix cart ${this.nom} ${produit.nomCourt}" id="${produit.id}" data-id="${this.nom}-${produit.id}" data-price="${produit.prix}" data-store=${this.nom}>${produit.prix}</span>
                         </div>`
 
 
                     
                     // Ajout temporaire des produits créés dans la section2
                         document.querySelector(".section2").appendChild(produitPanier)
-                        produitPanier.style.display = "none"
+                            produitPanier.style.display = "none"
 
         
         }
-
-
-
-      function increaseQuantite(productID) {
-            document.querySelectorAll(".section2 .produit").forEach(produitPanier => {
-                if(productID === produitPanier.id){
-                    document.querySelectorAll(".produits-panier span.quantite").forEach(quantiteProd => {
-                        if(quantiteProd.id === productID){
-                            // Incrémentation de la quatité du produit
-                            document.querySelectorAll(".produits-panier img.add").forEach(buttonAdd => {
-                                buttonAdd.addEventListener("click", (e) => {
-                                    e.preventDefault()
-                                    e.stopImmediatePropagation()
-                                    quantiteProd.textContent++
-
-                                    localStorage.setItem(`quantite${productID}`, quantiteProd.textContent) // sauvegarde de la quatité du produit
-
-                                    increasePriceOrdecreasePrice(productID) // augmentation du prix en même temps
-                                })
-                            })
-                        }
-                    })
-                }
-            })
-        }
-
-
-
-        function decreaseQuantite(productID) {
-            document.querySelectorAll(".section2 .produit").forEach(produitPanier => {
-                if(productID === produitPanier.id){
-                    document.querySelectorAll(".produits-panier span.quantite").forEach(quantiteProd => {
-                        if(quantiteProd.id === productID){
-                            // décrémentation de la quatité du produit
-                            document.querySelectorAll(".produits-panier img.remove").forEach(buttonRemove => {
-                                buttonRemove.addEventListener("click", (e) => {
-                                    e.preventDefault()
-                                    e.stopImmediatePropagation()
-                                    if(quantiteProd.textContent >= 1){
-                                        quantiteProd.textContent--
-                                        localStorage.setItem(`quantite${productID}`, quantiteProd.textContent) // sauvegarde de la quatité du produit
-
-                                        increasePriceOrdecreasePrice(productID) // On diminue en même temps le prix des produits
-                                    }
-
-                                    if (quantiteProd.textContent == 0 && quantiteProd.id === produitPanier.id) { //retrait du produit du panier
-                                        produitPanier.style.display = "none"
-                                        localStorage.removeItem(`quantite${productID}`);
-                                        localStorage.removeItem(`produit${productID}`);
-                                    }    
-                                })
-                            })
-                        }
-                    })
-                }
-            })           
-        }
-
-
-
-        
-
-        function increasePriceOrdecreasePrice(productID) {
-            //Augmentation et imunition du prix du produit en fonction de sa quantité
-            document.querySelectorAll(".produits-panier span.prix").forEach(produitPrix => {
-                if(produitPrix.id === productID){
-                const  savedProductQuantite = localStorage.getItem(`quantite${productID}`)
-                    newProduits.forEach(produitJson => {
-                        if(produitPrix.id === produitJson.id && savedProductQuantite >= 1){
-                            produitPrix.textContent = parseFloat(produitJson.prix * savedProductQuantite).toFixed(2)
-                                                        .replace(".00", "")
-                                                        .replace(".10", ".1")
-                                                        .replace(".20", ".2")
-                                                        .replace(".30", ".3")
-                                                        .replace(".40", ".4")
-                                                        .replace(".50", ".5")
-                                                        .replace(".60", ".6")
-                                                        .replace(".70", ".7")
-                                                        .replace(".80", ".8")
-                                                        .replace(".90", ".9")                                                                                                                    
-                        }
-                    })
-                }
-            })         
-        }
-
-
-
-        function addProductToCart(productID) {
-            produitsPanierContainer.forEach(container => {
-                choixSupermarche.forEach(choix => {
-                    document.querySelectorAll(".section2 .produit").forEach(produitPanier => {
-                        if(produitPanier.className.includes(choix.value) && productID === produitPanier.id){
-                            container.appendChild(produitPanier);
-                            produitPanier.style.display = "flex"
-                            localStorage.setItem(`produit${produitPanier.id}`, produitPanier.id)
-
-                            increaseQuantite(productID)
-                            decreaseQuantite(productID)
-                        }
-                    })
-                })
-            })
-        }
-
-            // Ajout des produits-panier crées à chaque panier d'un supermarché et incrémentation de la quantité du produit et du prix
-            addToCartBtns.forEach(button => {
-                button.addEventListener("click", (e) => {
-                    e.preventDefault()
-                    e.stopImmediatePropagation()
-                    const produitID = button.id;
-
-                    
-                    // Incrémentation de la quatité du produit
-                    document.querySelectorAll(".produits-panier span.quantite").forEach(quantiteProd => {
-                        if (quantiteProd.id === produitID) {
-                            quantiteProd.textContent++
-                            localStorage.setItem(`quantite${quantiteProd.id}`, quantiteProd.textContent) // sauvegarde de la quantité du produit
-
-                            // Augmentation du prix du produit en fonction de sa quantité
-                            increasePriceOrdecreasePrice(produitID)
-                        }
-                    });
-
-                    addProductToCart(produitID)
-
-                })
-            })
-
-            
-
-            
-            // LocalStorage (maintient) du produit dans le panier
-            addToCartBtns.forEach(button => {
-            const savedProductID = localStorage.getItem(`produit${button.id}`)
-                addProductToCart(savedProductID)
-            })
-
-            // Maintien de la quantité du produit
-            document.querySelectorAll(".produits-panier span.quantite").forEach(quantiteProduit => {
-                const savedProductQuantite = localStorage.getItem(`quantite${quantiteProduit.id}`)
-                if (savedProductQuantite) {
-                    quantiteProduit.textContent = savedProductQuantite
-                }
-            });
-
-            // Maintien du prix du produit
-            document.querySelectorAll(".produits-panier span.prix").forEach(prixProduit => {
-                const savedProductQuantite = localStorage.getItem(`quantite${prixProduit.id}`)
-                const savedProductPrice = sessionStorage.getItem(`${prixProduit.className} ${prixProduit.id}`)
-                newProduits.forEach(produitJson => {
-                    if (produitJson.id === prixProduit.id && prixProduit.className.includes(this.nom) && savedProductQuantite) {
-                        prixProduit.textContent = parseFloat(produitJson.prix * savedProductQuantite).toFixed(2)
-                                                        .replace(".00", "")
-                                                        .replace(".10", ".1")
-                                                        .replace(".20", ".2")
-                                                        .replace(".30", ".3")
-                                                        .replace(".40", ".4")
-                                                        .replace(".50", ".5")
-                                                        .replace(".60", ".6")
-                                                        .replace(".70", ".7")
-                                                        .replace(".80", ".8")
-                                                        .replace(".90", ".9")  
-                    }
-                })
-            });
-
 
         return newProduits;
     })
+    .then(newProduits => {
 
-    };
+        const rankingDivContainer = document.querySelectorAll(".supermarche.ranking")
+
+
+        // CRÉATION DES DIV POUR LE CLASSEMENT DES SUPERMARCHÉS
+
+        const supermarketRankingDiv = document.createElement("div")
+                supermarketRankingDiv.className = `ranking-${this.nom}`
+                supermarketRankingDiv.id = this.nom
+                supermarketRankingDiv.dataset.prixTotal = 0
+        
+
+        const supermarketLogo = document.createElement("img")
+                supermarketLogo.src = this.logo
+                supermarketLogo.className = `logoSupermarche`
+                supermarketLogo.id = this.nom
+                supermarketLogo.alt = `logo ${this.nom}`
+
+
+        const spanPrixTotal = document.createElement("span")
+                spanPrixTotal.className = "prixTotal"
+                spanPrixTotal.id = this.nom
+                spanPrixTotal.textContent = 0
+
+        supermarketRankingDiv.appendChild(supermarketLogo)
+        supermarketRankingDiv.appendChild(spanPrixTotal)
+
+        rankingDivContainer.forEach(container => container.appendChild(supermarketRankingDiv))
+
+
+
+        return newProduits
+    })
+};
 
     /**
      * @param {[string]} elements Tableau des id et/ou des catégories des produits dont le prix originel va être modifier.
@@ -794,7 +762,7 @@ Lidl.setPromoByCategory("chart traiteur",35, ["CHA1", "CHA2", "BOI2", "CHA11", "
         
 
 const Carrefour = new Supermarket("Carrefour", "Logo_Carrefour.svg", "60 boulevard de Stalingrad Vitry-sur-Seine");
-Carrefour.setPromoByCategory("fruits",30,["FRU3", "FRU16"])
+Carrefour.setPromoByCategory("fruits",35,["FRU3", "FRU16"])
 
        
 
@@ -815,23 +783,8 @@ Carrefour.setPromoByCategory("fruits",30,["FRU3", "FRU16"])
 
 
 
-// getProduits().then(p => {
 
 
-//              // récupération de tous les éléments sauvegardés
-//             const savedSupermaket = localStorage.getItem('productSupermarketName'); 
 
-//             if (savedSupermaket) {
-
-//                 document.querySelectorAll(".containerProduits .produit").forEach((product) => {
-
-//                     if(product.className.includes(savedSupermaket))
-//                         product.style.display = "flex";
-//                     else 
-//                         product.style.display = "none";
-//                 })
-//             }
-
-// })
 
 

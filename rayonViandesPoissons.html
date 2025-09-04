@@ -170,28 +170,19 @@
                         <option value="pertinence" id="pertinence">Pertinence</option>
                         <option value="prixCroissant" id="prixCroissant">Prix croissant</option>
                         <option value="prixDecroissant" id="prixDecroissant">Prix décroissant</option>
+                        <option value="deAaZ" id="deAaZ">de A à Z</option>
+                        <option value="deZaA" id="deZaA">de Z à A</option>
                     </select>
                 </div>
                 <div class="containerProduits Viandes Poissons">
 
                     <!-- Ici s'affficheront les produits à acheter. -->
+                     <h3 class="aucunProduitTrouve" id="aucunProduitTrouve" style="display: none;">Aucun produit n'a été trouvé</h3>
+
 
                 </div>
 
 
-
-                
-                    <div class="description-produit" style="display: none;">
-                            <div class="img-description">
-                                <img src="https://raw.githubusercontent.com/Gigiwiz/Images-BeDrive/refs/heads/main/produits/FruitLe%CC%81gumes/ananas.png" id="imgAnanas" alt=" ananas">
-                                <p id="ananasDesc">Un ananas frais, juteux et sucré, parfait pour vos desserts ou smoothies.</p>
-                            </div>
-                            <span class="prix">2.34€, -55.16%</span>
-                            <div class="addToCart">
-                                <span id="addToCart">Ajouter au panier</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fcfcfc"><path d="M440-600v-120H320v-80h120v-120h80v120h120v80H520v120h-80ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z"/></svg>
-                            </div>
-                    </div>
             </div>
 
         </section>
@@ -206,21 +197,28 @@
                     <div class="imgContainer">
                     </div>
                 </div>
-            
-                <div class="produits-panier" style="background-image: url(https://raw.githubusercontent.com/Gigiwiz/Images-BeDrive/refs/heads/main/icons/shopping_cart.svg);
+                <div class="container-produits-panier"  style="background-image: url(https://raw.githubusercontent.com/Gigiwiz/Images-BeDrive/refs/heads/main/icons/shopping_cart.svg);
     background-size: 50px;
     background-repeat: no-repeat;
     background-position: center;">
-                        
-                    <!-- Ici s'ajouteront tous les produits du panier -->
+
+                    <!-- <div class="produits-panier" style="display: none;"> -->
+                            
+                        <!-- Ici s'ajouteront tous les produits du panier -->
+
+                    <!-- </div> -->
 
                 </div>
+            
+                
 
                 <!-- Le prix total du panier -->
-                <div class="Total">
+                <div class="container-total">
+                    <!-- <div class="Total">
                     <span id="total">Total:</span>
                     <span class="prixTotal">100 €</span>
-                </div>
+                    </div> -->
+                 </div>
                 <!-- Les bouttons  -->
                 <div class="button">
                      <!-- Le boutton de validation du panier -->
@@ -235,32 +233,8 @@
             <div class="ranking">
                 <span class="titre ranking" id="classement">Classement</span>
                 <div class="supermarche ranking">
-                    <div>
-                        <img src="https://raw.githubusercontent.com/Gigiwiz/Images-BeDrive/refs/heads/main/supermarket/Logo-Intermarché.svg" alt=" logo Intermarche" class="logoSupermarche">
-                        <span class="prixTotal"> 10 €</span>
-                    </div>
-                    <div>
-                        <img src="https://raw.githubusercontent.com/Gigiwiz/Images-BeDrive/refs/heads/main/supermarket/Aldi_Nord_201x_logo.svg" alt=" logo Aldi" class="logoSupermarche">
-                        <span class="prixTotal"> 13.53 €</span>
-                    </div>
-                    <div>
-                        <img src="https://raw.githubusercontent.com/Gigiwiz/Images-BeDrive/refs/heads/main/supermarket/E.Leclerc_logo.svg" alt=" logo Leclerc" class="logoSupermarche">
-                        <span class="prixTotal"> 10.5 €</span>
-                    </div>
-                    <div>
-                        <img src="https://raw.githubusercontent.com/Gigiwiz/Images-BeDrive/refs/heads/main/supermarket/Logo_Auchan_(2015).svg" alt=" logo Auchan" class="logoSupermarche">
-                        <span class="prixTotal"> 22.38 €</span>
-                    </div>
-                    <div>
-                        <img src="https://raw.githubusercontent.com/Gigiwiz/Images-BeDrive/refs/heads/main/supermarket/Logo_Carrefour.svg" alt=" logo Carrefour" class="logoSupermarche">
-                        <span class="prixTotal"> 100.43 €</span>
-                    </div>
-                    <div>
-                        <img src="https://raw.githubusercontent.com/Gigiwiz/Images-BeDrive/refs/heads/main/supermarket/lidl.svg" alt=" logo Lidl" class="logoSupermarche">
-                        <span class="prixTotal"> 115.47 €</span>
-                    </div>
-
-
+                    <!-- Ici s'ajouteront les div des supermarchés pour le ranking -->
+                    
                 </div> 
             </div>
 
@@ -331,9 +305,9 @@
         </div>
     </footer>
     <!-- Liens JS -->
-    <script type="module" src="JS/script.js"></script>
-    <script type="module" src="JS/produits.js"></script>
+    <script type="module" src="JS/panier.js"></script>
     <script type="module" src="JS/BeDrive.js"></script>
+    <script type="module" src="JS/script.js"></script>
     <script type="module" src="JS/traductions.js"></script>
     <script type="module" src="JS/traducteur.js"></script>
     <script type="module" src="JS/fonctions.js"></script>
