@@ -194,7 +194,7 @@ let produitsPanierDeChaqueStore = []
 
 
         let totauxDesSupermarche = produitsPanierDeChaqueStore.reduce((acc, p) => {
-            acc[p.store] = (acc[p.store] || 0) + p.total;
+            acc[p.store] = (acc[p.store]) + p.total;
 
             // localStorage.setItem("totauxDesSupermarche", JSON.stringify(acc))
 
