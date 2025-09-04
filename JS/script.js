@@ -35,14 +35,23 @@ getSupermarket().then(reponse => {
         selectSupermarche.forEach(select => {
             lesProduits.forEach(produit => {
                 const productToFind = produit.querySelector("span.nom").textContent
-
-                if(sansAccents(productToFind).toLowerCase().includes(sansAccents(inputValue).toLowerCase()) && produit.dataset.store === select.value)
+                
+                if(sansAccents(productToFind).toLowerCase().includes(sansAccents(inputValue).toLowerCase()) && produit.dataset.store === select.value ){
                     produit.style.display = "flex"
+                }
                 else
                     produit.style.display = "none"
             })    
         })
     }
+
+    // lesProduits.forEach(produit => {
+    //     selectSupermarche.forEach(select => {
+    //     if(produit.style.display === "none" && produit.className.includes(select.value)){
+    //         aucunProduitTrouveTexte.style.display = "flex"
+    //     }
+    //     })
+    // })
 
 
     function clearSearchBar(){
@@ -68,7 +77,15 @@ getSupermarket().then(reponse => {
 
 
 
-    const selectTrie = document.querySelectorAll(".header select");
+    
+
+})
+
+
+
+
+
+const selectTrie = document.querySelectorAll(".header select");
 
     selectTrie.forEach(select => {                    
             select.addEventListener("change", (e) => {
@@ -79,6 +96,7 @@ getSupermarket().then(reponse => {
 
     
     function trieDesProduits(trieValue) {
+        getSupermarket().then(reponse => {
         const parent = document.querySelector(".containerProduits");
         const enfants = Array.from(parent.children);
 
@@ -97,11 +115,13 @@ getSupermarket().then(reponse => {
         enfants.forEach(e => parent.appendChild(e)); // réinsertion dans l'ordre
 
         sessionStorage.setItem("selectTrieValue", trieValue)
+        })
     }
 
 
     // SessionStorage
-    selectTrie.forEach(select => {
+    document.addEventListener("DOMContentLoaded", () => {
+        selectTrie.forEach(select => {
         const savedSelectValue = sessionStorage.getItem("selectTrieValue")
         if (savedSelectValue){
             select.value = savedSelectValue
@@ -109,6 +129,5 @@ getSupermarket().then(reponse => {
         }
     })
 
-
-})
-
+    })
+    

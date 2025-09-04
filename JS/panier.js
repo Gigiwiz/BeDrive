@@ -18,7 +18,6 @@ let produitsPanierDeChaqueStore = []
 
 
 
-         document.addEventListener("DOMContentLoaded", () => {
 
 
             getSupermarket().then(produitsJSON => {
@@ -270,4 +269,4 @@ let produitsPanierDeChaqueStore = []
 
 
 
-})
+

@@ -862,7 +862,7 @@ footer button.btn-contact:hover{
 .containerProduits,
 .section1Produits .container{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-around;
     flex-wrap: wrap;
     background-color: var(--second-color);
